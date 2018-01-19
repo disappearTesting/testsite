@@ -93,7 +93,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <body>
 	<div class="wrapper">
 		<h2>Login</h2>
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+		<form action="loginPage" method="post">
 			<div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
 				<label>Username:<sup>*</sup></label>
 				<input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
@@ -112,4 +112,3 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	</div>    
 </body>
 </html>
-
