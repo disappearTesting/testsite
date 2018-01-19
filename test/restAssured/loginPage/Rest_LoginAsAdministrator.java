@@ -24,11 +24,11 @@ public class Rest_LoginAsAdministrator {
     @Test
     public void test_LoginAsAdministrator() throws Exception {
         given().
-                auth().form("test1", "123456", FormAuthConfig.springSecurity()).
+                auth().form("test1", "123456", new FormAuthConfig("",)).
         expect().
                 statusCode(200).
                 //  body(equalTo("OK")).
         when().
-                get("welcome.php");
+                get("login.php");
     }
 }
