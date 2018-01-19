@@ -8,15 +8,12 @@ import pom.PomLogin;
 
 public class Unit_LoginAsAdministrator {
 
-    private static String URL_LOGIN_PAGE = "http://testsite.local/loginPage/login.php";
-
     WebDriver driver;
     PomLogin objLogin;
 
     @Before
     public void before() {
         driver = new FirefoxDriver();
-        driver.get(URL_LOGIN_PAGE);
         objLogin = new PomLogin(driver);
     }
 
