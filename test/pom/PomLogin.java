@@ -13,7 +13,7 @@ public class PomLogin {
     WebDriver driver;
 
     By username = By.name("username");
-    //  By useremail = By.name("useremail");
+    //By useremail = By.name("useremail");
     By password = By.name("password");
     By submitbutton = By.name("submitbutton");
 

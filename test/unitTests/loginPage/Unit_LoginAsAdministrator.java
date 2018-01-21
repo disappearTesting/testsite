@@ -1,5 +1,13 @@
+/**
+ * @author hookie
+ * @version 1.0
+ */
 package unitTests.loginPage;
 
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.response.Response;
+import com.jayway.restassured.specification.RequestSpecification;
+import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -8,16 +16,17 @@ import pom.PomLogin;
 
 public class Unit_LoginAsAdministrator {
 
-    private static String URL_LOGIN_PAGE = "http://testsite.local/loginPage/login.php";
-
     WebDriver driver;
     PomLogin objLogin;
 
     @Before
     public void before() {
         driver = new FirefoxDriver();
-        driver.get(URL_LOGIN_PAGE);
         objLogin = new PomLogin(driver);
+
+        RestAssured.baseURI = "http://testsite.local/rest";
+        //  RestAssured.port = 80;
+        RestAssured.basePath = "/loginPage";
     }
 
     @After
@@ -25,9 +34,11 @@ public class Unit_LoginAsAdministrator {
         driver.quit();
     }
 
-//    @Test
-//    public void test_loginNamePassword() {
-//        objLogin.loginEmailPassword("test1", "test1");
-//        assertEquals();
-//    }
+    @Test
+    public void test_loginNamePassword() {
+        RequestSpecification httpRequest = RestAssured.given();
+        Response response = httpRequest.get("/login.php");
+        objLogin.loginSetNamePassword("test1", "123456");
+
+    }
 }

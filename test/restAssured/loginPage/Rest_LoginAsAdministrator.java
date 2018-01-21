@@ -8,13 +8,12 @@ import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.authentication.FormAuthConfig;
 import org.junit.Before;
 import org.junit.Test;
-import static org.hamcrest.Matchers.equalTo;
 import static com.jayway.restassured.RestAssured.given;
 
 public class Rest_LoginAsAdministrator {
 
     @Before
-    public void setup() {
+    public void before() {
         RestAssured.baseURI = "http://testsite.local/rest";
         //  RestAssured.port = 80;
         RestAssured.basePath = "/loginPage";
@@ -23,12 +22,12 @@ public class Rest_LoginAsAdministrator {
 
     @Test
     public void test_LoginAsAdministrator() throws Exception {
-        given().
-                auth().form("test1", "123456", new FormAuthConfig("",)).
-        expect().
-                statusCode(200).
-                //  body(equalTo("OK")).
-        when().
-                get("login.php");
+        given().log().all().
+                auth().
+                form("test1", "123456", new FormAuthConfig("/rest/loginPage/login.php", "username", "password")).
+                when().
+                get("/login.php").
+                then().
+                statusCode(200);
     }
 }
