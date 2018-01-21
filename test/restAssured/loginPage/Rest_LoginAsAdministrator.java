@@ -22,7 +22,7 @@ public class Rest_LoginAsAdministrator {
 
     @Test
     public void test_LoginAsAdministrator() throws Exception {
-        given().log().all().
+        given().log().path().
                 auth().
                 form("test1", "123456", new FormAuthConfig("/rest/loginPage/login.php", "username", "password")).
                 when().

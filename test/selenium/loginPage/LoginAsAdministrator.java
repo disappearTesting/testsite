@@ -35,6 +35,6 @@ public class LoginAsAdministrator {
         PomLogin objLogin = new PomLogin(driver);
         objLogin.loginSetNamePassword("test1", "123456");
 
-        //  driver.quit();
+        driver.quit();
     }
 }

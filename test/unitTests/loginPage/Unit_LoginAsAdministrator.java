@@ -4,29 +4,33 @@
  */
 package unitTests.loginPage;
 
-import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.response.Response;
-import com.jayway.restassured.specification.RequestSpecification;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.PomLogin;
+
+import javax.annotation.Nullable;
+
+import static org.junit.Assert.assertEquals;
+import static org.openqa.selenium.support.ui.ExpectedConditions.urlContains;
 
 public class Unit_LoginAsAdministrator {
 
-    WebDriver driver;
-    PomLogin objLogin;
+    private static final String URL = "http://testsite.local/rest/loginPage/login.php";
+    private static final String URL_EXPECTED = "http://testsite.local/rest/loginPage/welcome.php";
+
+    private WebDriver driver;
+    private PomLogin objLogin;
 
     @Before
     public void before() {
         driver = new FirefoxDriver();
         objLogin = new PomLogin(driver);
-
-        RestAssured.baseURI = "http://testsite.local/rest";
-        //  RestAssured.port = 80;
-        RestAssured.basePath = "/loginPage";
     }
 
     @After
@@ -36,9 +40,12 @@ public class Unit_LoginAsAdministrator {
 
     @Test
     public void test_loginNamePassword() {
-        RequestSpecification httpRequest = RestAssured.given();
-        Response response = httpRequest.get("/login.php");
+        driver.get(URL);
         objLogin.loginSetNamePassword("test1", "123456");
 
+        new WebDriverWait(driver, 5).until(urlContains(URL_EXPECTED));
+
+        System.out.println(driver.getCurrentUrl());
+        assertEquals(URL_EXPECTED, driver.getCurrentUrl());
     }
 }
