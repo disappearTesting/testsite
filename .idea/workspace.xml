@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="136e4e73-4e22-4de5-b055-e6124c0a3486" name="Default" comment="Merge branch 'master' of https://github.com/disappearTesting/testsite&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;test/restAssured/loginPage/Rest_LoginAsAdministrator.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/rest/loginPage/login.php" afterPath="$PROJECT_DIR$/rest/loginPage/login.php" />
-      <change beforePath="$PROJECT_DIR$/test/pom/PomLogin.java" afterPath="$PROJECT_DIR$/test/pom/PomLogin.java" />
-      <change beforePath="$PROJECT_DIR$/test/restAssured/loginPage/Rest_LoginAsAdministrator.java" afterPath="$PROJECT_DIR$/test/restAssured/loginPage/Rest_LoginAsAdministrator.java" />
-      <change beforePath="$PROJECT_DIR$/test/selenium/loginPage/LoginAsAdministrator.java" afterPath="$PROJECT_DIR$/test/selenium/loginPage/LoginAsAdministrator.java" />
-      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java" />
-    </list>
+    <list default="true" id="136e4e73-4e22-4de5-b055-e6124c0a3486" name="Default" comment="Merge branch 'master' of https://github.com/disappearTesting/testsite&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;test/restAssured/loginPage/Rest_LoginAsAdministrator.java" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +33,8 @@
       <file leaf-file-name="Unit_LoginAsAdministrator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+            <state relative-caret-position="306">
+              <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1013#1014#0" expanded="true" />
@@ -601,7 +594,7 @@
       <workItem from="1516386414806" duration="3635000" />
       <workItem from="1516535235715" duration="4337000" />
       <workItem from="1516543199698" duration="595000" />
-      <workItem from="1516548639917" duration="10970000" />
+      <workItem from="1516548639917" duration="11645000" />
     </task>
     <servers />
   </component>
@@ -638,22 +631,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19537000" />
+    <option name="totallyTimeSpent" value="20212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31340206" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31340206" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24514039" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24387646" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3701031" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="299" y="23" width="1477" height="1053" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3701031" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="299" y="23" width="1477" height="1053" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2670103" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -813,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        <state relative-caret-position="306">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1013#1014#0" expanded="true" />
