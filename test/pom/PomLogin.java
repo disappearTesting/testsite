@@ -12,13 +12,18 @@ public class PomLogin {
 
     WebDriver driver;
 
-    By username = By.name("username");
-    By useremail = By.name("useremail");
-    By password = By.name("password");
-    By submitbutton = By.name("submitbutton");
+    public By username = By.name("username");
+    public By useremail = By.name("useremail");
+    public By password = By.name("password");
+    public By submitbutton = By.name("submitbutton");
 
     public PomLogin(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public By setHelpBlock() {
+        By helpBlock = By.className("help-block");
+        return helpBlock;
     }
 
     public void loginSetNamePassword(String name, String pass) {

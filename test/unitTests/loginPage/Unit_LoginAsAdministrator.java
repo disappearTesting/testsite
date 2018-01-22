@@ -25,6 +25,7 @@ public class Unit_LoginAsAdministrator {
     private static final String URL = "http://testsite.local/rest/loginPage/login.php";
     private static final String URL_EXPECTED = "http://testsite.local/rest/loginPage/welcome.php";
     private static final String[] EXPECTED_TEXT_VALIDATION = {"Please enter username.", "Please enter your password."};
+    private static final String EXPECTED_TEXT_UNVALID_NAME = "No account found with that username.";
 
     private WebDriver driver;
     private PomLogin objLogin;
@@ -41,7 +42,7 @@ public class Unit_LoginAsAdministrator {
     }
 
     @Test
-    public void test_loginNamePassword() {
+    public void test_LoginNamePassword() {
         driver.get(URL);
         objLogin.loginSetNamePassword("test1", "123456");
 
@@ -51,18 +52,29 @@ public class Unit_LoginAsAdministrator {
     }
 
     @Test
-    public void test_loginSetNamePasswordNullParams() {
+    public void test_LoginSetNamePasswordNullParams() {
         driver.get(URL);
         objLogin.loginSetNamePassword("", "");
 
         //  new WebDriverWait(driver, 5).until(presenceOfElementLocated(By.className("help-block")));
 
-        List<WebElement> elements = driver.findElements(By.className("help-block"));
+        List<WebElement> elements = driver.findElements(objLogin.setHelpBlock());
         String[] ACTUAL_TEXT_VALIDATION = new String[elements.size()];
         int i = 0;
         for(WebElement element : elements) {
             ACTUAL_TEXT_VALIDATION[i] = element.getText();
             assertEquals(EXPECTED_TEXT_VALIDATION, ACTUAL_TEXT_VALIDATION[i]);
         }
+    }
+
+    @Test
+    public void test_LoginSetNamePasswordUnvalidName() {
+        driver.get(URL);
+        objLogin.loginSetNamePassword("tets", "123456");
+
+        new WebDriverWait(driver, 5).until(presenceOfElementLocated(objLogin.setHelpBlock()));
+
+        WebElement element = driver.findElement(objLogin.setHelpBlock());
+        assertEquals(EXPECTED_TEXT_UNVALID_NAME, element.getText());
     }
 }
