@@ -17,10 +17,15 @@ public class PomLogin {
     By password = By.name("password");
     By submitbutton = By.name("submitbutton");
 
+    By formGroupHasError = By.className("form-group-has-error");
     By helpBlock = By.className("help-block");
 
     public PomLogin(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public By getFormGroupHasError() {
+        return formGroupHasError;
     }
 
     public By getHelpBlock() {
