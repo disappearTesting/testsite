@@ -35,7 +35,7 @@
       <file leaf-file-name="Unit_LoginAsAdministrator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
+            <state relative-caret-position="431">
               <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -568,6 +568,9 @@
     <history-entry file="Unit_LoginAsAdministrator_test_LoginSetNamePasswordUnvalidName - 2018.01.22 at 19h 30m 52s.xml">
       <configuration name="Unit_LoginAsAdministrator.test_LoginSetNamePasswordUnvalidName" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_LoginAsAdministrator_test_LoginSetNamePasswordUnvalidName - 2018.01.22 at 19h 43m 37s.xml">
+      <configuration name="Unit_LoginAsAdministrator.test_LoginSetNamePasswordUnvalidName" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Unit_LoginAsAdministrator_test_LoginSetNamePasswordUnvalidPassword - 2018.01.22 at 19h 08m 05s.xml">
       <configuration name="Unit_LoginAsAdministrator.test_LoginSetNamePasswordUnvalidPassword" configurationId="JUnit" />
     </history-entry>
@@ -580,16 +583,13 @@
     <history-entry file="Unit_LoginAsAdministrator_test_loginNamePassword - 2018.01.22 at 15h 36m 56s.xml">
       <configuration name="Unit_LoginAsAdministrator.test_loginNamePassword" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginAsAdministrator_test_loginSetNamePasswordNullParams - 2018.01.22 at 15h 26m 46s.xml">
-      <configuration name="Unit_LoginAsAdministrator.test_loginSetNamePasswordNullParams" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_LoginAsAdministrator_test_loginSetNamePasswordNullParams - 2018.01.22 at 15h 35m 23s.xml">
       <configuration name="Unit_LoginAsAdministrator.test_loginSetNamePasswordNullParams" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -600,10 +600,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3827027" sideWeight="0.5021299" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20607029" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3827027" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3827027" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26702702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26702702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18370607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -728,7 +728,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginAsAdministrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
+        <state relative-caret-position="431">
           <caret line="71" column="56" lean-forward="true" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
