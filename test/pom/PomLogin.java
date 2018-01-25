@@ -9,23 +9,23 @@ import org.openqa.selenium.WebDriver;
 
 public class PomLogin {
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    By username = By.name("username");
-    By password = By.name("password");
-    By submitbutton = By.name("submitbutton");
+    private By username = By.name("username");
+    private By password = By.name("password");
 
-    By formGroupHasError = By.className("form-group-has-error");
-    By helpBlock = By.className("help-block");
+    private By submitButton = By.name("submitbutton");
+    private By textSignUpNow = By.xpath("/html/body/div/form/p/a");
 
-    By textSignUpNow = By.xpath("/html/body/div/form/p/a");
+    private By formGroupHasError = By.className("form-group-has-error");
+    private By helpBlock = By.className("help-block");
 
     public PomLogin(WebDriver driver) {
         this.driver = driver;
     }
 
-    public By getSubmitbutton() {
-        return submitbutton;
+    public By getSubmitButton() {
+        return submitButton;
     }
 
     public By getTextSignUpNow() {
@@ -43,6 +43,6 @@ public class PomLogin {
     public void loginSetNamePassword(String name, String pass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
-        driver.findElement(submitbutton).submit();
+        driver.findElement(submitButton).submit();
     }
 }
