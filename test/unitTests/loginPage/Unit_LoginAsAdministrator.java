@@ -4,30 +4,31 @@
  */
 package unitTests.loginPage;
 
+import pom.PomLogin;
+
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pom.PomLogin;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.assertTrue;
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
-
 public class Unit_LoginAsAdministrator {
 
-    private static final String URL = "http://testsite.local/rest/loginPage/login.php";
-    private static final String URL_EXPECTED = "http://testsite.local/rest/loginPage/welcome.php";
+    private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
+    private static final String URL_LOGIN_SUCCESS = "http://testsite.local/rest/loginPage/welcome.php";
 
-    private static final List<String> TEXT_VALIDATION_EXPECTED = Arrays.asList("Please enter username.", "Please enter your password.");
-    private static final List<String> TEXT_ERROR_EXPECTED = Arrays.asList("No account found with that username.", "The password you entered was not valid.");
+    private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter username.", "Please enter your password.");
+
+    private static final String TEXT_ERROR_UNVALID_NAME = "No account found with that username.";
+    private static final String TEXT_ERROR_UNVALID_PASSWORD = "The password you entered was not valid.";
 
     private WebDriver driver;
     private PomLogin objLogin;
@@ -36,7 +37,7 @@ public class Unit_LoginAsAdministrator {
     public void setUp() {
         driver = new FirefoxDriver();
         objLogin = new PomLogin(driver);
-        driver.get(URL);
+        driver.get(URL_LOGIN_PAGE);
     }
 
     @After
@@ -45,12 +46,30 @@ public class Unit_LoginAsAdministrator {
     }
 
     @Test
+    public void test_submitButtonIsActive() {
+        WebElement submitButton = driver.findElement(objLogin.getSubmitbutton());
+
+        new WebDriverWait(driver, 3).until(elementToBeClickable(objLogin.getSubmitbutton()));
+
+        assertTrue(submitButton.isEnabled());
+    }
+
+    @Test
+    public void test_textSignUpNowUpIsActive() {
+        WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
+
+        new WebDriverWait(driver, 3).until(elementToBeClickable(objLogin.getTextSignUpNow()));
+
+        assertTrue(textSignUpNow.isEnabled());
+    }
+
+    @Test
     public void test_LoginNamePassword() {
         objLogin.loginSetNamePassword("test1", "123456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_EXPECTED));
+        new WebDriverWait(driver, 3).until(urlContains(URL_LOGIN_SUCCESS));
 
-        assertTrue(driver.getCurrentUrl().equals(URL_EXPECTED));
+        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_SUCCESS));
     }
 
     @Test
@@ -58,13 +77,12 @@ public class Unit_LoginAsAdministrator {
         boolean testFail = false;
         objLogin.loginSetNamePassword("", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            System.out.println(element.getText().equals(TEXT_VALIDATION_EXPECTED));
-            testFail = testFail || element.getText().equals(TEXT_VALIDATION_EXPECTED);
+            testFail = testFail || TEXT_VALIDATION.contains(element.getText());
         }
         assertTrue(testFail);
     }
@@ -74,13 +92,12 @@ public class Unit_LoginAsAdministrator {
         boolean testFail = false;
         objLogin.loginSetNamePassword("tets", "123456");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            System.out.println(element.getText().equals(TEXT_ERROR_EXPECTED));
-            testFail = testFail || element.getText().equals("No account found with that username.");
+            testFail = testFail || element.getText().equals(TEXT_ERROR_UNVALID_NAME);
         }
         assertTrue(testFail);
     }
@@ -88,16 +105,14 @@ public class Unit_LoginAsAdministrator {
     @Test
     public void test_LoginSetNamePasswordUnvalidPassword() {
         boolean testFail = false;
-
         objLogin.loginSetNamePassword("test1", "123");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
 
-        List<WebElement> elements = driver.findElements(objLogin.getFormGroupHasError());
+        List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            System.out.println(element.getText().equals(TEXT_ERROR_EXPECTED));
-            testFail = testFail || element.getText().equals("The password you entered was not valid.");
+            testFail = testFail || element.getText().equals(TEXT_ERROR_UNVALID_PASSWORD);
         }
         assertTrue(testFail);
     }
