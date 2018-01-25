@@ -47,14 +47,27 @@ public class Unit_LoginAsAdministrator {
 
     @Test
     public void test_submitButtonIsActive() {
+        WebElement submitButton = driver.findElement(objLogin.getSubmitbutton());
 
+        new WebDriverWait(driver, 3).until(elementToBeClickable(objLogin.getSubmitbutton()));
+
+        assertTrue(submitButton.isEnabled());
+    }
+
+    @Test
+    public void test_textSignUpNowUpIsActive() {
+        WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
+
+        new WebDriverWait(driver, 3).until(elementToBeClickable(objLogin.getTextSignUpNow()));
+
+        assertTrue(textSignUpNow.isEnabled());
     }
 
     @Test
     public void test_LoginNamePassword() {
         objLogin.loginSetNamePassword("test1", "123456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_SUCCESS));
+        new WebDriverWait(driver, 3).until(urlContains(URL_LOGIN_SUCCESS));
 
         assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_SUCCESS));
     }
@@ -64,7 +77,7 @@ public class Unit_LoginAsAdministrator {
         boolean testFail = false;
         objLogin.loginSetNamePassword("", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
@@ -79,7 +92,7 @@ public class Unit_LoginAsAdministrator {
         boolean testFail = false;
         objLogin.loginSetNamePassword("tets", "123456");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
@@ -94,7 +107,7 @@ public class Unit_LoginAsAdministrator {
         boolean testFail = false;
         objLogin.loginSetNamePassword("test1", "123");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
+        new WebDriverWait(driver, 3).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 

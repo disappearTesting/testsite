@@ -19,9 +19,18 @@ public class PomLogin {
 
     By formGroupHasError = By.className("form-group-has-error");
     By helpBlock = By.className("help-block");
+    By textSignUpNow = By.xpath("/html/body/div/form/p/a");
 
     public PomLogin(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public By getSubmitbutton() {
+        return submitbutton;
+    }
+
+    public By getTextSignUpNow() {
+        return textSignUpNow;
     }
 
     public By getFormGroupHasError() {
