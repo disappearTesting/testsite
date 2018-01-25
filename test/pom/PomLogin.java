@@ -6,7 +6,6 @@ package pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class PomLogin {
 
@@ -17,7 +16,7 @@ public class PomLogin {
     By password = By.name("password");
     By submitbutton = By.name("submitbutton");
 
-    By formGroupHasError = By.className("form-group has-error");
+    By formGroupHasError = By.className("form-group-has-error");
     By helpBlock = By.className("help-block");
 
     public PomLogin(WebDriver driver) {

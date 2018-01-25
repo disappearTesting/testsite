@@ -55,21 +55,23 @@ public class Unit_LoginAsAdministrator {
 
     @Test
     public void test_LoginSetNamePasswordNullParams() {
+        boolean testFail = false;
         objLogin.loginSetNamePassword("", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
-        String[] TEXT_VALIDATION_ACTUAL = new String[elements.size()];
-        int i = 0;
+
         for(WebElement element : elements) {
-            TEXT_VALIDATION_ACTUAL[i] = element.getText();
-            assertEquals(TEXT_VALIDATION_EXPECTED, TEXT_VALIDATION_ACTUAL[i]);
+            System.out.println(element.getText().equals(TEXT_VALIDATION_EXPECTED));
+            testFail = testFail || element.getText().equals(TEXT_VALIDATION_EXPECTED);
         }
+        assertTrue(testFail);
     }
 
     @Test
     public void test_LoginSetNamePasswordUnvalidName() {
+        boolean testFail = false;
         objLogin.loginSetNamePassword("tets", "123456");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
@@ -78,21 +80,25 @@ public class Unit_LoginAsAdministrator {
 
         for(WebElement element : elements) {
             System.out.println(element.getText().equals(TEXT_ERROR_EXPECTED));
-            assertTrue(element.getText().equals("No account found with that username."));
+            testFail = testFail || element.getText().equals("No account found with that username.");
         }
+        assertTrue(testFail);
     }
 
     @Test
     public void test_LoginSetNamePasswordUnvalidPassword() {
+        boolean testFail = false;
+
         objLogin.loginSetNamePassword("test1", "123");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
 
-        List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
+        List<WebElement> elements = driver.findElements(objLogin.getFormGroupHasError());
 
         for(WebElement element : elements) {
             System.out.println(element.getText().equals(TEXT_ERROR_EXPECTED));
-            assertTrue(element.getText().equals("The password you entered was not valid."));
+            testFail = testFail || element.getText().equals("The password you entered was not valid.");
         }
+        assertTrue(testFail);
     }
 }
