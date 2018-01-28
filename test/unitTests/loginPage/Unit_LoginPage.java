@@ -23,7 +23,7 @@ import java.util.List;
 public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
-    private static final String URL_LOGIN_SUCCESS = "http://testsite.local/rest/loginPage/welcome.php";
+    private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
 
     private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter username.", "Please enter your password.");
 
@@ -67,9 +67,9 @@ public class Unit_LoginPage {
     public void test_LoginNamePassword() {
         objLogin.loginSetNamePassword("test1", "123456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_SUCCESS));
+        new WebDriverWait(driver, 5).until(urlContains(URL_WELCOME_PAGE));
 
-        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_SUCCESS));
+        assertTrue(driver.getCurrentUrl().equals(URL_WELCOME_PAGE));
     }
 
     @Test
