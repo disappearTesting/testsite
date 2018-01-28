@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class LoginPage {
+public class Selenium_LoginPage {
 
     private static final String URL = "http://testsite.local/rest/loginPage/login.php";
 

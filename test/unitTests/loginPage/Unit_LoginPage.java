@@ -46,7 +46,7 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_submitButtonIsActive() {
+    public void test_SubmitButtonIsActive() {
         WebElement submitButton = driver.findElement(objLogin.getSubmitButton());
 
         new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getSubmitButton()));
@@ -55,7 +55,7 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_textSignUpNowUpIsActive() {
+    public void test_TextSignUpNowUpIsActive() {
         WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
 
         new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getTextSignUpNow()));

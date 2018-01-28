@@ -38,4 +38,11 @@ public class RegisterPage {
         driver.findElement(confirmPassword).sendKeys(pass);
         driver.findElement(submitButton).submit();
     }
+
+    public void resetDataFromTextFields(String name, String pass) {
+        driver.findElement(username).sendKeys(name);
+        driver.findElement(password).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(resetButton).click();
+    }
 }
