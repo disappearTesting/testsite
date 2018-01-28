@@ -7,7 +7,7 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class PomLogin {
+public class LoginPage {
 
     private WebDriver driver;
 
@@ -20,7 +20,7 @@ public class PomLogin {
     private By formGroupHasError = By.className("form-group-has-error");
     private By helpBlock = By.className("help-block");
 
-    public PomLogin(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 

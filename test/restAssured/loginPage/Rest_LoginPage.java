@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static com.jayway.restassured.RestAssured.given;
 
-public class Rest_LoginAsAdministrator {
+public class Rest_LoginPage {
 
     @Before
     public void before() {

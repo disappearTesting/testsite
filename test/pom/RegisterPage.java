@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 
-public class PomRegister {
+public class RegisterPage {
 
     private WebDriver driver;
 
@@ -16,7 +16,7 @@ public class PomRegister {
     private By resetButton = By.name("resetbutton");
     private By textLoginHere = By.xpath("/html/body/div/form/p/a");
 
-    public PomRegister(WebDriver driver) {
+    public RegisterPage(WebDriver driver) {
         this.driver = driver;
     }
 

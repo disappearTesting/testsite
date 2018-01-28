@@ -4,7 +4,7 @@
  */
 package unitTests.loginPage;
 
-import pom.PomLogin;
+import pom.LoginPage;
 
 import org.junit.Test;
 import org.junit.After;
@@ -20,7 +20,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import java.util.Arrays;
 import java.util.List;
 
-public class Unit_LoginAsAdministrator {
+public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
     private static final String URL_LOGIN_SUCCESS = "http://testsite.local/rest/loginPage/welcome.php";
@@ -31,12 +31,12 @@ public class Unit_LoginAsAdministrator {
     private static final String TEXT_ERROR_UNVALID_PASSWORD = "The password you entered was not valid.";
 
     private WebDriver driver;
-    private PomLogin objLogin;
+    private LoginPage objLogin;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
-        objLogin = new PomLogin(driver);
+        objLogin = new LoginPage(driver);
         driver.get(URL_LOGIN_PAGE);
     }
 
