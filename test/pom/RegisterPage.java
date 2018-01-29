@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
 
-public class PomRegister {
+public class RegisterPage {
 
     private WebDriver driver;
 
@@ -16,7 +16,9 @@ public class PomRegister {
     private By resetButton = By.name("resetbutton");
     private By textLoginHere = By.xpath("/html/body/div/form/p/a");
 
-    public PomRegister(WebDriver driver) {
+    private By helpBlock = By.className("help-block");
+
+    public RegisterPage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -32,10 +34,21 @@ public class PomRegister {
         return textLoginHere;
     }
 
+    public By getHelpBlock() {
+        return helpBlock;
+    }
+
     public void registerSetNamePassword(String name, String pass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
         driver.findElement(confirmPassword).sendKeys(pass);
         driver.findElement(submitButton).submit();
+    }
+
+    public void resetDataFromTextFields(String name, String pass) {
+        driver.findElement(username).sendKeys(name);
+        driver.findElement(password).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(resetButton).click();
     }
 }

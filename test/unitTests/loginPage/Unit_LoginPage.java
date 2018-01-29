@@ -4,7 +4,7 @@
  */
 package unitTests.loginPage;
 
-import pom.PomLogin;
+import pom.LoginPage;
 
 import org.junit.Test;
 import org.junit.After;
@@ -20,10 +20,10 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import java.util.Arrays;
 import java.util.List;
 
-public class Unit_LoginAsAdministrator {
+public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
-    private static final String URL_LOGIN_SUCCESS = "http://testsite.local/rest/loginPage/welcome.php";
+    private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
 
     private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter username.", "Please enter your password.");
 
@@ -31,12 +31,12 @@ public class Unit_LoginAsAdministrator {
     private static final String TEXT_ERROR_UNVALID_PASSWORD = "The password you entered was not valid.";
 
     private WebDriver driver;
-    private PomLogin objLogin;
+    private LoginPage objLogin;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
-        objLogin = new PomLogin(driver);
+        objLogin = new LoginPage(driver);
         driver.get(URL_LOGIN_PAGE);
     }
 
@@ -46,7 +46,7 @@ public class Unit_LoginAsAdministrator {
     }
 
     @Test
-    public void test_submitButtonIsActive() {
+    public void test_SubmitButtonIsActive() {
         WebElement submitButton = driver.findElement(objLogin.getSubmitButton());
 
         new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getSubmitButton()));
@@ -55,7 +55,7 @@ public class Unit_LoginAsAdministrator {
     }
 
     @Test
-    public void test_textSignUpNowUpIsActive() {
+    public void test_TextSignUpNowUpIsActive() {
         WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
 
         new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getTextSignUpNow()));
@@ -67,9 +67,9 @@ public class Unit_LoginAsAdministrator {
     public void test_LoginNamePassword() {
         objLogin.loginSetNamePassword("test1", "123456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_SUCCESS));
+        new WebDriverWait(driver, 5).until(urlContains(URL_WELCOME_PAGE));
 
-        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_SUCCESS));
+        assertTrue(driver.getCurrentUrl().equals(URL_WELCOME_PAGE));
     }
 
     @Test

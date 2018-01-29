@@ -7,14 +7,14 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 
-public class PomUploadFile {
+public class UploadFilePage {
 
     WebDriver driver;
     String path;
     By inputFile = By.name("uploadfile");
     By inputSubmit = By.name("upload");
 
-    public PomUploadFile(WebDriver driver) {
+    public UploadFilePage(WebDriver driver) {
         this.driver = driver;
     }
 
