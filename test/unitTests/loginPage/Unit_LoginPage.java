@@ -75,6 +75,7 @@ public class Unit_LoginPage {
     @Test
     public void test_LoginSetNamePasswordNullParams() {
         boolean testFail = false;
+
         objLogin.loginSetNamePassword("", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
@@ -90,6 +91,7 @@ public class Unit_LoginPage {
     @Test
     public void test_LoginSetNamePasswordUnvalidName() {
         boolean testFail = false;
+
         objLogin.loginSetNamePassword("tets", "123456");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
@@ -105,6 +107,7 @@ public class Unit_LoginPage {
     @Test
     public void test_LoginSetNamePasswordUnvalidPassword() {
         boolean testFail = false;
+
         objLogin.loginSetNamePassword("test1", "123");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));

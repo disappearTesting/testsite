@@ -1,5 +1,6 @@
 package unitTests.loginPage;
 
+import org.openqa.selenium.By;
 import pom.RegisterPage;
 
 import org.junit.Test;
@@ -13,12 +14,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Unit_RegisterPage {
 
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
+
+    private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
 
     private static final String TEXT_ERROR_USER_ALREADY_TAKEN = "This username is already taken.";
 
@@ -65,8 +69,25 @@ public class Unit_RegisterPage {
     }
 
     @Test
+    public void test_RegisterSetNamePasswordNullParams() {
+        boolean testFail = false;
+
+        objRegister.registerSetNamePassword("", "");
+
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+
+        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
+
+        for(WebElement element: elements) {
+            testFail = testFail || TEXT_VALIDATION.contains(element.getText());
+        }
+        assertTrue(testFail);
+    }
+
+    @Test
     public void test_AvoidDoubleRegisterSetNamePassword() {
         boolean testFail = false;
+
         objRegister.registerSetNamePassword("test3", "456456");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
@@ -84,7 +105,15 @@ public class Unit_RegisterPage {
         for(WebElement element: elements) {
             testFail = testFail || element.getText().equals(TEXT_ERROR_USER_ALREADY_TAKEN);
         }
-
         assertTrue(testFail);
+    }
+
+    @Test
+    public void test_ResetEnteredParams() {
+        objRegister.resetDataFromTextFields("test", "test");
+
+        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
+
+        assertTrue(objRegister.getRegisterTextFields().isEmpty());
     }
 }
