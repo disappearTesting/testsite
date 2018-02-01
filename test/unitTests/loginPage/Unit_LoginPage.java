@@ -23,12 +23,12 @@ import java.util.List;
 public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
+    private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
 
-    private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter username.", "Please enter your password.");
-
-    private static final String TEXT_ERROR_UNVALID_NAME = "No account found with that username.";
-    private static final String TEXT_ERROR_UNVALID_PASSWORD = "The password you entered was not valid.";
+    private static final List<String> TEXT_ERROR_NULL_PARAMS = Arrays.asList("Please enter username.", "Please enter your password.");
+    private static final String TEXT_ERROR_INVALID_NAME = "No account found with that username.";
+    private static final String TEXT_ERROR_INVALID_PASSWORD = "The password you entered was not valid.";
 
     private WebDriver driver;
     private LoginPage objLogin;
@@ -55,12 +55,12 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_TextSignUpNowUpIsActive() {
-        WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
+    public void test_GetRegisterPage() {
+        objLogin.getRegisterPage();
 
-        new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getTextSignUpNow()));
+        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 
-        assertTrue(textSignUpNow.isEnabled());
+        assertTrue(driver.getCurrentUrl().equals(URL_REGISTER_PAGE));
     }
 
     @Test
@@ -83,13 +83,13 @@ public class Unit_LoginPage {
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            testFail = testFail || TEXT_VALIDATION.contains(element.getText());
+            testFail = testFail || TEXT_ERROR_NULL_PARAMS.contains(element.getText());
         }
         assertTrue(testFail);
     }
 
     @Test
-    public void test_LoginSetNamePasswordUnvalidName() {
+    public void test_LoginSetNamePasswordInvalidName() {
         boolean testFail = false;
 
         objLogin.loginSetNamePassword("tets", "123456");
@@ -99,13 +99,13 @@ public class Unit_LoginPage {
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            testFail = testFail || element.getText().equals(TEXT_ERROR_UNVALID_NAME);
+            testFail = testFail || element.getText().equals(TEXT_ERROR_INVALID_NAME);
         }
         assertTrue(testFail);
     }
 
     @Test
-    public void test_LoginSetNamePasswordUnvalidPassword() {
+    public void test_LoginSetNamePasswordInvalidPassword() {
         boolean testFail = false;
 
         objLogin.loginSetNamePassword("test1", "123");
@@ -115,7 +115,7 @@ public class Unit_LoginPage {
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
         for(WebElement element : elements) {
-            testFail = testFail || element.getText().equals(TEXT_ERROR_UNVALID_PASSWORD);
+            testFail = testFail || element.getText().equals(TEXT_ERROR_INVALID_PASSWORD);
         }
         assertTrue(testFail);
     }

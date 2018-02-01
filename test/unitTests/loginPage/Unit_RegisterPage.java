@@ -21,9 +21,9 @@ public class Unit_RegisterPage {
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
 
-    private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
-
+    private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
     private static final String TEXT_ERROR_USER_ALREADY_TAKEN = "This username is already taken.";
+    private static final List<String> TEXT_ERROR_VALIDATION = Arrays.asList("", "Password must have at least 6 characters.", "Password did not match.");
 
     private WebDriver driver;
     private RegisterPage objRegister;
@@ -59,8 +59,17 @@ public class Unit_RegisterPage {
     }
 
     @Test
+    public void test_GetLoginPage() {
+        objRegister.getLoginPage();
+
+        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
+
+        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_PAGE));
+    }
+
+    @Test
     public void test_RegisterSetNamePassword() {
-        objRegister.registerSetNamePassword("test2", "456789");
+        objRegister.registerSetNamePassword("test2", "456789", "456789");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
 
@@ -71,14 +80,37 @@ public class Unit_RegisterPage {
     public void test_RegisterSetNamePasswordNullParams() {
         boolean testFail = false;
 
-        objRegister.registerSetNamePassword("", "");
+        objRegister.registerSetNamePassword("", "", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
         for(WebElement element: elements) {
-            testFail = testFail || TEXT_VALIDATION.contains(element.getText());
+            testFail = testFail || TEXT_ERROR_EMPTY_PARAMS.contains(element.getText());
+        }
+        assertTrue(testFail);
+    }
+
+    @Test
+    public void test_RegisterSetNamePasswordInvalidParams() {
+        boolean testFail = true;
+
+        objRegister.registerSetNamePassword("test", "", "");
+
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+
+        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
+
+        for(WebElement element: elements) {
+            for(String s : TEXT_ERROR_VALIDATION) {
+                if(TEXT_ERROR_VALIDATION.contains(s)) {
+                    System.out.println("element: " + s);
+                    //testFail = true;
+                }
+            }
+            //testFail = testFail || TEXT_ERROR_VALIDATION.contains(element.getText());
+            //System.out.println("element: " + element.getText());
         }
         assertTrue(testFail);
     }
@@ -87,7 +119,7 @@ public class Unit_RegisterPage {
     public void test_AvoidDoubleRegisterSetNamePassword() {
         boolean testFail = false;
 
-        objRegister.registerSetNamePassword("test3", "456456");
+        objRegister.registerSetNamePassword("test3", "456456", "456456");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
 
@@ -95,7 +127,7 @@ public class Unit_RegisterPage {
 
         new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 
-        objRegister.registerSetNamePassword("test3", "456456");
+        objRegister.registerSetNamePassword("test3", "456456", "456456");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
@@ -110,7 +142,7 @@ public class Unit_RegisterPage {
     @Test
     public void test_ResetEnteredParams() {
         boolean testFail = false;
-        objRegister.resetDataFromTextFields("test", "test");
+        objRegister.resetDataFromTextFields("test", "test", "test");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 

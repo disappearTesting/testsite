@@ -34,25 +34,25 @@ public class RegisterPage {
         return resetButton;
     }
 
-    public By getTextLoginHere() {
-        return textLoginHere;
+    public void getLoginPage() {
+        driver.findElement(textLoginHere).click();
     }
 
     public By getHelpBlock() {
         return helpBlock;
     }
 
-    public void registerSetNamePassword(String name, String pass) {
+    public void registerSetNamePassword(String name, String pass, String confirmPass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(confirmPass);
         driver.findElement(submitButton).submit();
     }
 
-    public void resetDataFromTextFields(String name, String pass) {
+    public void resetDataFromTextFields(String name, String pass, String confirmPass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(confirmPass);
         driver.findElement(resetButton).click();
     }
 
