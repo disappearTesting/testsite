@@ -23,6 +23,7 @@ import java.util.List;
 public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
+    private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
 
     private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter username.", "Please enter your password.");
@@ -55,12 +56,12 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_TextSignUpNowUpIsActive() {
-        WebElement textSignUpNow = driver.findElement(objLogin.getTextSignUpNow());
+    public void test_GetRegisterPage() {
+        objLogin.getRegisterPage();
 
-        new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getTextSignUpNow()));
+        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 
-        assertTrue(textSignUpNow.isEnabled());
+        assertTrue(driver.getCurrentUrl().equals(URL_REGISTER_PAGE));
     }
 
     @Test

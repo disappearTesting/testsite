@@ -28,8 +28,8 @@ public class LoginPage {
         return submitButton;
     }
 
-    public By getTextSignUpNow() {
-        return textSignUpNow;
+    public void getRegisterPage() {
+        driver.findElement(textSignUpNow).click();
     }
 
     public By getFormGroupHasError() {

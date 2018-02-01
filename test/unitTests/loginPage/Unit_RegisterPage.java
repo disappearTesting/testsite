@@ -59,6 +59,15 @@ public class Unit_RegisterPage {
     }
 
     @Test
+    public void test_TextLoginHereIsActive() {
+        WebElement textLoginHere = driver.findElement(objRegister.getTextLoginHere());
+
+        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
+
+        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_PAGE));
+    }
+
+    @Test
     public void test_RegisterSetNamePassword() {
         objRegister.registerSetNamePassword("test2", "456789");
 
