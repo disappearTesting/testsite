@@ -69,7 +69,7 @@ public class Unit_RegisterPage {
 
     @Test
     public void test_RegisterSetNamePassword() {
-        objRegister.registerSetNamePassword("test2", "456789");
+        objRegister.registerSetNamePassword("test2", "456789", "456789");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
 
@@ -80,7 +80,7 @@ public class Unit_RegisterPage {
     public void test_RegisterSetNamePasswordNullParams() {
         boolean testFail = false;
 
-        objRegister.registerSetNamePassword("", "");
+        objRegister.registerSetNamePassword("", "", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
@@ -93,10 +93,15 @@ public class Unit_RegisterPage {
     }
 
     @Test
+    public void test_RegisterSetNamePasswordUnvalidParams() {
+
+    }
+
+    @Test
     public void test_AvoidDoubleRegisterSetNamePassword() {
         boolean testFail = false;
 
-        objRegister.registerSetNamePassword("test3", "456456");
+        objRegister.registerSetNamePassword("test3", "456456", "456456");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
 
@@ -104,7 +109,7 @@ public class Unit_RegisterPage {
 
         new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 
-        objRegister.registerSetNamePassword("test3", "456456");
+        objRegister.registerSetNamePassword("test3", "456456", "456456");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
@@ -119,7 +124,7 @@ public class Unit_RegisterPage {
     @Test
     public void test_ResetEnteredParams() {
         boolean testFail = false;
-        objRegister.resetDataFromTextFields("test", "test");
+        objRegister.resetDataFromTextFields("test", "test", "test");
 
         new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
 

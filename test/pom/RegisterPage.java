@@ -42,17 +42,17 @@ public class RegisterPage {
         return helpBlock;
     }
 
-    public void registerSetNamePassword(String name, String pass) {
+    public void registerSetNamePassword(String name, String pass, String confirmPass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(confirmPass);
         driver.findElement(submitButton).submit();
     }
 
-    public void resetDataFromTextFields(String name, String pass) {
+    public void resetDataFromTextFields(String name, String pass, String confirmPass) {
         driver.findElement(username).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(pass);
+        driver.findElement(confirmPassword).sendKeys(confirmPass);
         driver.findElement(resetButton).click();
     }
 
