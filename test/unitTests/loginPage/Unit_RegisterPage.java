@@ -1,6 +1,5 @@
 package unitTests.loginPage;
 
-import org.openqa.selenium.By;
 import pom.RegisterPage;
 
 import org.junit.Test;
