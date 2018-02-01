@@ -26,10 +26,6 @@ public class RegisterPage {
         this.driver = driver;
     }
 
-    public WebElement getUsername() {
-        return driver.findElement(username);
-    }
-
     public By getSubmitButton() {
         return submitButton;
     }
@@ -60,16 +56,13 @@ public class RegisterPage {
         driver.findElement(resetButton).click();
     }
 
-    public void getRegisterTextFields() {
+    public List<WebElement> getRegisterTextFields() {
         ArrayList elementsTextFields = new ArrayList<String>();
 
-        elementsTextFields.add(driver.findElement(username).getText());
-        elementsTextFields.add(driver.findElement(password).getText());
-        elementsTextFields.add(driver.findElement(confirmPassword).getText());
+        elementsTextFields.add(driver.findElement(username));
+        elementsTextFields.add(driver.findElement(password));
+        elementsTextFields.add(driver.findElement(confirmPassword));
 
-        for(Object textFromTextFields: elementsTextFields) {
-            textFromTextFields = elementsTextFields;
-            System.out.println(textFromTextFields);
-        }
+        return elementsTextFields;
     }
 }
