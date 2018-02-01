@@ -34,8 +34,8 @@ public class RegisterPage {
         return resetButton;
     }
 
-    public By getTextLoginHere() {
-        return textLoginHere;
+    public void getLoginPage() {
+        driver.findElement(textLoginHere).click();
     }
 
     public By getHelpBlock() {

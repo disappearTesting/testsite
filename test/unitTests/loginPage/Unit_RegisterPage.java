@@ -59,8 +59,8 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_TextLoginHereIsActive() {
-        WebElement textLoginHere = driver.findElement(objRegister.getTextLoginHere());
+    public void test_GetLoginPage() {
+        objRegister.getLoginPage();
 
         new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
 
