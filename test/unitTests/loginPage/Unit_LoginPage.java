@@ -9,6 +9,8 @@ import pom.LoginPage;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
+
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
@@ -26,7 +28,7 @@ public class Unit_LoginPage {
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
 
-    private static final List<String> TEXT_ERROR_NULL_PARAMS = Arrays.asList("Please enter username.", "Please enter your password.");
+    private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter username.", "Please enter your password.");
     private static final String TEXT_ERROR_INVALID_NAME = "No account found with that username.";
     private static final String TEXT_ERROR_INVALID_PASSWORD = "The password you entered was not valid.";
 
@@ -74,7 +76,8 @@ public class Unit_LoginPage {
 
     @Test
     public void test_LoginSetNamePasswordNullParams() {
-        boolean testFail = false;
+        int i = 0;
+        int eqCount = 0;
 
         objLogin.loginSetNamePassword("", "");
 
@@ -82,10 +85,12 @@ public class Unit_LoginPage {
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
-        for(WebElement element : elements) {
-            testFail = testFail || TEXT_ERROR_NULL_PARAMS.contains(element.getText());
+        for(WebElement element: elements) {
+            if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
+                eqCount++;
+            }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
