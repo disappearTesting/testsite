@@ -85,6 +85,7 @@ public class Unit_LoginPage {
 
         List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
 
+        // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
             if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
                 eqCount++;

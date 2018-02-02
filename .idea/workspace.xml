@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07e5848-9337-4c16-9b25-b5ff61db9018" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,25 +36,12 @@
       <file leaf-file-name="Unit_RegisterPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="79" column="56" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="56" />
+            <state relative-caret-position="262">
+              <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
                 <element signature="e#1454#1455#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="92" column="47" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="92" selection-end-column="47" />
-              <folding>
-                <element signature="e#1494#1495#0" expanded="true" />
-                <element signature="e#1523#1524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -540,9 +528,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.24324325" sideWeight="0.5085197" order="7" side_tool="true" content_ui="tabs" x="2071" y="147" width="948" height="734" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1652459" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1453" height="1053" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1453" height="1053" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1970" y="199" width="982" height="767" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1970" y="199" width="982" height="767" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19409835" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -726,19 +714,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="92" column="47" lean-forward="true" selection-start-line="87" selection-start-column="8" selection-end-line="92" selection-end-column="47" />
-          <folding>
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1523#1524#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1122">
+          <caret line="87" column="53" lean-forward="false" selection-start-line="87" selection-start-column="53" selection-end-line="87" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="79" column="56" lean-forward="false" selection-start-line="79" selection-start-column="16" selection-end-line="79" selection-end-column="56" />
+        <state relative-caret-position="262">
+          <caret line="89" column="53" lean-forward="false" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />
