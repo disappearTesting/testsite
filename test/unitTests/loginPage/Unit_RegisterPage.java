@@ -94,7 +94,7 @@ public class Unit_RegisterPage {
 
     @Test
     public void test_RegisterSetNamePasswordUnvalidParams() {
-
+        objRegister.registerSetNamePassword("test", "");
     }
 
     @Test
