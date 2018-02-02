@@ -78,7 +78,8 @@ public class Unit_RegisterPage {
 
     @Test
     public void test_RegisterSetNamePasswordNullParams() {
-        boolean testFail = false;
+        int i = 0;
+        int eqCount = 0;
 
         objRegister.registerSetNamePassword("", "", "");
 
@@ -87,15 +88,11 @@ public class Unit_RegisterPage {
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
         for(WebElement element: elements) {
-            new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
-
-            final String text = element.getText();
-
-            for(String s : TEXT_ERROR_EMPTY_PARAMS) {
-                testFail = testFail || text.equals(s);
+            if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
+                eqCount++;
             }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
