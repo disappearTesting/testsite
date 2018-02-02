@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b07e5848-9337-4c16-9b25-b5ff61db9018" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/register.php" afterPath="$PROJECT_DIR$/rest/loginPage/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsite.iml" afterPath="$PROJECT_DIR$/testsite.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="Unit_RegisterPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="59" />
+            <state relative-caret-position="329">
+              <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1425#1426#0" expanded="true" />
@@ -195,7 +192,7 @@
       <pane id="AndroidView" />
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordInvalidParams">
+  <component name="RunManager" selected="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordNullParams">
     <configuration default="false" name="Unit_RegisterPage.test_RegisterSetNamePasswordInvalidParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -209,6 +206,32 @@
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
       <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
       <option name="METHOD_NAME" value="test_RegisterSetNamePasswordInvalidParams" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unit_RegisterPage.test_RegisterSetNamePasswordNullParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.loginPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests.loginPage" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
+      <option name="METHOD_NAME" value="test_RegisterSetNamePasswordNullParams" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -426,12 +449,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordInvalidParams" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordNullParams" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordInvalidParams" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordNullParams" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterSetNamePasswordInvalidParams" />
       </list>
     </recent_temporary>
   </component>
@@ -487,9 +512,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.24324325" sideWeight="0.5085197" order="7" side_tool="true" content_ui="tabs" x="2071" y="147" width="948" height="734" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1341853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1453" height="1053" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1453" height="1053" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1970" y="199" width="982" height="767" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1970" y="199" width="982" height="767" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15761448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -676,8 +701,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="95" column="59" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="59" />
+        <state relative-caret-position="329">
+          <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1425#1426#0" expanded="true" />

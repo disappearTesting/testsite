@@ -87,7 +87,13 @@ public class Unit_RegisterPage {
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
         for(WebElement element: elements) {
-            testFail = testFail || TEXT_ERROR_EMPTY_PARAMS.contains(element.getText());
+            new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+
+            final String text = element.getText();
+
+            for(String s : TEXT_ERROR_EMPTY_PARAMS) {
+                testFail = testFail || text.equals(s);
+            }
         }
         assertTrue(testFail);
     }
@@ -103,12 +109,11 @@ public class Unit_RegisterPage {
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
         for(WebElement element: elements) {
-
             new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
             final String text = element.getText();
-            for(String s : TEXT_ERROR_VALIDATION) {
 
+            for(String s : TEXT_ERROR_VALIDATION) {
                 testFail = testFail || text.equals(s);
             }
         }
