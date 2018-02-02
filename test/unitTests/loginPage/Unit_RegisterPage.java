@@ -21,9 +21,9 @@ public class Unit_RegisterPage {
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
 
-    private static final List<String> TEXT_VALIDATION = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
-
+    private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
     private static final String TEXT_ERROR_USER_ALREADY_TAKEN = "This username is already taken.";
+    private static final List<String> TEXT_ERROR_VALIDATION = Arrays.asList("Please enter a username.", "Password must have at least 6 characters.", "Password did not match.");
 
     private WebDriver driver;
     private RegisterPage objRegister;
@@ -87,14 +87,32 @@ public class Unit_RegisterPage {
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
         for(WebElement element: elements) {
-            testFail = testFail || TEXT_VALIDATION.contains(element.getText());
+            testFail = testFail || TEXT_ERROR_EMPTY_PARAMS.contains(element.getText());
         }
         assertTrue(testFail);
     }
 
     @Test
-    public void test_RegisterSetNamePasswordUnvalidParams() {
-        objRegister.registerSetNamePassword("test", "");
+    public void test_RegisterSetNamePasswordInvalidParams() {
+        boolean testFail = false;
+
+        objRegister.registerSetNamePassword("test", "1", "7897897");
+
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+
+        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
+
+        for(WebElement element: elements) {
+
+            new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+
+            final String text = element.getText();
+            for(String s : TEXT_ERROR_VALIDATION) {
+
+                testFail = testFail || text.equals(s);
+            }
+        }
+        assertTrue(testFail);
     }
 
     @Test
