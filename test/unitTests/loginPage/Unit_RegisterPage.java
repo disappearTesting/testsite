@@ -23,7 +23,7 @@ public class Unit_RegisterPage {
 
     private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
     private static final String TEXT_ERROR_USER_ALREADY_TAKEN = "This username is already taken.";
-    private static final List<String> TEXT_ERROR_VALIDATION = Arrays.asList("", "Password must have at least 6 characters.", "Password did not match.");
+    private static final List<String> TEXT_ERROR_VALIDATION = Arrays.asList("Please enter a username.", "Password must have at least 6 characters.", "Password did not match.");
 
     private WebDriver driver;
     private RegisterPage objRegister;
@@ -78,7 +78,8 @@ public class Unit_RegisterPage {
 
     @Test
     public void test_RegisterSetNamePasswordNullParams() {
-        boolean testFail = false;
+        int i = 0;
+        int eqCount = 0;
 
         objRegister.registerSetNamePassword("", "", "");
 
@@ -86,33 +87,33 @@ public class Unit_RegisterPage {
 
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
+        // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            testFail = testFail || TEXT_ERROR_EMPTY_PARAMS.contains(element.getText());
+            if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
+                eqCount++;
+            }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
     public void test_RegisterSetNamePasswordInvalidParams() {
-        boolean testFail = true;
+        int i = 0;
+        int eqCount = 0;
 
-        objRegister.registerSetNamePassword("test", "", "");
+        objRegister.registerSetNamePassword("test", "1", "7897897");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
 
         List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
 
+        // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            for(String s : TEXT_ERROR_VALIDATION) {
-                if(TEXT_ERROR_VALIDATION.contains(s)) {
-                    System.out.println("element: " + s);
-                    //testFail = true;
-                }
+            if(TEXT_ERROR_VALIDATION.get(i++).equals(element.getText())){
+                eqCount++;
             }
-            //testFail = testFail || TEXT_ERROR_VALIDATION.contains(element.getText());
-            //System.out.println("element: " + element.getText());
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
