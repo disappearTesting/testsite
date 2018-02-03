@@ -57,7 +57,7 @@
   }
   
   // password encrypt using SHA256();
-  $password = hash('sha256', $pass);
+  $param_password = password_hash($password, PASSWORD_DEFAULT);
   
   // if there's no error, continue to signup
   if( !$error ) {
@@ -85,7 +85,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Sign Up</title>
+	<title>Sign In</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<style type="text/css">
 		body{ font: 14px sans-serif; }
