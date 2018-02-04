@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f07b5f91-b109-41a5-973b-55538fd22f3b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/rest/loginPage/register.php" afterPath="$PROJECT_DIR$/rest/loginPage/register.php" />
       <change beforePath="$PROJECT_DIR$/test/pom/RegisterPage.java" afterPath="$PROJECT_DIR$/test/pom/RegisterPage.java" />
+      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
+      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
+      <change beforePath="$PROJECT_DIR$/testsite.iml" afterPath="$PROJECT_DIR$/testsite.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,32 +20,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/pom/RegisterPage.java">
+      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="1989">
+              <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
+      <file leaf-file-name="Unit_RegisterPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="274">
+              <caret line="68" column="91" lean-forward="true" selection-start-line="68" selection-start-column="91" selection-end-line="68" selection-end-column="91" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1081#1082#0" expanded="true" />
+                <element signature="e#1901#1902#0" expanded="true" />
+                <element signature="e#1930#1931#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLQueries_Testsite_Users.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/SQLQueries_Testsite_Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLConnector.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/SQLConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1517780613347" expanded="true" signature="624:668" ph="select * fro... employee" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/RegisterPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,9 +107,15 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/test/selenium/loginPage/Selenium_LoginPage.java" />
         <option value="$PROJECT_DIR$/test/pom/LoginPage.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
         <option value="$PROJECT_DIR$/test/pom/RegisterPage.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom/ConnectToDataBase.java" />
+        <option value="$PROJECT_DIR$/test/pom/SQLQueries.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/SQLTest.java" />
+        <option value="$PROJECT_DIR$/test/pom/SQLQueries_Testsite_Users.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/SQLConnector.java" />
       </list>
     </option>
   </component>
@@ -163,13 +220,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_LoginPage.test_LoginSetIncorrectCredentials">
+  <component name="RunManager" selected="Application.SQLConnector">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="SQLConnector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.loginPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.SQLConnector" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="testsite" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -185,7 +261,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="Unit_LoginPage.test_LoginEmailPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_RegisterPage.test_AvoidDoubleRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.loginPage.*" />
@@ -196,8 +272,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_LoginPage" />
-      <option name="METHOD_NAME" value="test_LoginEmailPassword" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
+      <option name="METHOD_NAME" value="test_AvoidDoubleRegister" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -210,7 +286,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Unit_LoginPage.test_LoginSetEmailPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_RegisterPage.test_Register" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.loginPage.*" />
@@ -221,8 +297,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_LoginPage" />
-      <option name="METHOD_NAME" value="test_LoginSetEmailPassword" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
+      <option name="METHOD_NAME" value="test_Register" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -235,7 +311,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Unit_LoginPage.test_LoginSetEmailPasswordNullParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_RegisterPage.test_RegisterInvalidParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.loginPage.*" />
@@ -246,8 +322,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_LoginPage" />
-      <option name="METHOD_NAME" value="test_LoginSetEmailPasswordNullParams" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
+      <option name="METHOD_NAME" value="test_RegisterInvalidParams" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -260,7 +336,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="Unit_LoginPage.test_LoginSetIncorrectCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_RegisterPage.test_RegisterInvalidParamsValidateValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.loginPage.*" />
@@ -271,33 +347,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_LoginPage" />
-      <option name="METHOD_NAME" value="test_LoginSetIncorrectCredentials" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Unit_LoginPage.test_LoginSetemailPasswordInvalidEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.loginPage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="testsite" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests.loginPage" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_LoginPage" />
-      <option name="METHOD_NAME" value="test_LoginSetemailPasswordInvalidEmail" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_RegisterPage" />
+      <option name="METHOD_NAME" value="test_RegisterInvalidParamsValidateValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -371,19 +422,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginEmailPassword" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetEmailPassword" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetEmailPasswordNullParams" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetemailPasswordInvalidEmail" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetIncorrectCredentials" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_Register" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterInvalidParams" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_AvoidDoubleRegister" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterInvalidParamsValidateValue" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SQLConnector" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetIncorrectCredentials" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetemailPasswordInvalidEmail" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetEmailPasswordNullParams" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginSetEmailPassword" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_LoginEmailPassword" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SQLConnector" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_Register" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_AvoidDoubleRegister" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterInvalidParamsValidateValue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_RegisterPage.test_RegisterInvalidParams" />
       </list>
     </recent_temporary>
   </component>
@@ -402,44 +453,44 @@
       <updated>1517600256674</updated>
       <workItem from="1517600257857" duration="917000" />
       <workItem from="1517658740762" duration="1620000" />
-      <workItem from="1517741786509" duration="6809000" />
+      <workItem from="1517741786509" duration="22790000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_LoginPage_test_ButtonSignInIsActive - 2018.02.04 at 14h 40m 08s.xml">
-      <configuration name="Unit_LoginPage.test_ButtonSignInIsActive" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_AvoidDoubleRegister - 2018.02.04 at 20h 35m 52s.xml">
+      <configuration name="Unit_RegisterPage.test_AvoidDoubleRegister" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_GetRegisterPage - 2018.02.04 at 14h 40m 45s.xml">
-      <configuration name="Unit_LoginPage.test_GetRegisterPage" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_AvoidDoubleRegister - 2018.02.04 at 20h 36m 50s.xml">
+      <configuration name="Unit_RegisterPage.test_AvoidDoubleRegister" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginEmailPassword - 2018.02.04 at 14h 41m 26s.xml">
-      <configuration name="Unit_LoginPage.test_LoginEmailPassword" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_AvoidDoubleRegister - 2018.02.04 at 20h 37m 55s.xml">
+      <configuration name="Unit_RegisterPage.test_AvoidDoubleRegister" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginEmailPassword - 2018.02.04 at 14h 44m 58s.xml">
-      <configuration name="Unit_LoginPage.test_LoginEmailPassword" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_AvoidDoubleRegister - 2018.02.04 at 20h 55m 36s.xml">
+      <configuration name="Unit_RegisterPage.test_AvoidDoubleRegister" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetEmailPassword - 2018.02.04 at 14h 46m 16s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetEmailPassword" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_Register - 2018.02.04 at 23h 14m 45s.xml">
+      <configuration name="Unit_RegisterPage.test_Register" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetEmailPasswordNullParams - 2018.02.04 at 16h 40m 38s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetEmailPasswordNullParams" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_Register - 2018.02.04 at 23h 40m 37s.xml">
+      <configuration name="Unit_RegisterPage.test_Register" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetIncorrectCredentials - 2018.02.04 at 17h 06m 42s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetIncorrectCredentials" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_RegisterInvalidParams - 2018.02.04 at 20h 24m 49s.xml">
+      <configuration name="Unit_RegisterPage.test_RegisterInvalidParams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetIncorrectCredentials - 2018.02.04 at 17h 07m 07s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetIncorrectCredentials" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_RegisterInvalidParams - 2018.02.04 at 20h 25m 29s.xml">
+      <configuration name="Unit_RegisterPage.test_RegisterInvalidParams" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetemailPasswordInvalidEmail - 2018.02.04 at 16h 45m 13s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetemailPasswordInvalidEmail" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_RegisterInvalidParamsValidateValue - 2018.02.04 at 20h 55m 04s.xml">
+      <configuration name="Unit_RegisterPage.test_RegisterInvalidParamsValidateValue" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_LoginPage_test_LoginSetemailPasswordInvalidEmail - 2018.02.04 at 16h 45m 49s.xml">
-      <configuration name="Unit_LoginPage.test_LoginSetemailPasswordInvalidEmail" configurationId="JUnit" />
+    <history-entry file="Unit_RegisterPage_test_RegisterSetNamePasswordNullParams - 2018.02.04 at 20h 18m 25s.xml">
+      <configuration name="Unit_RegisterPage.test_RegisterSetNamePasswordNullParams" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11115000" />
+    <option name="totallyTimeSpent" value="27096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
@@ -447,12 +498,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="21" y="88" width="1878" height="922" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -465,7 +516,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -481,7 +532,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -499,7 +552,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,7 +571,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="103" column="68" lean-forward="true" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,7 +583,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -541,42 +606,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/test/pom/UploadFilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="108" column="26" lean-forward="true" selection-start-line="108" selection-start-column="26" selection-end-line="108" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/java/util/Arrays.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="2109" column="0" lean-forward="true" selection-start-line="2109" selection-start-column="0" selection-end-line="2109" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="476">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#894#895#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/RegisterPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="122" column="62" lean-forward="false" selection-start-line="122" selection-start-column="62" selection-end-line="122" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="68" column="91" lean-forward="true" selection-start-line="68" selection-start-column="91" selection-end-line="68" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1901#1902#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/SQLQueries_Testsite_Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/SQLConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1517780613347" expanded="true" signature="624:668" ph="select * fro... employee" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -644,6 +769,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

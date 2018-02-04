@@ -120,8 +120,6 @@ public class Unit_LoginPage {
 
         WebElement element = driver.findElement(objLogin.getAlertDanger());
 
-        boolean testFail = element.getText().equals(TEXT_ERROR_LOGIN);
-
-        assertTrue(testFail);
+        assertTrue(element.getText().equals(TEXT_ERROR_LOGIN));
     }
 }

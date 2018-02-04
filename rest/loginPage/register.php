@@ -27,7 +27,7 @@
    $nameError = "Please enter your full name.";
   } else if (strlen($name) < 3) {
    $error = true;
-   $nameError = "Name must have atleat 3 characters.";
+   $nameError = "Name must have at least 3 characters.";
   } else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
    $error = true;
    $nameError = "Name must contain alphabets and space.";
@@ -53,7 +53,7 @@
    $passError = "Please enter password.";
   } else if(strlen($password) < 6) {
    $error = true;
-   $passError = "Password must have atleast 6 characters.";
+   $passError = "Password must have at least 6 characters.";
   }
   
   // password encrypt using SHA256();
@@ -67,13 +67,13 @@
     
    if ($res) {
     $errTyp = "success";
-    $errMSG = "Successfully registered, you may login now";
+    $errMSG = "Successfully registered, you may login now.";
     unset($name);
     unset($email);
     unset($password);
    } else {
     $errTyp = "danger";
-    $errMSG = "Something went wrong, try again later..."; 
+    $errMSG = "Something went wrong, try again later."; 
    } 
     
   }
@@ -131,7 +131,7 @@
             <div class="form-group">
              <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-             <input type="email" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" value="<?php echo $email ?>" />
+             <input type="text" name="email" class="form-control" placeholder="Enter Your Email" maxlength="40" value="<?php echo $email ?>" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>
