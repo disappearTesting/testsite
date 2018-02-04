@@ -139,19 +139,4 @@ public class Unit_RegisterPage {
         }
         assertTrue(testFail);
     }
-
-    @Test
-    public void test_ResetEnteredParams() {
-        boolean testFail = false;
-        objRegister.resetDataFromTextFields("test", "test", "test");
-
-        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
-
-        List<WebElement> elements = objRegister.getRegisterTextFields();
-
-        for(WebElement element : elements) {
-            testFail = testFail || element.getText().isEmpty();
-        }
-        assertTrue(testFail);
-    }
 }

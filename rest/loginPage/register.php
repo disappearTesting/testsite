@@ -17,9 +17,9 @@
   $email = strip_tags($email);
   $email = htmlspecialchars($email);
   
-  $pass = trim($_POST['pass']);
-  $pass = strip_tags($pass);
-  $pass = htmlspecialchars($pass);
+  $password = trim($_POST['password']);
+  $password = strip_tags($password);
+  $password = htmlspecialchars($password);
   
   // basic name validation
   if (empty($name)) {
@@ -48,10 +48,10 @@
    }
   }
   // password validation
-  if (empty($pass)){
+  if (empty($password)){
    $error = true;
    $passError = "Please enter password.";
-  } else if(strlen($pass) < 6) {
+  } else if(strlen($password) < 6) {
    $error = true;
    $passError = "Password must have atleast 6 characters.";
   }
@@ -70,7 +70,7 @@
     $errMSG = "Successfully registered, you may login now";
     unset($name);
     unset($email);
-    unset($pass);
+    unset($password);
    } else {
     $errTyp = "danger";
     $errMSG = "Something went wrong, try again later..."; 
@@ -139,7 +139,7 @@
             <div class="form-group">
              <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-             <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15" />
+             <input type="password" name="password" class="form-control" placeholder="Enter Password" maxlength="15" />
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>

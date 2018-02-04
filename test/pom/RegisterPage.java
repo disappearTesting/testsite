@@ -12,13 +12,12 @@ public class RegisterPage {
 
     private static WebDriver driver;
 
-    private static By username = By.name("username");
+    private static By userName = By.name("name");
+    private static By userEmail = By.name("name");
     private static By password = By.name("password");
-    private static By confirmPassword = By.name("confirm_password");
 
-    private By submitButton = By.name("submitbutton");
-    private By resetButton = By.name("resetbutton");
-    private By textLoginHere = By.xpath("/html/body/div/form/p/a");
+    private By buttonSignUp = By.name("btn-signup");
+    private By textSignInHere = By.xpath("/html/body/div/div/form/div/div[9]");
 
     private By helpBlock = By.className("help-block");
 
@@ -26,16 +25,12 @@ public class RegisterPage {
         this.driver = driver;
     }
 
-    public By getSubmitButton() {
-        return submitButton;
-    }
-
-    public By getResetButton() {
-        return resetButton;
+    public By getButtonSignUp() {
+        return buttonSignUp;
     }
 
     public void getLoginPage() {
-        driver.findElement(textLoginHere).click();
+        driver.findElement(textSignInHere).click();
     }
 
     public By getHelpBlock() {
@@ -43,23 +38,16 @@ public class RegisterPage {
     }
 
     public void registerSetNamePassword(String name, String pass, String confirmPass) {
-        driver.findElement(username).sendKeys(name);
+        driver.findElement(userName).sendKeys(name);
         driver.findElement(password).sendKeys(pass);
         driver.findElement(confirmPassword).sendKeys(confirmPass);
-        driver.findElement(submitButton).submit();
-    }
-
-    public void resetDataFromTextFields(String name, String pass, String confirmPass) {
-        driver.findElement(username).sendKeys(name);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(confirmPass);
-        driver.findElement(resetButton).click();
+        driver.findElement(submitButton).click();
     }
 
     public List<WebElement> getRegisterTextFields() {
         ArrayList elementsTextFields = new ArrayList<String>();
 
-        elementsTextFields.add(driver.findElement(username));
+        elementsTextFields.add(driver.findElement(userName));
         elementsTextFields.add(driver.findElement(password));
         elementsTextFields.add(driver.findElement(confirmPassword));
 

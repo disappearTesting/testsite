@@ -17,7 +17,6 @@ public class LoginPage {
     private By buttonSignIn = By.name("btn-login");
     private By textSignUpHere = By.xpath("/html/body/div/div/form/div/div[8]/a");
 
-    private By formGroupHasError = By.className("form-group-has-error");
     private By textDanger = By.className("text-danger");
     private By alertDanger = By.xpath("/html/body/div/div/form/div/div[3]/div");
 
@@ -31,10 +30,6 @@ public class LoginPage {
 
     public void getRegisterPage() {
         driver.findElement(textSignUpHere).click();
-    }
-
-    public By getFormGroupHasError() {
-        return formGroupHasError;
     }
 
     public By getTextDanger() {
