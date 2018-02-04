@@ -10,7 +10,6 @@ import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
@@ -26,11 +25,11 @@ public class Unit_LoginPage {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
-    private static final String URL_WELCOME_PAGE = "http://testsite.local/rest/loginPage/welcome.php";
+    private static final String URL_HOME_PAGE = "http://testsite.local/rest/loginPage/home.php";
 
-    private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter username.", "Please enter your password.");
-    private static final String TEXT_ERROR_INVALID_NAME = "No account found with that username.";
-    private static final String TEXT_ERROR_INVALID_PASSWORD = "The password you entered was not valid.";
+    private static final List<String> TEXT_ERROR_EMPTY = Arrays.asList("Please enter your email address.", "Please enter your password.");
+    private static final List<String> TEXT_ERROR_VALIDATE_VALUE = Arrays.asList("Please enter valid email address.");
+    private static final String TEXT_ERROR_LOGIN = "Incorrect Credentials, Try again.";
 
     private WebDriver driver;
     private LoginPage objLogin;
@@ -48,12 +47,12 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_SubmitButtonIsActive() {
-        WebElement submitButton = driver.findElement(objLogin.getSubmitButton());
+    public void test_ButtonSignInIsActive() {
+        WebElement buttonGignIn = driver.findElement(objLogin.getButtonSignIn());
 
-        new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getSubmitButton()));
+        new WebDriverWait(driver, 5).until(elementToBeClickable(objLogin.getButtonSignIn()));
 
-        assertTrue(submitButton.isEnabled());
+        assertTrue(buttonGignIn.isEnabled());
     }
 
     @Test
@@ -66,28 +65,28 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_LoginNamePassword() {
-        objLogin.loginSetNamePassword("test1", "123456");
+    public void test_Login() {
+        objLogin.loginSetEmailPassword("makarov@smartproject.ua", "123456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_WELCOME_PAGE));
+        new WebDriverWait(driver, 5).until(urlContains(URL_HOME_PAGE));
 
-        assertTrue(driver.getCurrentUrl().equals(URL_WELCOME_PAGE));
+        assertTrue(driver.getCurrentUrl().equals(URL_HOME_PAGE));
     }
 
     @Test
-    public void test_LoginSetNamePasswordNullParams() {
+    public void test_LoginSetNullParams() {
         int i = 0;
         int eqCount = 0;
 
-        objLogin.loginSetNamePassword("", "");
+        objLogin.loginSetEmailPassword("", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getTextDanger()));
 
-        List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
+        List<WebElement> elements = driver.findElements(objLogin.getTextDanger());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
+            if(TEXT_ERROR_EMPTY.get(i++).equals(element.getText())){
                 eqCount++;
             }
         }
@@ -95,34 +94,34 @@ public class Unit_LoginPage {
     }
 
     @Test
-    public void test_LoginSetNamePasswordInvalidName() {
-        boolean testFail = false;
+    public void test_LoginSetInvalidEmail() {
+        int i = 0;
+        int eqCount = 0;
 
-        objLogin.loginSetNamePassword("tets", "123456");
+        objLogin.loginSetEmailPassword("test", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getHelpBlock()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getTextDanger()));
 
-        List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
+        List<WebElement> elements = driver.findElements(objLogin.getTextDanger());
 
-        for(WebElement element : elements) {
-            testFail = testFail || element.getText().equals(TEXT_ERROR_INVALID_NAME);
+        for(WebElement element: elements) {
+            if(TEXT_ERROR_VALIDATE_VALUE.get(i++).equals(element.getText())){
+                eqCount++;
+            }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
-    public void test_LoginSetNamePasswordInvalidPassword() {
-        boolean testFail = false;
+    public void test_LoginSetIncorrectCredentials() {
+        objLogin.loginSetEmailPassword("makarov@smartproject.ua", "test");
 
-        objLogin.loginSetNamePassword("test1", "123");
+        new WebDriverWait(driver, 5).until(presenceOfElementLocated(objLogin.getAlertDanger()));
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getFormGroupHasError()));
+        WebElement element = driver.findElement(objLogin.getAlertDanger());
 
-        List<WebElement> elements = driver.findElements(objLogin.getHelpBlock());
+        boolean testFail = element.getText().equals(TEXT_ERROR_LOGIN);
 
-        for(WebElement element : elements) {
-            testFail = testFail || element.getText().equals(TEXT_ERROR_INVALID_PASSWORD);
-        }
         assertTrue(testFail);
     }
 }
