@@ -12,57 +12,40 @@ public class RegisterPage {
 
     private static WebDriver driver;
 
-    private static By username = By.name("username");
-    private static By password = By.name("password");
-    private static By confirmPassword = By.name("confirm_password");
+    private static By userName = By.name("name");
+    private static By userEmail = By.name("email");
+    private static By userPassword = By.name("password");
 
-    private By submitButton = By.name("submitbutton");
-    private By resetButton = By.name("resetbutton");
-    private By textLoginHere = By.xpath("/html/body/div/form/p/a");
+    private By buttonSignUp = By.name("btn-signup");
+    private By textSignInHere = By.xpath("/html/body/div/div/form/div/div[9]/a");
 
-    private By helpBlock = By.className("help-block");
+    private By textDanger = By.className("text-danger");
+    private By alertSuccess = By.xpath("/html/body/div/div/form/div/div[3]/div");
 
     public RegisterPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public By getSubmitButton() {
-        return submitButton;
-    }
-
-    public By getResetButton() {
-        return resetButton;
+    public By getButtonSignUp() {
+        return buttonSignUp;
     }
 
     public void getLoginPage() {
-        driver.findElement(textLoginHere).click();
+        driver.findElement(textSignInHere).click();
     }
 
-    public By getHelpBlock() {
-        return helpBlock;
+    public By getTextDanger() {
+        return textDanger;
     }
 
-    public void registerSetNamePassword(String name, String pass, String confirmPass) {
-        driver.findElement(username).sendKeys(name);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(confirmPass);
-        driver.findElement(submitButton).submit();
+    public By getRegisterSuccess() {
+        return alertSuccess;
     }
 
-    public void resetDataFromTextFields(String name, String pass, String confirmPass) {
-        driver.findElement(username).sendKeys(name);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(confirmPassword).sendKeys(confirmPass);
-        driver.findElement(resetButton).click();
-    }
-
-    public List<WebElement> getRegisterTextFields() {
-        ArrayList elementsTextFields = new ArrayList<String>();
-
-        elementsTextFields.add(driver.findElement(username));
-        elementsTextFields.add(driver.findElement(password));
-        elementsTextFields.add(driver.findElement(confirmPassword));
-
-        return elementsTextFields;
+    public void registerSetNameEmailPassword(String name, String email, String pass) {
+        driver.findElement(userName).sendKeys(name);
+        driver.findElement(userEmail).sendKeys(email);
+        driver.findElement(userPassword).sendKeys(pass);
+        driver.findElement(buttonSignUp).click();
     }
 }

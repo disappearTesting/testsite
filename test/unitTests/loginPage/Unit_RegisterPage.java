@@ -1,5 +1,6 @@
 package unitTests.loginPage;
 
+import pom.MySQLQueries_Testsite;
 import pom.RegisterPage;
 
 import org.junit.Test;
@@ -13,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
+import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,17 +23,24 @@ public class Unit_RegisterPage {
     private static final String URL_REGISTER_PAGE = "http://testsite.local/rest/loginPage/register.php";
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
 
-    private static final List<String> TEXT_ERROR_EMPTY_PARAMS = Arrays.asList("Please enter a username.", "Please enter a password.", "Please confirm password.");
-    private static final String TEXT_ERROR_USER_ALREADY_TAKEN = "This username is already taken.";
-    private static final List<String> TEXT_ERROR_VALIDATION = Arrays.asList("Please enter a username.", "Password must have at least 6 characters.", "Password did not match.");
+    private static final List<String> TEXT_ERROR_EMPTY = Arrays.asList("Please enter your full name.", "Please enter valid email address.", "Please enter password.");
+    private static final List<String> TEXT_ERROR_VALIDATE_VALUE = Arrays.asList("Name must contain alphabets and space.", "Please enter valid email address.", "Please enter password.");
+    private static final List<String> TEXT_ERROR_VALIDATE_LENGTH = Arrays.asList("Name must have at least 3 characters.", "Please enter valid email address.", "Password must have at least 6 characters.");
+    private static final List<String> TEXT_ERROR_VALIDATE_ALREADY_USE = Arrays.asList("", "Provided Email is already in use.", "");
+
+    private static final String TEXT_SUCCESS_REGISTER = "Successfully registered, you may login now.";
+
+    private static final String SQL_DELETE_FROM_WHERE = "DELETE FROM testsite.users WHERE userName = 'ATester'";
 
     private WebDriver driver;
     private RegisterPage objRegister;
+    private MySQLQueries_Testsite objSQLQueries;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         objRegister = new RegisterPage(driver);
+        objSQLQueries =  new MySQLQueries_Testsite();
         driver.get(URL_REGISTER_PAGE);
     }
 
@@ -41,21 +50,12 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_SubmitButtonIsActive() {
-        WebElement submitButton = driver.findElement(objRegister.getSubmitButton());
+    public void test_ButtonSignUpIsActive() {
+        WebElement submitButton = driver.findElement(objRegister.getButtonSignUp());
 
-        new WebDriverWait(driver, 5).until(elementToBeClickable(objRegister.getSubmitButton()));
+        new WebDriverWait(driver, 5).until(elementToBeClickable(objRegister.getButtonSignUp()));
 
         assertTrue(submitButton.isEnabled());
-    }
-
-    @Test
-    public void test_ResetButtonIsActive() {
-        WebElement resetButton = driver.findElement(objRegister.getResetButton());
-
-        new WebDriverWait(driver, 5).until(elementToBeClickable(objRegister.getResetButton()));
-
-        assertTrue(resetButton.isEnabled());
     }
 
     @Test
@@ -68,28 +68,33 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_RegisterSetNamePassword() {
-        objRegister.registerSetNamePassword("test2", "456789", "456789");
+    public void test_Register() throws SQLException, ClassNotFoundException {
+        objRegister.registerSetNameEmailPassword("ATester", "atest@example.com", "456456");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
+        new WebDriverWait(driver, 5).until(presenceOfElementLocated(objRegister.getRegisterSuccess()));
 
-        assertTrue(driver.getCurrentUrl().equals(URL_LOGIN_PAGE));
+        WebElement element = driver.findElement(objRegister.getRegisterSuccess());
+
+        objSQLQueries.getSQLQueries(SQL_DELETE_FROM_WHERE);
+        objSQLQueries.disconnect();
+
+        assertTrue(element.getText().equals(TEXT_SUCCESS_REGISTER));
     }
 
     @Test
-    public void test_RegisterSetNamePasswordNullParams() {
+    public void test_RegisterNullParams() {
         int i = 0;
         int eqCount = 0;
 
-        objRegister.registerSetNamePassword("", "", "");
+        objRegister.registerSetNameEmailPassword("", "", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
+        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            if(TEXT_ERROR_EMPTY_PARAMS.get(i++).equals(element.getText())){
+            if(TEXT_ERROR_EMPTY.get(i++).equals(element.getText())){
                 eqCount++;
             }
         }
@@ -97,19 +102,19 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_RegisterSetNamePasswordInvalidParams() {
+    public void test_RegisterInvalidParamsValidateValue() {
         int i = 0;
         int eqCount = 0;
 
-        objRegister.registerSetNamePassword("test", "1", "7897897");
+        objRegister.registerSetNameEmailPassword("@Tester", "", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
+        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            if(TEXT_ERROR_VALIDATION.get(i++).equals(element.getText())){
+            if(TEXT_ERROR_VALIDATE_VALUE.get(i++).equals(element.getText())){
                 eqCount++;
             }
         }
@@ -117,41 +122,45 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_AvoidDoubleRegisterSetNamePassword() {
-        boolean testFail = false;
+    public void test_RegisterInvalidParamsValidateLength() {
+        int i = 0;
+        int eqCount = 0;
 
-        objRegister.registerSetNamePassword("test3", "456456", "456456");
+        objRegister.registerSetNameEmailPassword("t", "@example.com", "test");
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_LOGIN_PAGE));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
 
-        driver.get(URL_REGISTER_PAGE);
+        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
-
-        objRegister.registerSetNamePassword("test3", "456456", "456456");
-
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getHelpBlock()));
-
-        List<WebElement> elements = driver.findElements(objRegister.getHelpBlock());
-
+        // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
-            testFail = testFail || element.getText().equals(TEXT_ERROR_USER_ALREADY_TAKEN);
+            if(TEXT_ERROR_VALIDATE_LENGTH.get(i++).equals(element.getText())){
+                eqCount++;
+            }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 
     @Test
-    public void test_ResetEnteredParams() {
-        boolean testFail = false;
-        objRegister.resetDataFromTextFields("test", "test", "test");
+    public void test_AvoidDoubleRegister() {
+        int i = 0;
+        int eqCount = 0;
 
-        new WebDriverWait(driver, 5).until(urlContains(URL_REGISTER_PAGE));
+        objRegister.registerSetNameEmailPassword("BTester", "btest@example.com", "456456");
 
-        List<WebElement> elements = objRegister.getRegisterTextFields();
+        new WebDriverWait(driver, 5).until(presenceOfElementLocated(objRegister.getRegisterSuccess()));
 
-        for(WebElement element : elements) {
-            testFail = testFail || element.getText().isEmpty();
+        objRegister.registerSetNameEmailPassword("BTester", "btest@example.com", "456456");
+
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
+
+        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
+
+        for(WebElement element: elements) {
+            if(TEXT_ERROR_VALIDATE_ALREADY_USE.get(i++).equals(element.getText())){
+                eqCount++;
+            }
         }
-        assertTrue(testFail);
+        assertTrue(elements.size() == eqCount);
     }
 }

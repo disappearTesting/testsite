@@ -1,114 +1,111 @@
 <?php
-// Include config file
+ob_start();
+session_start();
 require_once 'config.php';
-
-// Define variables and initialize with empty values
-$username = $password = "";
-$username_err = $password_err = "";
-
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-	// Check if username is empty
-	if(empty(trim($_POST["username"]))){
-		$username_err = 'Please enter username.';
-	} else{
-		$username = trim($_POST["username"]);
-	}
-
-	// Check if password is empty
-	if(empty(trim($_POST['password']))){
-		$password_err = 'Please enter your password.';
-	} else{
-		$password = trim($_POST['password']);
-	}
-
-	// Validate credentials
-	if(empty($username_err) && empty($password_err)){
-
-	// Prepare a select statement
-		$sql = "SELECT username, password FROM users WHERE username = ?";
-		if($stmt = mysqli_prepare($link, $sql)){
-
-			// Bind variables to the prepared statement as parameters
-			mysqli_stmt_bind_param($stmt, "s", $param_username);
-
-			// Set parameters
-			$param_username = $username;
-
-			// Attempt to execute the prepared statement
-			if(mysqli_stmt_execute($stmt)){
-
-				// Store result
-				mysqli_stmt_store_result($stmt);
-
-				// Check if username exists, if yes then verify password
-				if(mysqli_stmt_num_rows($stmt) == 1){                    
-
-					// Bind result variables
-					mysqli_stmt_bind_result($stmt, $username, $hashed_password);
-					if(mysqli_stmt_fetch($stmt)){
-						if(password_verify($password, $hashed_password)){
-
-							/* Password is correct, so start a new session and
-							save the username to the session */
-							session_start();
-							$_SESSION['username'] = $username;      
-							header("location: welcome.php");
-						} else{
-							// Display an error message if password is not valid
-							$password_err = 'The password you entered was not valid.';
-						}
-					}
-				} else{
-					
-					// Display an error message if username doesn't exist
-					$username_err = 'No account found with that username.';
-				}
-			} else{
-				echo "Oops! Something went wrong. Please try again later.";
-			}
-		}
-		
-		// Close statement
-		mysqli_stmt_close($stmt);
-	}
-
-	// Close connection
-	mysqli_close($link);
+// it will never let you open index(login) page if session is set
+if ( isset($_SESSION['user'])!="" ) {
+	header("Location: home.php");
+exit;
+}
+$error = false;
+if( isset($_POST['btn-login']) ) { 
+// prevent sql injections/ clear user invalid inputs
+$email = trim($_POST['email']);
+$email = strip_tags($email);
+$email = htmlspecialchars($email);
+$password = trim($_POST['password']);
+$password = strip_tags($password);
+$password = htmlspecialchars($password);
+// prevent sql injections / clear user invalid inputs
+if(empty($email)){
+	$error = true;
+	$emailError = "Please enter your email address.";
+} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+	$error = true;
+	$emailError = "Please enter valid email address.";
+}
+if(empty($password)){
+	$error = true;
+	$passwordError = "Please enter your password.";
+}
+// if there's no error, continue to login
+if (!$error) {
+$password = hash('sha256', $password); // password hashing using SHA256
+$res=mysql_query("SELECT userId, userName, userPass FROM users WHERE userEmail='$email'");
+$row=mysql_fetch_array($res);
+$count = mysql_num_rows($res); // if uname/password correct it returns must be 1 row
+if( $count == 1 && $row['userPass']==$password ) {
+	$_SESSION['user'] = $row['userId'];
+	header("Location: home.php");
+} else {
+	$errMSG = "Incorrect Credentials, Try again.";
+}
+}
 }
 ?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Login</title>
+	<title>Sign In</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<style type="text/css">
 		body{ font: 14px sans-serif; }
-		.wrapper{ width: 350px; padding: 20px; }
+		.container{ width: 350px; padding: 20px; }
 	</style>
 </head>
 <body>
-	<div class="wrapper">
-		<h2>Login</h2>
-		<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-			<div class="form-group-<?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-				<label>Username:<sup>*</sup></label>
-				<input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
-				<span class="help-block"><?php echo $username_err; ?></span>
-			</div>    
-			<div class="form-group-<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-				<label>Password:<sup>*</sup></label>
-				<input type="password" name="password" class="form-control">
-				<span class="help-block"><?php echo $password_err; ?></span>
-			</div>
-			<div class="form-group">
-				<input type="submit" name="submitbutton" class="btn btn-primary" value="Submit">
-			</div>
-			<p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-		</form>
-	</div>    
+	<div class="container">
+	<div id="login-form">
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+	<div class="col-md-12">
+		<div class="form-group">
+			<h2 class="">Sign In.</h2>
+		</div>
+		<div class="form-group">
+			<hr />
+		</div>
+	<?php
+	if ( isset($errMSG) ) {
+	?>
+	<div class="form-group">
+		<div class="alert alert-danger">
+			<span class="glyphicon glyphicon-info-sign"></span> <?php echo $errMSG; ?>
+		</div>
+	</div>
+	<?php
+		}
+	?>
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+			<input type="text" name="email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" maxlength="40" />
+		</div>
+		<span class="text-danger"><?php echo $emailError; ?></span>
+	</div>
+	<div class="form-group">
+		<div class="input-group">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+			<input type="password" name="password" class="form-control" placeholder="Your password" maxlength="15" />
+		</div>
+		<span class="text-danger"><?php echo $passwordError; ?></span>
+	</div>
+	<div class="form-group">
+		<hr />
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
+	</div>
+	<div class="form-group">
+		<hr />
+	</div>
+	<div class="form-group">
+		<a href="register.php">Sign Up Here</a>
+	</div>
+	</div>
+	</form>
+	</div> 
+	</div>
 </body>
 </html>
+<?php ob_end_flush(); ?>

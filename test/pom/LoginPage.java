@@ -11,38 +11,38 @@ public class LoginPage {
 
     private WebDriver driver;
 
-    private By username = By.name("username");
-    private By password = By.name("password");
+    private By userEmail = By.name("email");
+    private By userPassword = By.name("password");
 
-    private By submitButton = By.name("submitbutton");
-    private By textSignUpNow = By.xpath("/html/body/div/form/p/a");
+    private By buttonSignIn = By.name("btn-login");
+    private By textSignUpHere = By.xpath("/html/body/div/div/form/div/div[8]/a");
 
-    private By formGroupHasError = By.className("form-group-has-error");
-    private By helpBlock = By.className("help-block");
+    private By textDanger = By.className("text-danger");
+    private By alertDanger = By.xpath("/html/body/div/div/form/div/div[3]/div");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public By getSubmitButton() {
-        return submitButton;
+    public By getButtonSignIn() {
+        return buttonSignIn;
     }
 
     public void getRegisterPage() {
-        driver.findElement(textSignUpNow).click();
+        driver.findElement(textSignUpHere).click();
     }
 
-    public By getFormGroupHasError() {
-        return formGroupHasError;
+    public By getTextDanger() {
+        return textDanger;
     }
 
-    public By getHelpBlock() {
-        return helpBlock;
+    public By getAlertDanger() {
+        return alertDanger;
     }
 
-    public void loginSetNamePassword(String name, String pass) {
-        driver.findElement(username).sendKeys(name);
-        driver.findElement(password).sendKeys(pass);
-        driver.findElement(submitButton).submit();
+    public void loginSetEmailPassword(String email, String pass) {
+        driver.findElement(userEmail).sendKeys(email);
+        driver.findElement(userPassword).sendKeys(pass);
+        driver.findElement(buttonSignIn).click();
     }
 }

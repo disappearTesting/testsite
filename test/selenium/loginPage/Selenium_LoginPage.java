@@ -32,7 +32,7 @@ public class Selenium_LoginPage {
         driver.get(URL);
 
         pom.LoginPage objLogin = new pom.LoginPage(driver);
-        objLogin.loginSetNamePassword("test1", "123456");
+        objLogin.loginSetEmailPassword("makarov@smartproject.ua", "123456");
 
         driver.quit();
     }
