@@ -51,6 +51,7 @@ public class MySQLQueries_Testsite {
 
     public void getSQLQueries(String sql) {
         try {
+            //for each String sql create PreparedStatement statement
             PreparedStatement statement = connect().prepareStatement(sql);
             statement.execute();
         } catch (SQLException e) {
