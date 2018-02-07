@@ -1,7 +1,7 @@
 package unitTests.loginPage;
 
+import pom.MySQLQueries_Testsite;
 import pom.RegisterPage;
-import pom.SQLQueries_Testsite_Users;
 
 import org.junit.Test;
 import org.junit.After;
@@ -30,14 +30,17 @@ public class Unit_RegisterPage {
 
     private static final String TEXT_SUCCESS_REGISTER = "Successfully registered, you may login now.";
 
+    private static final String SQL_DELETE_FROM_WHERE = "DELETE FROM testsite.users WHERE userName = 'ATester'";
+
     private WebDriver driver;
     private RegisterPage objRegister;
-    private SQLQueries_Testsite_Users objSQLQueries;
+    private MySQLQueries_Testsite objSQLQueries;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         objRegister = new RegisterPage(driver);
+        objSQLQueries =  new MySQLQueries_Testsite();
         driver.get(URL_REGISTER_PAGE);
     }
 
@@ -72,9 +75,9 @@ public class Unit_RegisterPage {
 
         WebElement element = driver.findElement(objRegister.getRegisterSuccess());
 
-        if(element.getText().equals(TEXT_SUCCESS_REGISTER)) {
-            objSQLQueries.getQueryDeleteFromWhere("users", "userName", "ATester");
-        }
+        objSQLQueries.getSQLQueries(SQL_DELETE_FROM_WHERE);
+        objSQLQueries.disconnect();
+
         assertTrue(element.getText().equals(TEXT_SUCCESS_REGISTER));
     }
 
