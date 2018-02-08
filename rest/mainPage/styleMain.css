@@ -15,6 +15,12 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
+ul  .submenu li {
+	display: inline;
+    margin-right: 5px;
+    border: 1px solid #000;
+    padding: 3px;
+}
 nav a {
 	text-decoration: none;
 	display: block;
@@ -84,6 +90,11 @@ h2 a {
 	opacity: 0;
 	transform: translate(-50%, 20px);
 	transition: .3s;
+	
+	display:inline-block;
+}
+.checkbox-submenu a {
+	display:inline-block;
 }
 .topmenu > li:hover .submenu {
 	visibility: visible;

@@ -8,13 +8,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class MainPage {
 
     private WebDriver driver;
-    private static final String dropDownLinkText = null;
 
-    public WebElement getDropDownMenu(String dropDownLinkText) {
-        WebElement dropDownMenu = driver.findElement(By.linkText(dropDownLinkText));
-        return dropDownMenu;
+    private By submenu = By.className("submenu");
+
+    public By getSubmenu() {
+        return submenu;
+    }
+
+    public List<WebElement> getDropDownMenu(String linkText) {
+        List<WebElement> dropDownMenuElements = driver.findElements(By.linkText(linkText));
+        return dropDownMenuElements;
     }
 }
