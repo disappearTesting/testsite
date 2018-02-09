@@ -14,27 +14,49 @@
 <body>
 	<div class="container">
 		<header class="header">
-			<h2 class=""><a href="http://testsite.local/rest/mainPage/main.php">Main Page</a></h2>
+			<h1 class="">Main Page</h1>
 			<nav>
 				<ul class="topmenu">
 					<li><a href="http://testsite.local/rest/mainPage/main.php">Main Page</a></li>
-					<li><a href="#" class="down">Blog</a>
+					<li><a href="">Dropdown</a>
 						<ul class="submenu">
-							<li><input type="checkbox" name="checkbox-submenu" value="category"><a href="#">Category</a></li>
-							<li><input type="checkbox" name="checkbox-submenu" value="author"><a href="#">Author</a></li>
-							<li><input type="checkbox" name="checkbox-submenu" value="archive"><a href="#">Archive</a></li>
-							<li><input type="checkbox" name="checkbox-submenu" value="tags"><a href="#">Tags</a></li>
+							<li><a href="#">Test</a></li>
+							<li><a href="#">Test</a></li>
+							<li><a href="#">Test</a></li>
 						</ul>
 					</li>
-					<li><a href="" class="down">Portfolio</a>
+					<li><a href="">Checkbox</a>
 						<ul class="submenu">
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Author</a></li>
-							<li><a href="#">Archive</a></li>
-							<li><a href="#">Tags</a></li>
+							<li>
+								<input type="checkbox" id="option_1" name="checkbox" value="option_1">
+								<label for="option_1">Option 1</label>
+							</li>
+							<li>
+								<input type="checkbox" id="option_2" name="checkbox" value="option_2">
+								<label for="option_2">Option 2</label>
+							</li>
+							<li>
+								<input type="checkbox" id="option_3" name="checkbox" value="option_3">
+								<label for="option_3">Option 3</label>
+							</li>
 						</ul>
 					</li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="">Radio Button</a>
+						<ul class="submenu">
+							<li>
+								<input type="radio" id="radio_button_1" name="radio-button" value=">radio_button_1">
+								<label for="radio_button_1">Radio button 1</label>
+							</li>
+							<li>
+								<input type="radio" id="radio_button_2" name="radio-button" value=">radio_button_2">
+								<label for="radio_button_2">Radio button 2</label>
+							</li>
+							<li>
+								<input type="radio" id="radio_button_3" name="radio-button" value=">radio_button_3">
+								<label for="radio_button_3">Radio button 3</label>
+							</li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
 		</header>

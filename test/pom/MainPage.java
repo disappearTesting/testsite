@@ -16,12 +16,11 @@ public class MainPage {
 
     private By submenu = By.className("submenu");
 
-    public By getSubmenu() {
-        return submenu;
+    public MainPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    public List<WebElement> getDropDownMenu(String linkText) {
-        List<WebElement> dropDownMenuElements = driver.findElements(By.linkText(linkText));
-        return dropDownMenuElements;
+    public By getSubmenu() {
+        return submenu;
     }
 }

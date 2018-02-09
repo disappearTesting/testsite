@@ -15,18 +15,12 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
-ul  .submenu li {
-	display: inline;
-    margin-right: 5px;
-    border: 1px solid #000;
-    padding: 3px;
-}
 nav a {
 	text-decoration: none;
 	display: block;
 	color: #222;
 }
-h2 {
+h1 {
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -35,12 +29,7 @@ h2 {
 	line-height: 1.1;
 	font-size: 30px;	
 }
-h2 a {
-	text-decoration: none;
-	display: block;
-	color: #222;
-}
-.h2 {
+.h1 {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	font-size: 30px;
@@ -90,11 +79,6 @@ h2 a {
 	opacity: 0;
 	transform: translate(-50%, 20px);
 	transition: .3s;
-	
-	display:inline-block;
-}
-.checkbox-submenu a {
-	display:inline-block;
 }
 .topmenu > li:hover .submenu {
 	visibility: visible;
@@ -102,6 +86,12 @@ h2 a {
 	transform: translate(-50%, 0);
 }
 .submenu a {
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 5px 10px;
+	transition: .3s linear;
+}
+.submenu label {
 	font-size: 14px;
 	letter-spacing: 1px;
 	padding: 5px 10px;
