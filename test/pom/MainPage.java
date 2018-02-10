@@ -15,6 +15,7 @@ public class MainPage {
     private WebDriver driver;
 
     private By submenuDropdown = By.className("submenu-dropdown");
+
     private By submenuCheckbox = By.className("submenu-checkbox");
     private By submenuRadioButton = By.className("submenu-radio-button");
 
@@ -29,6 +30,11 @@ public class MainPage {
 
     public By getSubmenuDropdown() {
         return submenuDropdown;
+    }
+
+    public By getElementSubmenuDropdown(String linkText) {
+        By elementSubmenuDropdown = By.linkText(linkText);
+        return elementSubmenuDropdown;
     }
 
     public By getSubmenuCheckbox() {

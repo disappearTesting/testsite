@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8d550c9-42db-4175-8e10-b82bea6dbb3c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/rest/mainPage/main.php" afterPath="$PROJECT_DIR$/rest/mainPage/main.php" />
-      <change beforePath="$PROJECT_DIR$/rest/mainPage/styleMain.css" afterPath="$PROJECT_DIR$/rest/mainPage/styleMain.css" />
       <change beforePath="$PROJECT_DIR$/test/pom/MainPage.java" afterPath="$PROJECT_DIR$/test/pom/MainPage.java" />
-      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" />
+      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+      <file leaf-file-name="Unit_RegisterPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="-374">
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -33,9 +28,12 @@
       <file leaf-file-name="Unit_MainPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="583">
+              <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="46" />
+              <folding>
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,15 +41,15 @@
       <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="425">
+              <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
               <folding>
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#779#780#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#944#945#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
+                <element signature="e#1064#1065#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Unit_MainPage.test_SubmenuDropdownIsEnable">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -182,6 +180,31 @@
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
       <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_MainPage" />
       <option name="METHOD_NAME" value="test_DropdownMenuisVisible" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.loginPage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests.loginPage" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_MainPage" />
+      <option name="METHOD_NAME" value="test_SubmenuDropdownIsEnable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -254,9 +277,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_MainPage.test_DropdownMenuisVisible" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_MainPage.test_SubmenuDropdownIsEnable" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_MainPage.test_DropdownMenuisVisible" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_MainPage.test_SubmenuDropdownIsEnable" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_MainPage.test_DropdownMenuisVisible" />
       </list>
     </recent_temporary>
   </component>
@@ -273,47 +301,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518278795782</updated>
-      <workItem from="1518278801115" duration="7467000" />
+      <workItem from="1518278801115" duration="14653000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 01m 19s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.10 at 23h 38m 58s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 02m 45s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 34m 14s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 06m 17s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 39m 20s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 06m 56s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 39m 41s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 08m 48s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 40m 40s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 29m 52s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 41m 40s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 30m 12s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 42m 23s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 30m 49s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 43m 34s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 31m 44s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 45m 09s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_MainPage_test_DropdownMenuisVisible - 2018.02.10 at 21h 32m 08s.xml">
-      <configuration name="Unit_MainPage.test_DropdownMenuisVisible" configurationId="JUnit" />
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.02.11 at 00h 45m 51s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7467000" />
+    <option name="totallyTimeSpent" value="14653000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -324,11 +353,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="138" y="88" width="1685" height="979" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="139" y="88" width="1684" height="979" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="142" y="90" width="1168" height="750" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -352,7 +381,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -365,14 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -381,26 +402,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="40" column="86" lean-forward="true" selection-start-line="40" selection-start-column="86" selection-end-line="40" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-862">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="425">
+          <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="12" lean-forward="false" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="583">
+          <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="46" />
+          <folding>
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

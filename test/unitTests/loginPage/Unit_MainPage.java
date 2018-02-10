@@ -55,13 +55,21 @@ public class Unit_MainPage {
 
         builder.moveToElement(elementTopmenuTitle).perform();
 
-        new WebDriverWait(driver,5).until(presenceOfElementLocated(objMain.getSubmenuDropdown()));
-
         assertTrue(elementSubmenuDropdown.isDisplayed());
     }
 
     @Test
     public void test_SubmenuDropdownIsEnable() {
+        Actions builder = new Actions(driver);
 
+        WebElement elementTopmenuTitle = driver.findElement(objMain.getTopMenuTitle(TEXT_CLASSNAME_DROPDOWN));
+
+        builder.moveToElement(elementTopmenuTitle).perform();
+
+        for(int i = 0; i < TEXT_LINK_SUBMENU_DROPDOWN.size(); i++) {
+            String linkTextSubmenuDropdown = TEXT_LINK_SUBMENU_DROPDOWN.get(i);
+            WebElement elementSubmenuDropdown = driver.findElement(objMain.getElementSubmenuDropdown(linkTextSubmenuDropdown));
+            elementSubmenuDropdown.isEnabled();
+        }
     }
 }
