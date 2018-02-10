@@ -20,10 +20,10 @@
 					<li><a href="http://testsite.local/rest/mainPage/main.php">Main Page</a></li>
 					<li><a href="#" class="down">Blog</a>
 						<ul class="submenu">
-							<li><a href="#">Category</a></li>
-							<li><a href="#">Author</a></li>
-							<li><a href="#">Archive</a></li>
-							<li><a href="#">Tags</a></li>
+							<li><input type="checkbox" name="checkbox-submenu" value="category"><a href="#">Category</a></li>
+							<li><input type="checkbox" name="checkbox-submenu" value="author"><a href="#">Author</a></li>
+							<li><input type="checkbox" name="checkbox-submenu" value="archive"><a href="#">Archive</a></li>
+							<li><input type="checkbox" name="checkbox-submenu" value="tags"><a href="#">Tags</a></li>
 						</ul>
 					</li>
 					<li><a href="" class="down">Portfolio</a>
