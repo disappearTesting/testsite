@@ -1,3 +1,7 @@
+/**
+ * @author hookie
+ * @version 1.0
+ */
 package unitTests.loginPage;
 
 import pom.MySQLQueries_Testsite;
