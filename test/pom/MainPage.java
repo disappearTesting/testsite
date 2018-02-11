@@ -6,16 +6,12 @@ package pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class MainPage {
 
     private WebDriver driver;
 
     private By submenuDropdown = By.className("submenu-dropdown");
-
     private By submenuCheckbox = By.className("submenu-checkbox");
     private By submenuRadioButton = By.className("submenu-radio-button");
 
@@ -24,10 +20,11 @@ public class MainPage {
     }
 
     public By getTopMenuTitle(String className) {
-        By topMenuTitle = By.className(className);
-        return topMenuTitle;
+        By topmenuTitle = By.className(className);
+        return topmenuTitle;
     }
 
+    // for check that submenu is visible
     public By getSubmenuDropdown() {
         return submenuDropdown;
     }
@@ -37,11 +34,14 @@ public class MainPage {
         return elementSubmenuDropdown;
     }
 
-    public By getSubmenuCheckbox() {
-        return submenuCheckbox;
+    public By getElementSubmenuCheckbox(String id) {
+        By elementSubmenuCheckbox = By.id(id);
+        return elementSubmenuCheckbox;
     }
 
-    public By getSubmenuRadioButton() {
-        return submenuRadioButton;
+    public By getElementSubmenuRadioButton(String id) {
+        By elementSubmenuRadioButton = By.id(id);
+        return elementSubmenuRadioButton;
     }
+
 }

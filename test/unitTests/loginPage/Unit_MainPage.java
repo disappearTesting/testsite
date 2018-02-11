@@ -28,8 +28,10 @@ public class Unit_MainPage {
 
     private static final String URL_MAIN_PAGE = "http://testsite.local/rest/mainPage/main.php";
     private static final String TEXT_CLASSNAME_DROPDOWN = "topmenu-dropdown";
+    private static final String TEXT_CLASSNAME_CHECKBOX = "topmenu-checkbox";
 
     private static final List<String> TEXT_LINK_SUBMENU_DROPDOWN = Arrays.asList("Test", "Test", "Test");
+    private static final List<String> TEXT_ID_SUBMENU_CHECKBOX = Arrays.asList("option_1", "option_2", "option_3");
 
     private WebDriver driver;
     private MainPage objMain;
@@ -72,4 +74,49 @@ public class Unit_MainPage {
             elementSubmenuDropdown.isEnabled();
         }
     }
+
+    @Test
+    public void test_SubmenuCheckboxIsSelected() {
+        Actions builder = new Actions(driver);
+
+        WebElement elementTopmenuTitle = driver.findElement(objMain.getTopMenuTitle(TEXT_CLASSNAME_CHECKBOX));
+
+        builder.moveToElement(elementTopmenuTitle).perform();
+
+        for(int i = 0; i < TEXT_ID_SUBMENU_CHECKBOX.size(); i++) {
+            String idSubmenuCheckbox = TEXT_ID_SUBMENU_CHECKBOX.get(i);
+            WebElement elementSubmenuCheckbox = driver.findElement(objMain.getElementSubmenuCheckbox(idSubmenuCheckbox));
+            elementSubmenuCheckbox.click();
+            System.out.println(elementSubmenuCheckbox.isSelected());
+        }
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
