@@ -11,7 +11,6 @@ public class MySQLQueries_Testsite {
     private static final String URL_DATABASE = "jdbc:mysql://localhost:3306/testsite";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "354Godsmack";
-    private static final String MAX_POOL = "250";
 
     private Connection connection;
     private Properties properties;
@@ -21,7 +20,6 @@ public class MySQLQueries_Testsite {
             properties = new Properties();
             properties.setProperty("user", USERNAME);
             properties.setProperty("password", PASSWORD);
-            properties.setProperty("MaxPooledStatements", MAX_POOL);
         }
         return properties;
     }

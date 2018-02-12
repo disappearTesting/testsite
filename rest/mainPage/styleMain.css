@@ -17,7 +17,6 @@ nav ul {
 }
 nav a {
 	text-decoration: none;
-	display: block;
 	color: #222;
 }
 h1 {
@@ -63,7 +62,7 @@ h1 {
 	transform: translate(-50%, 0);
 	opacity: 1;
 }
-.submenu {
+.submenu-dropdown, .submenu-checkbox, .submenu-radio-button {
 	position: absolute;
 	z-index: 4;
 	left: 50%;
@@ -80,21 +79,21 @@ h1 {
 	transform: translate(-50%, 20px);
 	transition: .3s;
 }
-.topmenu > li:hover .submenu {
+.topmenu > li:hover .submenu-dropdown, .topmenu > li:hover .submenu-checkbox, .topmenu > li:hover .submenu-radio-button {
 	visibility: visible;
 	opacity: 1;
 	transform: translate(-50%, 0);
 }
-.submenu a {
+.submenu-dropdown a, .submenu-checkbox a, .submenu-radio-button a {
 	font-size: 14px;
 	letter-spacing: 1px;
 	padding: 5px 10px;
 	transition: .3s linear;
 }
-.submenu label {
+.submenu-dropdown label, .submenu-checkbox label, .submenu-radio-button label {
 	font-size: 14px;
 	letter-spacing: 1px;
 	padding: 5px 10px;
 	transition: .3s linear;
 }
-.submenu a:hover {background: #e8e8e8;}
+.submenu-dropdown a:hover, .submenu-checkbox a:hover, .submenu-radio-button a:hover {background: #e8e8e8;}
