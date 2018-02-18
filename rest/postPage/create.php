@@ -59,14 +59,14 @@
 <body>
     <div class="container">
 		<header class="header">
-			<h1 class="">Create a Customer</h1>
+			<h1>Create a Customer</h1>
 		</header>
 		<content>
 			<form class="form-horizontal" action="create.php" method="post">
 				<div class="control-group <?php echo !empty($nameError)?'error':'';?>">
 					<label class="control-label">Name</label>
 					<div class="controls">
-						<input name="name" type="text"  placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
+						<input name="name" type="text" placeholder="Name" value="<?php echo !empty($name)?$name:'';?>">
 						<?php if (!empty($nameError)): ?>
 						<span class="help-inline"><?php echo $nameError;?></span>
 						<?php endif; ?>
@@ -84,7 +84,7 @@
 				<div class="control-group <?php echo !empty($mobileError)?'error':'';?>">
 					<label class="control-label">Mobile Number</label>
 					<div class="controls">
-						<input name="mobile" type="text"  placeholder="Mobile Number" value="<?php echo !empty($mobile)?$mobile:'';?>">
+						<input name="mobile" type="text" placeholder="Mobile Number" value="<?php echo !empty($mobile)?$mobile:'';?>">
 						<?php if (!empty($mobileError)): ?>
 						<span class="help-inline"><?php echo $mobileError;?></span>
 						<?php endif;?>

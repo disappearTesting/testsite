@@ -17,8 +17,8 @@ public class LoginPage {
     private By buttonSignIn = By.name("btn-login");
     private By textSignUpHere = By.xpath("/html/body/div/div/form/div/div[8]/a");
 
-    private By textDanger = By.className("text-danger");
-    private By alertDanger = By.xpath("/html/body/div/div/form/div/div[3]/div");
+    private By textError = By.className("text-danger");
+    private By alertError = By.xpath("/html/body/div/div/form/div/div[3]/div");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -33,16 +33,16 @@ public class LoginPage {
     }
 
     public By getTextDanger() {
-        return textDanger;
+        return textError;
     }
 
     public By getAlertDanger() {
-        return alertDanger;
+        return alertError;
     }
 
     public void loginSetEmailPassword(String email, String pass) {
         driver.findElement(userEmail).sendKeys(email);
         driver.findElement(userPassword).sendKeys(pass);
-        driver.findElement(buttonSignIn).click();
+        driver.findElement(buttonSignIn).submit();
     }
 }
