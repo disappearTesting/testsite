@@ -31,7 +31,12 @@
         if (empty($mobile)) {
             $mobileError = 'Please enter Mobile Number';
             $valid = false;
-        }
+        } else if(array_key_exists('mobile', $_POST)) {
+			if(!preg_match('/^\+380\d{3}\d{2}\d{2}\d{2}$/', $_POST['mobile'])) {
+			  $mobileError = 'Please enter a valid Mobile Number';
+			  $valid = false;
+			}
+		}
          
         // insert data
         if ($valid) {

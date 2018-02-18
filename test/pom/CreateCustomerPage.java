@@ -11,10 +11,10 @@ public class CreateCustomerPage {
     private By userEmail = By.name("email");
     private By userMobile = By.name("mobile");
 
-    private By buttonCreate = By.name("button-create");
-    private By textBack = By.name("a-button-back");
+    private By buttonCreate = By.className("button-create");
+    private By textBack = By.className("a-button-back");
 
-    private By textError = By.className("");
+    private By textError = By.className("help-inline");
 
     public CreateCustomerPage(WebDriver driver) {
         this.driver = driver;
