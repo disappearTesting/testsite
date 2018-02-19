@@ -1,9 +1,6 @@
 package pom;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 public class MySQLQueries_Testsite {
@@ -55,5 +52,18 @@ public class MySQLQueries_Testsite {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public int getSQLExecuteUpdated(String sql) {
+        int result = 0;
+        try {
+            //for each String sql create PreparedStatement statement
+            PreparedStatement statement = connect().prepareStatement(sql);
+            result = statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return result;
     }
 }
