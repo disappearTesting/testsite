@@ -44,17 +44,7 @@ public class MySQLQueries_Testsite {
         }
     }
 
-    public void getSQLQueries(String sql) {
-        try {
-            //for each String sql create PreparedStatement statement
-            PreparedStatement statement = connect().prepareStatement(sql);
-            statement.execute();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public int getSQLExecuteUpdated(String sql) {
+    public int getSQLQuery_executeUpdate(String sql) {
         int result = 0;
         try {
             //for each String sql create PreparedStatement statement
@@ -63,7 +53,21 @@ public class MySQLQueries_Testsite {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return result;
+    }
+
+    public ResultSet getSQLQuery_executeQuery(String sql) {
+        ResultSet resultSet = null;
+        try {
+            //for each String sql create PreparedStatement statement
+            PreparedStatement statement = connect().prepareStatement(sql);
+            resultSet = statement.executeQuery();
+            while(resultSet.next()) {
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultSet;
     }
 }

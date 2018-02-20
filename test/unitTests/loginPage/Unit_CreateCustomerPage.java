@@ -22,6 +22,8 @@ public class Unit_CreateCustomerPage {
     private static final List<String> TEXT_ERROR_EMPTY = Arrays.asList("Please enter Name", "Please enter Email Address", "Please enter Mobile Number");
     private static final List<String> TEXT_ERROR_VALIDATE_VALUE = Arrays.asList("Please enter a valid Email Address", "Please enter a valid Mobile Number");
 
+    private static final String SQL_SELECT_FROM_WHERE = "SELECT * FROM testsite.customers WHERE name='John' AND email='john@example.com' AND mobile='+380991112233';";
+
     private WebDriver driver;
     private CreateCustomerPage objCreate;
     private MySQLQueries_Testsite objSQLQueries;
@@ -44,7 +46,7 @@ public class Unit_CreateCustomerPage {
 
         new WebDriverWait(driver,5).until(ExpectedConditions.urlContains(URL_INDEX_PAGE));
 
-        objSQLQueries.getSQLQueries("SELECT * FROM testsite.customers WHERE name='John' AND email='john@example.com' AND mobile='+380991112233';");
+        objSQLQueries.getSQLQuery_executeUpdate(SQL_SELECT_FROM_WHERE);
 
         Assert.assertTrue(driver.getCurrentUrl().equals(URL_INDEX_PAGE));
     }
