@@ -15,7 +15,7 @@ public class RegisterPage {
     private By buttonSignUp = By.name("btn-signup");
     private By textSignInHere = By.xpath("/html/body/div/div/form/div/div[9]/a");
 
-    private By textDanger = By.className("text-danger");
+    private By textError = By.className("text-danger");
     private By alertSuccess = By.xpath("/html/body/div/div/form/div/div[3]/div");
 
     public RegisterPage(WebDriver driver) {
@@ -30,8 +30,8 @@ public class RegisterPage {
         driver.findElement(textSignInHere).click();
     }
 
-    public By getTextDanger() {
-        return textDanger;
+    public By getTextError() {
+        return textError;
     }
 
     public By getRegisterSuccess() {

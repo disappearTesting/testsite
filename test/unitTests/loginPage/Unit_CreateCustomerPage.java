@@ -9,6 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.CreateCustomerPage;
+import pom.MySQLQueries_Testsite;
 
 import java.util.Arrays;
 import java.util.List;
@@ -21,13 +22,17 @@ public class Unit_CreateCustomerPage {
     private static final List<String> TEXT_ERROR_EMPTY = Arrays.asList("Please enter Name", "Please enter Email Address", "Please enter Mobile Number");
     private static final List<String> TEXT_ERROR_VALIDATE_VALUE = Arrays.asList("Please enter a valid Email Address", "Please enter a valid Mobile Number");
 
+    private static final String SQL_SELECT_FROM_WHERE = "SELECT * FROM testsite.customers WHERE name='John' AND email='john@example.com' AND mobile='+380991112233';";
+
     private WebDriver driver;
     private CreateCustomerPage objCreate;
+    private MySQLQueries_Testsite objSQLQueries;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         objCreate = new CreateCustomerPage(driver);
+        objSQLQueries = new MySQLQueries_Testsite();
         driver.get(URL_CREATE_PAGE);
     }
 
@@ -42,6 +47,15 @@ public class Unit_CreateCustomerPage {
 
         new WebDriverWait(driver,5).until(ExpectedConditions.urlContains(URL_INDEX_PAGE));
 
+        objSQLQueries.getSQLQuery_executeQuery(SQL_SELECT_FROM_WHERE);
+
         Assert.assertTrue(driver.getCurrentUrl().equals(URL_INDEX_PAGE));
+    }
+
+    @Test
+    public void test_CreateNullParams() {
+        objCreate.createSetNameEmailMobile(null, null, null);
+
+        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfAllElementsLocatedBy(objCreate.ge))
     }
 }

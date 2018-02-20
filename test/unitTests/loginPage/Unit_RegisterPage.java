@@ -10,12 +10,16 @@ import pom.RegisterPage;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.fail;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.sql.SQLException;
@@ -72,14 +76,14 @@ public class Unit_RegisterPage {
     }
 
     @Test
-    public void test_Register() throws SQLException, ClassNotFoundException {
+    public void test_Register() {
         objRegister.registerSetNameEmailPassword("ATester", "atest@example.com", "456456");
 
         new WebDriverWait(driver, 5).until(presenceOfElementLocated(objRegister.getRegisterSuccess()));
 
         WebElement element = driver.findElement(objRegister.getRegisterSuccess());
 
-        objSQLQueries.getSQLQueries(SQL_DELETE_FROM_WHERE);
+        assertEquals(1, objSQLQueries.getSQLQuery_executeUpdate(SQL_DELETE_FROM_WHERE));
         objSQLQueries.disconnect();
 
         assertTrue(element.getText().equals(TEXT_SUCCESS_REGISTER));
@@ -92,9 +96,9 @@ public class Unit_RegisterPage {
 
         objRegister.registerSetNameEmailPassword("", "", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextError()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
+        List<WebElement> elements = driver.findElements(objRegister.getTextError());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
@@ -112,9 +116,9 @@ public class Unit_RegisterPage {
 
         objRegister.registerSetNameEmailPassword("@Tester", "", "");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextError()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
+        List<WebElement> elements = driver.findElements(objRegister.getTextError());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
@@ -132,9 +136,9 @@ public class Unit_RegisterPage {
 
         objRegister.registerSetNameEmailPassword("t", "@example.com", "test");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextError()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
+        List<WebElement> elements = driver.findElements(objRegister.getTextError());
 
         // Проверка каждого с каждым, на одном уровне
         for(WebElement element: elements) {
@@ -156,9 +160,9 @@ public class Unit_RegisterPage {
 
         objRegister.registerSetNameEmailPassword("BTester", "btest@example.com", "456456");
 
-        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextDanger()));
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextError()));
 
-        List<WebElement> elements = driver.findElements(objRegister.getTextDanger());
+        List<WebElement> elements = driver.findElements(objRegister.getTextError());
 
         for(WebElement element: elements) {
             if(TEXT_ERROR_VALIDATE_ALREADY_USE.get(i++).equals(element.getText())){

@@ -1,9 +1,6 @@
 package pom;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Properties;
 
 public class MySQLQueries_Testsite {
@@ -47,13 +44,32 @@ public class MySQLQueries_Testsite {
         }
     }
 
-    public void getSQLQueries(String sql) {
+    public int getSQLQuery_executeUpdate(String sql) {
+        int result = 0;
         try {
             //for each String sql create PreparedStatement statement
             PreparedStatement statement = connect().prepareStatement(sql);
-            statement.execute();
+            result = statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return result;
+    }
+
+    public void getSQLQuery_executeQuery(String sql) {
+        //ResultSet resultSet = null;
+        try {
+            //for each String sql create PreparedStatement statement
+            PreparedStatement statement = connect().prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery();
+            while(resultSet.next()) {
+                System.out.println("getRow(): " + resultSet.getRow()
+                        + "\t getInt(): " + resultSet.getInt("id")
+                        + "\t" + resultSet.getString("mobile"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        //return resultSet;
     }
 }
