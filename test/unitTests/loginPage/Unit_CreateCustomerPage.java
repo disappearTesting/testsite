@@ -1,18 +1,26 @@
 package unitTests.loginPage;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.CreateCustomerPage;
 import pom.MySQLQueries_Testsite;
 
+
+import org.junit.Test;
+import org.junit.After;
+import org.junit.Before;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.util.Arrays;
 import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfAllElementsLocatedBy;
 
 public class Unit_CreateCustomerPage {
 
@@ -49,13 +57,25 @@ public class Unit_CreateCustomerPage {
 
         objSQLQueries.getSQLQuery_executeQuery(SQL_SELECT_FROM_WHERE);
 
-        Assert.assertTrue(driver.getCurrentUrl().equals(URL_INDEX_PAGE));
+        assertTrue(driver.getCurrentUrl().equals(URL_INDEX_PAGE));
     }
 
     @Test
     public void test_CreateNullParams() {
-        objCreate.createSetNameEmailMobile(null, null, null);
+        int i = 0;
+        int eqCount = 0;
 
-        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfAllElementsLocatedBy(objCreate.ge))
+        objCreate.createSetNameEmailMobile("", "", "");
+
+        new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objCreate.getTextError()));
+
+        List<WebElement> elements = driver.findElements(objCreate.getTextError());
+
+        for(WebElement element: elements) {
+            if(TEXT_ERROR_EMPTY.get(i++).equals(element.getText())) {
+                eqCount++;
+            }
+        }
+        assertTrue(elements.size() == eqCount);
     }
 }

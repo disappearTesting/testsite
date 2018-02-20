@@ -30,9 +30,7 @@ public class RegisterPage {
         driver.findElement(textSignInHere).click();
     }
 
-    public By getTextError() {
-        return textError;
-    }
+    public By getTextError() { return textError; }
 
     public By getRegisterSuccess() {
         return alertSuccess;

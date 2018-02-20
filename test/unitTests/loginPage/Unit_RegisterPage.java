@@ -19,10 +19,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.fail;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.List;
 

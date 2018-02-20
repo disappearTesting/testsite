@@ -28,7 +28,9 @@ public class CreateCustomerPage {
         driver.findElement(textBack).click();
     }
 
-    public void getTextError
+    public By getTextError() {
+        return textError;
+    }
 
     public void createSetNameEmailMobile(String name, String email, String mobile) {
         driver.findElement(userName).sendKeys(name);
