@@ -56,15 +56,46 @@
     <meta charset="UTF-8">
 	<title>Create Page</title>
 	<link rel="stylesheet" href="styleCreate.css">
-	<style type="text/css">
-		
-	</style>
+	<link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+	<script type="text/javascript">
+		function startTime()
+		{
+		var tm=new Date();
+		var h=tm.getHours();
+		var m=tm.getMinutes();
+		var s=tm.getSeconds();
+		m=checkTime(m);
+		s=checkTime(s);
+		document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+		t=setTimeout('startTime()',500);
+		}
+		function checkTime(i)
+		{
+		if (i<10)
+		{
+		i="0" + i;
+		}
+		return i;
+		}
+	</script>
+	<script>
+		$(function(){
+		$('#datetime12').combodate();  
+		});
+	</script>
 </head>
- 
-<body>
+<body  onload="startTime()">
     <div class="container">
 		<header class="header">
 			<h1>Create a Customer</h1>
+			<div class="time">
+				<p id="txt"> </p>
+			</div>
 		</header>
 		<content>
 			<form class="form-horizontal" action="create.php" method="post">

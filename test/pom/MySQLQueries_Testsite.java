@@ -57,7 +57,6 @@ public class MySQLQueries_Testsite {
     }
 
     public void getSQLQuery_executeQuery(String sql) {
-        //ResultSet resultSet = null;
         try {
             //for each String sql create PreparedStatement statement
             PreparedStatement statement = connect().prepareStatement(sql);
@@ -70,6 +69,5 @@ public class MySQLQueries_Testsite {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        //return resultSet;
     }
 }
