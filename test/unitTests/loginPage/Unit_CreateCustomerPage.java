@@ -68,7 +68,7 @@ public class Unit_CreateCustomerPage {
         objCreate.createSetNameEmailMobile("", "", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objCreate.getTextError()));
-
+t t
         List<WebElement> elements = driver.findElements(objCreate.getTextError());
 
         for(WebElement element: elements) {
