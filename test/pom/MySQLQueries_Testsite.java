@@ -56,18 +56,18 @@ public class MySQLQueries_Testsite {
         return result;
     }
 
-    public ResultSet getSQLQuery_executeQuery(String sql) {
-        ResultSet resultSet = null;
+    public void getSQLQuery_executeQuery(String sql) {
         try {
             //for each String sql create PreparedStatement statement
             PreparedStatement statement = connect().prepareStatement(sql);
-            resultSet = statement.executeQuery();
+            ResultSet resultSet = statement.executeQuery();
             while(resultSet.next()) {
-                System.out.println();
+                System.out.println("getRow(): " + resultSet.getRow()
+                        + "\t getInt(): " + resultSet.getInt("id")
+                        + "\t" + resultSet.getString("mobile"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return resultSet;
     }
 }
