@@ -28,8 +28,9 @@ public class LoginPage {
         return buttonSignIn;
     }
 
-    public void getRegisterPage() {
+    public RegisterPage getRegisterPage() {
         driver.findElement(textSignUpHere).click();
+        return new RegisterPage(driver);
     }
 
     public By getTextDanger() {
@@ -40,9 +41,10 @@ public class LoginPage {
         return alertError;
     }
 
-    public void loginSetEmailPassword(String email, String pass) {
+    public HomePage loginSetEmailPassword(String email, String pass) {
         driver.findElement(userEmail).sendKeys(email);
         driver.findElement(userPassword).sendKeys(pass);
-        driver.findElement(buttonSignIn).submit();
+        driver.findElement(buttonSignIn).click();
+        return new HomePage(driver);
     }
 }
