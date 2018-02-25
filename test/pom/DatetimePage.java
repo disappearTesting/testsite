@@ -20,6 +20,18 @@ public class DatetimePage {
         this.driver = driver;
     }
 
+    public By getInputDateTime() {
+        return inputDateTime;
+    }
+
+    public By getInputDate() {
+        return inputDate;
+    }
+
+    public By getInputTime() {
+        return inputTime;
+    }
+
     public void setDateTime(String datetime) {
         WebElement element = driver.findElement(inputDateTime);
         element.sendKeys(datetime);
