@@ -17,7 +17,7 @@
         <fieldset>
             <div class="control-group">
                 <label class="control-label">DateTime</label>
-                <div class="controls input-append date form_datetime" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                <div class="controls input-append date form_datetime" data-date="" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
                     <input size="16" type="text" id="input-datetime" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
@@ -36,7 +36,7 @@
 			<div class="control-group">
                 <label class="control-label">Time</label>
                 <div class="controls input-append date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-                    <input size="16" type="text" id="input-time" value="" readonly disabled>
+                    <input size="16" type="text" id="input-time" value="" readonly>
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
