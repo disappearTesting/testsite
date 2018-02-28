@@ -32,20 +32,25 @@ public class Unit_DatetimeKendoUIPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
-    public void test_SetDateTime_JavaScript() {
+    public void test_SetDateTimeAndRemove_Javascript() {
         String resultDateTime = "01 January 1970 - 12:00 am";
 
-        WebElement elementDateTime = driver.findElement(objDatetime.getInputDateTime());
+        WebElement elementInputDateTime = driver.findElement(objDatetime.getInputDateTime());
+        WebElement elementRemoveDatetime = driver.findElement(objDatetime.getIconRemoveDatetime());
 
         // inputs has 'readonly' params, that because JS
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
         javascriptExecutor.executeScript("document.getElementById('input-datetime').value=" + "'" + resultDateTime + "'");
 
-        assertEquals(resultDateTime, elementDateTime.getAttribute("value"));
+        assertEquals(resultDateTime, elementInputDateTime.getAttribute("value"));
+
+        javascriptExecutor.executeScript("document.getElementsByClassName('icon-remove')[0].click()");
+
+        assertEquals("", elementInputDateTime.getAttribute("value"));
     }
 
     @Test
