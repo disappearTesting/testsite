@@ -14,13 +14,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.JavascriptExecutor;
 
-<<<<<<< HEAD:test/unitTests/loginPage/Unit_DatetimePage.java
-public class Unit_DatetimePageKendoUI {
-=======
 import java.util.List;
 
 public class Unit_DatetimeKendoUIPage {
->>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8:test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java
 
     private static final String URL_DATETIME_PAGE = "http://testsite.local/rest/datetimePage/datetime/index.php";
 
@@ -52,12 +48,6 @@ public class Unit_DatetimeKendoUIPage {
         assertEquals(resultDateTime, elementDateTime.getAttribute("value"));
     }
 
-    @Test
-<<<<<<< HEAD:test/unitTests/loginPage/Unit_DatetimePage.java
-    public void test_SetDateTime() {
-        WebElement selectDatetime = driver.findElement(objDatetime.getDatetimeDropdownMenu());
-        selectDatetime.click();
-=======
     public void test_DateTimeDropdownMenu() {
         WebElement iconDatetime = driver.findElement(objDatetime.getIconDatetime());
         iconDatetime.click();
@@ -69,6 +59,5 @@ public class Unit_DatetimeKendoUIPage {
             System.out.println(elementIsEnabled);
         }
         assertTrue(elementIsEnabled);
->>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8:test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java
     }
 }
