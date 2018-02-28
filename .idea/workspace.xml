@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07e5848-9337-4c16-9b25-b5ff61db9018" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_CreateCustomerPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_RegisterPage.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/datetimePage/datetime/index.php" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" afterPath="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +23,15 @@
       <file leaf-file-name="DatetimeKendoUIPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+            <state relative-caret-position="782">
+              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
               <folding>
-                <element signature="e#1201#1202#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="Unit_DatetimeKendoUIPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_DatetimeKendoUIPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
-              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="652">
+              <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -62,6 +62,7 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java" />
+        <option value="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" />
       </list>
     </option>
   </component>
@@ -462,7 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webdriver-maven-project/src/test/pom/PageUploadFile.java" />
     <entry file="file://$PROJECT_DIR$/webdriver-maven-project/src/test/java/TestGetHar.java" />
     <entry file="file://$PROJECT_DIR$/webdriver-maven-project/src/test/java/BasicAuth.java" />
     <entry file="file://$PROJECT_DIR$/webdriver-maven-project/src/test/java/UploadFile.java" />
@@ -690,21 +690,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/CreateCustomerPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_DatetimeKendoUIPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="652">
+          <caret line="56" column="43" lean-forward="true" selection-start-line="56" selection-start-column="43" selection-end-line="56" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="64" column="1" lean-forward="true" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        <state relative-caret-position="782">
+          <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
           <folding>
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
           </folding>
         </state>
       </provider>
