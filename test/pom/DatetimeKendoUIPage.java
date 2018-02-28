@@ -41,10 +41,13 @@ public class DatetimeKendoUIPage {
         return iconDatetime;
     }
 
+    public By getIconRemoveDatetime() {
+        return iconRemoveDatetime;
+    }
+
     public List<WebElement> getElementsDatetimeDropdownMenu() {
 
         List<WebElement> elementsDatetimeDropdownMenu = new ArrayList();
-        elementsDatetimeDropdownMenu.add(driver.findElement(iconRemoveDatetime));
         elementsDatetimeDropdownMenu.add(driver.findElement(thSwitchDatetime));
         elementsDatetimeDropdownMenu.add(driver.findElement(thNextDatetime));
         elementsDatetimeDropdownMenu.add(driver.findElement(thPreviousDatetime));
