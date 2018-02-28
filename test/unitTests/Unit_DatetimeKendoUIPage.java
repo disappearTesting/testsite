@@ -1,4 +1,8 @@
-package unitTests.loginPage;
+/**
+ * @author hookie
+ * @version 1.0
+ */
+package unitTests;
 
 import pom.DatetimeKendoUIPage;
 

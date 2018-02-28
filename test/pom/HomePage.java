@@ -1,3 +1,7 @@
+/**
+ * @author hookie
+ * @version 1.0
+ */
 package pom;
 
 import org.openqa.selenium.WebDriver;
