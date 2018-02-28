@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07e5848-9337-4c16-9b25-b5ff61db9018" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/img/glyphicons-halflings-white.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/img/glyphicons-halflings.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/index.php" />
@@ -23,6 +24,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/js/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/bootstrap/js/bootstrap.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/LoginPage.java" afterPath="$PROJECT_DIR$/test/pom/LoginPage.java" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/rest/datetimePage/datetime/index.php" afterPath="$PROJECT_DIR$/rest/datetimePage/datetime/index.php" />
+      <change beforePath="$PROJECT_DIR$/test/pom/DatetimePage.java" afterPath="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" />
+      <change beforePath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimePage.java" afterPath="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,6 +48,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="DatetimeKendoUIPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,11 +63,23 @@
                 <element signature="e#1161#1162#0" expanded="true" />
                 <element signature="e#1201#1202#0" expanded="true" />
                 <element signature="e#1241#1242#0" expanded="true" />
+=======
+      <file leaf-file-name="Unit_DatetimeKendoUIPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1020#1021#0" expanded="true" />
+                <element signature="e#1049#1050#0" expanded="true" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Unit_DatetimePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimePage.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,11 +87,51 @@
               <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+      <file leaf-file-name="DatetimeKendoUIPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1310#1311#0" expanded="true" />
+                <element signature="e#1346#1347#0" expanded="true" />
+                <element signature="e#1382#1383#0" expanded="true" />
+                <element signature="e#1417#1418#0" expanded="true" />
+                <element signature="e#1452#1453#0" expanded="true" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="623">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -86,9 +146,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/test/pom/DatetimePage.java" />
         <option value="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" />
+=======
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java" />
+        <option value="$PROJECT_DIR$/test/pom/LoginPage.java" />
+        <option value="$PROJECT_DIR$/test/pom/HomePage.java" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
         <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimePage.java" />
+        <option value="$PROJECT_DIR$/test/pom/DatetimePage.java" />
+        <option value="$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java" />
       </list>
     </option>
   </component>
@@ -115,6 +184,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -240,6 +310,86 @@
   </component>
   <component name="RunManager" selected="JUnit.Unit_DatetimePage.test_GetDateTime_Javascript">
     <configuration default="false" name="Unit_DatetimePage.test_GetDateTime_Javascript" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="pom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="loginPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="unitTests.loginPage.*" />
@@ -250,8 +400,13 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="unitTests.loginPage" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_DatetimePage" />
       <option name="METHOD_NAME" value="test_GetDateTime_Javascript" />
+=======
+      <option name="MAIN_CLASS_NAME" value="unitTests.loginPage.Unit_DatetimeKendoUIPage" />
+      <option name="METHOD_NAME" value="test_DateTimeDropdownMenu" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -469,12 +624,35 @@
       <listeners />
       <method />
     </configuration>
+<<<<<<< HEAD
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_GetDateTime_Javascript" />
     </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_GetDateTime_Javascript" />
+=======
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_SetDateTime_JavaScript" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_SetDateTime" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_Login" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_GetRegisterPage" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_SetDateTime_JavaScript" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_DatetimePage.test_SetDateTime" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_Login" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_LoginPage.test_GetRegisterPage" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
       </list>
     </recent_temporary>
   </component>
@@ -487,11 +665,20 @@
       <created>1519717666697</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1519717666697</updated>
+=======
+      <updated>1519384322299</updated>
+      <workItem from="1519480180623" duration="8862000" />
+      <workItem from="1519557606360" duration="7997000" />
+      <workItem from="1519566015489" duration="10584000" />
+      <workItem from="1519760877127" duration="3542000" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
     </task>
     <servers />
   </component>
   <component name="TestHistory">
+<<<<<<< HEAD
     <history-entry file="Unit_DatetimePage_test_GetDateTime_Javascript - 2018.02.27 at 11h 01m 41s.xml">
       <configuration name="Unit_DatetimePage.test_GetDateTime_Javascript" configurationId="JUnit" />
     </history-entry>
@@ -500,6 +687,13 @@
     </history-entry>
     <history-entry file="Unit_DatetimePage_test_GetDateTime_Javascript - 2018.02.27 at 11h 08m 13s.xml">
       <configuration name="Unit_DatetimePage.test_GetDateTime_Javascript" configurationId="JUnit" />
+=======
+    <history-entry file="Unit_DatetimeKendoUIPage_test_DateTimeDropdownMenu - 2018.02.27 at 22h 45m 46s.xml">
+      <configuration name="Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_DatetimeKendoUIPage_test_DateTimeDropdownMenu - 2018.02.27 at 22h 46m 28s.xml">
+      <configuration name="Unit_DatetimeKendoUIPage.test_DateTimeDropdownMenu" configurationId="JUnit" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
     </history-entry>
     <history-entry file="Unit_DatetimePage_test_GetDateTime_Javascript - 2018.02.27 at 11h 13m 11s.xml">
       <configuration name="Unit_DatetimePage.test_GetDateTime_Javascript" configurationId="JUnit" />
@@ -522,9 +716,20 @@
     <history-entry file="Unit_DatetimePage_test_GetDateTime_Javascript - 2018.02.27 at 11h 35m 21s.xml">
       <configuration name="Unit_DatetimePage.test_GetDateTime_Javascript" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_DatetimePage_test_SetDateTime_JavaScript - 2018.02.25 at 20h 38m 52s.xml">
+      <configuration name="Unit_DatetimePage.test_SetDateTime_JavaScript" configurationId="JUnit" />
+    </history-entry>
   </component>
+<<<<<<< HEAD
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+=======
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="30985000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -534,6 +739,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.24324325" sideWeight="0.5085197" order="7" side_tool="true" content_ui="tabs" x="2071" y="147" width="948" height="734" />
+<<<<<<< HEAD
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17316785" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1647" height="1053" />
@@ -542,6 +748,16 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19542067" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17316785" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="209" y="46" width="1490" height="914" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="9" side_tool="false" content_ui="tabs" x="551" y="118" width="982" height="767" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19755058" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -735,13 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="103" column="1" lean-forward="false" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/sql/PreparedStatement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -780,6 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_CreateCustomerPage.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="68">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
         </state>
@@ -798,16 +1008,65 @@
             <element signature="e#1161#1162#0" expanded="true" />
             <element signature="e#1201#1202#0" expanded="true" />
             <element signature="e#1241#1242#0" expanded="true" />
+=======
+        <state relative-caret-position="700">
+          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="516">
           <caret line="49" column="83" lean-forward="false" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1474">
+          <caret line="103" column="1" lean-forward="false" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/DatetimeKendoUIPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1417#1418#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/loginPage/Unit_DatetimeKendoUIPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="55" column="45" lean-forward="true" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1049#1050#0" expanded="true" />
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
           </folding>
         </state>
       </provider>

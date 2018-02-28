@@ -17,8 +17,13 @@
         <fieldset>
             <div class="control-group">
                 <label class="control-label">DateTime</label>
+<<<<<<< HEAD
                 <div class="controls input-append date form_datetime" data-date=""  data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
 					<input size="16" type="text" id="input-datetime" value="" readonly>
+=======
+                <div class="controls input-append date form_datetime" data-date="" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+                    <input size="16" type="text" id="input-datetime" value="" readonly>
+>>>>>>> 2722adb9a385e4c68099027cbd7d2d514d7c54c8
                     <span class="add-on"><i class="icon-remove"></i></span>
 					<span class="add-on"><i class="icon-th"></i></span>
                 </div>
