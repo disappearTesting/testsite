@@ -55,4 +55,11 @@ public class DatetimeKendoUIPage {
 
         return elementsDatetimeDropdownMenu;
     }
+
+    public String getCurrentDatetime() {
+        driver.findElement(iconDatetime).click();
+        driver.findElement(thTodayDatetime).click();
+        String currentDatetime = driver.findElement(inputDateTime).getAttribute("value");
+        return currentDatetime;
+    }
 }
