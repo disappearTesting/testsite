@@ -7,6 +7,7 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,12 +38,12 @@ public class DatetimeKendoUIPage {
         return inputDateTime;
     }
 
-    public By getIconDatetime() {
-        return iconDatetime;
+    public void getDatetimeDropdownMenu() {
+        driver.findElement(iconDatetime).click();
     }
 
-    public By getIconRemoveDatetime() {
-        return iconRemoveDatetime;
+    public void removeDatetime() {
+        driver.findElement(iconRemoveDatetime).click();
     }
 
     public List<WebElement> getElementsDatetimeDropdownMenu() {
@@ -51,7 +52,6 @@ public class DatetimeKendoUIPage {
         elementsDatetimeDropdownMenu.add(driver.findElement(thSwitchDatetime));
         elementsDatetimeDropdownMenu.add(driver.findElement(thNextDatetime));
         elementsDatetimeDropdownMenu.add(driver.findElement(thPreviousDatetime));
-        elementsDatetimeDropdownMenu.add(driver.findElement(thTodayDatetime));
 
         return elementsDatetimeDropdownMenu;
     }
@@ -61,5 +61,19 @@ public class DatetimeKendoUIPage {
         driver.findElement(thTodayDatetime).click();
         String currentDatetime = driver.findElement(inputDateTime).getAttribute("value");
         return currentDatetime;
+    }
+
+    public void setYearDatetime(String year) {
+
+    }
+
+    public void setDayDatetime(String day) {
+        List<WebElement> columns = driver.findElements(By.tagName("td"));
+        for(WebElement cell: columns) {
+            if(cell.getText().equals(day)) {
+                cell.click();
+                break;
+            }
+        }
     }
 }
