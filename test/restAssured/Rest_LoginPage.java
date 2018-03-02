@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package restAssured.loginPage;
+package restAssured;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.authentication.FormAuthConfig;

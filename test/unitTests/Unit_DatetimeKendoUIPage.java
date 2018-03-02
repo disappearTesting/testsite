@@ -1,5 +1,10 @@
-package unitTests.loginPage;
+/**
+ * @author hookie
+ * @version 1.0
+ */
+package unitTests;
 
+import pom.CurrentDatetime;
 import pom.DatetimeKendoUIPage;
 
 import org.junit.Test;
@@ -22,17 +27,33 @@ public class Unit_DatetimeKendoUIPage {
 
     private WebDriver driver;
     private DatetimeKendoUIPage objDatetime;
+    private CurrentDatetime objCurrentDatetime;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         objDatetime = new DatetimeKendoUIPage(driver);
+        objCurrentDatetime = new CurrentDatetime(driver);
         driver.get(URL_DATETIME_PAGE);
     }
 
     @After
     public void tearDown() {
         //driver.quit();
+    }
+
+    @Test
+    public void test_DateTimeDropdownMenu() {
+        WebElement iconDatetime = driver.findElement(objDatetime.getIconDatetime());
+        iconDatetime.click();
+
+        List<WebElement> elements = objDatetime.getElementsDatetimeDropdownMenu();
+        boolean elementIsEnabled = false;
+        for(WebElement element: elements) {
+            elementIsEnabled = elementIsEnabled || element.isEnabled();
+            System.out.println(elementIsEnabled);
+        }
+        assertTrue(elementIsEnabled);
     }
 
     @Test
@@ -54,16 +75,10 @@ public class Unit_DatetimeKendoUIPage {
     }
 
     @Test
-    public void test_DateTimeDropdownMenu() {
-        WebElement iconDatetime = driver.findElement(objDatetime.getIconDatetime());
-        iconDatetime.click();
-
-        List<WebElement> elements = objDatetime.getElementsDatetimeDropdownMenu();
-        boolean elementIsEnabled = false;
-        for(WebElement element: elements) {
-            elementIsEnabled = elementIsEnabled || element.isEnabled();
-            System.out.println(elementIsEnabled);
-        }
-        assertTrue(elementIsEnabled);
+    public void test_GetTodayDatetime() {
+        String today = objDatetime.getTodayDatetime();
+        String currentDatetime = objCurrentDatetime.getCurrentDatetime();
+        assertEquals(currentDatetime, today);
     }
+
 }
