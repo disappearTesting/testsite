@@ -4,7 +4,7 @@
  */
 package unitTests;
 
-import pom.CurrentDatetimePage;
+import pom.CurrentDatetime;
 import pom.DatetimeKendoUIPage;
 
 import org.junit.Test;
@@ -27,13 +27,13 @@ public class Unit_DatetimeKendoUIPage {
 
     private WebDriver driver;
     private DatetimeKendoUIPage objDatetime;
-    private CurrentDatetimePage objCurrentDatetime;
+    private CurrentDatetime objCurrentDatetime;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         objDatetime = new DatetimeKendoUIPage(driver);
-        objCurrentDatetime = new CurrentDatetimePage(driver);
+        objCurrentDatetime = new CurrentDatetime(driver);
         driver.get(URL_DATETIME_PAGE);
     }
 
@@ -74,8 +74,9 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_GetTodayDatetime() {
+
         String today = objDatetime.getCurrentDatetime();
-        String currentDatetime = objCurrentDatetime.getCurrentDateTime();
+        String currentDatetime = objCurrentDatetime.getCurrentDatetime();
         assertEquals(currentDatetime, today);
     }
 
@@ -84,4 +85,5 @@ public class Unit_DatetimeKendoUIPage {
         objDatetime.getDatetimeDropdownMenu();
         objDatetime.setYearDatetime("1970");
     }
+
 }

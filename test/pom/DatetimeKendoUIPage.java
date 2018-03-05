@@ -76,4 +76,11 @@ public class DatetimeKendoUIPage {
             }
         }
     }
+
+    public void getYearDatetime(String datetime) {
+        String[] datetimeSplitter = datetime.split(" ");
+        String day = datetimeSplitter[0];
+        String month = datetimeSplitter[1];
+        String year = datetimeSplitter[2];
+    }
 }
