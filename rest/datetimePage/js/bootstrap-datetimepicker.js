@@ -810,9 +810,9 @@
           meridianOld = meridian;
           txt = (i % 12 ? i % 12 : 12);
           if (i < 12) {
-            classes.push('hour_am');
+            classes.push('hour_AM');
           } else {
-            classes.push('hour_pm');
+            classes.push('hour_PM');
           }
           html.push('<span class="' + classes.join(' ') + '">' + txt + '</span>');
           if (i === 23) {
@@ -1105,10 +1105,10 @@
                 }
               } else if (target.is('.hour')) {
                 hours = parseInt(target.text(), 10) || 0;
-                if (target.hasClass('hour_am') || target.hasClass('hour_pm')) {
-                  if (hours === 12 && target.hasClass('hour_am')) {
+                if (target.hasClass('hour_AM') || target.hasClass('hour_PM')) {
+                  if (hours === 12 && target.hasClass('hour_AM')) {
                     hours = 0;
-                  } else if (hours !== 12 && target.hasClass('hour_pm')) {
+                  } else if (hours !== 12 && target.hasClass('hour_PM')) {
                     hours += 12;
                   }
                 }
@@ -1500,7 +1500,7 @@
       daysMin:     ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
       months:      ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
       monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-      meridiem:    ['am', 'pm'],
+      meridiem:    ['AM', 'PM'],
       suffix:      ['st', 'nd', 'rd', 'th'],
       today:       'Today',
       clear:       'Clear'

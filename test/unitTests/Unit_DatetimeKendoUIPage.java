@@ -44,8 +44,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_DateTimeDropdownMenu() {
-        WebElement iconDatetime = driver.findElement(objDatetime.getIconDatetime());
-        iconDatetime.click();
+        objDatetime.getDatetimeDropdownMenu();
 
         List<WebElement> elements = objDatetime.getElementsDatetimeDropdownMenu();
         boolean elementIsEnabled = false;
@@ -61,7 +60,6 @@ public class Unit_DatetimeKendoUIPage {
         String resultDateTime = "01 January 1970 - 12:00 am";
 
         WebElement elementInputDateTime = driver.findElement(objDatetime.getInputDateTime());
-        WebElement elementRemoveDatetime = driver.findElement(objDatetime.getIconRemoveDatetime());
 
         // inputs has 'readonly' params, that because JS
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
@@ -76,9 +74,16 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_GetTodayDatetime() {
-        String today = objDatetime.getTodayDatetime();
+
+        String today = objDatetime.getCurrentDatetime();
         String currentDatetime = objCurrentDatetime.getCurrentDatetime();
         assertEquals(currentDatetime, today);
+    }
+
+    @Test
+    public void test_SelectDatetime() {
+        objDatetime.getDatetimeDropdownMenu();
+        objDatetime.setYearDatetime("1970");
     }
 
 }
