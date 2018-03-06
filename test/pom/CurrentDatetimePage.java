@@ -24,4 +24,14 @@ public class CurrentDatetimePage {
         Date date = new Date();
         return dateFormat.format(date);
     }
+
+    public void splitDatetime(String datetime) {
+        // dd MMMM yyyy - hh:mm a
+        String[] arrayDatetime = datetime.split("\\s");
+        String day = arrayDatetime[0];
+        String month = arrayDatetime[1];
+        String year = arrayDatetime[2];
+        String time = arrayDatetime[4];
+        String marker = arrayDatetime[5];
+    }
 }

@@ -9,7 +9,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
+import java.util.regex.Pattern;
 
 public class CurrentDatetime {
 
@@ -24,5 +26,14 @@ public class CurrentDatetime {
         Date date = new Date();
         String currentDatetime = dateFormat.format(date);
         return currentDatetime;
+    }
+
+    public void getSplitDatetime(String datetime) {
+        String[] arrayDatetime = datetime.split("\\s+");
+        String day = arrayDatetime[0];
+        String month = arrayDatetime[1];
+        String year = arrayDatetime[2];
+        String time = arrayDatetime[4];
+        String marker = arrayDatetime[5];
     }
 }

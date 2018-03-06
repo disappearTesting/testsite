@@ -7,7 +7,10 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,8 +81,17 @@ public class DatetimeKendoUIPage {
     }
 
     public void selectYearDatetime(String year) {
-        String inputValue = driver.findElement(inputDateTime).getAttribute("value");
-        String[] datetimeSplitter = inputValue.split(" ");
-        String yearDatetime = datetimeSplitter[2];
+        driver.findElement(thSwitchDatetime).click();
+        String currentYear = driver.findElement(thSwitchDatetime).getAttribute("value");
+        if(year != currentYear) {
+            driver.findElement(thSwitchDatetime).click();
+            String rangeDatetime = driver.findElement(thSwitchDatetime).getAttribute("value");
+            String[] arrayRangeYear = rangeDatetime.split("-");
+            String minYear = arrayRangeYear[0];
+            String maxYear = arrayRangeYear[1];
+            if(maxYear > year > minYear) {
+
+            }
+        }
     }
 }
