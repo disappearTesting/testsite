@@ -56,7 +56,7 @@ public class DatetimeKendoUIPage {
         return elementsDatetimeDropdownMenu;
     }
 
-    public String getCurrentDatetime() {
+    public String getTodayDatetime() {
         driver.findElement(iconDatetime).click();
         driver.findElement(thTodayDatetime).click();
         String currentDatetime = driver.findElement(inputDateTime).getAttribute("value");
@@ -67,7 +67,7 @@ public class DatetimeKendoUIPage {
 
     }
 
-    public void setDayDatetime(String day) {
+    public void selectDayDatetime(String day) {
         List<WebElement> columns = driver.findElements(By.tagName("td"));
         for(WebElement cell: columns) {
             if(cell.getText().equals(day)) {
@@ -77,10 +77,9 @@ public class DatetimeKendoUIPage {
         }
     }
 
-    public void getYearDatetime(String datetime) {
-        String[] datetimeSplitter = datetime.split(" ");
-        String day = datetimeSplitter[0];
-        String month = datetimeSplitter[1];
-        String year = datetimeSplitter[2];
+    public void selectYearDatetime(String year) {
+        String inputValue = driver.findElement(inputDateTime).getAttribute("value");
+        String[] datetimeSplitter = inputValue.split(" ");
+        String yearDatetime = datetimeSplitter[2];
     }
 }
