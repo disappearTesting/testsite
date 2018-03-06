@@ -39,7 +39,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -82,8 +82,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_SelectDatetime() {
-        objDatetime.getDatetimeDropdownMenu();
-        objDatetime.setYearDatetime("1970");
+        objCurrentDatetime.getSplitDatetime("01 January 1970 - 12:00 am");
     }
 
 }

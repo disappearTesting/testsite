@@ -7,7 +7,10 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,7 +70,8 @@ public class DatetimeKendoUIPage {
 
     }
 
-    public void setDayDatetime(String day) {
+    public void selectDayDatetime(String day) {
+        driver.findElement(iconDatetime).click();
         List<WebElement> columns = driver.findElements(By.tagName("td"));
         for(WebElement cell: columns) {
             if(cell.getText().equals(day)) {
@@ -77,10 +81,7 @@ public class DatetimeKendoUIPage {
         }
     }
 
-    public void getYearDatetime(String datetime) {
-        String[] datetimeSplitter = datetime.split(" ");
-        String day = datetimeSplitter[0];
-        String month = datetimeSplitter[1];
-        String year = datetimeSplitter[2];
+    public void selectDatetime(String datetime) {
+
     }
 }
