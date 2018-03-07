@@ -61,25 +61,23 @@ public class DatetimeKendoUIPage {
         return currentDatetime;
     }
 
-    public void setYearDatetime(String year) {
-
-    }
-
     public void selectDay(String day) {
-        List<WebElement> columns = driver.findElements(By.tagName("td"));
-        for(WebElement cell: columns) {
-            if(cell.getText().equals(day)) {
-                cell.click();
+        // use this method after selected Month
+        List<WebElement> columnsDay = driver.findElements(By.tagName("td"));
+        for(WebElement cellDay: columnsDay) {
+            if(cellDay.getText().equals(day)) {
+                cellDay.click();
                 break;
             }
         }
     }
 
-    public void selectYear(String year) {
-        List<WebElement> columnsYear = driver.findElements(By.tagName("span"));
-        for(WebElement cell : columnsYear) {
-            if(cell.getText().equals(year)) {
-                cell.click();
+    public void selectMonth(String month) {
+        // use this method after selected Year
+        List<WebElement> columnsMonth = driver.findElements(By.tagName("span"));
+        for(WebElement cellMonth : columnsMonth) {
+            if(cellMonth.getText().equals(month)) {
+                cellMonth.click();
                 break;
             }
         }
