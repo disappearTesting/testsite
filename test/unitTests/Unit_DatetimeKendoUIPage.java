@@ -75,7 +75,7 @@ public class Unit_DatetimeKendoUIPage {
     @Test
     public void test_GetTodayDatetime() {
 
-        String today = objDatetime.getCurrentDatetime();
+        String today = objDatetime.getTodayDatetime();
         String currentDatetime = objCurrentDatetime.getCurrentDatetime();
         assertEquals(currentDatetime, today);
     }

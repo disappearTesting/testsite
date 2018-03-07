@@ -7,11 +7,6 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,7 +54,7 @@ public class DatetimeKendoUIPage {
         return elementsDatetimeDropdownMenu;
     }
 
-    public String getCurrentDatetime() {
+    public String getTodayDatetime() {
         driver.findElement(iconDatetime).click();
         driver.findElement(thTodayDatetime).click();
         String currentDatetime = driver.findElement(inputDateTime).getAttribute("value");
@@ -70,8 +65,7 @@ public class DatetimeKendoUIPage {
 
     }
 
-    public void selectDayDatetime(String day) {
-        driver.findElement(iconDatetime).click();
+    public void selectDay(String day) {
         List<WebElement> columns = driver.findElements(By.tagName("td"));
         for(WebElement cell: columns) {
             if(cell.getText().equals(day)) {
@@ -81,7 +75,54 @@ public class DatetimeKendoUIPage {
         }
     }
 
-    public void selectDatetime(String datetime) {
+    public void selectYear(String year) {
+        List<WebElement> columnsYear = driver.findElements(By.tagName("span"));
+        for(WebElement cell : columnsYear) {
+            if(cell.getText().equals(year)) {
+                cell.click();
+                break;
+            }
+        }
+    }
 
+    public void selectYearDatetime(String year) {
+        driver.findElement(thSwitchDatetime).click();
+        String currentYear = driver.findElement(thSwitchDatetime).getAttribute("value");
+        if(!year.equals(currentYear)) {
+            driver.findElement(thSwitchDatetime).click();
+            String rangeDatetime = driver.findElement(thSwitchDatetime).getAttribute("value");
+            String[] arrayRangeYear = rangeDatetime.split("-");
+            String minYear = arrayRangeYear[0];
+            String maxYear = arrayRangeYear[1];
+            if(Integer.parseInt(year) > Integer.parseInt(maxYear)) {
+                do {
+                    driver.findElement(thNextDatetime).click();
+                    rangeDatetime = driver.findElement(thSwitchDatetime).getAttribute("value");
+                    arrayRangeYear = rangeDatetime.split("-");
+                    maxYear = arrayRangeYear[1];
+                } while (Integer.parseInt(year) == Integer.parseInt(maxYear));
+                List<WebElement> columnsYear = driver.findElements(By.tagName("span"));
+                for(WebElement cellYear : columnsYear) {
+                    if(cellYear.getText().equals(year)) {
+                        cellYear.click();
+                        break;
+                    }
+                }
+            } else {
+                do {
+                    driver.findElement(thPreviousDatetime).click();
+                    rangeDatetime = driver.findElement(thSwitchDatetime).getAttribute("value");
+                    arrayRangeYear = rangeDatetime.split("-");
+                    minYear = arrayRangeYear[0];
+                } while (Integer.parseInt(year) == Integer.parseInt(minYear));
+                List<WebElement> columnsYear = driver.findElements(By.tagName("span"));
+                for(WebElement cellYear : columnsYear) {
+                    if(cellYear.getText().equals(year)) {
+                        cellYear.click();
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
