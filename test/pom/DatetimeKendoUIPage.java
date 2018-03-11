@@ -7,6 +7,10 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,7 +71,11 @@ public class DatetimeKendoUIPage {
         return currentDatetime;
     }
 
-    public void selectDay(String day) {
+    public void selectTimeDatetime() {
+
+    }
+
+    public void selectDayDatetime(String day) {
         // use this method after selected Month
         List<WebElement> columnsDay = driver.findElements(By.tagName("td"));
         for(WebElement cellDay: columnsDay) {
@@ -78,14 +86,19 @@ public class DatetimeKendoUIPage {
         }
     }
 
-    public void selectMonth(String month) {
-        // use this method after selected Year
-        List<WebElement> columnsMonth = driver.findElements(By.tagName("span"));
-        for(WebElement cellMonth : columnsMonth) {
-            if(cellMonth.getText().equals(month)) {
-                cellMonth.click();
-                break;
+    public void selectMonthDatetime(String month) {
+        if (month != null && !month.isEmpty() && month.matches(String.valueOf(new SimpleDateFormat("MMM", Locale.ENGLISH)))) {
+            //month.matches("[A-z]{3}")
+            // use this method after selected Year
+            List<WebElement> columnsMonth = driver.findElements(By.tagName("span"));
+            for(WebElement cellMonth : columnsMonth) {
+                if(cellMonth.getText().equals(month)) {
+                    cellMonth.click();
+                    break;
+                }
             }
+        } else {
+            System.out.println("Something went wrong! Check actual value.");
         }
     }
 
