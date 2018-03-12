@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package unitTests.loginPage;
+package unitTests;
 
 import pom.LoginPage;
 
@@ -19,7 +19,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Unit_LoginPage {
 

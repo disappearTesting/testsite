@@ -39,7 +39,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
@@ -58,17 +58,12 @@ public class Unit_DatetimeKendoUIPage {
     @Test
     public void test_SetDateTimeAndRemove_Javascript() {
         String resultDateTime = "01 January 1970 - 12:00 am";
-
         WebElement elementInputDateTime = driver.findElement(objDatetime.getInputDateTime());
-
         // inputs has 'readonly' params, that because JS
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
         javascriptExecutor.executeScript("document.getElementById('input-datetime').value=" + "'" + resultDateTime + "'");
-
         assertEquals(resultDateTime, elementInputDateTime.getAttribute("value"));
-
         javascriptExecutor.executeScript("document.getElementsByClassName('icon-remove')[0].click()");
-
         assertEquals("", elementInputDateTime.getAttribute("value"));
     }
 
@@ -82,8 +77,9 @@ public class Unit_DatetimeKendoUIPage {
     @Test
     public void test_SelectDatetime() {
         objDatetime.getDatetimeDropdownMenu();
-        objDatetime.selectYearDatetime("2000");
-        objDatetime.selectMonthDatetime("Dec");
+        assertTrue("Something went wrong! selectYearhDatetime()", objDatetime.selectYearDatetime("2000"));
+        assertTrue("Something went wrong! selectMonthDatetime()", objDatetime.selectMonthDatetime("Dec"));
+        assertTrue("Something went wrong! selectDayDatetime()", objDatetime.selectDayDatetime("1"));
     }
 
     @Test

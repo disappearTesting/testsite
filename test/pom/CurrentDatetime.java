@@ -7,11 +7,8 @@ package pom;
 import org.openqa.selenium.WebDriver;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
-import java.util.regex.Pattern;
 
 public class CurrentDatetime {
 
