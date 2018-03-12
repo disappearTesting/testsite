@@ -85,4 +85,6 @@ public class Unit_DatetimeKendoUIPage {
         objCurrentDatetime.getSplitDatetime("01 January 1970 - 12:00 am");
     }
 
+    @Test
+    public void test_Select
 }
