@@ -74,7 +74,6 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_GetTodayDatetime() {
-
         String today = objDatetime.getTodayDatetime();
         String currentDatetime = objCurrentDatetime.getCurrentDatetime();
         assertEquals(currentDatetime, today);
@@ -82,9 +81,18 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_SelectDatetime() {
-        objCurrentDatetime.getSplitDatetime("01 January 1970 - 12:00 am");
+        objDatetime.getDatetimeDropdownMenu();
+        objDatetime.selectYearDatetime("2000");
+        objDatetime.selectMonthDatetime("Dec");
     }
 
     @Test
-    public void test_Select
+    public void test_SelectDate() {
+
+    }
+
+    @Test
+    public void test_SelectTime() {
+
+    }
 }
