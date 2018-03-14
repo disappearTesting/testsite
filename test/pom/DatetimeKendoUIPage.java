@@ -33,6 +33,8 @@ public class DatetimeKendoUIPage {
     private By thPreviousDatetime_div4 = By.xpath("/html/body/div[2]/div[4]/table/thead/tr/th[1]/i");
     private By thPreviousDatetime_div5 = By.xpath("/html/body/div[2]/div[5]/table/thead/tr/th[1]");
     private By thTodayDatetime = By.xpath("/html/body/div[2]/div[3]/table/tfoot/tr[1]/th");
+    private By legendMarkerAM = By.xpath("/html/body/div[2]/div[2]/table/tbody/tr/td/fieldset[1]/legend");
+    private By legendMarkerPM = By.xpath("/html/body/div[2]/div[2]/table/tbody/tr/td/fieldset[2]/legend");
 
     private By inputDate = By.id("input-date");
     private By iconDate = By.xpath("/html/body/div[1]/content/form/fieldset/div[2]/div/span[2]");
@@ -73,9 +75,41 @@ public class DatetimeKendoUIPage {
         return currentDatetime;
     }
 
-    public void selectTimeDatetime() {
+    public boolean selectTimeDatetime(String marker, String hour, String minute) {
         // use this method after selected Day
-
+        boolean result = false;
+        String markerAM = driver.findElement(legendMarkerAM).getText();
+        String markerPM = driver.findElement(legendMarkerPM).getText();
+        List<WebElement> columnsHourAM = driver.findElements(By.className("hour_AM"));
+        List<WebElement> columnsHourPM = driver.findElements(By.className("hour_PM"));
+        List<WebElement> columnsMinute = driver.findElements(By.className("minute"));
+        if(marker.equals(markerAM)) {
+            for(WebElement cellHourAM : columnsHourAM) {
+                if(cellHourAM.getText().equals(hour)) {
+                    cellHourAM.click();
+                    result = true;
+                    break;
+                }
+            }
+            for(WebElement cellMinute : columnsMinute) {
+                String[] arrayRangeMinute = cellMinute.getText().split(":");
+                String rangeMinute = arrayRangeMinute[1];
+                if(minute.equals(rangeMinute)) {
+                    cellMinute.click();
+                    result = true;
+                    break;
+                }
+            }
+        } else if(marker.equals(markerPM)) {
+            for(WebElement cellHourPM : columnsHourPM) {
+                if(cellHourPM.getText().equals(hour)) {
+                    cellHourPM.click();
+                    result = true;
+                    break;
+                }
+            }
+        }
+        return result;
     }
 
     public boolean selectDayDatetime(String day) {

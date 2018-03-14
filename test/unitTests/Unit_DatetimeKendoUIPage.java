@@ -80,6 +80,7 @@ public class Unit_DatetimeKendoUIPage {
         assertTrue("Something went wrong! selectYearhDatetime()", objDatetime.selectYearDatetime("2000"));
         assertTrue("Something went wrong! selectMonthDatetime()", objDatetime.selectMonthDatetime("Dec"));
         assertTrue("Something went wrong! selectDayDatetime()", objDatetime.selectDayDatetime("1"));
+        assertTrue("Something went wrong! selectTimeDatetime()", objDatetime.selectTimeDatetime("AM", "3", "00"));
     }
 
     @Test
