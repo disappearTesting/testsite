@@ -82,7 +82,7 @@ public class DatetimeKendoUIPage {
         String markerPM = driver.findElement(legendMarkerPM).getText();
         List<WebElement> columnsHourAM = driver.findElements(By.className("hour_AM"));
         List<WebElement> columnsHourPM = driver.findElements(By.className("hour_PM"));
-        List<WebElement> columnsMinute = driver.findElements(By.className("minute"));
+        List<WebElement> columnsMinute = driver.findElements(By.xpath("//table[@class=' table-condensed']//fieldset[@class='minute']//span"));
         if(marker.equals(markerAM)) {
             for(WebElement cellHourAM : columnsHourAM) {
                 if(cellHourAM.getText().equals(hour)) {
