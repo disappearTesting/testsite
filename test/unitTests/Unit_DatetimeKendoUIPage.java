@@ -39,13 +39,12 @@ public class Unit_DatetimeKendoUIPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
     public void test_DateTimeDropdownMenu() {
         objDatetime.getDatetimeDropdownMenu();
-
         List<WebElement> elements = objDatetime.getElementsDatetimeDropdownMenu();
         boolean elementIsEnabled = false;
         for(WebElement element: elements) {
@@ -69,6 +68,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @Test
     public void test_GetTodayDatetime() {
+        objDatetime.getDatetimeDropdownMenu();
         String today = objDatetime.getTodayDatetime();
         String currentDatetime = objCurrentDatetime.getCurrentDatetime();
         assertEquals(currentDatetime, today);
@@ -83,13 +83,4 @@ public class Unit_DatetimeKendoUIPage {
         assertTrue("Something went wrong! selectTimeDatetime()", objDatetime.selectTimeDatetime("AM", "3", "00"));
     }
 
-    @Test
-    public void test_SelectDate() {
-
-    }
-
-    @Test
-    public void test_SelectTime() {
-
-    }
 }

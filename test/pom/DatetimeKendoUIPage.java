@@ -36,12 +36,6 @@ public class DatetimeKendoUIPage {
     private By legendMarkerAM = By.xpath("/html/body/div[2]/div[2]/table/tbody/tr/td/fieldset[1]/legend");
     private By legendMarkerPM = By.xpath("/html/body/div[2]/div[2]/table/tbody/tr/td/fieldset[2]/legend");
 
-    private By inputDate = By.id("input-date");
-    private By iconDate = By.xpath("/html/body/div[1]/content/form/fieldset/div[2]/div/span[2]");
-
-    private By inputTime = By.id("input-time");
-    private By iconTime = By.xpath("/html/body/div[1]/content/form/fieldset/div[3]/div/span[2]");
-
     public DatetimeKendoUIPage(WebDriver driver) {
         this.driver = driver;
     }
@@ -69,7 +63,6 @@ public class DatetimeKendoUIPage {
     }
 
     public String getTodayDatetime() {
-        driver.findElement(iconDatetime).click();
         driver.findElement(thTodayDatetime).click();
         String currentDatetime = driver.findElement(inputDateTime).getAttribute("value");
         return currentDatetime;
@@ -93,7 +86,6 @@ public class DatetimeKendoUIPage {
             List<WebElement> columnsMinute = driver.findElements(By.xpath("//table[@class=' table-condensed']//fieldset[@class='minute']//span"));
             for(WebElement cellMinute : columnsMinute) {
                 String[] arrayRangeMinute = cellMinute.getText().split(":");
-                System.out.println(arrayRangeMinute);
                 String rangeMinute = arrayRangeMinute[1];
                 if(minute.equals(rangeMinute)) {
                     cellMinute.click();
