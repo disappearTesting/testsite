@@ -16,9 +16,42 @@
 	<div class="container">
 		<h1 class="">Alert</h1>
 		<div id="alert-form">
-			
-		</form>
-		</div> 
+			<div class="simple-alert">
+				<h4>Simple alert</h4>
+				<input type="button" value="Click" onclick="getSimpleAlert();" />
+				<script type="text/javascript">
+				function getSimpleAlert() {
+					alert ("This is a warning message!");
+				}
+      </script>
+			</div>
+			<div class="confirm_alert">
+				<h4>Confirm alert</h4>
+				<input type="button" value="Click" onclick="getConfirmAlert();" />
+				<script type="text/javascript">
+				function getConfirmAlert(){
+					var retVal = confirm("Do you want to continue ?");
+					if( retVal == true ){
+						document.write ("User wants to continue!");
+						return true;
+					} else{
+					alert ("User does not want to continue!");
+					return false;
+					}
+				}
+				</script>
+			</div>
+			<div class="prompt_alert">
+				<h4>Prompt alert</h4>
+				<input type="button" value="Click" onclick="getPromptAlert();" />
+				<script type="text/javascript">
+				function getPromptAlert(){
+					var retVal = prompt("Enter your name : ", "your name here");
+					document.write("You have entered : " + retVal);
+				}
+				</script>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
