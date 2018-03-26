@@ -33,6 +33,7 @@
 					var retVal = confirm("Do you want to continue ?");
 					if( retVal == true ){
 						document.write("User wants to continue!");
+						document.close();
 						return true;
 					} else{
 					alert("User does not want to continue!");
@@ -48,6 +49,7 @@
 				function getPromptAlert(){
 					var retVal = prompt("Enter your name : ", "your name here");
 					document.write("You have entered : " + retVal);
+					document.close();
 				}
 				</script>
 			</div>

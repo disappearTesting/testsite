@@ -23,17 +23,34 @@ public class AlertPage {
         this.driver = driver;
     }
 
-    public boolean checkSimpleAlert() {
+    public boolean checkSimpleAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
             try {
-                driver.findElement(inputClickConfirmAlert).click();
+                driver.findElement(inputClickSimpleAlert).click();
                 new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
                 driver.switchTo().alert().accept();
+                result = true;
             } catch(NoAlertPresentException e) {
 
             }
         }
         return result;
+    }
+
+    public boolean checkConfirmAlertOK() {
+        boolean result = false;
+        if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
+            try {
+                driver.findElement(inputClickConfirmAlert).click();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+                driver.switchTo().alert().accept();
+                result = true;
+            } catch(NoAlertPresentException e) {
+
+            }
+        }
+        return result;
+
     }
 }

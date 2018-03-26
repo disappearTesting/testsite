@@ -8,10 +8,15 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.AlertPage;
 
 public class Unit_AlertPage {
@@ -30,11 +35,27 @@ public class Unit_AlertPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
     public void test_CheckSimpleAlert() {
-        assertTrue("Something went wrong!", objAlert.checkSimpleAlert());
+        assertTrue("Something went wrong!", objAlert.checkSimpleAlertOK());
+    }
+
+    @Test
+    public void test_CheckConfirmAlertOK() {
+        objAlert.checkConfirmAlertOK();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
+        assertEquals("User wants to continue!", driver.findElement(By.tagName("body")).getText());
+
+        // or
+        // assertTrue(driver.getPageSource().contains("User wants to continue!"));
+    }
+
+    @Test
+    public void test() {
+        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+        System.out.println(javascriptExecutor.executeScript("document.getElementsByTagName('h4')[0].textContent;"));
     }
 }
