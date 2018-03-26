@@ -51,6 +51,20 @@ public class AlertPage {
             }
         }
         return result;
+    }
 
+    public boolean checkConfirmAlertCancel() {
+        boolean result = false;
+        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
+            try {
+                driver.findElement(inputClickPromptAlert).click();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+                driver.switchTo().alert().dismiss();
+                result = true;
+            } catch(NoAlertPresentException e) {
+
+            }
+        }
+        return  result;
     }
 }
