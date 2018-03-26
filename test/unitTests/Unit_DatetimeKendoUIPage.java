@@ -39,7 +39,7 @@ public class Unit_DatetimeKendoUIPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
