@@ -29,17 +29,6 @@
 				<h4>Confirm alert</h4>
 				<input type="button" name="input_confirm_alert" value="Click" onclick="getConfirmAlert();" />
 				<script type="text/javascript">
-				function getConfirmAlert(){
-					var retVal = confirm("Do you want to continue ?");
-					if( retVal == true ){
-						document.write("User wants to continue!");
-						document.close();
-						return true;
-					} else{
-					alert("User does not want to continue!");
-					return false;
-					}
-				}
 				</script>
 			</div>
 			<div class="prompt_alert">

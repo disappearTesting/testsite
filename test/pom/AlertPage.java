@@ -28,7 +28,6 @@ public class AlertPage {
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
             try {
                 driver.findElement(inputClickSimpleAlert).click();
-                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
                 driver.switchTo().alert().accept();
                 result = true;
             } catch(NoAlertPresentException e) {
@@ -43,7 +42,6 @@ public class AlertPage {
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
             try {
                 driver.findElement(inputClickConfirmAlert).click();
-                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
                 driver.switchTo().alert().accept();
                 result = true;
             } catch(NoAlertPresentException e) {
@@ -58,7 +56,6 @@ public class AlertPage {
         if(driver.findElement(inputClickPromptAlert).isEnabled()) {
             try {
                 driver.findElement(inputClickPromptAlert).click();
-                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
                 driver.switchTo().alert().dismiss();
                 result = true;
             } catch(NoAlertPresentException e) {
