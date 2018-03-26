@@ -20,35 +20,37 @@
 				<h4>Simple alert</h4>
 				<input type="button" name="input_simple_alert" value="Click" onclick="getSimpleAlert();" />
 				<script type="text/javascript">
-				function getSimpleAlert() {
-					alert("This is a warning message!");
-				}
-      </script>
+					function getSimpleAlert() {
+						alert("This is a warning message!");
+					}
+				</script>
 			</div>
 			<div class="confirm_alert">
 				<h4>Confirm alert</h4>
-				<input type="button" name="input_confirm_alert" value="Click" onclick="getConfirmAlert();" />
+				<input type="button" name="input_confirm_alert" value="Click" onclick="getConfirmAlert();" disabled />
 				<script type="text/javascript">
-				function getConfirmAlert(){
-					var retVal = confirm("Do you want to continue ?");
-					if( retVal == true ){
-						document.write("User wants to continue!");
-						return true;
-					} else{
-					alert("User does not want to continue!");
-					return false;
+					function getConfirmAlert(){
+						var retVal = confirm("Do you want to continue ?");
+						if( retVal == true ){
+							document.write("User wants to continue!");
+							document.close();
+							return true;
+						} else{
+						alert("User does not want to continue!");
+						return false;
+						}
 					}
-				}
 				</script>
 			</div>
 			<div class="prompt_alert">
 				<h4>Prompt alert</h4>
 				<input type="button" name="input_confirm_alert" value="Click" onclick="getPromptAlert();" />
 				<script type="text/javascript">
-				function getPromptAlert(){
-					var retVal = prompt("Enter your name : ", "your name here");
-					document.write("You have entered : " + retVal);
-				}
+					function getPromptAlert(){
+						var retVal = prompt("Enter your name : ", "your name here");
+						document.write("You have entered : " + retVal);
+						document.close();
+					}
 				</script>
 			</div>
 		</div>
