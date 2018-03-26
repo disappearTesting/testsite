@@ -44,7 +44,6 @@ public class Unit_AlertPage {
 
     @Test
     public void test_CheckConfirmAlertOK() {
-        // objAlert.checkConfirmAlertOK();
         assertTrue("Something went wrong! checkSimpleAlertOK()", objAlert.checkConfirmAlertOK());
         new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(By.tagName("body")));
         assertEquals("User wants to continue!", driver.findElement(By.tagName("body")).getText());

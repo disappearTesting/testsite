@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b07e5848-9337-4c16-9b25-b5ff61db9018" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/alertPage/index.php" afterPath="$PROJECT_DIR$/rest/alertPage/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/AlertPage.java" afterPath="$PROJECT_DIR$/test/pom/AlertPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java" />
@@ -24,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Unit_DatetimeKendoUIPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_DatetimeKendoUIPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="65" column="8" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AlertPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/AlertPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="669">
+              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +35,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MySQLQueries_Testsite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/MySQLQueries_Testsite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Unit_AlertPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="550">
+              <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -528,15 +527,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 15h 16m 04s.xml">
-      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 15h 28m 40s.xml">
-      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 15h 31m 05s.xml">
-      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 15h 54m 05s.xml">
       <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
     </history-entry>
@@ -558,10 +548,19 @@
     <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 19h 22m 26s.xml">
       <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 19h 26m 22s.xml">
+      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 19h 30m 18s.xml">
+      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertOK - 2018.03.26 at 19h 31m 30s.xml">
+      <configuration name="Unit_AlertPage.test_CheckConfirmAlertOK" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33679834" sideWeight="0.4978701" order="6" side_tool="false" content_ui="tabs" />
@@ -575,7 +574,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.35783783" sideWeight="0.4978701" order="2" side_tool="false" content_ui="tabs" x="2085" y="23" width="1647" height="1053" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1983" y="119" width="982" height="767" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.17621621" sideWeight="0.4914803" order="7" side_tool="false" content_ui="tabs" x="1983" y="119" width="982" height="767" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16400427" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -599,7 +598,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="58" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -673,13 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="76" column="14" lean-forward="false" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/MySQLQueries_Testsite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -810,10 +802,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/MySQLQueries_Testsite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="550">
+          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -822,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/AlertPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="669">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

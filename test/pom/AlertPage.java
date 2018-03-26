@@ -31,7 +31,7 @@ public class AlertPage {
                 driver.switchTo().alert().accept();
                 result = true;
             } catch(NoAlertPresentException e) {
-
+                e.printStackTrace();
             }
         }
         return result;
@@ -45,7 +45,7 @@ public class AlertPage {
                 driver.switchTo().alert().accept();
                 result = true;
             } catch(NoAlertPresentException e) {
-
+                e.printStackTrace();
             }
         }
         return result;
@@ -59,7 +59,7 @@ public class AlertPage {
                 driver.switchTo().alert().dismiss();
                 result = true;
             } catch(NoAlertPresentException e) {
-
+                e.printStackTrace();
             }
         }
         return  result;
