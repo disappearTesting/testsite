@@ -7,6 +7,7 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class AlertPage {
 
@@ -20,15 +21,23 @@ public class AlertPage {
         this.driver = driver;
     }
 
+    private boolean alertDoAccept(WebElement element) {
+        boolean isAccepted = false;
+        try {
+            element.click();
+            driver.switchTo().alert().accept();
+            isAccepted = true;
+        } catch(NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+        return isAccepted;
+    }
+
     public boolean checkSimpleAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
-            try {
-                driver.findElement(inputClickSimpleAlert).click();
-                driver.switchTo().alert().accept();
+            if(alertDoAccept(driver.findElement(inputClickSimpleAlert))) {
                 result = true;
-            } catch(NoAlertPresentException e) {
-                e.printStackTrace();
             }
         }
         return result;
@@ -37,12 +46,8 @@ public class AlertPage {
     public boolean checkConfirmAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            try {
-                driver.findElement(inputClickConfirmAlert).click();
-                driver.switchTo().alert().accept();
+            if(alertDoAccept(driver.findElement(inputClickConfirmAlert))) {
                 result = true;
-            } catch(NoAlertPresentException e) {
-                e.printStackTrace();
             }
         }
         return result;
