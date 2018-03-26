@@ -34,7 +34,7 @@ public class Unit_AlertPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
