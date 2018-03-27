@@ -34,7 +34,7 @@ public class Unit_AlertPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -50,5 +50,10 @@ public class Unit_AlertPage {
 
         // or
         assertTrue(driver.getPageSource().contains("User wants to continue!"));
+    }
+
+    @Test
+    public void test_CheckConfirmAlertCancel() {
+        assertTrue("Something went wrong! checkSimpleAlertCancel()", objAlert.checkConfirmAlertCancel());
     }
 }

@@ -36,7 +36,7 @@
 							document.close();
 							return true;
 						} else{
-						alert("User does not want to continue!");
+							alert("User does not want to continue!");
 						return false;
 						}
 					}
