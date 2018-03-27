@@ -7,9 +7,7 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebElement;
 
 public class AlertPage {
 
@@ -23,15 +21,35 @@ public class AlertPage {
         this.driver = driver;
     }
 
+    private boolean alertDoAccept(WebElement element) {
+        boolean isAccepted = false;
+        try {
+            element.click();
+            driver.switchTo().alert().accept();
+            isAccepted = true;
+        } catch(NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+        return isAccepted;
+    }
+
+    private boolean alertDoCancel(WebElement element) {
+        boolean isCanceled = false;
+        try {
+            element.click();
+            driver.switchTo().alert().dismiss();
+            isCanceled = true;
+        } catch(NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+        return isCanceled;
+    }
+
     public boolean checkSimpleAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
-            try {
-                driver.findElement(inputClickSimpleAlert).click();
-                driver.switchTo().alert().accept();
+            if(alertDoAccept(driver.findElement(inputClickSimpleAlert))) {
                 result = true;
-            } catch(NoAlertPresentException e) {
-                e.printStackTrace();
             }
         }
         return result;
@@ -40,12 +58,8 @@ public class AlertPage {
     public boolean checkConfirmAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            try {
-                driver.findElement(inputClickConfirmAlert).click();
-                driver.switchTo().alert().accept();
+            if(alertDoAccept(driver.findElement(inputClickConfirmAlert))) {
                 result = true;
-            } catch(NoAlertPresentException e) {
-                e.printStackTrace();
             }
         }
         return result;
@@ -53,15 +67,11 @@ public class AlertPage {
 
     public boolean checkConfirmAlertCancel() {
         boolean result = false;
-        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
-            try {
-                driver.findElement(inputClickPromptAlert).click();
-                driver.switchTo().alert().dismiss();
+        if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
+            if(alertDoCancel(driver.findElement(inputClickConfirmAlert))) {
                 result = true;
-            } catch(NoAlertPresentException e) {
-                e.printStackTrace();
             }
         }
-        return  result;
+        return result;
     }
 }

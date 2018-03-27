@@ -27,7 +27,7 @@
 			</div>
 			<div class="confirm_alert">
 				<h4>Confirm alert</h4>
-				<input type="button" name="input_confirm_alert" value="Click" onclick="getConfirmAlert();" disabled />
+				<input type="button" name="input_confirm_alert" value="Click" onclick="getConfirmAlert();" />
 				<script type="text/javascript">
 					function getConfirmAlert(){
 						var retVal = confirm("Do you want to continue ?");
