@@ -9,8 +9,6 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.StringJoiner;
-
 public class AlertPage {
 
     private WebDriver driver;
@@ -30,7 +28,7 @@ public class AlertPage {
                 element.click();
             }
             if(!(inputText == null)) {
-                element.sendKeys(inputText);
+                driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().accept();
             isAccepted = true;
@@ -47,7 +45,8 @@ public class AlertPage {
                 element.click();
             }
             if(!(inputText == null)) {
-                element.sendKeys(inputText);
+                assert element != null;
+                driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().dismiss();
             isCanceled = true;
@@ -83,6 +82,16 @@ public class AlertPage {
             if(alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
                 alertDoAcceptSetInputText(null, null);
                 result = true;
+            }
+        }
+        return result;
+    }
+
+    public boolean checkPromptAlertOK(String text) {
+        boolean result = false;
+        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
+            if(alertDoAcceptSetInputText(driver.findElement(inputClickPromptAlert),text)) {
+                return true;
             }
         }
         return result;

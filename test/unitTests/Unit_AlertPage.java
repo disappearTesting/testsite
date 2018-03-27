@@ -34,7 +34,7 @@ public class Unit_AlertPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
@@ -55,5 +55,13 @@ public class Unit_AlertPage {
     @Test
     public void test_CheckConfirmAlertCancel() {
         assertTrue("Something went wrong! checkSimpleAlertCancel()", objAlert.checkConfirmAlertCancel());
+    }
+
+    @Test
+    public void test_CheckPromptAlertOK() {
+        String expectedValue = "admin";
+        assertTrue("", objAlert.checkPromptAlertOK(expectedValue));
+        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("body")));
+        assertEquals("You have entered : " + expectedValue, driver.findElement(By.tagName("body")).getText());
     }
 }

@@ -44,12 +44,17 @@
 			</div>
 			<div class="prompt_alert">
 				<h4>Prompt alert</h4>
-				<input type="button" name="input_confirm_alert" value="Click" onclick="getPromptAlert();" />
+				<input type="button" name="input_prompt_alert" value="Click" onclick="getPromptAlert();" />
 				<script type="text/javascript">
 					function getPromptAlert(){
 						var retVal = prompt("Enter your name : ", "your name here");
-						document.write("You have entered : " + retVal);
-						document.close();
+						if( !(retVal == null) ) {
+							document.write("You have entered : " + retVal);
+							document.close();
+							return true;
+						} else{
+							return false;
+						}
 					}
 				</script>
 			</div>
