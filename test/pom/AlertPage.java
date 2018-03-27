@@ -21,8 +21,7 @@ public class AlertPage {
         this.driver = driver;
     }
 
-    private boolean alertDoAcceptSetInputText(WebElement element, String inputText) {
-        boolean isAccepted = false;
+    private void alertDoAcceptSetInputText(WebElement element, String inputText) {
         try {
             if(!(element == null)) {
                 element.click();
@@ -31,29 +30,23 @@ public class AlertPage {
                 driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().accept();
-            isAccepted = true;
         } catch(NoAlertPresentException e) {
             e.printStackTrace();
         }
-        return isAccepted;
     }
 
-    private boolean alertDoCancelSetInputText(WebElement element, String inputText) {
-        boolean isCanceled = false;
+    private void alertDoCancelSetInputText(WebElement element, String inputText) {
         try {
             if(!(element == null)) {
                 element.click();
-            }
-            if(!(inputText == null)) {
+            } else if(!(inputText == null)) {
                 assert element != null;
                 driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().dismiss();
-            isCanceled = true;
         } catch(NoAlertPresentException e) {
             e.printStackTrace();
         }
-        return isCanceled;
     }
 
     public boolean checkSimpleAlertOK() {
