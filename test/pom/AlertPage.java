@@ -40,7 +40,6 @@ public class AlertPage {
             if(!(element == null)) {
                 element.click();
             } else if(!(inputText == null)) {
-                assert element != null;
                 driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().dismiss();
