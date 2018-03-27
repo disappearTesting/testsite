@@ -69,6 +69,7 @@ public class AlertPage {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
             if(alertDoCancel(driver.findElement(inputClickConfirmAlert))) {
+                driver.switchTo().alert().accept();
                 result = true;
             }
         }

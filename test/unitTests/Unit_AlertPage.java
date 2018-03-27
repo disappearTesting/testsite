@@ -51,4 +51,9 @@ public class Unit_AlertPage {
         // or
         assertTrue(driver.getPageSource().contains("User wants to continue!"));
     }
+
+    @Test
+    public void test_CheckConfirmAlertCancel() {
+        assertTrue("Something went wrong! checkSimpleAlertCancel()", objAlert.checkConfirmAlertCancel());
+    }
 }
