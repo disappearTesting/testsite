@@ -26,7 +26,9 @@ public class AlertPage {
     private boolean alertDoAcceptSetInputText(WebElement element, String inputText) {
         boolean isAccepted = false;
         try {
-            element.click();
+            if(!(element == null)) {
+                element.click();
+            }
             if(!(inputText == null)) {
                 element.sendKeys(inputText);
             }
@@ -41,7 +43,9 @@ public class AlertPage {
     private boolean alertDoCancelSetInputText(WebElement element, String inputText) {
         boolean isCanceled = false;
         try {
-            element.click();
+            if(!(element == null)) {
+                element.click();
+            }
             if(!(inputText == null)) {
                 element.sendKeys(inputText);
             }
@@ -77,12 +81,8 @@ public class AlertPage {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
             if(alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
-                try {
-                    driver.switchTo().alert().accept();
-                    result = true;
-                } catch(NoAlertPresentException e) {
-                    e.printStackTrace();
-                }
+                alertDoAcceptSetInputText(null, null);
+                result = true;
             }
         }
         return result;
