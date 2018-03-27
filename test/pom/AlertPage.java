@@ -59,9 +59,8 @@ public class AlertPage {
     public boolean checkSimpleAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
-            if(alertDoAcceptSetInputText(driver.findElement(inputClickSimpleAlert), null)) {
-                result = true;
-            }
+            alertDoAcceptSetInputText(driver.findElement(inputClickSimpleAlert), null);
+            result = true;
         }
         return result;
     }
@@ -69,9 +68,8 @@ public class AlertPage {
     public boolean checkConfirmAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            if(alertDoAcceptSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
-                result = true;
-            }
+            alertDoAcceptSetInputText(driver.findElement(inputClickConfirmAlert), null);
+            result = true;
         }
         return result;
     }
@@ -79,10 +77,9 @@ public class AlertPage {
     public boolean checkConfirmAlertCancel() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            if(alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
-                alertDoAcceptSetInputText(null, null);
-                result = true;
-            }
+            alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null);
+            alertDoAcceptSetInputText(null, null);
+            result = true;
         }
         return result;
     }
@@ -90,9 +87,17 @@ public class AlertPage {
     public boolean checkPromptAlertOK(String text) {
         boolean result = false;
         if(driver.findElement(inputClickPromptAlert).isEnabled()) {
-            if(alertDoAcceptSetInputText(driver.findElement(inputClickPromptAlert),text)) {
-                return true;
-            }
+            alertDoAcceptSetInputText(driver.findElement(inputClickPromptAlert),text);
+            result = true;
+        }
+        return result;
+    }
+
+    public boolean checkPromptAlertCancel() {
+        boolean result = false;
+        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
+            alertDoCancelSetInputText(driver.findElement(inputClickPromptAlert), null);
+            result = true;
         }
         return result;
     }

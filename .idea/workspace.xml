@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f24dc2f-e87f-4209-9f32-435d122223ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/rest/alertPage/index.php" afterPath="$PROJECT_DIR$/rest/alertPage/index.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/pom/AlertPage.java" afterPath="$PROJECT_DIR$/test/pom/AlertPage.java" />
       <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java" />
     </list>
@@ -16,21 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Unit_AlertPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Unit_AlertPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="703">
+              <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlertPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AlertPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/AlertPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="763">
+              <caret line="98" column="87" lean-forward="true" selection-start-line="98" selection-start-column="87" selection-end-line="98" selection-end-column="87" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -135,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_AlertPage.test_CheckPromptAlertOK">
+  <component name="RunManager" selected="JUnit.Unit_AlertPage.test_CheckPromptAlertCancel">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -170,6 +170,31 @@
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.Unit_AlertPage" />
       <option name="METHOD_NAME" value="test_CheckConfirmAlertCancel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Unit_AlertPage.test_CheckPromptAlertCancel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_AlertPage" />
+      <option name="METHOD_NAME" value="test_CheckPromptAlertCancel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -267,14 +292,16 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckPromptAlertOK" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckConfirmAlertCancel" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckPromptAlertCancel" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckPromptAlertOK" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckConfirmAlertCancel" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckPromptAlertCancel" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckPromptAlertOK" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_AlertPage.test_CheckConfirmAlertCancel" />
       </list>
     </recent_temporary>
   </component>
@@ -291,42 +318,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522179074031</updated>
-      <workItem from="1522179075168" duration="5002000" />
+      <workItem from="1522179075168" duration="6322000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertCancel - 2018.03.27 at 23h 43m 50s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertCancel - 2018.03.28 at 00h 12m 30s.xml">
       <configuration name="Unit_AlertPage.test_CheckConfirmAlertCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckConfirmAlertCancel - 2018.03.27 at 23h 46m 51s.xml">
-      <configuration name="Unit_AlertPage.test_CheckConfirmAlertCancel" configurationId="JUnit" />
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertCancel - 2018.03.28 at 00h 16m 18s.xml">
+      <configuration name="Unit_AlertPage.test_CheckPromptAlertCancel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.27 at 23h 32m 59s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertCancel - 2018.03.28 at 00h 18m 32s.xml">
+      <configuration name="Unit_AlertPage.test_CheckPromptAlertCancel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertCancel - 2018.03.28 at 00h 22m 58s.xml">
+      <configuration name="Unit_AlertPage.test_CheckPromptAlertCancel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 06m 26s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.27 at 23h 50m 10s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 08m 56s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.27 at 23h 52m 37s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 09m 34s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.27 at 23h 56m 38s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 10m 21s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.27 at 23h 58m 29s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 17m 20s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 00m 34s.xml">
+    <history-entry file="Unit_AlertPage_test_CheckPromptAlertOK - 2018.03.28 at 00h 18m 07s.xml">
       <configuration name="Unit_AlertPage.test_CheckPromptAlertOK" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5002000" />
+    <option name="totallyTimeSpent" value="6322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -337,7 +369,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="205" y="23" width="1499" height="1053" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="205" y="23" width="1499" height="1053" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -356,6 +388,35 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="2044" y="74" width="1330" height="780" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="205" y="23" width="1499" height="1053" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -378,22 +439,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/AlertPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="763">
+          <caret line="98" column="87" lean-forward="true" selection-start-line="98" selection-start-column="87" selection-end-line="98" selection-end-column="87" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

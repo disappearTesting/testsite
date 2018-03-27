@@ -60,8 +60,13 @@ public class Unit_AlertPage {
     @Test
     public void test_CheckPromptAlertOK() {
         String expectedValue = "admin";
-        assertTrue("", objAlert.checkPromptAlertOK(expectedValue));
+        assertTrue("Something went wrong! checkPromptAlertOK()", objAlert.checkPromptAlertOK(expectedValue));
         new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.tagName("body")));
         assertEquals("You have entered : " + expectedValue, driver.findElement(By.tagName("body")).getText());
+    }
+
+    @Test
+    public void test_CheckPromptAlertCancel() {
+        assertTrue("Something went wrong! checkPromptAlertCancel()", objAlert.checkPromptAlertCancel());
     }
 }
