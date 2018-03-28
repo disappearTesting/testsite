@@ -9,9 +9,6 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.Objects;
-import java.util.StringJoiner;
-
 public class AlertPage {
 
     private WebDriver driver;
@@ -24,48 +21,41 @@ public class AlertPage {
         this.driver = driver;
     }
 
-    private boolean alertDoAcceptSetInputText(WebElement element, String inputText) {
-        boolean isAccepted = false;
+    private void alertDoAcceptSetInputText(WebElement element, String inputText) {
+        try {
+            if(!(element == null)) {
+                element.click();
+            }
+            if(!(inputText == null)) {
+                driver.switchTo().alert().sendKeys(inputText);
+            }
+            driver.switchTo().alert().accept();
+        } catch(NoAlertPresentException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void alertDoCancelSetInputText(WebElement element, String inputText) {
         try {
             if(!(element == null)) {
                 element.click();
             }
             if(!(inputText == null)) {
                 element.sendKeys(inputText);
-            }
-            driver.switchTo().alert().accept();
-            isAccepted = true;
-        } catch(NoAlertPresentException e) {
-            e.printStackTrace();
-        }
-        return isAccepted;
-    }
-
-    private boolean alertDoCancelSetInputText(WebElement element, String inputText) {
-        boolean isCanceled = false;
-        try {
-            if(!(element == null)) {
-                element.click();
-            }
-            if(!(inputText == null)) {
-                if (Objects.nonNull(element)) {
-                    element.sendKeys(inputText);
-                }
+            } else if(!(inputText == null)) {
+                driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().dismiss();
-            isCanceled = true;
         } catch(NoAlertPresentException e) {
             e.printStackTrace();
         }
-        return isCanceled;
     }
 
     public boolean checkSimpleAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickSimpleAlert).isEnabled()) {
-            if(alertDoAcceptSetInputText(driver.findElement(inputClickSimpleAlert), null)) {
-                result = true;
-            }
+            alertDoAcceptSetInputText(driver.findElement(inputClickSimpleAlert), null);
+            result = true;
         }
         return result;
     }
@@ -73,9 +63,8 @@ public class AlertPage {
     public boolean checkConfirmAlertOK() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            if(alertDoAcceptSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
-                result = true;
-            }
+            alertDoAcceptSetInputText(driver.findElement(inputClickConfirmAlert), null);
+            result = true;
         }
         return result;
     }
@@ -83,10 +72,27 @@ public class AlertPage {
     public boolean checkConfirmAlertCancel() {
         boolean result = false;
         if(driver.findElement(inputClickConfirmAlert).isEnabled()) {
-            if(alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null)) {
-                alertDoAcceptSetInputText(null, null);
-                result = true;
-            }
+            alertDoCancelSetInputText(driver.findElement(inputClickConfirmAlert), null);
+            alertDoAcceptSetInputText(null, null);
+            result = true;
+        }
+        return result;
+    }
+
+    public boolean checkPromptAlertOK(String text) {
+        boolean result = false;
+        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
+            alertDoAcceptSetInputText(driver.findElement(inputClickPromptAlert),text);
+            result = true;
+        }
+        return result;
+    }
+
+    public boolean checkPromptAlertCancel() {
+        boolean result = false;
+        if(driver.findElement(inputClickPromptAlert).isEnabled()) {
+            alertDoCancelSetInputText(driver.findElement(inputClickPromptAlert), null);
+            result = true;
         }
         return result;
     }
