@@ -59,6 +59,22 @@
 				</script>
 			</div>
 		</div>
+		<div class="links">
+			<p>
+				<a href="https://google.com/" target="_blank" >_blank</a>
+			</p>
+			<div class="link-new-window">
+				<a id="link" href="https://google.com/" >new window</a>
+				<script>
+					var link = document.getElementById('link')
+					link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=350,height=350,top=0'); popupWin.focus(); return false")
+				</script>
+			</div>
+			<div class="link-ifrmae">
+				<p><a href="http://testsite.local/rest/alertPage/main.php" target="iframe_a">iframe</a></p>
+				<iframe name="iframe_a" height="280" width="360"></iframe>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
