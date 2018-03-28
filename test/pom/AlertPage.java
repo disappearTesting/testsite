@@ -9,6 +9,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.Objects;
 import java.util.StringJoiner;
 
 public class AlertPage {
@@ -47,7 +48,9 @@ public class AlertPage {
                 element.click();
             }
             if(!(inputText == null)) {
-                element.sendKeys(inputText);
+                if (Objects.nonNull(element)) {
+                    element.sendKeys(inputText);
+                }
             }
             driver.switchTo().alert().dismiss();
             isCanceled = true;
