@@ -59,25 +59,6 @@
 				</script>
 			</div>
 		</div>
-		<div class="links">
-			<p>
-				<a href="http://testsite.local/rest/alertPage/main.php" target="_blank" >_blank</a>
-			</p>
-			<p>
-				<a href="http://testsite.local/rest/alertPage/main.php" target="_self" >_self</a>
-			</p>
-			<p>
-				<a id="link" href="http://testsite.local/rest/alertPage/main.php" >_new-window</a>
-				<script>
-					var link = document.getElementById('link')
-					link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=350,height=350,top=0'); popupWin.focus(); return false")
-				</script>
-			</p>
-			<p>
-				<a href="http://testsite.local/rest/alertPage/main.php" target="iframe_a">_iframe</a>
-			</p>
-			<iframe name="iframe_a" height="280" width="360"></iframe>
-		</div>
 	</div>
 </body>
 </html>
