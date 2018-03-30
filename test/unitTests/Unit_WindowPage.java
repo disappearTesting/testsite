@@ -6,6 +6,7 @@ package unitTests;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import pom.WindowPage;
@@ -29,5 +30,11 @@ public class Unit_WindowPage {
     @After
     public void tearDown() {
         driver.quit();
+    }
+
+    @Test
+    public void test_GetWindowHandle() {
+        //  objWindow.getWindowHandle(URL_WINDOW_INDEX_PAGE);
+        System.out.println(objWindow.getParamsCurrentWindow());
     }
 }

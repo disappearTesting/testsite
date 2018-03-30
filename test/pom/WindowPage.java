@@ -7,6 +7,9 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class WindowPage {
 
     private WebDriver driver;
@@ -18,5 +21,10 @@ public class WindowPage {
 
     public WindowPage(WebDriver driver) {
         this.driver = driver;
+    }
+
+    public List<Object> getParamsCurrentWindow() {
+        List<Object> params = Arrays.asList(driver.getCurrentUrl(), driver.getTitle(), driver.getWindowHandle());
+        return params;
     }
 }
