@@ -1,7 +1,9 @@
 /**
- * @author hookie
- * @version 1.0
- */
+* @author hookie
+* @version 1.0
+*/
+package pom;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -9,10 +11,10 @@ import java.io.File;
 
 public class UploadFilePage {
 
-    WebDriver driver;
-    String path;
-    By inputFile = By.name("uploadfile");
-    By inputSubmit = By.name("upload");
+    private WebDriver driver;
+    private String path;
+    private By inputFile = By.name("uploadfile");
+    private By inputSubmit = By.name("upload");
 
     public UploadFilePage(WebDriver driver) {
         this.driver = driver;

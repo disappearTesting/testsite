@@ -59,25 +59,6 @@
 				</script>
 			</div>
 		</div>
-		<div class="link-form">
-			<p id="link-blank">
-				<a href="https://google.com/" target="_blank" >_blank</a>
-			</p>
-			<p id="link-parent">
-				<a href="https://google.com/" target="_parent" >_parent</a>
-			</p>
-			<p id="link-new-window">
-				<a id="link" href="https://google.com/" >new window</a>
-			</p>
-			<script>
-				var link = document.getElementById('link')
-				link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=600,height=600,top=0'); popupWin.focus(); return false")
-			</script>
-			<div class="link-iframe">
-				<p><a href="http://testsite.local/rest/alertPage/main.php" target="iframe_a">iframe</a></p>
-				<iframe name="iframe_a" height="280" width="360"></iframe>
-			</div>
-		</div>
 	</div>
 </body>
 </html>

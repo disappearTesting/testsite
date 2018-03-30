@@ -14,13 +14,14 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Hello World!</h1>
+		<h1 class="">Hello World!</h1>
 		<div class="links">
+			<h4>Links</h4>
 			<p>
-				<a href="/rest/alertPage/home.php" target="_blank" >_blank-window</a>
+				<a href="/rest/alertPage/home.php" target="_blank" >_blank</a>
 			</p>
 			<p>
-				<a href="/rest/alertPage/home.php" target="_self" >_self-window</a>
+				<a href="/rest/alertPage/home.php" target="_self" >_self</a>
 			</p>
 			<p>
 				<a id="link" href="/rest/alertPage/home.php" >_new-window</a>
@@ -30,7 +31,7 @@
 				</script>
 			</p>
 			<p>
-				<a href="/rest/alertPage/home.php" target="iframe_b">_iframe-window</a>
+				<a href="/rest/alertPage/home.php" target="iframe_b">_iframe</a>
 			</p>
 			<iframe name="iframe_b" height="350" width="360"></iframe>
 		</div>
