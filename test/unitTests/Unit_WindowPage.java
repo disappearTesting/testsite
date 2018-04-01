@@ -7,8 +7,15 @@ package unitTests;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.WindowPage;
 
 public class Unit_WindowPage {
@@ -29,12 +36,20 @@ public class Unit_WindowPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
-    public void test_GetWindowHandle() {
-        //  objWindow.getWindowHandle(URL_WINDOW_INDEX_PAGE);
-        System.out.println(objWindow.getParamsCurrentWindow());
+    public void test_Test() {
+        System.out.println(driver.getCurrentUrl());
     }
+
+    @Test
+    public void test_BlankWindow() {
+        objWindow.getParentWindowHandle();
+        assertTrue("Something went wrong! getBlankWindow()", objWindow.getBlankWindow());
+        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getBlankWindowHandle(objWindow.getParentWindowHandle()));
+    }
+
+
 }
