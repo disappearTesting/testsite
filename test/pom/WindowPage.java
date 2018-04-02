@@ -4,22 +4,14 @@
  */
 package pom;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.NoSuchWindowException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class WindowPage {
-
-    private static final String URL_WINDOW_INDEX_PAGE = "http://testsite.local/rest/windowPage/index.php";
-    private static final String URL_WINDOW_MAIN_PAGE = "http://testsite.local/rest/windowPage/main.php";
-    private static final String URL_WINDOW_HOME_PAGE = "http://testsite.local/rest/windowPage/home.php";
 
     private WebDriver driver;
 
@@ -41,22 +33,35 @@ public class WindowPage {
         return driver.getWindowHandle();
     }
 
-    public boolean getBlankWindow() {
+    public boolean getWindow(String typeWindow) {
         boolean windowIsOpen = false;
-        if(driver.findElement(textBlankWindow).isEnabled()) {
-            try {
-                driver.findElement(textBlankWindow).click();
-                windowIsOpen = true;
-            } catch (ElementClickInterceptedException e) {
-                e.printStackTrace();
+        try {
+            switch (typeWindow) {
+                case "blank":
+                    driver.findElement(textBlankWindow).click();
+                    windowIsOpen = true;
+                    break;
+                case "self":
+                    driver.findElement(textSelfWindow).click();
+                    windowIsOpen = true;
+                    break;
+                case "new":
+                    driver.findElement(textNewWindow).click();
+                    windowIsOpen = true;
+                    break;
             }
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        } catch (InvalidElementStateException e) {
+            e.printStackTrace();
         }
         return windowIsOpen;
     }
 
-    public boolean getBlankWindowHandle(String parentWindowHandle) {
+    public boolean getParentkWindow(String parentWindowHandle, String urlParentWindow) {
         boolean result = false;
-            Set<String> allWindowHandles = driver.getWindowHandles();
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        if(allWindowHandles.size() > 1) {
             for (String currentWindowHandle : allWindowHandles) {
                 if (!currentWindowHandle.equals(parentWindowHandle)) {
                     driver.switchTo().window(currentWindowHandle);
@@ -70,6 +75,11 @@ public class WindowPage {
             } catch (NoSuchWindowException e) {
                 e.printStackTrace();
             }
+        } else {
+            driver.navigate().to(urlParentWindow);
+            result = true;
+        }
+
         return result;
     }
 }

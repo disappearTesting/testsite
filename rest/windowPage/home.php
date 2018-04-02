@@ -15,6 +15,9 @@
 <body>
 	<div class="container">
 		<h1 class="">Welcome to home!</h1>
+		<p>
+			<a href="http://testsite.local/rest/windowPage/index.php" >IndexPage</a>
+		</p>
 	</div>
 </body>
 </html>
