@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 
 public class WindowPage {
@@ -41,22 +42,47 @@ public class WindowPage {
         return driver.getWindowHandle();
     }
 
-    public boolean getBlankWindow() {
+    public boolean getWindow(String typeWindow) {
         boolean windowIsOpen = false;
-        if(driver.findElement(textBlankWindow).isEnabled()) {
-            try {
-                driver.findElement(textBlankWindow).click();
-                windowIsOpen = true;
-            } catch (ElementClickInterceptedException e) {
-                e.printStackTrace();
-            }
+        switch (typeWindow) {
+            case "blank" :
+                try {
+                    driver.findElement(textBlankWindow).click();
+                    windowIsOpen = true;
+                    break;
+                } catch (NoSuchElementException e) {
+                    e.printStackTrace();
+                } catch (ElementClickInterceptedException e) {
+                    e.printStackTrace();
+                }
+            case "self" :
+                try {
+                    driver.findElement(textSelfWindow).click();
+                    windowIsOpen = true;
+                    break;
+                } catch (NoSuchElementException e) {
+                    e.printStackTrace();
+                } catch (ElementClickInterceptedException e) {
+                    e.printStackTrace();
+                }
+            case "new" :
+                try {
+                    driver.findElement(textNewWindow).click();
+                    windowIsOpen = true;
+                    break;
+                } catch (NoSuchElementException e) {
+                    e.printStackTrace();
+                } catch (ElementClickInterceptedException e) {
+                    e.printStackTrace();
+                }
         }
         return windowIsOpen;
     }
 
-    public boolean getBlankWindowHandle(String parentWindowHandle) {
+    public boolean getParentkWindow(String parentWindowHandle, String urlParentWindow) {
         boolean result = false;
-            Set<String> allWindowHandles = driver.getWindowHandles();
+        Set<String> allWindowHandles = driver.getWindowHandles();
+        if(allWindowHandles.size() > 1) {
             for (String currentWindowHandle : allWindowHandles) {
                 if (!currentWindowHandle.equals(parentWindowHandle)) {
                     driver.switchTo().window(currentWindowHandle);
@@ -70,6 +96,11 @@ public class WindowPage {
             } catch (NoSuchWindowException e) {
                 e.printStackTrace();
             }
+        } else {
+            driver.navigate().to(urlParentWindow);
+            result = true;
+        }
+
         return result;
     }
 }

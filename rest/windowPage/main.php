@@ -18,23 +18,26 @@
 		<div class="links">
 			<h4>Links</h4>
 			<p>
-				<a href="/rest/alertPage/home.php" target="_blank" >_blank</a>
+				<a href="/rest/windowPage/home.php" target="_blank" >_blank-window</a>
 			</p>
 			<p>
-				<a href="/rest/alertPage/home.php" target="_self" >_self</a>
+				<a href="/rest/windowPage/home.php" target="_self" >_self-window</a>
 			</p>
 			<p>
-				<a id="link" href="/rest/alertPage/home.php" >_new-window</a>
+				<a id="link" href="/rest/windowPage/home.php" >_new-window</a>
 				<script>
 					var link = document.getElementById('link')
-					link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=350,height=350,top=0'); popupWin.focus(); return false")
+					link.setAttribute("onclick","popupWin = window.open(this.href,'contacts','location,width=450,height=450,top=0'); popupWin.focus(); return false")
 				</script>
 			</p>
 			<p>
-				<a href="/rest/alertPage/home.php" target="iframe_b">_iframe</a>
+				<a href="/rest/windowPage/home.php" target="iframe_b" >_iframe-window</a>
 			</p>
 			<iframe name="iframe_b" height="350" width="360"></iframe>
 		</div>
+		<p>
+			<a href="/rest/windowPage/index.php" >IndexPage</a>
+		</p>
 	</div>
 </body>
 </html>

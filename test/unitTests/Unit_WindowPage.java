@@ -40,16 +40,9 @@ public class Unit_WindowPage {
     }
 
     @Test
-    public void test_Test() {
-        System.out.println(driver.getCurrentUrl());
-    }
-
-    @Test
     public void test_BlankWindow() {
         objWindow.getParentWindowHandle();
-        assertTrue("Something went wrong! getBlankWindow()", objWindow.getBlankWindow());
-        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getBlankWindowHandle(objWindow.getParentWindowHandle()));
+        assertTrue("Something went wrong! getBlankWindow()", objWindow.getWindow("blank"));
+        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentkWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
     }
-
-
 }
