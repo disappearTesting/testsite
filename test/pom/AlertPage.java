@@ -25,8 +25,7 @@ public class AlertPage {
         try {
             if(!(element == null)) {
                 element.click();
-            }
-            if(!(inputText == null)) {
+            } else if(!(inputText == null)) {
                 driver.switchTo().alert().sendKeys(inputText);
             }
             driver.switchTo().alert().accept();
@@ -39,9 +38,6 @@ public class AlertPage {
         try {
             if(!(element == null)) {
                 element.click();
-            }
-            if(!(inputText == null)) {
-                element.sendKeys(inputText);
             } else if(!(inputText == null)) {
                 driver.switchTo().alert().sendKeys(inputText);
             }
