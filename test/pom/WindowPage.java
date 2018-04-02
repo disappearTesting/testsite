@@ -4,12 +4,7 @@
  */
 package pom;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.NoSuchWindowException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -52,7 +47,7 @@ public class WindowPage {
                     break;
                 } catch (NoSuchElementException e) {
                     e.printStackTrace();
-                } catch (ElementClickInterceptedException e) {
+                } catch (InvalidElementStateException e) {
                     e.printStackTrace();
                 }
             case "self" :
@@ -62,7 +57,7 @@ public class WindowPage {
                     break;
                 } catch (NoSuchElementException e) {
                     e.printStackTrace();
-                } catch (ElementClickInterceptedException e) {
+                } catch (InvalidElementStateException e) {
                     e.printStackTrace();
                 }
             case "new" :
@@ -72,7 +67,7 @@ public class WindowPage {
                     break;
                 } catch (NoSuchElementException e) {
                     e.printStackTrace();
-                } catch (ElementClickInterceptedException e) {
+                } catch (InvalidElementStateException e) {
                     e.printStackTrace();
                 }
         }
