@@ -43,20 +43,26 @@ public class Unit_WindowPage {
     public void test_BlankWindow() {
         objWindow.getParentWindowHandle();
         assertTrue("Something went wrong! getBlankWindow()", objWindow.getWindow("blank"));
-        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentkWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
+        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
     }
 
     @Test
     public void test_SelfWindow() {
         objWindow.getParentWindowHandle();
         assertTrue("Something went wrong! getBlankWindow()", objWindow.getWindow("self"));
-        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentkWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
+        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
     }
 
     @Test
     public void test_NewWindow() {
         objWindow.getParentWindowHandle();
         assertTrue("Something went wrong! getBlankWindow()", objWindow.getWindow("new"));
-        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentkWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
+        assertTrue("Something went wrong! getBlankWindowHandle()", objWindow.getParentWindow(objWindow.getParentWindowHandle(), URL_WINDOW_INDEX_PAGE));
+    }
+
+    @Test
+    public void test_IFrameWindow() {
+        objWindow.getParentWindowHandle();
+        objWindow.getIFrameWindow();
     }
 }

@@ -50,15 +50,22 @@ public class WindowPage {
                     windowIsOpen = true;
                     break;
             }
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-        } catch (InvalidElementStateException e) {
+        } catch (NoSuchElementException | InvalidElementStateException e) {
             e.printStackTrace();
         }
         return windowIsOpen;
     }
 
-    public boolean getParentkWindow(String parentWindowHandle, String urlParentWindow) {
+    public void getIFrameWindow() {
+        driver.findElement(textIFrameWindow).click();
+        driver.switchTo().frame("iframe_a");
+        driver.findElement(textIFrameWindow).click();
+        driver.switchTo().frame("iframe_b");
+        driver.switchTo().defaultContent();
+        driver.navigate().refresh();
+    }
+
+    public boolean getParentWindow(String parentWindowHandle, String urlParentWindow) {
         boolean result = false;
         Set<String> allWindowHandles = driver.getWindowHandles();
         if(allWindowHandles.size() > 1) {

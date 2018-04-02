@@ -32,7 +32,7 @@
 			<p>
 				<a href="/rest/windowPage/main.php" target="iframe_a">_iframe-window</a>
 			</p>
-			<iframe name="iframe_a" height="500" width="500"></iframe>
+			<iframe name="iframe_a" id="iframe_a" height="500" width="500"></iframe>
 		</div>
 	</div>
 </body>

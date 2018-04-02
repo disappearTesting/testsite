@@ -16,7 +16,6 @@
 	<div class="container">
 		<h1 class="">Hello World!</h1>
 		<div class="links">
-			<h4>Links</h4>
 			<p>
 				<a href="/rest/windowPage/home.php" target="_blank" >_blank-window</a>
 			</p>
@@ -33,7 +32,7 @@
 			<p>
 				<a href="/rest/windowPage/home.php" target="iframe_b" >_iframe-window</a>
 			</p>
-			<iframe name="iframe_b" height="350" width="360"></iframe>
+			<iframe name="iframe_b" height="500" width="500"></iframe>
 		</div>
 		<p>
 			<a href="/rest/windowPage/index.php" >IndexPage</a>
