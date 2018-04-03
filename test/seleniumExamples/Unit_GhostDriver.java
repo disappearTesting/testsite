@@ -8,7 +8,7 @@ package seleniumExamples;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 
-public class Unit_FirefoxProfileAddon {
+public class Unit_GhostDriver {
 
     private WebDriver driver;
 
