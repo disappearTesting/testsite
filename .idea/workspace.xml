@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest/alertPage/home.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest/alertPage/main.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/windowPage/home.php" afterPath="$PROJECT_DIR$/rest/windowPage/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/windowPage/index.php" afterPath="$PROJECT_DIR$/rest/windowPage/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/windowPage/main.php" afterPath="$PROJECT_DIR$/rest/windowPage/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/WindowPage.java" afterPath="$PROJECT_DIR$/test/pom/WindowPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java" />
-    </list>
+    <list default="true" id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +30,8 @@
       <file leaf-file-name="WindowPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/WindowPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+            <state relative-caret-position="890">
+              <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#546#547#0" expanded="true" />
@@ -415,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/WindowPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        <state relative-caret-position="890">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#546#547#0" expanded="true" />

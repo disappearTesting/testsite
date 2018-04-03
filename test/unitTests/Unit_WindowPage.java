@@ -36,7 +36,7 @@ public class Unit_WindowPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -63,6 +63,6 @@ public class Unit_WindowPage {
     @Test
     public void test_IFrameWindow() {
         objWindow.getParentWindowHandle();
-        objWindow.getIFrameWindow();
+        assertTrue("Something went wrong! getIFrameWindow()", objWindow.getIFrameWindow());
     }
 }

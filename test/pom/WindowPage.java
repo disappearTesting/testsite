@@ -56,13 +56,20 @@ public class WindowPage {
         return windowIsOpen;
     }
 
-    public void getIFrameWindow() {
-        driver.findElement(textIFrameWindow).click();
-        driver.switchTo().frame("iframe_a");
-        driver.findElement(textIFrameWindow).click();
-        driver.switchTo().frame("iframe_b");
-        driver.switchTo().defaultContent();
-        driver.navigate().refresh();
+    public boolean getIFrameWindow() {
+        boolean result = false;
+        try {
+            driver.findElement(textIFrameWindow).click();
+            driver.switchTo().frame("iframe_a");
+            driver.findElement(textIFrameWindow).click();
+            driver.switchTo().frame("iframe_b");
+            driver.switchTo().defaultContent();
+            driver.navigate().refresh();
+            result = true;
+        } catch (NoSuchElementException | InvalidElementStateException e) {
+            e.printStackTrace();
+        }
+        return result;
     }
 
     public boolean getParentWindow(String parentWindowHandle, String urlParentWindow) {
