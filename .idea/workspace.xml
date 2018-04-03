@@ -2,11 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_phantomjsdriver_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/ChangeLog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/LICENSE.BSD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/arguments.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/child_process-examples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/colorwheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/countdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/detectsniff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/echoToFile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/features.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/fibo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/hello.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/injectme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/loadspeed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/loadurlwithoutcss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/module.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/netlog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/netsniff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/openurlwithproxy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/outputEncoding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/page_events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/pagecallback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/phantomwebintro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/post.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/postjson.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/postserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/printenv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/printheaderfooter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/printmargins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/rasterize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/render_multi_url.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/responsive-screenshot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/run-jasmine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/run-jasmine2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/run-qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/scandir.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/serverkeepalive.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/simpleserver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/sleepsort.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/stdin-stdout-stderr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/universe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/unrandomize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/useragent.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/waitfor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/examples/walk_through_frames.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tools/phantomjs-2.1.1-windows/third-party.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/seleniumExamples/Unit_GhostDriver.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsite.iml" afterPath="$PROJECT_DIR$/testsite.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,40 +77,28 @@
       <file leaf-file-name="Unit_WindowPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
+            <state relative-caret-position="136">
               <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Unit_LoginPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-868">
+            <state relative-caret-position="17">
               <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit_GhostDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/seleniumExamples/Unit_GhostDriver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+            <state relative-caret-position="1547">
+              <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -76,6 +116,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -87,6 +132,7 @@
         <option value="$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java" />
         <option value="$PROJECT_DIR$/test/seleniumExamples/Selenium_LoginPage.java" />
         <option value="$PROJECT_DIR$/test/seleniumExamples/Unit_FirefoxDesiredCapabilitiesProxy.java" />
+        <option value="$PROJECT_DIR$/test/seleniumExamples/Unit_GhostDriver.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -112,6 +158,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,21 +182,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seleniumExamples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phantomjs-2.1.1-windows" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="JUnit.Unit_WindowPage.test_BlankWindow">
+  <component name="RunManager" selected="JUnit.Unit_GhostDriver.test_GhostDriver">
     <configuration default="false" name="Unit_WindowPage.test_BlankWindow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -162,6 +252,32 @@
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.Unit_WindowPage" />
       <option name="METHOD_NAME" value="test_BlankWindow" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unit_GhostDriver.test_GhostDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="seleniumExamples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="seleniumExamples" />
+      <option name="MAIN_CLASS_NAME" value="seleniumExamples.Unit_GhostDriver" />
+      <option name="METHOD_NAME" value="test_GhostDriver" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -379,12 +495,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_WindowPage.test_BlankWindow" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_GhostDriver.test_GhostDriver" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_WindowPage.test_BlankWindow" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_GhostDriver.test_GhostDriver" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_WindowPage.test_BlankWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -392,9 +510,25 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="" />
+      <created>1522756333073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522756333073</updated>
+    </task>
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="Unit_GhostDriver_test_GhostDriver - 2018.04.03 at 13h 40m 12s.xml">
+      <configuration name="Unit_GhostDriver.test_GhostDriver" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_GhostDriver_test_GhostDriver - 2018.04.03 at 13h 40m 59s.xml">
+      <configuration name="Unit_GhostDriver.test_GhostDriver" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_GhostDriver_test_GhostDriver - 2018.04.03 at 13h 44m 50s.xml">
+      <configuration name="Unit_GhostDriver.test_GhostDriver" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="Unit_WindowPage_test_BlankWindow - 2018.04.03 at 11h 26m 14s.xml">
       <configuration name="Unit_WindowPage.test_BlankWindow" configurationId="JUnit" />
     </history-entry>
@@ -412,7 +546,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -421,10 +554,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1802" y="239" width="1688" height="863" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1412" y="232" width="1305" height="766" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="-1412" y="232" width="1305" height="766" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29602447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29969418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -435,9 +568,13 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -452,6 +589,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
           <folding />
@@ -462,13 +623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -484,13 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -498,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,26 +652,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Test.java" />
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_AlertPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="e#870#871#0" expanded="false" />
-            <element signature="e#899#900#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -541,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,13 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="58" column="36" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#546#547#0" expanded="false" />
-            <element signature="e#582#583#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#869#870#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,34 +694,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_WindowPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="136">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_LoginPage.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-868">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="1547">
+          <caret line="91" column="21" lean-forward="false" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/seleniumExamples/Unit_GhostDriver.java">
+    <entry file="file://$PROJECT_DIR$/test/seleniumExamples/Unit_GhostDriver.java" />
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+        <state relative-caret-position="17">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
