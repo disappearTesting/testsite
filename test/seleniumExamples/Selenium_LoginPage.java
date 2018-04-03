@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package selenium;
+package seleniumExamples;
 
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
