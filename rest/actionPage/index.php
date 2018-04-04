@@ -21,12 +21,15 @@
 				<p>Press the button and hold 3 sec</p>
 				<button onmousedown="functionDown();" onmouseup="functionUp();">PressAndHold</button>
 				<script>
+					var myVar;
+
 					function functionDown() {
-						var timerId = setTimeout(function() { alert('Hello World') }, 3000);
+						myVar = setTimeout(function(){ alert("Hello World!"); }, 3000);
 					}
-					
+
 					function functionUp() {
-						setTimeout(function() { clearInterval(timerId); }
+						clearTimeout(myVar);
+					}
 				</script>
 			</div>
 			
