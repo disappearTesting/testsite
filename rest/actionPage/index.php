@@ -19,12 +19,12 @@
 			<div class="clickAndHold_event">
 				<h4>clickAndHold</h4>
 				<p>Press the button and hold 3 sec</p>
-				<button onmousedown="functionDown();" onmouseup="functionUp();">PressAndHold</button>
+				<button id="button-clickAndHold" onmousedown="functionDown();" onmouseup="functionUp();">PressAndHold</button>
 				<script>
 					var myVar;
 
 					function functionDown() {
-						myVar = setTimeout(function(){ alert("Hello World!"); }, 3000);
+						myVar = setTimeout(function(){ alert("AlertClickAndHold"); }, 3000);
 					}
 
 					function functionUp() {
