@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package selenium;
+package seleniumExamples;
 
 import net.lightbody.bmp.BrowserMobProxy;
 import net.lightbody.bmp.BrowserMobProxyServer;
@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class Selenium_LoginPage {
+public class Selenium_LoginPageUseMobProxy {
 
     private static final String URL = "http://testsite.local/rest/loginPage/login.php";
 

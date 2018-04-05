@@ -21,8 +21,6 @@ import pom.WindowPage;
 public class Unit_WindowPage {
 
     private static final String URL_WINDOW_INDEX_PAGE = "http://testsite.local/rest/windowPage/index.php";
-    private static final String URL_WINDOW_MAIN_PAGE = "http://testsite.local/rest/windowPage/main.php";
-    private static final String URL_WINDOW_HOME_PAGE = "http://testsite.local/rest/windowPage/home.php";
 
     private WebDriver driver;
     private WindowPage objWindow;
@@ -36,7 +34,7 @@ public class Unit_WindowPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
@@ -63,6 +61,6 @@ public class Unit_WindowPage {
     @Test
     public void test_IFrameWindow() {
         objWindow.getParentWindowHandle();
-        objWindow.getIFrameWindow();
+        assertTrue("Something went wrong! getIFrameWindow()", objWindow.getIFrameWindow());
     }
 }
