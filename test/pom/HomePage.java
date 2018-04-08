@@ -13,4 +13,8 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
+
+    public boolean checkLoginSuccess(String userCredentials) {
+        return driver.getPageSource().contains(userCredentials);
+    }
 }
