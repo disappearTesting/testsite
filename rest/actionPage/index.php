@@ -6,16 +6,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Action Page</title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-	<link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	<script src="//cdn.jsdelivr.net/gh/mar10/jquery-ui-contextmenu@v1/jquery.ui-contextmenu.min.js"></script>
 	<style type="text/css">
 		body{ font: 14px sans-serif; }
 		.container{ width: 350px; padding: 20px; }
 	</style>
+	
+	<!-- contextMenu-hard -->
+	<link href="simple-contextMenu/css.txt" rel="stylesheet" type="text/css">
+    <link href="simple-contextMenu/jquery.css" rel="stylesheet" type="text/css">
+    <script src="simple-contextMenu/jquery_003.txt"></script>
+    <script src="simple-contextMenu/jquery_002.txt" type="text/javascript"></script>
+    <script src="simple-contextMenu/jquery.txt" type="text/javascript"></script>
 </head>
 <body>
 	<div class="container">
@@ -39,52 +43,149 @@
 			</div>
 			<div class="contextMenu-event">
 				<h4>ContextMenu</h4>
-				<p>Press the right-click on the button</p>
-				<div>
-					<button class="hasmenu" tabindex="0">ContextMenu</button>
+				<div class="contextMenu-hard">
+					<div>
+						<p>Hard. Press the right-click on the button</p>
+						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
+					</div>
+					<script>
+						$(function(){
+							$.contextMenu({
+								selector: '#button-hard-contextMenu', 
+								items: {
+								// <input type="text">
+								name: {
+								name: "Text", 
+								type: 'text', 
+								value: "Hello World",
+								events: {
+								keyup: function(e) {
+								// add some fancy key handling here?
+								window.console && console.log('key: '+ e.keyCode); 
+								}
+								}
+								},
+								sep1: "---------",
+								// <input type="checkbox">
+								yesno: {
+								name: "Boolean", 
+								type: 'checkbox',
+								selected: true,
+								disabled: true
+								},
+								sep2: "---------",
+								// <input type="radio">
+								radio1: {
+								name: "Radio1", 
+								type: 'radio', 
+								radio: 'radio', 
+								value: '1'
+								},
+								radio2: {
+								name: "Radio2", 
+								type: 'radio', 
+								radio: 'radio', 
+								value: '2', 
+								selected: true
+								},
+								radio3: {
+								name: "Radio3", 
+								type: 'radio', 
+								radio: 'radio', 
+								value: '3'
+								},
+								radio4: {
+								name: "Radio3", 
+								type: 'radio', 
+								radio: 'radio', 
+								value: '4', 
+								disabled: true
+								},
+								sep3: "---------",
+								// <select>
+								select: {
+								name: "Select", 
+								type: 'select', 
+								options: {1: 'one', 2: 'two', 3: 'three'}, 
+								selected: 2
+								},
+								// <textarea>
+								area2: {
+								name: "Textarea", 
+								type: 'textarea', 
+								value: "Hello World"
+								}
+								},
+								events: {
+								show: function(opt) {
+								// this is the trigger element
+								var $this = this;
+								// import states from data store 
+								$.contextMenu.setInputValues(opt, $this.data());
+								// this basically fills the input commands from an object
+								// like {name: "foo", yesno: true, radio: "3", &hellip;}
+								}, 
+								hide: function(opt) {
+								// this is the trigger element
+								var $this = this;
+								// export states to data store
+								$.contextMenu.getInputValues(opt, $this.data());
+								// this basically dumps the input commands' values to an object
+								// like {name: "foo", yesno: true, radio: "3", &hellip;}
+								}
+								}
+							});
+						});
+					</script>
+				</div>
+				<div class="contextMenu-simple">
+					<div>
+						<p>Simple. Press the right-click on the button</p>
+						<button id="button-simple-contextMenu" >ContextMenu</button>
+					</div>
+					<script type="text/javascript" class="showcase">
+						$(function(){
+							$.contextMenu({
+								selector: '#button-simple-contextMenu', 
+								callback: function(key, options) {
+								var m = "clicked: " + key;
+								window.console && console.log(m) || alert(m); 
+								},
+								items: {
+								"edit": {"name": "Edit", "icon": "edit"},
+								"cut": {"name": "Cut", "icon": "cut"},
+								"sep1": "---------",
+								"quit": {"name": "Quit", "icon": "quit"},
+								"sep2": "---------",
+								"fold1": {
+								"name": "Sub group", 
+								"items": {
+								"fold1-key1": {"name": "Foo bar"},
+								"fold2": {
+								"name": "Sub group 2", 
+								"items": {
+								"fold2-key1": {"name": "alpha"},
+								"fold2-key2": {"name": "bravo"},
+								"fold2-key3": {"name": "charlie"}
+								}
+								},
+								"fold1-key3": {"name": "delta"}
+								}
+								},
+								"fold1a": {
+								"name": "Other group", 
+								"items": {
+								"fold1a-key1": {"name": "echo"},
+								"fold1a-key2": {"name": "foxtrot"},
+								"fold1a-key3": {"name": "golf"}
+								}
+								}
+								}
+							});
+							});
+					</script>
 				</div>
 			</div>
-			<script>
-				var CLIPBOARD = "";
-				$(function(){
-				$(document).contextmenu({
-				delegate: ".hasmenu",
-				autoFocus: true,
-				preventContextMenuForPopup: true,
-				preventSelect: true,
-				taphold: true,
-				menu: [
-				{title: "Copy <kbd>Ctrl+C</kbd>", cmd: "copy", uiIcon: "ui-icon-copy"},
-				{title: "Paste <kbd>Ctrl+V</kbd>", cmd: "paste", uiIcon: "ui-icon-clipboard", disabled: true },
-				{title: "----"},
-				{title: "Edit <kbd>[F2]</kbd>", cmd: "edit", uiIcon: "ui-icon-pencil"}
-				],
-				select: function(event, ui) {
-				var $target = ui.target;
-				switch(ui.cmd){
-				case "copy":
-				CLIPBOARD = $target.text();
-				break;
-				case "paste":
-				CLIPBOARD = "";
-				break;
-				}
-				alert("select " + ui.cmd + " on " + $target.text());
-				},
-				beforeOpen: function(event, ui) {
-				var $menu = ui.menu,
-				$target = ui.target,
-				extraData = ui.extraData;
-
-				$(document)
-				.contextmenu("setEntry", "copy", "Copy '" + $target.text() + "'")
-				.contextmenu("setEntry", "paste", "Paste" + (CLIPBOARD ? " '" + CLIPBOARD + "'" : ""))
-				.contextmenu("enableEntry", "paste", (CLIPBOARD !== ""));
-				}
-				});
-
-				});
-			</script>
 		</div>
 	</div>
 </body>

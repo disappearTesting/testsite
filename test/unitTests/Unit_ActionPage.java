@@ -5,7 +5,7 @@
 package unitTests;
 
 import org.junit.After;
-import org.junit.Assert;
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -31,11 +31,21 @@ public class Unit_ActionPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
     public void test_GetAlertClickAndHold() {
-        Assert.assertTrue("Something went wrong! getAlertClickAndHold()", objAction.getAlertClickAndHold());
+        assertTrue(objAction.getAlertClickAndHold());
+    }
+
+    @Test
+    public void test_InputText_ContextMenuHard() {
+        assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
+    }
+
+    @Test
+    public void test_ValueOfTheCheckbox_ContextMenuHard() {
+        assertTrue(objAction.setValueToCheckbox_ContextMenuHard());
     }
 }
