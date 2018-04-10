@@ -11,10 +11,10 @@ public class LoginPage {
 
     private WebDriver driver;
 
-    private By userEmail = By.name("email");
-    private By userPassword = By.name("password");
+    private By userEmail = By.id("email");
+    private By userPassword = By.id("password");
 
-    private By buttonSignIn = By.name("btn-login");
+    private By buttonSignIn = By.id("btn-login");
     private By textSignUpHere = By.xpath("/html/body/div/div/form/div/div[8]/a");
 
     private By textError = By.className("text-danger");

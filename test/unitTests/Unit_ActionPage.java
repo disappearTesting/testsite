@@ -5,13 +5,14 @@
 package unitTests;
 
 import org.junit.After;
-import org.junit.Assert;
+import static org.junit.Assert.assertTrue;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
+import pom.SetTextTestResult;
 
 public class Unit_ActionPage {
 
@@ -31,11 +32,28 @@ public class Unit_ActionPage {
 
     @After
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 
     @Test
     public void test_GetAlertClickAndHold() {
-        Assert.assertTrue("Something went wrong! getAlertClickAndHold()", objAction.getAlertClickAndHold());
+        SetTextTestResult test = objAction.getAlertClickAndHold_Action();
+        assertTrue(test.getMessage(), test.getResult());
+    }
+
+    @Test
+    public void test_InputText_ContextMenuHard_Action() {
+        SetTextTestResult test = objAction.setTextToInput_ContextMenuHard_Action("test");
+        assertTrue(test.getMessage(), test.getResult());
+    }
+
+    @Test
+    public void test_ValueOfTheCheckbox_ContextMenuHard_Action() {
+        objAction.setValueToCheckbox_ContextMenuHard_Action();
+    }
+
+    @Test
+    public void test_ValueOfTheCheckbox_ContextMenuHard() {
+        assertTrue(objAction.setValueToCheckbox_ContextMenuHard());
     }
 }
