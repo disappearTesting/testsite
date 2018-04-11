@@ -49,11 +49,19 @@ public class Unit_ActionPage {
 
     @Test
     public void test_ValueOfTheCheckbox_ContextMenuHard_Action() {
-        objAction.setValueToCheckbox_ContextMenuHard_Action();
+        SetTextTestResult test = objAction.setValueToCheckbox_ContextMenuHard_Action();
+        assertTrue(test.getMessage(), test.getResult());
     }
 
     @Test
-    public void test_ValueOfTheCheckbox_ContextMenuHard() {
-        assertTrue(objAction.setValueToCheckbox_ContextMenuHard());
+    public void test_SelectRadioButton_ContextMenuHard_Action() {
+        SetTextTestResult test = objAction.selectRadioButton_ContextMenuHard_Action();
+        assertTrue(test.getMessage(), test.getResult());
+    }
+
+    @Test
+    public void test_SelectRadioButton_ContextMenuHard() {
+        SetTextTestResult test = objAction.selectRadioButton_ContextMenuHard_Action();
+        assertTrue(test.getMessage(), test.getResult());
     }
 }
