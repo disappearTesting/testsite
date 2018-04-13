@@ -70,7 +70,8 @@
 								yesno: {
 								name: "Boolean", 
 								type: 'checkbox',
-								selected: true
+								selected: true,
+								disabled: true
 								},
 								sep2: "---------",
 								// <input type="radio">
@@ -78,7 +79,8 @@
 								name: "Radio1", 
 								type: 'radio', 
 								radio: 'radio', 
-								value: '1'
+								value: '1',
+								disabled: true
 								},
 								radio2: {
 								name: "Radio2", 
@@ -97,8 +99,7 @@
 								name: "Radio3", 
 								type: 'radio', 
 								radio: 'radio', 
-								value: '4', 
-								disabled: true
+								value: '4'
 								},
 								sep3: "---------",
 								// <select>

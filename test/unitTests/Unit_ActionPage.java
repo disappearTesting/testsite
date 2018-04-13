@@ -6,6 +6,8 @@ package unitTests;
 
 import org.junit.After;
 import static org.junit.Assert.assertTrue;
+
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -49,7 +51,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_ValueOfTheCheckbox_ContextMenuHard_Action() {
-        SetTextTestResult test = objAction.setValueToCheckbox_ContextMenuHard_Action();
+        SetTextTestResult test = objAction.toggleCheckbox_ContextMenuHard_Action();
         assertTrue(test.getMessage(), test.getResult());
     }
 
@@ -60,8 +62,7 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_SelectRadioButton_ContextMenuHard() {
-        SetTextTestResult test = objAction.selectRadioButton_ContextMenuHard_Action();
-        assertTrue(test.getMessage(), test.getResult());
+    public void test_SelectDropdownMenu_ContextMenuHard_Action() {
+        objAction.selectDropdownMenu_ContextMenuHard_Action();
     }
 }

@@ -23,6 +23,7 @@ public class ActionPage {
     private static By inputTextContextMenuHard = By.name("context-menu-input-name");
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
+    private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -79,7 +80,7 @@ public class ActionPage {
         return new SetTextTestResult(result, message);
     }
 
-    public SetTextTestResult setValueToCheckbox_ContextMenuHard_Action() {
+    public SetTextTestResult toggleCheckbox_ContextMenuHard_Action() {
         boolean result = true;
         String message = null;
         try {
@@ -95,6 +96,9 @@ public class ActionPage {
                     message = "Error. Element checkboxContextMenuHard is't enabled!";
                     result =  false;
                 }
+            } else {
+                message = "Error. Element buttonContextMenuHard is't enabled!";
+                result =  false;
             }
         } catch (NoSuchElementException | InvalidElementStateException e) {
             message = e.getMessage();
@@ -105,7 +109,7 @@ public class ActionPage {
 
 
     // analogue method, without use class Actions
-    public boolean setValueToCheckbox_ContextMenuHard() {
+    public boolean toggleCheckbox_ContextMenuHard() {
         boolean result = false;
         try {
             builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
@@ -123,21 +127,22 @@ public class ActionPage {
     public SetTextTestResult selectRadioButton_ContextMenuHard_Action() {
         boolean result = true;
         String message = null;
-        WebElement element = null;
         try {
             if(driver.findElement(buttonContextMenuHard).isEnabled()) {
                 builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
                 new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
                 List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
                 for(WebElement elementRadioButton : listRadioButtons) {
-                    element = elementRadioButton;
+                    if(elementRadioButton.isEnabled()) {
+                        builder.moveToElement(elementRadioButton).click().build().perform();
+                    } else {
+                        message = "Error. Element radioButtonContextMenuHard is't enabled!";
+                        result =  false;
+                    }
                 }
-                if(element.isEnabled()) {
-                    builder.moveToElement(element).click().build().perform();
-                } else {
-                    message = "Error. Element radioButtonContextMenuHard is't enabled!";
-                    result =  false;
-                }
+            } else {
+                message = "Error. Element buttonContextMenuHard is't enabled!";
+                result =  false;
             }
         } catch (NoSuchElementException | InvalidElementStateException e) {
             message = e.getMessage();
@@ -146,29 +151,13 @@ public class ActionPage {
         return new SetTextTestResult(result, message);
     }
 
-    public SetTextTestResult selectRadioButton_ContextMenuHard() {
-        boolean result = true;
-        String message = null;
-        WebElement element = null;
+    public void selectDropdownMenu_ContextMenuHard_Action() {
         try {
             if(driver.findElement(buttonContextMenuHard).isEnabled()) {
-                driver.findElement(buttonContextMenuHard).click();
-                new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
-                List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
-                for(WebElement elementRadioButton : listRadioButtons) {
-                    element = elementRadioButton;
-                }
-                if(element.isEnabled()) {
-                    element.click();
-                } else {
-                    message = "Error. Element radioButtonContextMenuHard is't enabled!";
-                    result =  false;
-                }
+                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
             }
-        } catch (NoSuchElementException | InvalidElementStateException e) {
-            message = e.getMessage();
-            result = false;
+        } catch (Exception e) {
+
         }
-        return new SetTextTestResult(result, message);
     }
 }
