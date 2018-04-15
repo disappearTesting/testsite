@@ -4,14 +4,12 @@
  */
 package pom;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.InvalidElementStateException;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class ActionPage {
@@ -24,37 +22,101 @@ public class ActionPage {
     private static By contextMenuHard = By.className("context-menu-list");
     private static By inputTextContextMenuHard = By.name("context-menu-input-name");
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
+    private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
+    private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
     }
 
-    public boolean getAlertClickAndHold() {
-        boolean result = false;
+    public SetTextTestResult getAlertClickAndHold_Action() {
+        boolean result = true;
+        String message = null;
         try {
-            builder.clickAndHold(driver.findElement(buttonClickAndHold)).pause(3000).build().perform();
-            new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
-            try {
-                driver.switchTo().alert().accept();
-                result = true;
-            } catch (NoAlertPresentException e) {
-                e.printStackTrace();
+            if(driver.findElement(buttonClickAndHold).isEnabled()) {
+                builder.clickAndHold(driver.findElement(buttonClickAndHold)).pause(3000).build().perform();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+                try {
+                    driver.switchTo().alert().accept();
+                } catch (NoAlertPresentException e) {
+                    message = e.getMessage();
+                    result =  false;
+                }
+            } else {
+                message = "Error. Element buttonClickAndHold is't enabled!";
+                result =  false;
             }
         } catch (NoSuchElementException | InvalidElementStateException e) {
-            e.printStackTrace();
+            message = e.getMessage();
+            result =  false;
         }
-        return result;
+        return new SetTextTestResult(result, message);
     }
 
-    public boolean setTextToInput_ContextMenuHard(String text) {
+    public SetTextTestResult setTextToInput_ContextMenuHard_Action(String text) {
+        boolean result = true;
+        String message = null;
+        try {
+            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
+                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
+                if(driver.findElement(inputTextContextMenuHard).isEnabled()) {
+                    builder.moveToElement(driver.findElement(inputTextContextMenuHard)).click().sendKeys(text).build().perform();
+                } else {
+                    message = "Error. Element inputTextContextMenuHard is't enabled!";
+                    result =  false;
+                }
+                // close the ContextMenuHard
+                builder.moveToElement(driver.findElement(buttonContextMenuHard)).click().build().perform();
+            } else {
+                message = "Error. Element buttonContextMenuHard is't enabled!";
+                result =  false;
+            }
+        } catch (NoSuchElementException | InvalidElementStateException e) {
+            message = e.getMessage();
+            result =  false;
+        }
+        return new SetTextTestResult(result, message);
+    }
+
+    public SetTextTestResult toggleCheckbox_ContextMenuHard_Action() {
+        boolean result = true;
+        String message = null;
+        try {
+            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
+                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
+                if(driver.findElement(checkboxContextMenuHard).isEnabled()) {
+                    builder.moveToElement(driver.findElement(checkboxContextMenuHard));
+                    for (int i = 1; i <= 2; i++) {
+                        builder.click().build().perform();
+                    }
+                } else {
+                    message = "Error. Element checkboxContextMenuHard is't enabled!";
+                    result =  false;
+                }
+            } else {
+                message = "Error. Element buttonContextMenuHard is't enabled!";
+                result =  false;
+            }
+        } catch (NoSuchElementException | InvalidElementStateException e) {
+            message = e.getMessage();
+            result =  false;
+        }
+        return new SetTextTestResult(result, message);
+    }
+
+
+    // analogue method, without use class Actions
+    public boolean toggleCheckbox_ContextMenuHard() {
         boolean result = false;
         try {
             builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
             new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
-            builder.moveToElement(driver.findElement(inputTextContextMenuHard)).click().sendKeys(text).build().perform();
-            // click outside the area of the ContextMenuHard
-            builder.moveToElement(driver.findElement(buttonContextMenuHard)).click().build().perform();
+            for(int i = 1; i <= 2; i++) {
+                driver.findElement(checkboxContextMenuHard).click();
+            }
             result = true;
         } catch (NoSuchElementException | InvalidElementStateException e) {
             e.printStackTrace();
@@ -62,19 +124,40 @@ public class ActionPage {
         return result;
     }
 
-    public boolean setValueToCheckbox_ContextMenuHard() {
-        boolean result =false;
+    public SetTextTestResult selectRadioButton_ContextMenuHard_Action() {
+        boolean result = true;
+        String message = null;
         try {
-            builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
-            new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
-            builder.moveToElement(driver.findElement(checkboxContextMenuHard));
-            for(int i = 1; i <= 2; i++) {
-                builder.click().build().perform();
-                result = true;
+            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
+                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(contextMenuHard));
+                List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
+                for(WebElement elementRadioButton : listRadioButtons) {
+                    if(elementRadioButton.isEnabled()) {
+                        builder.moveToElement(elementRadioButton).click().build().perform();
+                    } else {
+                        message = "Error. Element radioButtonContextMenuHard is't enabled!";
+                        result =  false;
+                    }
+                }
+            } else {
+                message = "Error. Element buttonContextMenuHard is't enabled!";
+                result =  false;
             }
         } catch (NoSuchElementException | InvalidElementStateException e) {
-            e.printStackTrace();
+            message = e.getMessage();
+            result = false;
         }
-        return result;
+        return new SetTextTestResult(result, message);
+    }
+
+    public void selectDropdownMenu_ContextMenuHard_Action() {
+        try {
+            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
+                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
+            }
+        } catch (Exception e) {
+
+        }
     }
 }

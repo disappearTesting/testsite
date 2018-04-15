@@ -29,4 +29,13 @@ public class Login {
         driver.findElement(buttonSignIn).click();
         return new HomePage(driver);
     }
+
+    private class A {
+        public A() {
+            HomePage homePage = new Login(null)
+                    .enterUserEmail("")
+                    .enterUserPassword("")
+                    .submitLoginCredentials();
+        }
+    }
 }

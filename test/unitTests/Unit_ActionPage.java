@@ -6,12 +6,15 @@ package unitTests;
 
 import org.junit.After;
 import static org.junit.Assert.assertTrue;
+
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
+import pom.SetTextTestResult;
 
 public class Unit_ActionPage {
 
@@ -36,16 +39,30 @@ public class Unit_ActionPage {
 
     @Test
     public void test_GetAlertClickAndHold() {
-        assertTrue(objAction.getAlertClickAndHold());
+        SetTextTestResult test = objAction.getAlertClickAndHold_Action();
+        assertTrue(test.getMessage(), test.getResult());
     }
 
     @Test
-    public void test_InputText_ContextMenuHard() {
-        assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
+    public void test_InputText_ContextMenuHard_Action() {
+        SetTextTestResult test = objAction.setTextToInput_ContextMenuHard_Action("test");
+        assertTrue(test.getMessage(), test.getResult());
     }
 
     @Test
-    public void test_ValueOfTheCheckbox_ContextMenuHard() {
-        assertTrue(objAction.setValueToCheckbox_ContextMenuHard());
+    public void test_ValueOfTheCheckbox_ContextMenuHard_Action() {
+        SetTextTestResult test = objAction.toggleCheckbox_ContextMenuHard_Action();
+        assertTrue(test.getMessage(), test.getResult());
+    }
+
+    @Test
+    public void test_SelectRadioButton_ContextMenuHard_Action() {
+        SetTextTestResult test = objAction.selectRadioButton_ContextMenuHard_Action();
+        assertTrue(test.getMessage(), test.getResult());
+    }
+
+    @Test
+    public void test_SelectDropdownMenu_ContextMenuHard_Action() {
+        objAction.selectDropdownMenu_ContextMenuHard_Action();
     }
 }

@@ -28,7 +28,7 @@
 			<div class="clickAndHold_event">
 				<h4>ClickAndHold</h4>
 				<p>Press the button and hold 3 sec</p>
-				<button id="button-clickAndHold" onmousedown="functionDown();" onmouseup="functionUp();">PressAndHold</button>
+				<button id="button-clickAndHold" onmousedown="functionDown();" onmouseup="functionUp();" >PressAndHold</button>
 				<script>
 					var myVar;
 
@@ -46,7 +46,7 @@
 				<div class="contextMenu-hard">
 					<div>
 						<p>Hard. Press the right-click on the button</p>
-						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
+						<button id="button-hard-contextMenu" tabindex="0" >ContextMenu</button>
 					</div>
 					<script>
 						$(function(){
@@ -79,7 +79,8 @@
 								name: "Radio1", 
 								type: 'radio', 
 								radio: 'radio', 
-								value: '1'
+								value: '1',
+								disabled: true
 								},
 								radio2: {
 								name: "Radio2", 
@@ -98,8 +99,7 @@
 								name: "Radio3", 
 								type: 'radio', 
 								radio: 'radio', 
-								value: '4', 
-								disabled: true
+								value: '4'
 								},
 								sep3: "---------",
 								// <select>
