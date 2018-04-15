@@ -7,6 +7,7 @@ package pom;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -28,6 +29,45 @@ public class ActionPage {
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
+    }
+
+    private boolean getContextMenu(WebElement elementContextMenu) {
+        boolean result = false;
+        if(elementContextMenu != null && elementContextMenu.isEnabled()) {
+            try {
+                builder.moveToElement(elementContextMenu).contextClick().build().perform();
+                result = true;
+            } catch (NoSuchElementException | InvalidElementStateException e) {
+                System.out.println("getContextMenu(). Error, contextClick()!");
+            }
+        } else {
+            System.out.println("getContextMenu(). Error, elementContextMenu is null or is enabled!");
+        }
+        return result;
+    }
+
+    private boolean selectOptionFromDropDown_useValue(WebElement elementSelect, String value) {
+        boolean result = false;
+        if(elementSelect != null && elementSelect.isEnabled()) {
+            try {
+                Select select = new Select(elementSelect);
+                for(WebElement element : select.getOptions()) {
+                    if(element.getAttribute("value").contains(value)) {
+                        select.selectByValue(value);
+                        result = true;
+                        break;
+                    } else {
+                        System.out.println("selectOptionFromDropDown_useValue(). Error, getAttribute(value) is't contains value!");
+                        break;
+                    }
+                }
+            } catch (NoSuchElementException | InvalidElementStateException e) {
+                e.getMessage();
+            }
+        } else {
+            System.out.println("selectOptionFromDropDown_useValue(). Error, elementSelect is null or is enabled!");
+        }
+        return result;
     }
 
     public SetTextTestResult getAlertClickAndHold_Action() {
@@ -151,13 +191,8 @@ public class ActionPage {
         return new SetTextTestResult(result, message);
     }
 
-    public void selectDropdownMenu_ContextMenuHard_Action() {
-        try {
-            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
-                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
-            }
-        } catch (Exception e) {
-
-        }
+    public void selectOption_ContextMenuHard_Action(String value) {
+        getContextMenu(driver.findElement(buttonContextMenuHard));
+        selectOptionFromDropDown_useValue(driver.findElement(inputDropdownMenuContextMenuHard), value);
     }
 }

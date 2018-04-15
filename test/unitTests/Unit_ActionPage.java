@@ -10,6 +10,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -21,8 +22,8 @@ public class Unit_ActionPage {
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
 
     private WebDriver driver;
-    private ActionPage objAction;
     private Actions builder;
+    private ActionPage objAction;
 
     @Before
     public void setUp() {
@@ -63,6 +64,6 @@ public class Unit_ActionPage {
 
     @Test
     public void test_SelectDropdownMenu_ContextMenuHard_Action() {
-        objAction.selectDropdownMenu_ContextMenuHard_Action();
+        assertTrue(objAction.selectOption_ContextMenuHard_Action("1"));
     }
 }
