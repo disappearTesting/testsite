@@ -46,7 +46,7 @@
 				<div class="contextMenu-hard">
 					<div>
 						<p>Hard. Press the right-click on the button</p>
-						<button id="button-hard-contextMenu" tabindex="0" disabled >ContextMenu</button>
+						<button id="button-hard-contextMenu" tabindex="0" >ContextMenu</button>
 					</div>
 					<script>
 						$(function(){

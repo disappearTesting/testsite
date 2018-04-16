@@ -31,43 +31,29 @@ public class ActionPage {
         this.builder = builder;
     }
 
-    private boolean getContextMenu(WebElement elementContextMenu) {
-        boolean result = false;
+    public boolean callContextMenu() {
+        WebElement elementContextMenu = driver.findElement(buttonContextMenuHard);
         if(elementContextMenu != null && elementContextMenu.isEnabled()) {
-            try {
-                builder.moveToElement(elementContextMenu).contextClick().build().perform();
-                result = true;
-            } catch (NoSuchElementException | InvalidElementStateException e) {
-                System.out.println("getContextMenu(). Error, contextClick()!");
+            builder.moveToElement(elementContextMenu).contextClick().build().perform();
+            if(driver.findElement(contextMenuHard).isEnabled()) {
+                return true;
             }
-        } else {
-            System.out.println("getContextMenu(). Error, elementContextMenu is null or is enabled!");
         }
-        return result;
+        return false;
     }
 
-    private boolean selectOptionFromDropDown_useValue(WebElement elementSelect, String value) {
-        boolean result = false;
+    public boolean selectOptionFromDropDown_useValue(String value) {
+        WebElement elementSelect = driver.findElement(inputDropdownMenuContextMenuHard);
         if(elementSelect != null && elementSelect.isEnabled()) {
-            try {
-                Select select = new Select(elementSelect);
-                for(WebElement element : select.getOptions()) {
-                    if(element.getAttribute("value").contains(value)) {
-                        select.selectByValue(value);
-                        result = true;
-                        break;
-                    } else {
-                        System.out.println("selectOptionFromDropDown_useValue(). Error, getAttribute(value) is't contains value!");
-                        break;
-                    }
+            Select select = new Select(elementSelect);
+            for(WebElement element : select.getOptions()) {
+                if(element.getAttribute("value").contains(value)) {
+                    select.selectByValue(value);
+                    return true;
                 }
-            } catch (NoSuchElementException | InvalidElementStateException e) {
-                e.getMessage();
             }
-        } else {
-            System.out.println("selectOptionFromDropDown_useValue(). Error, elementSelect is null or is enabled!");
         }
-        return result;
+        return false;
     }
 
     public SetTextTestResult getAlertClickAndHold_Action() {
@@ -189,10 +175,5 @@ public class ActionPage {
             result = false;
         }
         return new SetTextTestResult(result, message);
-    }
-
-    public void selectOption_ContextMenuHard_Action(String value) {
-        getContextMenu(driver.findElement(buttonContextMenuHard));
-        selectOptionFromDropDown_useValue(driver.findElement(inputDropdownMenuContextMenuHard), value);
     }
 }
