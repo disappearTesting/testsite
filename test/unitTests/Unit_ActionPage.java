@@ -64,6 +64,6 @@ public class Unit_ActionPage {
     @Test
     public void test_SelectDropdownMenu_ContextMenuHard_Action() throws TestRunException {
         assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.selectOptionFromDropDown_useValue("1"));
     }
 }

@@ -20,7 +20,7 @@ public class ActionPage {
 
     private static By buttonClickAndHold = By.id("button-clickAndHold");
     private static By buttonContextMenuHard = By.id("button-hard-contextMenu");
-    private static By contextMenuHard = By.className("context-menu-list context-menu-root");
+    private static By contextMenuHard = By.className("context-menu-list");
     private static By inputTextContextMenuHard = By.name("context-menu-input-name");
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
