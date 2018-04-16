@@ -7,6 +7,7 @@ package pom;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class ActionPage {
 
     private static By buttonClickAndHold = By.id("button-clickAndHold");
     private static By buttonContextMenuHard = By.id("button-hard-contextMenu");
-    private static By contextMenuHard = By.className("context-menu-list");
+    private static By contextMenuHard = By.className("context-menu-list context-menu-root");
     private static By inputTextContextMenuHard = By.name("context-menu-input-name");
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
@@ -28,6 +29,31 @@ public class ActionPage {
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
+    }
+
+    public boolean callContextMenu() {
+        WebElement elementContextMenu = driver.findElement(buttonContextMenuHard);
+        if(elementContextMenu != null && elementContextMenu.isEnabled()) {
+            builder.moveToElement(elementContextMenu).contextClick().build().perform();
+            if(driver.findElement(contextMenuHard).isEnabled()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean selectOptionFromDropDown_useValue(String value) {
+        WebElement elementSelect = driver.findElement(inputDropdownMenuContextMenuHard);
+        if(elementSelect != null && elementSelect.isEnabled()) {
+            Select select = new Select(elementSelect);
+            for(WebElement element : select.getOptions()) {
+                if(element.getAttribute("value").contains(value)) {
+                    select.selectByValue(value);
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     public SetTextTestResult getAlertClickAndHold_Action() {
@@ -149,15 +175,5 @@ public class ActionPage {
             result = false;
         }
         return new SetTextTestResult(result, message);
-    }
-
-    public void selectDropdownMenu_ContextMenuHard_Action() {
-        try {
-            if(driver.findElement(buttonContextMenuHard).isEnabled()) {
-                builder.contextClick(driver.findElement(buttonContextMenuHard)).build().perform();
-            }
-        } catch (Exception e) {
-
-        }
     }
 }

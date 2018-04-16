@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/pom/TestPage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/pom/TestRunException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unitTests/Unit_Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/actionPage/index.php" afterPath="$PROJECT_DIR$/rest/actionPage/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +28,8 @@
       <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="754">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="771">
+              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,8 +40,8 @@
       <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="153" column="59" lean-forward="false" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="59" />
+            <state relative-caret-position="172">
+              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,17 +49,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SetTextTestResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pom/SetTextTestResult.java">
+      <file leaf-file-name="TestRunException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/TestRunException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="e#310#311#0" expanded="false" />
-                <element signature="e#339#340#0" expanded="false" />
-                <element signature="e#373#374#0" expanded="false" />
-                <element signature="e#403#404#0" expanded="false" />
+                <element signature="e#103#104#0" expanded="true" />
+                <element signature="e#127#128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,9 +83,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/pom/Login.java" />
-        <option value="$PROJECT_DIR$/test/pom/SetTextResult.java" />
-        <option value="$PROJECT_DIR$/test/pom/SetTextTestResult.java" />
         <option value="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
         <option value="$PROJECT_DIR$/test/pom/ActionPage.java" />
       </list>
@@ -111,8 +109,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -187,6 +185,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testsite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -555,67 +567,60 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="" />
-      <created>1523433449771</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1523433449771</updated>
-    </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.13 at 18h 45m 53s.xml">
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 11h 15m 36s.xml">
       <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 45m 54s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 11m 05s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 46m 29s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 11m 46s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 47m 46s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 18m 55s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 50m 13s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 19m 31s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 53m 00s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 20m 47s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard - 2018.04.13 at 10h 53m 32s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 52m 48s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard_Action - 2018.04.13 at 10h 48m 52s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard_Action" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 55m 02s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_SelectRadioButton_ContextMenuHard_Action - 2018.04.13 at 10h 49m 51s.xml">
-      <configuration name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard_Action" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 14h 56m 01s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_ValueOfTheCheckbox_ContextMenuHard_Action - 2018.04.13 at 10h 59m 27s.xml">
-      <configuration name="Unit_ActionPage.test_ValueOfTheCheckbox_ContextMenuHard_Action" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_SelectDropdownMenu_ContextMenuHard_Action - 2018.04.16 at 15h 11m 59s.xml">
+      <configuration name="Unit_ActionPage.test_SelectDropdownMenu_ContextMenuHard_Action" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1907" y="251" width="1688" height="863" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="330" y="174" width="1305" height="766" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="330" y="174" width="1305" height="766" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541002" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21299255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -635,7 +640,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -644,74 +649,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/SetTextTestResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2686">
-          <caret line="161" column="36" lean-forward="false" selection-start-line="161" selection-start-column="36" selection-end-line="161" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/SetTextTestResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
@@ -736,13 +673,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,31 +953,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/SetTextTestResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1.jar!/org/openqa/selenium/support/events/EventFiringWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="162" column="38" lean-forward="false" selection-start-line="162" selection-start-column="38" selection-end-line="162" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="352" column="98" lean-forward="true" selection-start-line="352" selection-start-column="11" selection-end-line="352" selection-end-column="98" />
           <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#310#311#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#403#404#0" expanded="false" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12607#12608#0" expanded="true" />
+            <element signature="e#14953#14954#0" expanded="true" />
+            <element signature="e#15006#15007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding>
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#6429#6593#0" expanded="true" />
+            <element signature="e#6592#6593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar!/org/openqa/selenium/interactions/Actions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="357" column="19" lean-forward="false" selection-start-line="357" selection-start-column="19" selection-end-line="357" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/TestRunException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="771">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1055,8 +1066,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="153" column="59" lean-forward="false" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="59" />
+        <state relative-caret-position="172">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

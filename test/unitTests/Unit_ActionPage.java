@@ -7,7 +7,6 @@ package unitTests;
 import org.junit.After;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -15,14 +14,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
 import pom.SetTextTestResult;
+import pom.TestRunException;
 
 public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
 
     private WebDriver driver;
-    private ActionPage objAction;
     private Actions builder;
+    private ActionPage objAction;
 
     @Before
     public void setUp() {
@@ -62,7 +62,8 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_SelectDropdownMenu_ContextMenuHard_Action() {
-        objAction.selectDropdownMenu_ContextMenuHard_Action();
+    public void test_SelectDropdownMenu_ContextMenuHard_Action() throws TestRunException {
+        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.callContextMenu());
     }
 }
