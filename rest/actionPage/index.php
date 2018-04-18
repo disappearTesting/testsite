@@ -46,7 +46,7 @@
 				<div class="contextMenu-hard">
 					<div>
 						<p>Hard. Press the right-click on the button</p>
-						<button id="button-hard-contextMenu" tabindex="0" >ContextMenu</button>
+						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
 					</div>
 					<script>
 						$(function(){
@@ -68,10 +68,10 @@
 								sep1: "---------",
 								// <input type="checkbox">
 								yesno: {
-								name: "Boolean", 
-								type: 'checkbox',
-								selected: true,
-								disabled: true
+								name: "Boolean",
+								id: "chckb",
+								type: "checkbox",
+								selected: true
 								},
 								sep2: "---------",
 								// <input type="radio">
