@@ -13,7 +13,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
-import pom.SetTextTestResult;
 import pom.TestRunException;
 
 public class Unit_ActionPage {
@@ -39,31 +38,33 @@ public class Unit_ActionPage {
 
     @Test
     public void test_GetAlertClickAndHold() {
-        SetTextTestResult test = objAction.getAlertClickAndHold_Action();
-        assertTrue(test.getMessage(), test.getResult());
+        assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
     }
 
     @Test
-    public void test_InputText_ContextMenuHard_Action() {
-        SetTextTestResult test = objAction.setTextToInput_ContextMenuHard_Action("test");
-        assertTrue(test.getMessage(), test.getResult());
-    }
-
-    @Test
-    public void test_ValueOfTheCheckbox_ContextMenuHard_Action() {
-        SetTextTestResult test = objAction.toggleCheckbox_ContextMenuHard_Action();
-        assertTrue(test.getMessage(), test.getResult());
-    }
-
-    @Test
-    public void test_SelectRadioButton_ContextMenuHard_Action() {
-        SetTextTestResult test = objAction.selectRadioButton_ContextMenuHard_Action();
-        assertTrue(test.getMessage(), test.getResult());
-    }
-
-    @Test
-    public void test_SelectDropdownMenu_ContextMenuHard_Action() throws TestRunException {
+    public void test_CallContextMenu() {
         assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.selectOptionFromDropDown_useValue("1"));
+    }
+
+    @Test
+    public void test_SetTextToInput_ContextMenuHard() {
+        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.setTextToInput_ContextMenuHard_Action("test"));
+    }
+
+    @Test
+    public void test_ToggleCheckbox_ContextMenuHard() {
+        //assertTrue();
+    }
+
+    @Test
+    public void test_SelectRadioButton_ContextMenuHard() {
+        //assertTrue();
+    }
+
+    @Test
+    public void test_selectOptionFromDropdownMenu_ContextMenuHard() throws TestRunException {
+        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.selectOptionFromDropdownMenu_useValue("1"));
     }
 }
