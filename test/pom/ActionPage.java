@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class ActionPage {
@@ -31,8 +30,8 @@ public class ActionPage {
         this.builder = builder;
     }
 
-    public void getCoordinatesofElement(WebElement element) {
-        Point point = element.getLocation();
+    public Point getCoordinatesofElement(WebElement element) {
+        return element.getLocation();
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
@@ -135,6 +134,6 @@ public class ActionPage {
     }
 
     public boolean performDragAndDropTextArea_ContextMenuHard() {
-
+        return false;
     }
 }
