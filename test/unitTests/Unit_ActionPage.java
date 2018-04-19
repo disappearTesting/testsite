@@ -37,11 +37,6 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_GetCoordinatesofElement() {
-        objAction.getCoordinatesofElement();
-    }
-
-    @Test
     public void test_GetAlertClickAndHold() throws TestRunException {
         assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
     }

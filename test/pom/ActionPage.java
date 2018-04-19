@@ -31,7 +31,19 @@ public class ActionPage {
     }
 
     public Point getCoordinatesofElement(WebElement element) {
-        return element.getLocation();
+        if(element != null && element.isDisplayed()) {
+            return element.getLocation();
+        }
+    }
+
+    public int getSizeOfElement(WebElement element) {
+        int size = 0;
+        if(element != null && element.isDisplayed()) {
+            int width = element.getSize().getWidth();
+            int height = element.getSize().getHeight();
+            size = width + height;
+        }
+        return size;
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
