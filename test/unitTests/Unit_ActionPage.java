@@ -37,34 +37,36 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_GetAlertClickAndHold() {
+    public void test_GetAlertClickAndHold() throws TestRunException {
         assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
     }
 
     @Test
-    public void test_CallContextMenu() {
+    public void test_CallContextMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu());
     }
 
     @Test
-    public void test_SetTextToInput_ContextMenuHard() {
+    public void test_SetTextToInput_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.setTextToInput_ContextMenuHard_Action("test"));
+        assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
     }
 
     @Test
-    public void test_ToggleCheckbox_ContextMenuHard() {
-        //assertTrue();
-    }
-
-    @Test
-    public void test_SelectRadioButton_ContextMenuHard() {
-        //assertTrue();
-    }
-
-    @Test
-    public void test_selectOptionFromDropdownMenu_ContextMenuHard() throws TestRunException {
+    public void test_ToggleCheckbox_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.selectOptionFromDropdownMenu_useValue("1"));
+        assertTrue(objAction.toggleCheckbox_ContextMenuHard());
+    }
+
+    @Test
+    public void test_SelectOption_ContextMenuHard_useValue() throws TestRunException {
+        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.selectOption_ContextMenuHard_useValue("1"));
+    }
+
+    @Test
+    public void test_SelectRadioButton_ContextMenuHard() throws TestRunException {
+        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.selectRadioButton_ContextMenuHard());
     }
 }
