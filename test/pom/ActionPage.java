@@ -31,9 +31,11 @@ public class ActionPage {
     }
 
     public Point getCoordinatesofElement(WebElement element) {
+        Point position = null;
         if(element != null && element.isDisplayed()) {
-            return element.getLocation();
+           position = element.getLocation();
         }
+        return position;
     }
 
     public int getSizeOfElement(WebElement element) {
@@ -44,6 +46,23 @@ public class ActionPage {
             size = width + height;
         }
         return size;
+    }
+
+    public int getCountOfRowsInElement(String attribute, String value) {
+        int countOfRows = 0;
+        JavascriptExecutor javascript = null;
+        switch(attribute) {
+            case "id":
+                countOfRows = (int) javascript.executeScript("document.getElementById(\"value\").rows;");
+                break;
+            case "tag":
+                countOfRows = (int) javascript.executeScript("document.getElementsByTagName(\"value\").rows;");
+                break;
+            case "class":
+                countOfRows = (int) javascript.executeScript("document.getElementsByClassName(\"value\").rows;");
+                break;
+        }
+        return countOfRows;
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
