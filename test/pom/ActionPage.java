@@ -5,6 +5,7 @@
 package pom;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -48,21 +49,21 @@ public class ActionPage {
         return size;
     }
 
-    public int getCountOfRowsInElement(String attribute, String value) {
-        int countOfRows = 0;
-        JavascriptExecutor javascript = null;
-        switch(attribute) {
-            case "id":
-                countOfRows = (int) javascript.executeScript("document.getElementById(\"value\").rows;");
-                break;
-            case "tag":
-                countOfRows = (int) javascript.executeScript("document.getElementsByTagName(\"value\").rows;");
-                break;
-            case "class":
-                countOfRows = (int) javascript.executeScript("document.getElementsByClassName(\"value\").rows;");
-                break;
-        }
-        return countOfRows;
+    public void getCountOfRowsInElement(String attribute) {
+        JavascriptExecutor javascript = (JavascriptExecutor)driver;
+        javascript.executeScript("var x = document.getElementById(\"input-textarea\").rows;\n" + "document.getElementById(\"demo\").innerHTML = x;\n");
+//        switch(attribute) {
+//            case "id":
+//                countOfRows = (int) javascript.executeScript("document.getElementById('value').rows;");
+//                break;
+//            case "tag":
+//                countOfRows = (int) javascript.executeScript("document.getElementsByTagName('value').rows;");
+//                break;
+//            case "class":
+//                countOfRows = (int) javascript.executeScript("document.getElementsByClassName('value').rows;");
+//                break;
+//        }
+        System.out.println();
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
