@@ -5,12 +5,12 @@
 package pom;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Iterator;
 import java.util.List;
 
 public class ActionPage {
@@ -29,6 +29,41 @@ public class ActionPage {
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
+    }
+
+    public Point getCoordinatesofElement(WebElement element) {
+        Point position = null;
+        if(element != null && element.isDisplayed()) {
+           position = element.getLocation();
+        }
+        return position;
+    }
+
+    public int getSizeOfElement(WebElement element) {
+        int size = 0;
+        if(element != null && element.isDisplayed()) {
+            int width = element.getSize().getWidth();
+            int height = element.getSize().getHeight();
+            size = width + height;
+        }
+        return size;
+    }
+
+    public void getCountOfRowsInElement(String attribute) {
+        JavascriptExecutor javascript = (JavascriptExecutor)driver;
+        javascript.executeScript("var x = document.getElementById(\"input-textarea\").rows;\n" + "document.getElementById(\"demo\").innerHTML = x;\n");
+//        switch(attribute) {
+//            case "id":
+//                countOfRows = (int) javascript.executeScript("document.getElementById('value').rows;");
+//                break;
+//            case "tag":
+//                countOfRows = (int) javascript.executeScript("document.getElementsByTagName('value').rows;");
+//                break;
+//            case "class":
+//                countOfRows = (int) javascript.executeScript("document.getElementsByClassName('value').rows;");
+//                break;
+//        }
+        System.out.println();
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
@@ -117,14 +152,20 @@ public class ActionPage {
 
     public boolean selectRadioButton_ContextMenuHard() {
         List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
-        Iterator iterator = listRadioButtons.iterator();
         for(WebElement elementRadioButton : listRadioButtons) {
             if(!elementRadioButton.isEnabled()) {
                 builder.moveToElement(elementRadioButton);
             } else {
                 builder.click(elementRadioButton).build().perform();
             }
+            if(listRadioButtons.indexOf(elementRadioButton) == (listRadioButtons.size() -1) && elementRadioButton.isSelected()) {
+                return true;
+            }
         }
+        return false;
+    }
+
+    public boolean performDragAndDropTextArea_ContextMenuHard() {
         return false;
     }
 }

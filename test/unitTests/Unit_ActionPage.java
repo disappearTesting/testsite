@@ -37,6 +37,11 @@ public class Unit_ActionPage {
     }
 
     @Test
+    public void test_GetCountOfRowsInElement() {
+        objAction.getCountOfRowsInElement("id");
+    }
+
+    @Test
     public void test_GetAlertClickAndHold() throws TestRunException {
         assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
     }

@@ -47,6 +47,8 @@
 					<div>
 						<p>Hard. Press the right-click on the button</p>
 						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
+						<textarea id="input-textarea" rows="4" cols="50"></textarea>
+						<p id="demo"></p>
 					</div>
 					<script>
 						$(function(){
@@ -111,8 +113,8 @@
 								},
 								// <textarea>
 								area2: {
-								name: "Textarea", 
-								type: 'textarea', 
+								name: "Textarea",
+								type: 'textarea',
 								value: "Hello World"
 								}
 								},

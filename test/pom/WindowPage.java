@@ -36,7 +36,7 @@ public class WindowPage {
     public boolean getWindow(String typeWindow) {
         boolean windowIsOpen = false;
         try {
-            switch (typeWindow) {
+            switch(typeWindow) {
                 case "blank":
                     driver.findElement(textBlankWindow).click();
                     windowIsOpen = true;
