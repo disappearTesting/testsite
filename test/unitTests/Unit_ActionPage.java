@@ -29,7 +29,8 @@ public class Unit_ActionPage {
     public void setUp() {
         driver = new FirefoxDriver();
         builder = new Actions(driver);
-        objAction = new ActionPage(driver, builder, javascript);
+        //javascript = (JavascriptExecutor)driver;
+        objAction = new ActionPage(driver, builder);
         driver.get(URL_ACTION_PAGE);
     }
 
@@ -39,8 +40,14 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_GetCountOfRowsInElement() {
+    public void test_GetCountOfRowsInElement() throws TestRunException {
+        objAction.callContextMenu();
         objAction.getCountOfRowsInTextarea();
+    }
+
+    @Test
+    public void test_ResizeElement() throws TestRunException {
+        objAction.resizeElement();
     }
 
     @Test

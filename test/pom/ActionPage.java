@@ -26,9 +26,10 @@ public class ActionPage {
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
+    private static By textareaMain = By.id("input-textarea");
     private static By pContextMenuHard = By.id("demo");
 
-    public ActionPage(WebDriver driver, Actions builder, JavascriptExecutor javascript) {
+    public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
         this.javascript = (JavascriptExecutor)driver;
@@ -53,16 +54,16 @@ public class ActionPage {
     }
 
     public String getCountOfRowsInTextarea() {
-        JavascriptExecutor javascript = (JavascriptExecutor)driver;
-        javascript.executeScript("var x = document.getElementById('input-textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
+        javascript.executeScript("var x = document.getElementsByTagName('textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
         new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(pContextMenuHard));
         String countOfRows = driver.findElement(pContextMenuHard).getText();
         return countOfRows;
     }
 
-    public void resizeElement(WebElement element) throws TestRunException {
+    public void resizeElement() throws TestRunException {
+        WebElement element = driver.findElement(textareaMain);
         if(element != null && element.isEnabled()) {
-
+            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px;HEIGHT:100px');", element);
         } else {
             throw new TestRunException("Error, resizeElement is null or is't enabled");
         }

@@ -41,14 +41,17 @@
 					}
 				</script>
 			</div>
+			<div class="textarea-event">
+				<h4>Textarea</h4>
+				<textarea id="input-textarea" rows="4" cols="50"></textarea>
+				<p id="demo"></p>
+			</div>
 			<div class="contextMenu-event">
 				<h4>ContextMenu</h4>
 				<div class="contextMenu-hard">
 					<div>
 						<p>Hard. Press the right-click on the button</p>
 						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
-						<textarea id="input-textarea" rows="4" cols="50"></textarea>
-						<p id="demo"></p>
 					</div>
 					<script>
 						$(function(){
