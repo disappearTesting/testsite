@@ -5,7 +5,6 @@
 package pom;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -28,7 +27,8 @@ public class ActionPage {
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
     private static By textareaMain = By.id("input-textarea");
     private static By pContextMenuHard = By.id("demo");
-    private static By resizableHandleIconGrip = By.className("ui-resizable-handle");
+    private static By resizeareaMain = By.className("box resizable");
+    private static By resizableHandleIconGrip = By.className("win-size-grip");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -44,28 +44,45 @@ public class ActionPage {
         return position;
     }
 
-    public int getSizeOfElement(WebElement element) {
-        int size = 0;
+    public int getSizeOfElement(WebElement element) throws TestRunException {
+        int size;
         if(element != null && element.isDisplayed()) {
             int width = element.getSize().getWidth();
             int height = element.getSize().getHeight();
             size = width + height;
+        } else {
+            throw new TestRunException("getSizeOfElement(). Error, element is null or is't displayed");
         }
         return size;
     }
 
-    public void resizeTheElement() throws InterruptedException, TestRunException {
-        WebElement element = driver.findElement(resizableHandleIconGrip);
+    public void resizeTheElement(WebElement element, int x, int y) throws TestRunException {
         if(element != null && element.isEnabled()) {
-            builder.dragAndDropBy(element, 150, 150).build().perform();
-            Thread.sleep(5000);
-            builder.clickAndHold(element).moveByOffset(-100,-100).release().perform();
+            builder.dragAndDropBy(element, x, y).build().perform();
         } else {
             throw new TestRunException("resizeTheElement(). Error, element is null or is't enabled");
         }
     }
 
-    public String getCountOfRowsInElement() throws TestRunException {
+    public void resizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
+        int x = 310;
+        int y = 310;
+        WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
+        WebElement elementResizeArea = driver.findElement(resizeareaMain);
+        //getSizeOfElement(elementResizeArea);
+        getSizeOfElement(elementIconGrip);
+        //System.out.println(getSizeOfElement(elementResizeArea));
+        System.out.println(getSizeOfElement(elementIconGrip));
+        resizeTheElement(elementIconGrip, x, y);
+        new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
+        Thread.sleep(5000);
+        //getSizeOfElement(elementResizeArea);
+        getSizeOfElement(elementIconGrip);
+        //System.out.println(getSizeOfElement(elementResizeArea));
+        System.out.println(getSizeOfElement(elementIconGrip));
+    }
+
+    public String getCountOfRowsInElement_UseJavascript() throws TestRunException {
         String countOfRows;
         WebElement element = driver.findElement(pContextMenuHard);
         if(element != null && element.isEnabled()) {
@@ -80,7 +97,7 @@ public class ActionPage {
     public void resizeElement_UseJavascript() throws TestRunException {
         WebElement element = driver.findElement(textareaMain);
         if(element != null && element.isEnabled()) {
-            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px;HEIGHT:100px');", element);
+            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px; HEIGHT:100px');", element);
         } else {
             throw new TestRunException("resizeElement_UseJavascript(). Error, element is null or is't enabled");
         }

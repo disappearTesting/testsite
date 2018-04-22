@@ -45,8 +45,8 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_ResizeTheResizeArea() throws TestRunException, InterruptedException {
-        objAction.resizeTheElement();
+    public void test_ResizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
+        objAction.resizeTheElement_ResizeArea();
     }
 
     @Test

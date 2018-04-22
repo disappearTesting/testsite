@@ -1,0 +1,38 @@
+html, body {
+            height: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        .page-container {
+            margin: 20px;
+        }
+        .box {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            position: relative;
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+            /* limit size with min/max-width/height*/
+            min-height: 100px;
+            min-width: 200px;
+            max-width: 999px;
+            max-height: 800px;
+        }
+
+        .boxheader {
+			padding: 5px;
+        }
+
+        .win-size-grip {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            padding: 4px;
+            bottom: 0;
+            right: 0;
+            cursor: nwse-resize;
+            background: url(assets/wingrip.png) no-repeat;
+        }

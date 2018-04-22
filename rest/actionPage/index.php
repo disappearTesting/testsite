@@ -6,7 +6,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Action Page</title>
-	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 
 	<style type="text/css">
@@ -21,12 +20,10 @@
     <script src="simple-contextMenu/jquery_002.txt" type="text/javascript"></script>
     <script src="simple-contextMenu/jquery.txt" type="text/javascript"></script>
 	
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
-	<style>
-		#resizable { width: 150px; height: 150px; padding: 0.5em; }
-		#resizable h3 { text-align: center; margin: 0; }
-	</style>
+	<!-- resizearea -->
+	<link href="resize/styleResize.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+	<script src="resize/jquery-resizable.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -53,15 +50,20 @@
 				<textarea id="input-textarea" rows="4" cols="50"></textarea>
 				<p id="demo"></p>
 			</div>
-			<div class="">
-				<h4>ResizeArea</h4>
-				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-				<script>
-					$( function() {
-						$( "#resizable" ).resizable();
-						} );
-				</script>
-				<div id="resizable" class="ui-widget-content"></div>
+			<div class="box">
+				<h4 class="boxheader">ResizeArea</h4>
+				<div class="win-size-grip"></div>
+			<script>    
+				$(".box").resizable({
+					handleSelector: "> .win-size-grip",
+					onDragStart: function (e, $el, opt) {
+						$el.css("cursor", "nwse-resize");
+					},
+					onDragStop: function (e, $el, opt) {
+						$el.css("cursor", "");
+					}
+				});        
+			</script>
 			</div>
 			<div class="contextMenu-event">
 				<h4>ContextMenu</h4>
