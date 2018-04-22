@@ -17,6 +17,7 @@ public class ActionPage {
 
     private WebDriver driver;
     private Actions builder;
+    private JavascriptExecutor javascript;
 
     private static By buttonClickAndHold = By.id("button-clickAndHold");
     private static By buttonContextMenuHard = By.id("button-hard-contextMenu");
@@ -25,13 +26,15 @@ public class ActionPage {
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
+    private static By pContextMenuHard = By.id("demo");
 
-    public ActionPage(WebDriver driver, Actions builder) {
+    public ActionPage(WebDriver driver, Actions builder, JavascriptExecutor javascript) {
         this.driver = driver;
         this.builder = builder;
+        this.javascript = (JavascriptExecutor)driver;
     }
 
-    public Point getCoordinatesofElement(WebElement element) {
+    public Point getCoordinatesOfElement(WebElement element) {
         Point position = null;
         if(element != null && element.isDisplayed()) {
            position = element.getLocation();
@@ -49,21 +52,20 @@ public class ActionPage {
         return size;
     }
 
-    public void getCountOfRowsInElement(String attribute) {
+    public String getCountOfRowsInTextarea() {
         JavascriptExecutor javascript = (JavascriptExecutor)driver;
-        javascript.executeScript("var x = document.getElementById(\"input-textarea\").rows;\n" + "document.getElementById(\"demo\").innerHTML = x;\n");
-//        switch(attribute) {
-//            case "id":
-//                countOfRows = (int) javascript.executeScript("document.getElementById('value').rows;");
-//                break;
-//            case "tag":
-//                countOfRows = (int) javascript.executeScript("document.getElementsByTagName('value').rows;");
-//                break;
-//            case "class":
-//                countOfRows = (int) javascript.executeScript("document.getElementsByClassName('value').rows;");
-//                break;
-//        }
-        System.out.println();
+        javascript.executeScript("var x = document.getElementById('input-textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
+        new WebDriverWait(driver, 5).until(ExpectedConditions.presenceOfElementLocated(pContextMenuHard));
+        String countOfRows = driver.findElement(pContextMenuHard).getText();
+        return countOfRows;
+    }
+
+    public void resizeElement(WebElement element) throws TestRunException {
+        if(element != null && element.isEnabled()) {
+
+        } else {
+            throw new TestRunException("Error, resizeElement is null or is't enabled");
+        }
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {

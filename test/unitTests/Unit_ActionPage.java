@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -21,13 +22,14 @@ public class Unit_ActionPage {
 
     private WebDriver driver;
     private Actions builder;
+    private JavascriptExecutor javascript;
     private ActionPage objAction;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         builder = new Actions(driver);
-        objAction = new ActionPage(driver, builder);
+        objAction = new ActionPage(driver, builder, javascript);
         driver.get(URL_ACTION_PAGE);
     }
 
@@ -38,7 +40,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_GetCountOfRowsInElement() {
-        objAction.getCountOfRowsInElement("id");
+        objAction.getCountOfRowsInTextarea();
     }
 
     @Test
