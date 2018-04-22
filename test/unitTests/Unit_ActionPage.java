@@ -40,14 +40,13 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_GetCountOfRowsInElement() throws TestRunException {
-        objAction.callContextMenu();
-        objAction.getCountOfRowsInTextarea();
+    public void test_ResizeTheTextArea_UseJavascript() throws TestRunException {
+        objAction.resizeElement_UseJavascript();
     }
 
     @Test
-    public void test_ResizeElement() throws TestRunException {
-        objAction.resizeElement();
+    public void test_ResizeTheResizeArea() throws TestRunException, InterruptedException {
+        objAction.resizeTheElement();
     }
 
     @Test

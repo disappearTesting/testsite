@@ -20,6 +20,13 @@
     <script src="simple-contextMenu/jquery_003.txt"></script>
     <script src="simple-contextMenu/jquery_002.txt" type="text/javascript"></script>
     <script src="simple-contextMenu/jquery.txt" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<style>
+		#resizable { width: 150px; height: 150px; padding: 0.5em; }
+		#resizable h3 { text-align: center; margin: 0; }
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -42,9 +49,19 @@
 				</script>
 			</div>
 			<div class="textarea-event">
-				<h4>Textarea</h4>
+				<h4>TextArea</h4>
 				<textarea id="input-textarea" rows="4" cols="50"></textarea>
 				<p id="demo"></p>
+			</div>
+			<div class="">
+				<h4>ResizeArea</h4>
+				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+				<script>
+					$( function() {
+						$( "#resizable" ).resizable();
+						} );
+				</script>
+				<div id="resizable" class="ui-widget-content"></div>
 			</div>
 			<div class="contextMenu-event">
 				<h4>ContextMenu</h4>
