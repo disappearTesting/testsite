@@ -27,7 +27,7 @@ public class ActionPage {
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
     private static By textareaMain = By.id("input-textarea");
     private static By pContextMenuHard = By.id("demo");
-    private static By resizeareaMain = By.className("box resizable");
+    private static By resizeareaMain = By.className("box");
     private static By resizableHandleIconGrip = By.className("win-size-grip");
 
     public ActionPage(WebDriver driver, Actions builder) {
@@ -64,22 +64,28 @@ public class ActionPage {
         }
     }
 
-    public void resizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
-        int x = 310;
-        int y = 310;
+    public void resizeElement_UseJavascript() throws TestRunException {
+        WebElement element = driver.findElement(textareaMain);
+        if(element != null && element.isEnabled()) {
+            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px; HEIGHT:100px');", element);
+        } else {
+            throw new TestRunException("resizeElement_UseJavascript(). Error, element is null or is't enabled");
+        }
+    }
+
+    public boolean resizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
+        int x = 80;
+        int y = 80;
         WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
         WebElement elementResizeArea = driver.findElement(resizeareaMain);
-        //getSizeOfElement(elementResizeArea);
-        getSizeOfElement(elementIconGrip);
-        //System.out.println(getSizeOfElement(elementResizeArea));
-        System.out.println(getSizeOfElement(elementIconGrip));
+        int before = getSizeOfElement(elementResizeArea);
         resizeTheElement(elementIconGrip, x, y);
         new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
-        Thread.sleep(5000);
-        //getSizeOfElement(elementResizeArea);
-        getSizeOfElement(elementIconGrip);
-        //System.out.println(getSizeOfElement(elementResizeArea));
-        System.out.println(getSizeOfElement(elementIconGrip));
+        int after = getSizeOfElement(elementResizeArea);
+        if(after == (before + x + y)) {
+            return true;
+        }
+        return false;
     }
 
     public String getCountOfRowsInElement_UseJavascript() throws TestRunException {
@@ -92,15 +98,6 @@ public class ActionPage {
             throw new TestRunException("getCountOfRowsInElement(). Error, element is null or is't enabled");
         }
         return countOfRows;
-    }
-
-    public void resizeElement_UseJavascript() throws TestRunException {
-        WebElement element = driver.findElement(textareaMain);
-        if(element != null && element.isEnabled()) {
-            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px; HEIGHT:100px');", element);
-        } else {
-            throw new TestRunException("resizeElement_UseJavascript(). Error, element is null or is't enabled");
-        }
     }
 
     public boolean callAlertClickAndHold(String textAlert) throws TestRunException {

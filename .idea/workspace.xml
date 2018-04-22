@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1336dc2a-112e-49cb-9050-7bc737c0bc91" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/rest/actionPage/index.php" afterPath="$PROJECT_DIR$/rest/actionPage/index.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
       <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
     </list>
@@ -19,8 +19,8 @@
       <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -29,12 +29,12 @@
       <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+            <state relative-caret-position="540">
+              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8791#8792#0" expanded="true" />
-                <element signature="e#8819#8820#0" expanded="true" />
+                <element signature="e#8520#8521#0" expanded="true" />
+                <element signature="e#8548#8549#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -392,48 +392,47 @@
       <updated>1524312471374</updated>
       <workItem from="1524312472519" duration="5662000" />
       <workItem from="1524319638836" duration="1362000" />
-      <workItem from="1524389324409" duration="13823000" />
+      <workItem from="1524389324409" duration="15689000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 42m 31s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 43m 53s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 44m 37s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 47m 45s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 48m 48s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 50m 01s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 55m 02s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 21h 58m 59s.xml">
-      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 22h 00m 46s.xml">
       <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 22h 07m 14s.xml">
       <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 01m 37s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 04m 52s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 06m 16s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 06m 49s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 15m 32s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 16m 13s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 20m 52s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_ResizeTheElement_ResizeArea - 2018.04.22 at 23h 21m 18s.xml">
+      <configuration name="Unit_ActionPage.test_ResizeTheElement_ResizeArea" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20847000" />
+    <option name="totallyTimeSpent" value="22713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -444,7 +443,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="108" y="111" width="1740" height="818" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="108" y="111" width="1740" height="818" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -491,8 +490,8 @@
           <caret line="77" column="28" lean-forward="true" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8791#8792#0" expanded="true" />
-            <element signature="e#8819#8820#0" expanded="true" />
+            <element signature="e#8520#8521#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -511,8 +510,8 @@
           <caret line="62" column="16" lean-forward="false" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8791#8792#0" expanded="true" />
-            <element signature="e#8819#8820#0" expanded="true" />
+            <element signature="e#8520#8521#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -544,20 +543,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state relative-caret-position="160">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+        <state relative-caret-position="540">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8791#8792#0" expanded="true" />
-            <element signature="e#8819#8820#0" expanded="true" />
+            <element signature="e#8520#8521#0" expanded="true" />
+            <element signature="e#8548#8549#0" expanded="true" />
           </folding>
         </state>
       </provider>
