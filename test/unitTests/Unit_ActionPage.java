@@ -57,7 +57,7 @@ public class Unit_ActionPage {
     @Test
     public void test_SetTextToInput_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
+        assertTrue(objAction.setTextToInput_inputText());
     }
 
     @Test
@@ -67,9 +67,9 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_SelectOption_ContextMenuHard_useValue() throws TestRunException {
+    public void test_SelectOption_useValue_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectOption_ContextMenuHard_useValue("1"));
+        assertTrue(objAction.selectOption_useValue_InputDropdownMenu());
     }
 
     @Test

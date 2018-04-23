@@ -37,10 +37,12 @@ public class ActionPage {
     }
 
     //logical method
-    private Point getCoordinatesOfElement(WebElement element) {
-        Point position = null;
+    private Point getCoordinatesOfElement(WebElement element) throws TestRunException {
+        Point position;
         if(element != null && element.isDisplayed()) {
            position = element.getLocation();
+        } else {
+            throw new TestRunException("getCoordinatesOfElement(). Error, element is null or is't displayed");
         }
         return position;
     }
@@ -147,8 +149,8 @@ public class ActionPage {
         return callContextMenu(elementButton);
     }
 
-    public boolean selectOption_ContextMenuHard_useValue(String value) throws TestRunException {
-        WebElement element = driver.findElement(inputDropdownMenuContextMenuHard);
+    //logical method
+    private boolean selectOption_useValue(WebElement element, String value) throws TestRunException {
         if(element != null && element.isEnabled()) {
             Select select = new Select(element);
             for(WebElement elementSelect : select.getOptions()) {
@@ -161,14 +163,26 @@ public class ActionPage {
         return false;
     }
 
-    public boolean setTextToInput_ContextMenuHard(String text) throws TestRunException {
-        WebElement element = driver.findElement(inputTextContextMenuHard);
+    //action method
+    public boolean selectOption_useValue_InputDropdownMenu() throws TestRunException {
+        WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
+        return selectOption_useValue(elementDropdownMenu, "1");
+    }
+
+    //logical method
+    private boolean setTextToInput(WebElement element, String text) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.click(element).sendKeys(text).build().perform();
             return true;
         } else {
             throw new TestRunException("setTextToInput_ContextMenuHard(). Error, element is null or is't enabled");
         }
+    }
+
+    public boolean setTextToInput_inputText() throws TestRunException {
+        WebElement elementInput = driver.findElement(inputTextContextMenuHard);
+        return setTextToInput(elementInput, "test");
+
     }
 
     public boolean toggleCheckbox_ContextMenuHard() throws TestRunException {
