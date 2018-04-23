@@ -6,7 +6,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Action Page</title>
-	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 
 	<style type="text/css">
@@ -20,6 +19,10 @@
     <script src="simple-contextMenu/jquery_003.txt"></script>
     <script src="simple-contextMenu/jquery_002.txt" type="text/javascript"></script>
     <script src="simple-contextMenu/jquery.txt" type="text/javascript"></script>
+	
+	<!-- resizearea -->
+	<link href="resize/styleResize.css" rel="stylesheet" type="text/css">
+	<script src="resize/jquery-resizable.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -41,14 +44,32 @@
 					}
 				</script>
 			</div>
+			<div class="textarea-event">
+				<h4>TextArea</h4>
+				<textarea id="input-textarea" rows="4" cols="50"></textarea>
+				<p id="demo"></p>
+			</div>
+			<div class="box">
+				<h4 class="boxheader">ResizeArea</h4>
+				<div class="win-size-grip"></div>
+			<script>    
+				$(".box").resizable({
+					handleSelector: "> .win-size-grip",
+					onDragStart: function (e, $el, opt) {
+						$el.css("cursor", "nwse-resize");
+					},
+					onDragStop: function (e, $el, opt) {
+						$el.css("cursor", "");
+					}
+				});        
+			</script>
+			</div>
 			<div class="contextMenu-event">
 				<h4>ContextMenu</h4>
 				<div class="contextMenu-hard">
 					<div>
 						<p>Hard. Press the right-click on the button</p>
 						<button id="button-hard-contextMenu" tabindex="0">ContextMenu</button>
-						<textarea id="input-textarea" rows="4" cols="50"></textarea>
-						<p id="demo"></p>
 					</div>
 					<script>
 						$(function(){

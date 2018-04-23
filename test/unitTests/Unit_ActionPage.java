@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -21,12 +22,14 @@ public class Unit_ActionPage {
 
     private WebDriver driver;
     private Actions builder;
+    private JavascriptExecutor javascript;
     private ActionPage objAction;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         builder = new Actions(driver);
+        //javascript = (JavascriptExecutor)driver;
         objAction = new ActionPage(driver, builder);
         driver.get(URL_ACTION_PAGE);
     }
@@ -37,41 +40,41 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_GetCountOfRowsInElement() {
-        objAction.getCountOfRowsInElement("id");
+    public void test_ResizeTheElement_ResizeArea() throws TestRunException {
+        assertTrue(objAction.resizeTheElement_ResizeArea());
     }
 
     @Test
-    public void test_GetAlertClickAndHold() throws TestRunException {
-        assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
+    public void test_CallAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
+        assertTrue(objAction.callAlertClickAndHold_ButtonClickAndHold());
     }
 
     @Test
-    public void test_CallContextMenu() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+    public void test_CallContextMenu_ButtonContextMenu() throws TestRunException {
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
     }
 
     @Test
     public void test_SetTextToInput_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
     }
 
     @Test
     public void test_ToggleCheckbox_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.toggleCheckbox_ContextMenuHard());
     }
 
     @Test
     public void test_SelectOption_ContextMenuHard_useValue() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.selectOption_ContextMenuHard_useValue("1"));
     }
 
     @Test
     public void test_SelectRadioButton_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.selectRadioButton_ContextMenuHard());
     }
 }

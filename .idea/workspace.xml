@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/resize/assets/hsizegrip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/resize/assets/vsizegrip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/resize/assets/wingrip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/resize/jquery-resizable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/resize/styleResize.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unitTests/Resizable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/actionPage/index.php" afterPath="$PROJECT_DIR$/rest/actionPage/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,58 +28,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="121">
+              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            <state relative-caret-position="393">
+              <caret line="143" column="52" lean-forward="false" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavascriptExecutor.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar!/org/openqa/selenium/JavascriptExecutor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirefoxDriver.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unit_DatetimeKendoUIPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_DatetimeKendoUIPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="63" column="61" lean-forward="false" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,9 +71,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/pom/WindowPage.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
         <option value="$PROJECT_DIR$/test/pom/ActionPage.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
       </list>
     </option>
   </component>
@@ -222,7 +194,7 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_ActionPage.test_GetCountOfRowsInElement">
+  <component name="RunManager" selected="JUnit.Unit_ActionPage.test_CallContextMenu_ButtonContextMenu">
     <configuration default="false" name="Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -236,58 +208,6 @@
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
       <option name="METHOD_NAME" value="test_SelectRadioButton_ContextMenuHard" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unit_ActionPage.test_GetAlertClickAndHold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="testsite" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
-      <option name="METHOD_NAME" value="test_GetAlertClickAndHold" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unit_ActionPage.test_SetTextToInput_ContextMenuHard_Action" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="testsite" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
-      <option name="METHOD_NAME" value="test_SetTextToInput_ContextMenuHard_Action" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -340,6 +260,58 @@
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
       <option name="METHOD_NAME" value="test_GetCountOfRowsInElement" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unit_ActionPage.test_CallAlertClickAndHold_ButtonClickAndHold" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
+      <option name="METHOD_NAME" value="test_CallAlertClickAndHold_ButtonClickAndHold" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unit_ActionPage.test_CallContextMenu_ButtonContextMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
+      <option name="METHOD_NAME" value="test_CallContextMenu_ButtonContextMenu" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -559,18 +531,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetAlertClickAndHold" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SetTextToInput_ContextMenuHard_Action" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCoordinatesofElement" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCountOfRowsInElement" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCoordinatesofElement" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCountOfRowsInElement" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_CallAlertClickAndHold_ButtonClickAndHold" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_CallContextMenu_ButtonContextMenu" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCountOfRowsInElement" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCoordinatesofElement" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SetTextToInput_ContextMenuHard_Action" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetAlertClickAndHold" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_CallContextMenu_ButtonContextMenu" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_CallAlertClickAndHold_ButtonClickAndHold" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCountOfRowsInElement" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_GetCoordinatesofElement" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SelectRadioButton_ContextMenuHard" />
       </list>
     </recent_temporary>
   </component>
@@ -578,63 +550,39 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="59e78757-1953-4ac0-8abf-43e3e9ea0ff2" name="Default" comment="" />
-      <created>1524204041857</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1524204041857</updated>
-    </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 14h 25m 58s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_CallAlertClickAndHold_ButtonClickAndHold - 2018.04.23 at 09h 23m 50s.xml">
+      <configuration name="Unit_ActionPage.test_CallAlertClickAndHold_ButtonClickAndHold" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 14h 33m 58s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_CallAlertClickAndHold_ButtonClickAndHold - 2018.04.23 at 09h 26m 39s.xml">
+      <configuration name="Unit_ActionPage.test_CallAlertClickAndHold_ButtonClickAndHold" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 14h 35m 12s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_CallContextMenu_ButtonContextMenu - 2018.04.23 at 10h 42m 36s.xml">
+      <configuration name="Unit_ActionPage.test_CallContextMenu_ButtonContextMenu" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 14h 38m 30s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 14h 39m 14s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 15h 02m 44s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 15h 05m 30s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 15h 06m 36s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 15h 08m 52s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_GetCountOfRowsInElement - 2018.04.20 at 15h 09m 49s.xml">
-      <configuration name="Unit_ActionPage.test_GetCountOfRowsInElement" configurationId="JUnit" />
+    <history-entry file="Unit_ActionPage_test_CallContextMenu_ButtonContextMenu - 2018.04.23 at 10h 52m 56s.xml">
+      <configuration name="Unit_ActionPage.test_CallContextMenu_ButtonContextMenu" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1928" height="1044" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1763" y="212" width="1688" height="863" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-1763" y="212" width="1688" height="863" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="330" y="174" width="1305" height="766" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="330" y="174" width="1305" height="766" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22364217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -648,7 +596,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -705,11 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,11 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -942,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/AlertPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1022,15 +953,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-483">
+          <caret line="528" column="23" lean-forward="false" selection-start-line="528" selection-start-column="23" selection-end-line="528" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1039,13 +973,6 @@
         <state relative-caret-position="85">
           <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.6.0/selenium-remote-driver-3.6.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="528" column="23" lean-forward="false" selection-start-line="528" selection-start-column="23" selection-end-line="528" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1059,11 +986,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="65" column="29" lean-forward="false" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        <state relative-caret-position="393">
+          <caret line="143" column="52" lean-forward="false" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
