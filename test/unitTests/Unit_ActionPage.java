@@ -45,6 +45,12 @@ public class Unit_ActionPage {
     }
 
     @Test
+    public void test_ResizeTheElement_UseJavascript_Textarea_contextMenu() throws TestRunException {
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.resizeTheElement_UseJavascript_Textarea_ContextMenu());
+    }
+
+    @Test
     public void test_CallAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
         assertTrue(objAction.callAlertClickAndHold_ButtonClickAndHold());
     }

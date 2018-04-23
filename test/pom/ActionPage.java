@@ -25,6 +25,7 @@ public class ActionPage {
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
+    private static By textareaContextMenuHard = By.name("context-menu-input-area2");
     private static By textareaMain = By.id("input-textarea");
     private static By pContextMenuHard = By.id("demo");
     private static By resizeareaMain = By.className("box");
@@ -61,14 +62,19 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean resizeTheElement_UseJavascript() throws TestRunException {
-        WebElement element = driver.findElement(textareaMain);
+    private boolean resizeTheElement_UseJavascript(WebElement element) throws TestRunException {
         if(element != null && element.isEnabled()) {
-            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px; HEIGHT:100px');", element);
+            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:250px; HEIGHT:200px');", element);
             return true;
         } else {
             throw new TestRunException("resizeElement_UseJavascript(). Error, element is null or is't enabled");
         }
+    }
+
+    //action method
+    public boolean resizeTheElement_UseJavascript_Textarea_ContextMenu() throws TestRunException {
+        WebElement elementTextarea = driver.findElement(textareaContextMenuHard);
+        return resizeTheElement_UseJavascript(elementTextarea);
     }
 
     //logical method
