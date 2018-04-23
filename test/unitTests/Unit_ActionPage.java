@@ -57,24 +57,24 @@ public class Unit_ActionPage {
     @Test
     public void test_SetTextToInput_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.setTextToInput_inputText());
+        assertTrue(objAction.setTextToInput_InputText());
     }
 
     @Test
     public void test_ToggleCheckbox_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.toggleCheckbox_ContextMenuHard());
+        assertTrue(objAction.toggleCheckbox_ElementChceckbox());
     }
 
     @Test
     public void test_SelectOption_useValue_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectOption_useValue_InputDropdownMenu());
+        assertTrue(objAction.selectOption_UseValue_InputDropdownMenu());
     }
 
     @Test
     public void test_SelectRadioButton_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectRadioButton_ContextMenuHard());
+        assertTrue(objAction.selectRadioButton_RadioButton());
     }
 }
