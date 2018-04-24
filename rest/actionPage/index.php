@@ -218,15 +218,13 @@
 				<h4>SelectBox</h4>
 					<form action="#" method="post" id="demoForm" class="demoForm">
 						<p>
-							<select name="demoSel[]" id="demoSel" size="10" multiple>
-								<option value="scroll">Scrolling Divs JavaScript</option>
-								<option value="tooltip">JavaScript Tooltips</option>
-								<option value="con_scroll">Continuous Scroller</option>
-								<option value="banner">Rotating Banner JavaScript</option>
-								<option value="random_img">Random Image PHP</option>
-								<option value="form_builder">PHP Form Generator</option>
-								<option value="table_class">PHP Table Class</option>
-								<option value="order_forms">PHP Order Forms</option>
+							<select name="demoSel[]" id="demoSel" size="8" width="200" multiple style="width:175px">
+								<option value="option_1" disabled>Option 1</option>
+								<option value="option_2">Option 2</option>
+								<option value="option_3">Option 3</option>
+								<option value="option_4">Option 4</option>
+								<option value="option_5">Option 5</option>
+								<option value="option_6">Option 6</option>
 							</select>
 							<input type="submit" value="Submit" />
 							<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
@@ -291,7 +289,7 @@
 						// no callback function used this time
 						var opts = getSelectedOptions( this.elements['demoSel[]'] );
 						
-						alert( 'The number of options selected is: ' + opts.length ); //  number of selected options
+						alert( 'Selected is: ' + opts.length ); //  number of selected options
 						
 						return false; // don't return online form
 					};

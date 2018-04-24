@@ -186,6 +186,16 @@ public class ActionPage {
     }
 
     //logical method
+    private boolean selectMultipleOption_UseDragAndDrop(List<WebElement> listOfElements) {
+        for(WebElement element : listOfElements) {
+            if(element != null && element.isEnabled()) {
+                builder.clickAndHold()
+            }
+        }
+        return false;
+    }
+
+    //logical method
     private boolean setTextToInput(WebElement element, String text) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.click(element).sendKeys(text).build().perform();
