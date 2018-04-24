@@ -78,40 +78,46 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean resizeTheElement_UseDragAndDrop(WebElement elementIcon, WebElement elementResize, int x, int y) throws TestRunException {
-        int before = getSizeOfElement(elementResize);
+    private void resizeTheElement_UseDragAndDrop(WebElement elementIcon, WebElement elementResize, int x, int y) throws TestRunException {
         if(elementIcon != null && elementIcon.isEnabled()) {
             builder.dragAndDropBy(elementIcon, x, y).build().perform();
-            new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
-            int after = getSizeOfElement(elementResize);
-            if(after == (before + x + y) && elementResize.isDisplayed()) {
-                return true;
-            }
         } else {
             throw new TestRunException("resizeTheElement(). Error, element is null or is't enabled");
         }
-        return false;
     }
 
     //action method
-    public boolean resizeTheElement_ResizeArea() throws TestRunException {
+    public boolean resizeTheElement_ResizeArea(int x, int y) throws TestRunException {
         WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
         WebElement elementResizeArea = driver.findElement(resizeareaMain);
-        return resizeTheElement_UseDragAndDrop(elementIconGrip, elementResizeArea, 80, 80);
+        int before = getSizeOfElement(elementResizeArea);
+        resizeTheElement_UseDragAndDrop(elementIconGrip, elementResizeArea, x, y);
+        new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
+        int after = getSizeOfElement(elementResizeArea);
+        if(after == (before + x + y) && elementResizeArea.isDisplayed()) {
+            return true;
+        }
+        return false;
     }
 
     //logical method
     private String getCountOfRowsInElement_UseJavascript() throws TestRunException {
         String countOfRows;
-        WebElement element = driver.findElement(pContextMenuHard);
-        if(element != null && element.isEnabled()) {
-            javascript.executeScript("var x = document.getElementsByTagName('textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
-            countOfRows = element.getText();
+        WebElement setCount = driver.findElement(pContextMenuHard);
+        if(setCount != null && setCount.isEnabled()) {
+            javascript.executeScript("var x = document.getElementById('input-textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
+            countOfRows = setCount.getText();
         } else {
             throw new TestRunException("getCountOfRowsInElement_UseJavascript(). Error, element is null or is't enabled");
         }
         return countOfRows;
     }
+
+    //action method
+    public String getCountOfRowsInTextArea_UseJavascript() throws TestRunException {
+        return getCountOfRowsInElement_UseJavascript();
+    }
+
 
     //logical method
     private boolean callAlertClickAndHold(WebElement element, String text) throws TestRunException {

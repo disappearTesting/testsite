@@ -40,8 +40,13 @@ public class Unit_ActionPage {
     }
 
     @Test
+    public void test_GetCountOfRowsInResizeArea_UseJavascript() throws TestRunException {
+        objAction.getCountOfRowsInTextArea_UseJavascript();
+    }
+
+    @Test
     public void test_ResizeTheElement_ResizeArea() throws TestRunException {
-        assertTrue(objAction.resizeTheElement_ResizeArea());
+        assertTrue(objAction.resizeTheElement_ResizeArea(80,80));
     }
 
     @Test
