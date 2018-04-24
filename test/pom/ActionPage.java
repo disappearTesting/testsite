@@ -169,8 +169,8 @@ public class ActionPage {
     private boolean selectOption_UseValue(WebElement element, String[] values) throws TestRunException {
         if(element != null) {
             Select select = new Select(element);
-            for(WebElement option : select.getOptions()) {
-                for(String value : values) {
+            for(String value : values) {
+                for(WebElement option : select.getOptions()) {
                     if(!option.isEnabled()) {
                         builder.moveToElement(option);
                     } else {
@@ -178,7 +178,6 @@ public class ActionPage {
                     }
                 }
             }
-
         } else {
             throw new TestRunException("selectOption_UseValue(). Error, element is null or is't enabled");
         }
