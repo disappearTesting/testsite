@@ -78,26 +78,30 @@ public class ActionPage {
     }
 
     //logical method
-    private void resizeTheElement_UseDragAndDrop(WebElement elementIcon, WebElement elementResize, int x, int y) throws TestRunException {
-        if(elementIcon != null && elementIcon.isEnabled()) {
-            builder.dragAndDropBy(elementIcon, x, y).build().perform();
+    private boolean resizeTheElement_UseDragAndDrop(WebElement elementIcon, WebElement elementResize, int x, int y) throws TestRunException {
+        if(elementResize != null && elementResize.isEnabled()) {
+            int before = getSizeOfElement(elementResize);
+            if(elementIcon != null && elementIcon.isEnabled()) {
+                builder.dragAndDropBy(elementIcon, x, y).build().perform();
+                new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
+                int after = getSizeOfElement(elementResize);
+                if(after == (before + x + y) && elementResize.isDisplayed()) {
+                    return true;
+                }
+            } else {
+                throw new TestRunException("resizeTheElement(). Error, elementIcon is null or is't enabled");
+            }
         } else {
-            throw new TestRunException("resizeTheElement(). Error, element is null or is't enabled");
+            throw new TestRunException("resizeTheElement(). Error, elementResize is null or is't enabled");
         }
+        return false;
     }
 
     //action method
     public boolean resizeTheElement_ResizeArea(int x, int y) throws TestRunException {
         WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
         WebElement elementResizeArea = driver.findElement(resizeareaMain);
-        int before = getSizeOfElement(elementResizeArea);
-        resizeTheElement_UseDragAndDrop(elementIconGrip, elementResizeArea, x, y);
-        new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
-        int after = getSizeOfElement(elementResizeArea);
-        if(after == (before + x + y) && elementResizeArea.isDisplayed()) {
-            return true;
-        }
-        return false;
+        return resizeTheElement_UseDragAndDrop(elementIconGrip, elementResizeArea, x, y);
     }
 
     //logical method
