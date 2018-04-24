@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
@@ -40,46 +41,57 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_ResizeTheTextArea_UseJavascript() throws TestRunException {
-        objAction.resizeElement_UseJavascript();
+    public void test_Test() throws TestRunException {
+        objAction.getTest();
     }
 
     @Test
-    public void test_ResizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
-        assertTrue(objAction.resizeTheElement_ResizeArea());
+    public void test_GetCountOfRowsInResizeArea_UseJavascript() throws TestRunException {
+        objAction.getCountOfRowsInTextArea_UseJavascript();
     }
 
     @Test
-    public void test_GetAlertClickAndHold() throws TestRunException {
-        assertTrue(objAction.callAlertClickAndHold("AlertClickAndHold"));
+    public void test_ResizeTheElement_ResizeArea() throws TestRunException {
+        assertTrue(objAction.resizeTheElement_ResizeArea(80,80));
     }
 
     @Test
-    public void test_CallContextMenu() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
+    public void test_ResizeTheElement_UseJavascript_Textarea_contextMenu() throws TestRunException {
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.resizeTheElement_UseJavascript_Textarea_ContextMenu());
+    }
+
+    @Test
+    public void test_CallAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
+        assertTrue(objAction.callAlertClickAndHold_ButtonClickAndHold());
+    }
+
+    @Test
+    public void test_CallContextMenu_ButtonContextMenu() throws TestRunException {
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
     }
 
     @Test
     public void test_SetTextToInput_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.setTextToInput_ContextMenuHard("test"));
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.setTextToInput_InputText());
     }
 
     @Test
     public void test_ToggleCheckbox_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.toggleCheckbox_ContextMenuHard());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.toggleCheckbox_ElementCheckbox());
     }
 
     @Test
-    public void test_SelectOption_ContextMenuHard_useValue() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.selectOption_ContextMenuHard_useValue("1"));
+    public void test_SelectOption_useValue_InputDropdownMenu() throws TestRunException {
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.selectOption_UseValue_InputDropdownMenu(new String[]{"1"}));
     }
 
     @Test
     public void test_SelectRadioButton_ContextMenuHard() throws TestRunException {
-        assertTrue(objAction.callContextMenu());
-        assertTrue(objAction.selectRadioButton_ContextMenuHard());
+        assertTrue(objAction.callContextMenu_ButtonContextMenu());
+        assertTrue(objAction.selectRadioButton_RadioButton());
     }
 }

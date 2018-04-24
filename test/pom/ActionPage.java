@@ -25,10 +25,11 @@ public class ActionPage {
     private static By checkboxContextMenuHard = By.name("context-menu-input-yesno");
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
-    private static By textareaMain = By.id("input-textarea");
+    private static By textareaContextMenuHard = By.name("context-menu-input-area2");
     private static By pContextMenuHard = By.id("demo");
     private static By resizeareaMain = By.className("box");
     private static By resizableHandleIconGrip = By.className("win-size-grip");
+    private static By selectSelectBoxMain = By.id("demoSel");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -36,15 +37,19 @@ public class ActionPage {
         this.javascript = (JavascriptExecutor)driver;
     }
 
-    public Point getCoordinatesOfElement(WebElement element) {
-        Point position = null;
+    //logical method
+    private Point getCoordinatesOfElement(WebElement element) throws TestRunException {
+        Point position;
         if(element != null && element.isDisplayed()) {
            position = element.getLocation();
+        } else {
+            throw new TestRunException("getCoordinatesOfElement(). Error, element is null or is't displayed");
         }
         return position;
     }
 
-    public int getSizeOfElement(WebElement element) throws TestRunException {
+    //logical method
+    private int getSizeOfElement(WebElement element) throws TestRunException {
         int size;
         if(element != null && element.isDisplayed()) {
             int width = element.getSize().getWidth();
@@ -56,58 +61,76 @@ public class ActionPage {
         return size;
     }
 
-    public void resizeTheElement(WebElement element, int x, int y) throws TestRunException {
+    //logical method
+    private boolean resizeTheElement_UseJavascript(WebElement element) throws TestRunException {
         if(element != null && element.isEnabled()) {
-            builder.dragAndDropBy(element, x, y).build().perform();
-        } else {
-            throw new TestRunException("resizeTheElement(). Error, element is null or is't enabled");
-        }
-    }
-
-    public void resizeElement_UseJavascript() throws TestRunException {
-        WebElement element = driver.findElement(textareaMain);
-        if(element != null && element.isEnabled()) {
-            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:200px; HEIGHT:100px');", element);
+            javascript.executeScript("arguments[0].setAttribute('style', 'WIDTH:250px; HEIGHT:200px');", element);
+            return true;
         } else {
             throw new TestRunException("resizeElement_UseJavascript(). Error, element is null or is't enabled");
         }
     }
 
-    public boolean resizeTheElement_ResizeArea() throws TestRunException, InterruptedException {
-        int x = 80;
-        int y = 80;
-        WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
-        WebElement elementResizeArea = driver.findElement(resizeareaMain);
-        int before = getSizeOfElement(elementResizeArea);
-        resizeTheElement(elementIconGrip, x, y);
-        new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
-        int after = getSizeOfElement(elementResizeArea);
-        if(after == (before + x + y)) {
-            return true;
+    //action method
+    public boolean resizeTheElement_UseJavascript_Textarea_ContextMenu() throws TestRunException {
+        WebElement elementTextarea = driver.findElement(textareaContextMenuHard);
+        return resizeTheElement_UseJavascript(elementTextarea);
+    }
+
+    //logical method
+    private boolean resizeTheElement_UseDragAndDrop(WebElement elementIcon, WebElement elementResize, int x, int y) throws TestRunException {
+        if(elementResize != null && elementResize.isEnabled()) {
+            int before = getSizeOfElement(elementResize);
+            if(elementIcon != null && elementIcon.isEnabled()) {
+                builder.dragAndDropBy(elementIcon, x, y).build().perform();
+                new WebDriverWait(driver,5).until(ExpectedConditions.presenceOfElementLocated(resizeareaMain));
+                int after = getSizeOfElement(elementResize);
+                if(after == (before + x + y) && elementResize.isDisplayed()) {
+                    return true;
+                }
+            } else {
+                throw new TestRunException("resizeTheElement(). Error, elementIcon is null or is't enabled");
+            }
+        } else {
+            throw new TestRunException("resizeTheElement(). Error, elementResize is null or is't enabled");
         }
         return false;
     }
 
-    public String getCountOfRowsInElement_UseJavascript() throws TestRunException {
+    //action method
+    public boolean resizeTheElement_ResizeArea(int x, int y) throws TestRunException {
+        WebElement elementIconGrip = driver.findElement(resizableHandleIconGrip);
+        WebElement elementResizeArea = driver.findElement(resizeareaMain);
+        return resizeTheElement_UseDragAndDrop(elementIconGrip, elementResizeArea, x, y);
+    }
+
+    //logical method
+    private String getCountOfRowsInElement_UseJavascript() throws TestRunException {
         String countOfRows;
-        WebElement element = driver.findElement(pContextMenuHard);
-        if(element != null && element.isEnabled()) {
-            javascript.executeScript("var x = document.getElementsByTagName('textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
-            countOfRows = element.getText();
+        WebElement setCount = driver.findElement(pContextMenuHard);
+        if(setCount != null && setCount.isEnabled()) {
+            javascript.executeScript("var x = document.getElementById('input-textarea').rows; document.getElementById(\"demo\").innerHTML = x;");
+            countOfRows = setCount.getText();
         } else {
-            throw new TestRunException("getCountOfRowsInElement(). Error, element is null or is't enabled");
+            throw new TestRunException("getCountOfRowsInElement_UseJavascript(). Error, element is null or is't enabled");
         }
         return countOfRows;
     }
 
-    public boolean callAlertClickAndHold(String textAlert) throws TestRunException {
-        WebElement element = driver.findElement(buttonClickAndHold);
+    //action method
+    public String getCountOfRowsInTextArea_UseJavascript() throws TestRunException {
+        return getCountOfRowsInElement_UseJavascript();
+    }
+
+
+    //logical method
+    private boolean callAlertClickAndHold(WebElement element, String text) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.clickAndHold(element).pause(3000).build().perform();
             new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             //  не использую описание ошибки, так как не юзаю класс Actions
-            if(alert.getText().equals(textAlert)) {
+            if(alert.getText().equals(text)) {
                 alert.accept();
                 return true;
             }
@@ -117,8 +140,14 @@ public class ActionPage {
         return false;
     }
 
-    public boolean callContextMenu() throws TestRunException {
-        WebElement element = driver.findElement(buttonContextMenuHard);
+    //action method
+    public boolean callAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
+        WebElement elementButton = driver.findElement(buttonClickAndHold);
+        return callAlertClickAndHold(elementButton, "AlertClickAndHold");
+    }
+
+    //logical method
+    private boolean callContextMenu(WebElement element) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.contextClick(element).build().perform();
             if(driver.findElement(contextMenuHard).isEnabled()) {
@@ -130,32 +159,73 @@ public class ActionPage {
         return false;
     }
 
-    public boolean selectOption_ContextMenuHard_useValue(String value) throws TestRunException {
-        WebElement element = driver.findElement(inputDropdownMenuContextMenuHard);
-        if(element != null && element.isEnabled()) {
+    //action method
+    public boolean callContextMenu_ButtonContextMenu() throws TestRunException {
+        WebElement elementButton = driver.findElement(buttonContextMenuHard);
+        return callContextMenu(elementButton);
+    }
+
+    //logical method
+    private boolean selectOption_UseValue(WebElement element, String[] values) throws TestRunException {
+        if(element != null) {
             Select select = new Select(element);
-            for(WebElement elementSelect : select.getOptions()) {
-                select.selectByValue(value);
-                return true;
+            for(WebElement option : select.getOptions()) {
+                for(String value : values) {
+                    if(!option.isEnabled()) {
+                        builder.moveToElement(option);
+                    } else {
+                        select.selectByValue(value);
+                    }
+                }
             }
+
         } else {
-            throw new TestRunException("selectOption_ContextMenuHard_useValue(). Error, element is null or is't enabled");
+            throw new TestRunException("selectOption_UseValue(). Error, element is null or is't enabled");
         }
         return false;
     }
 
-    public boolean setTextToInput_ContextMenuHard(String text) throws TestRunException {
-        WebElement element = driver.findElement(inputTextContextMenuHard);
+    //action method
+    public boolean selectOption_UseValue_InputDropdownMenu(String[] values) throws TestRunException {
+        WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
+        return selectOption_UseValue(elementDropdownMenu, values);
+    }
+
+    //action method
+    public void getTest() throws TestRunException {
+        WebElement selectBox = driver.findElement(selectSelectBoxMain);
+        selectOption_UseValue(selectBox, new String[]{"option_3", "option_5"});
+    }
+
+    //logical method
+    private boolean selectMultipleOption_UseDragAndDrop(List<WebElement> listOfElements, String value) {
+        for(WebElement element : listOfElements) {
+            if(element != null && element.isEnabled()) {
+                //builder.moveToElement().clickAndHold();
+            }
+        }
+        return false;
+    }
+
+    //logical method
+    private boolean setTextToInput(WebElement element, String text) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.click(element).sendKeys(text).build().perform();
             return true;
         } else {
-            throw new TestRunException("setTextToInput_ContextMenuHard(). Error, element is null or is't enabled");
+            throw new TestRunException("setTextToInput(). Error, element is null or is't enabled");
         }
     }
 
-    public boolean toggleCheckbox_ContextMenuHard() throws TestRunException {
-        WebElement element = driver.findElement(checkboxContextMenuHard);
+    //action method
+    public boolean setTextToInput_InputText() throws TestRunException {
+        WebElement elementInput = driver.findElement(inputTextContextMenuHard);
+        return setTextToInput(elementInput, "test");
+
+    }
+
+    //logical method
+    private boolean toggleCheckbox(WebElement element) throws TestRunException {
         if(element.isEnabled()) {
             builder.moveToElement(element);
             for (int i = 1; i <= 2; i++) {
@@ -163,9 +233,15 @@ public class ActionPage {
                 return true;
             }
         } else {
-            throw new TestRunException("toggleCheckbox_ContextMenuHard(). Error, element is null or is't enabled");
+            throw new TestRunException("toggleCheckbox(). Error, element is null or is't enabled");
         }
         return false;
+    }
+
+    //action method
+    public boolean toggleCheckbox_ElementCheckbox() throws TestRunException {
+        WebElement elementCheckbox = driver.findElement(checkboxContextMenuHard);
+        return toggleCheckbox(elementCheckbox);
     }
 
     // analogue method, without use class Actions
@@ -184,22 +260,28 @@ public class ActionPage {
 //        return result;
 //    }
 
-    public boolean selectRadioButton_ContextMenuHard() {
-        List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
-        for(WebElement elementRadioButton : listRadioButtons) {
-            if(!elementRadioButton.isEnabled()) {
-                builder.moveToElement(elementRadioButton);
+    //logical method
+    public boolean selectRadioButton(List<WebElement> listOfElements) throws TestRunException {
+        for(WebElement elementRadioButton : listOfElements) {
+            if(elementRadioButton != null && elementRadioButton.isDisplayed()) {
+                if(!elementRadioButton.isEnabled()) {
+                    builder.moveToElement(elementRadioButton);
+                } else {
+                    builder.click(elementRadioButton).build().perform();
+                }
+                if(listOfElements.indexOf(elementRadioButton) == (listOfElements.size() -1) && elementRadioButton.isSelected()) {
+                    return true;
+                }
             } else {
-                builder.click(elementRadioButton).build().perform();
-            }
-            if(listRadioButtons.indexOf(elementRadioButton) == (listRadioButtons.size() -1) && elementRadioButton.isSelected()) {
-                return true;
+                throw new TestRunException("selectRadioButton(). Error, element is null or is't enabled");
             }
         }
         return false;
     }
 
-    public boolean performDragAndDropTextArea_ContextMenuHard() {
-        return false;
+    //action method
+    public boolean selectRadioButton_RadioButton() throws TestRunException {
+        List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
+        return selectRadioButton(listRadioButtons);
     }
 }
