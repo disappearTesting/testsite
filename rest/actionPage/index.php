@@ -23,6 +23,8 @@
 	<!-- resizearea -->
 	<link href="resize/styleResize.css" rel="stylesheet" type="text/css">
 	<script src="resize/jquery-resizable.js"></script>
+	
+	<!-- select-multiple -->
 </head>
 <body>
 	<div class="container">
@@ -50,7 +52,7 @@
 				<p id="demo"></p>
 			</div>
 			<div class="box">
-				<h4 class="boxheader">ResizeArea</h4>
+				<h4>ResizeArea</h4>
 				<p id="box-text">Curabitur aliquet quam id dui posuere blandit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
 				<div class="win-size-grip"></div>
 			<script>    
@@ -209,6 +211,91 @@
 							});
 					</script>
 				</div>
+			</div>
+			
+			<div class="select-multiple-event">
+				<div class="select-box">
+				<h4>SelectBox</h4>
+					<form action="#" method="post" id="demoForm" class="demoForm">
+						<p>
+							<select name="demoSel[]" id="demoSel" size="10" multiple>
+								<option value="scroll">Scrolling Divs JavaScript</option>
+								<option value="tooltip">JavaScript Tooltips</option>
+								<option value="con_scroll">Continuous Scroller</option>
+								<option value="banner">Rotating Banner JavaScript</option>
+								<option value="random_img">Random Image PHP</option>
+								<option value="form_builder">PHP Form Generator</option>
+								<option value="table_class">PHP Table Class</option>
+								<option value="order_forms">PHP Order Forms</option>
+							</select>
+							<input type="submit" value="Submit" />
+							<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
+						</p>
+					</form>
+				</div>
+				<script>
+					// arguments: reference to select list, callback function (optional)
+					function getSelectedOptions(sel, fn) {
+						var opts = [], opt;
+						
+						// loop through options in select list
+						for (var i=0, len=sel.options.length; i<len; i++) {
+							opt = sel.options[i];
+							
+							// check if selected
+							if ( opt.selected ) {
+								// add to array of option elements to return from this function
+								opts.push(opt);
+								
+								// invoke optional callback function if provided
+								if (fn) {
+									fn(opt);
+								}
+							}
+						}
+						
+						// return array containing references to selected option elements
+						return opts;
+					}
+				</script>
+				<script>
+					// example callback function (selected options passed one by one)
+					function callback(opt) {
+						// display in textarea for this example
+						var display = document.getElementById('display');
+						display.innerHTML += opt.value + ', ';
+
+						// can access properties of opt, such as...
+						//alert( opt.value )
+						//alert( opt.text )
+						//alert( opt.form )
+					}
+				</script>
+				<script>
+					// anonymous function onchange for select list with id demoSel
+					document.getElementById('demoSel').onchange = function(e) {
+						// get reference to display textarea
+						var display = document.getElementById('display');
+						display.innerHTML = ''; // reset
+						
+						// callback fn handles selected options
+						getSelectedOptions(this, callback);
+						
+						// remove ', ' at end of string
+						var str = display.innerHTML.slice(0, -2);
+						display.innerHTML = str;
+					};
+
+					document.getElementById('demoForm').onsubmit = function(e) {
+						// reference to select list using this keyword and form elements collection
+						// no callback function used this time
+						var opts = getSelectedOptions( this.elements['demoSel[]'] );
+						
+						alert( 'The number of options selected is: ' + opts.length ); //  number of selected options
+						
+						return false; // don't return online form
+					};
+				</script>
 			</div>
 		</div>
 	</div>
