@@ -26,10 +26,10 @@ public class ActionPage {
     private static By radioButtonContextMenuHard = By.name("context-menu-input-radio");
     private static By inputDropdownMenuContextMenuHard = By.name("context-menu-input-select");
     private static By textareaContextMenuHard = By.name("context-menu-input-area2");
-    private static By textareaMain = By.id("input-textarea");
     private static By pContextMenuHard = By.id("demo");
     private static By resizeareaMain = By.className("box");
     private static By resizableHandleIconGrip = By.className("win-size-grip");
+    private static By selectSelectBoxMain = By.id("demoSel");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -166,12 +166,17 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean selectOption_UseValue(WebElement element, String value) throws TestRunException {
-        if(element != null && element.isEnabled()) {
+    private boolean selectOption_UseValue(WebElement element, String[] values) throws TestRunException {
+        if(element != null) {
             Select select = new Select(element);
-            for(WebElement elementSelect : select.getOptions()) {
-                select.selectByValue(value);
-                return true;
+            for(String value : values) {
+                for(WebElement option : select.getOptions()) {
+                    if(!option.isEnabled()) {
+                        builder.moveToElement(option);
+                    } else {
+                        select.selectByValue(value);
+                    }
+                }
             }
         } else {
             throw new TestRunException("selectOption_UseValue(). Error, element is null or is't enabled");
@@ -180,16 +185,22 @@ public class ActionPage {
     }
 
     //action method
-    public boolean selectOption_UseValue_InputDropdownMenu() throws TestRunException {
+    public boolean selectOption_UseValue_InputDropdownMenu(String[] values) throws TestRunException {
         WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
-        return selectOption_UseValue(elementDropdownMenu, "1");
+        return selectOption_UseValue(elementDropdownMenu, values);
+    }
+
+    //action method
+    public void getTest() throws TestRunException {
+        WebElement selectBox = driver.findElement(selectSelectBoxMain);
+        selectOption_UseValue(selectBox, new String[]{"option_3", "option_5"});
     }
 
     //logical method
-    private boolean selectMultipleOption_UseDragAndDrop(List<WebElement> listOfElements) {
+    private boolean selectMultipleOption_UseDragAndDrop(List<WebElement> listOfElements, String value) {
         for(WebElement element : listOfElements) {
             if(element != null && element.isEnabled()) {
-                builder.clickAndHold()
+                //builder.moveToElement().clickAndHold();
             }
         }
         return false;
@@ -227,7 +238,7 @@ public class ActionPage {
     }
 
     //action method
-    public boolean toggleCheckbox_ElementChceckbox() throws TestRunException {
+    public boolean toggleCheckbox_ElementCheckbox() throws TestRunException {
         WebElement elementCheckbox = driver.findElement(checkboxContextMenuHard);
         return toggleCheckbox(elementCheckbox);
     }

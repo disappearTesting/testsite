@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
@@ -37,6 +38,11 @@ public class Unit_ActionPage {
     @After
     public void tearDown() {
         //driver.quit();
+    }
+
+    @Test
+    public void test_Test() throws TestRunException {
+        objAction.getTest();
     }
 
     @Test
@@ -74,13 +80,13 @@ public class Unit_ActionPage {
     @Test
     public void test_ToggleCheckbox_ContextMenuHard() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.toggleCheckbox_ElementChceckbox());
+        assertTrue(objAction.toggleCheckbox_ElementCheckbox());
     }
 
     @Test
     public void test_SelectOption_useValue_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectOption_UseValue_InputDropdownMenu());
+        assertTrue(objAction.selectOption_UseValue_InputDropdownMenu(new String[]{"1"}));
     }
 
     @Test
