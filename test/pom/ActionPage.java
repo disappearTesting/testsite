@@ -166,15 +166,15 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean selectOption_UseValue(WebElement element, String[] values) throws TestRunException {
+    private boolean selectOption_UseValue(WebElement element, String attribute, String[] values) throws TestRunException {
         if(element != null) {
             Select select = new Select(element);
             for(String value : values) {
                 for(WebElement option : select.getOptions()) {
-                    if(!option.isEnabled()) {
-                        builder.moveToElement(option);
-                    } else {
+                    if(option.getAttribute(attribute).equals(value) && option.isEnabled()) {
                         select.selectByValue(value);
+                    } else {
+                        builder.moveToElement(option);
                     }
                 }
             }
@@ -185,15 +185,15 @@ public class ActionPage {
     }
 
     //action method
-    public boolean selectOption_UseValue_InputDropdownMenu(String[] values) throws TestRunException {
+    public boolean selectOption_UseValue_InputDropdownMenu(String attribute, String[] values) throws TestRunException {
         WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
-        return selectOption_UseValue(elementDropdownMenu, values);
+        return selectOption_UseValue(elementDropdownMenu, attribute, values);
     }
 
     //action method
-    public void getTest() throws TestRunException {
+    public boolean selectOption_UseValue_SelectBox(String attribute, String[] values) throws TestRunException {
         WebElement selectBox = driver.findElement(selectSelectBoxMain);
-        selectOption_UseValue(selectBox, new String[]{"option_3", "option_5"});
+        return selectOption_UseValue(selectBox, attribute, values);
     }
 
     //logical method
