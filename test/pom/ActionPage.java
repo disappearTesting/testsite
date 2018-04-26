@@ -200,6 +200,11 @@ public class ActionPage {
     }
 
     //logical method
+    private boolean sortElement_UseDragAndDrop() {
+        return false;
+    }
+
+    //logical method
     private boolean selectMultipleOption_UseDragAndDrop(List<WebElement> listOfElements, String value) {
         for(WebElement element : listOfElements) {
             if(element != null && element.isEnabled()) {

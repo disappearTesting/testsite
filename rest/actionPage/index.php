@@ -221,20 +221,21 @@
 			<div class="select-multiple-event">
 				<div class="select-box">
 				<h4>SelectBox</h4>
-					<form action="#" method="post" id="demoForm" class="demoForm">
-						<p>
-							<select name="demoSel[]" id="demoSel" size="8" width="200" multiple style="width:175px">
-								<option value="option_1" disabled>Option 1</option>
-								<option value="option_2">Option 2</option>
-								<option value="option_3">Option 3</option>
-								<option value="option_4">Option 4</option>
-								<option value="option_5">Option 5</option>
-								<option value="option_6">Option 6</option>
-							</select>
-							<input type="submit" value="Submit" />
-							<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
-						</p>
-					</form>
+				<p>Select elements, individually or in a group.</p>
+				<form action="#" method="post" id="demoForm" class="demoForm">
+					<p>
+						<select name="demoSel[]" id="demoSel" size="8" width="200" multiple style="width:175px">
+							<option value="option_1" disabled>Option 1</option>
+							<option value="option_2">Option 2</option>
+							<option value="option_3">Option 3</option>
+							<option value="option_4">Option 4</option>
+							<option value="option_5">Option 5</option>
+							<option value="option_6">Option 6</option>
+						</select>
+						<input type="submit" value="Submit" />
+						<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
+					</p>
+				</form>
 				</div>
 				<script>
 					// arguments: reference to select list, callback function (optional)
@@ -302,6 +303,7 @@
 			</div>
 			<div class="sort-box">
 				<h4>SortBox</h4>
+				<p>Reorder elements in a list using the mouse.</p>
 				<ul id="sortable">
 				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
 				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
