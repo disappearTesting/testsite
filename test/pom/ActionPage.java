@@ -169,13 +169,16 @@ public class ActionPage {
     private boolean selectOption_UseValue(WebElement element, String attribute, String[] values) throws TestRunException {
         if(element != null) {
             Select select = new Select(element);
-            for(String value : values) {
-                for(WebElement option : select.getOptions()) {
+            for(WebElement option : select.getOptions()) {
+                for(String value : values) {
                     if(option.getAttribute(attribute).equals(value) && option.isEnabled()) {
                         select.selectByValue(value);
                     } else {
                         builder.moveToElement(option);
                     }
+                }
+                if(select.getOptions().indexOf(option) == (select.getOptions().size() -1)) {
+                    return true;
                 }
             }
         } else {

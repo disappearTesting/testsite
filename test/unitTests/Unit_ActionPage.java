@@ -86,7 +86,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_SelectOption_UseValue_SelectBox() throws TestRunException {
-        assertTrue(objAction.selectOption_UseValue_SelectBox("value", new String[]{"option_1", "option_3", "option_4", "option_5", "option_99", "option_7"}));
+        assertTrue(objAction.selectOption_UseValue_SelectBox("value", new String[]{"option_0"}));
     }
 
     @Test
