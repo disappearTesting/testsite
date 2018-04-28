@@ -41,6 +41,11 @@ public class Unit_ActionPage {
     }
 
     @Test
+    public void test_Test() throws TestRunException {
+        objAction.sortElement_UseDragAndDrop("Item 2", "Item 4");
+    }
+
+    @Test
     public void test_GetCountOfRowsInResizeArea_UseJavascript() throws TestRunException {
         objAction.getCountOfRowsInTextArea_UseJavascript();
     }
@@ -79,14 +84,14 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_SelectOption_useValue_InputDropdownMenu() throws TestRunException {
+    public void test_SelectOption_UseValue_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.selectOption_UseValue_InputDropdownMenu("value", new String[]{"1"}));
     }
 
     @Test
     public void test_SelectOption_UseValue_SelectBox() throws TestRunException {
-        assertTrue(objAction.selectOption_UseValue_SelectBox("value", new String[]{"option_0"}));
+        assertTrue(objAction.selectOption_UseValue_SelectBox("value", new String[]{"option_2"}));
     }
 
     @Test

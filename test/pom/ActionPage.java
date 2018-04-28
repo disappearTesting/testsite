@@ -30,6 +30,7 @@ public class ActionPage {
     private static By resizeareaMain = By.className("box");
     private static By resizableHandleIconGrip = By.className("win-size-grip");
     private static By selectSelectBoxMain = By.id("demoSel");
+    private static By liSortBoxMain = By.className("ui-sortable-handle");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -200,7 +201,26 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean sortElement_UseDragAndDrop() {
+    public WebElement getElementFromList_UseText(List<WebElement> listOfElements, String item) throws TestRunException {
+        for(WebElement element : listOfElements) {
+            if(element.getText().equals(item)) {
+                return element;
+            }
+        }
+        return null;
+    }
+
+    //logical method
+    public boolean sortElement_UseDragAndDrop(String itemThat, String itemTo) throws TestRunException {
+        List<WebElement> listOfElements = driver.findElements(liSortBoxMain);
+        WebElement elementThat = getElementFromList_UseText(listOfElements, itemThat);
+        WebElement elementTo = getElementFromList_UseText(listOfElements, itemTo);
+        if(elementThat.isEnabled()) {
+            builder.clickAndHold(elementThat).moveToElement(elementTo).release().build().perform();
+        } else {
+            throw new TestRunException("sortElement_UseDragAndDrop(). Error, element is't displayed");
+        }
+        //builder.clickAndHold(elementThat).moveToElement(elementTo).release().build().perform();
         return false;
     }
 
@@ -268,7 +288,7 @@ public class ActionPage {
 //    }
 
     //logical method
-    public boolean selectRadioButton(List<WebElement> listOfElements) throws TestRunException {
+    private boolean selectRadioButton(List<WebElement> listOfElements) throws TestRunException {
         for(WebElement elementRadioButton : listOfElements) {
             if(elementRadioButton != null && elementRadioButton.isDisplayed()) {
                 if(!elementRadioButton.isEnabled()) {
