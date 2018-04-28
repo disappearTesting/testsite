@@ -30,12 +30,21 @@ public class ActionPage {
     private static By resizeareaMain = By.className("box");
     private static By resizableHandleIconGrip = By.className("win-size-grip");
     private static By selectSelectBoxMain = By.id("demoSel");
+    private static By buttonSubmitSelectBoxMain = By.id("button-submit-select-box");
     private static By liSortBoxMain = By.className("ui-sortable-handle");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
         this.builder = builder;
         this.javascript = (JavascriptExecutor)driver;
+    }
+
+    //logical method
+    public void scrollToElement(WebElement element) {
+        if (driver instanceof JavascriptExecutor) {
+            ((JavascriptExecutor) driver)
+                    .executeScript("arguments[0].scrollIntoView(true);", element);
+        }
     }
 
     //logical method

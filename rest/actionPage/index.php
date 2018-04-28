@@ -251,7 +251,7 @@
 							<option value="option_5">Option 5</option>
 							<option value="option_6">Option 6</option>
 						</select>
-						<input type="submit" value="Submit" />
+						<input id="button-submit-select-box" type="submit" value="Submit" />
 						<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
 					</p>
 				</form>

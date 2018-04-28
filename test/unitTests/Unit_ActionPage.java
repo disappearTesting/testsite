@@ -42,7 +42,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_Test() throws TestRunException {
-        objAction.sortElement_UseDragAndDrop("Item 2", "Item 4");
+        //objAction.sortElement_UseDragAndDrop("Item 2", "Item 4");
     }
 
     @Test
