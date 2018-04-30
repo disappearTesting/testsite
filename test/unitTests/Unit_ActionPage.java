@@ -80,14 +80,14 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_SelectOption_UseValue_InputDropdownMenu() throws TestRunException {
+    public void test_SelectOption_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectOption_UseValue_ContextMenuHard("value", new String[]{"1"}));
+        assertTrue(objAction.selectOption_ContextMenuHard(new String[]{"1"}));
     }
 
     @Test
-    public void test_SelectOption_UseValue_SelectBox() throws TestRunException {
-        assertTrue(objAction.selectOption_UseValue_SelectBox("value", new String[]{"option_2"}));
+    public void test_SelectOption_SelectBox() throws TestRunException {
+        assertTrue(objAction.selectOption_SelectBox(new String[]{"option_2"}));
     }
 
     @Test

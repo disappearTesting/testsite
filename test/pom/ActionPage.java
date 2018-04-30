@@ -134,9 +134,19 @@ public class ActionPage {
     }
 
     //logical method
-    private Alert callAlert_ClickAndHold(WebElement element) throws TestRunException {
+    private Alert callAlertSimple(WebElement element) throws TestRunException {
         if(element != null && element.isEnabled()) {
-            builder.clickAndHold(element).pause(3000).build().perform();
+            builder.moveToElement(element).click().build().perform();
+            return driver.switchTo().alert();
+        } else {
+            throw new TestRunException("callAlertSimple(). Error, element is null or is't enabled");
+        }
+    }
+
+    //logical method
+    private Alert callAlertClickAndHold(WebElement element) throws TestRunException {
+        if(element != null && element.isEnabled()) {
+            builder.moveToElement(element).clickAndHold().pause(3000).build().perform();
             return driver.switchTo().alert();
         } else {
             throw new TestRunException("callAlertClickAndHold(). Error, element is null or is't enabled");
@@ -146,7 +156,7 @@ public class ActionPage {
     //action method
     public boolean callAlertClickAndHold_ButtonClickAndHold(String text) throws TestRunException {
         WebElement elementButton = driver.findElement(buttonClickAndHold);
-        Alert alertClickAndHold = callAlert_ClickAndHold(elementButton);
+        Alert alertClickAndHold = callAlertClickAndHold(elementButton);
         new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
         if(alertClickAndHold.getText().equals(text)) {
             alertClickAndHold.accept();
@@ -175,12 +185,12 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean selectOption_UseValue(WebElement element, String attribute, String[] values) throws TestRunException {
+    private boolean selectOption(WebElement element, String[] values) throws TestRunException {
         if(element != null) {
             Select select = new Select(element);
             for(WebElement option : select.getOptions()) {
                 for(String value : values) {
-                    if(option.getAttribute(attribute).equals(value) && option.isEnabled()) {
+                    if(option.getAttribute("value").equals(value) && option.isEnabled()) {
                         select.selectByValue(value);
                     } else {
                         builder.moveToElement(option);
@@ -196,30 +206,24 @@ public class ActionPage {
         return false;
     }
 
-    //logical method
-    private void callAlert_SelectBox() {
-
-    }
-
     //action method
-    public boolean selectOption_UseValue_ContextMenuHard(String attribute, String[] values) throws TestRunException {
+    public boolean selectOption_ContextMenuHard(String[] values) throws TestRunException {
         WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
-        return selectOption_UseValue(elementDropdownMenu, attribute, values);
+        return selectOption(elementDropdownMenu, values);
     }
 
     //action method
-    public boolean selectOption_UseValue_SelectBox(String attribute, String[] values) throws TestRunException {
+    public boolean selectOption_SelectBox(String[] values) throws TestRunException {
         WebElement elementSelectBox = driver.findElement(selectSelectBoxMain);
         WebElement buttonSubmit = driver.findElement(buttonSubmitSelectBoxMain);
-        if(selectOption_UseValue(elementSelectBox, attribute, values)) {
-            if(buttonSubmit != null && buttonSubmit.isEnabled()) {
-                builder.moveToElement(buttonSubmit).click();
-                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
-            } else {
-                throw new TestRunException("selectOption_UseValue_SelectBox(). Error, buttonSubmit is null or is't enabled");
+        if(selectOption(elementSelectBox, values)) {
+            Alert alert = callAlertSimple(buttonSubmit);
+            if(alert.getText().equals(String.valueOf("Selected is: " + values.length))) {
+                alert.accept();
+                return true;
             }
         }
-        return selectOption_UseValue(elementSelectBox, attribute, values);
+        return false;
     }
 
     //logical method
