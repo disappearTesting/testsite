@@ -52,14 +52,14 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_ResizeTheElement_UseJavascript_Textarea_contextMenu() throws TestRunException {
+    public void test_ResizeTheElement_UseJavascript_Textarea_ContextMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
         assertTrue(objAction.resizeTheElement_UseJavascript_Textarea_ContextMenu());
     }
 
     @Test
     public void test_CallAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
-        assertTrue(objAction.callAlertClickAndHold_ButtonClickAndHold());
+        assertTrue(objAction.callAlertClickAndHold_ButtonClickAndHold("AlertClickAndHold"));
     }
 
     @Test
@@ -82,7 +82,7 @@ public class Unit_ActionPage {
     @Test
     public void test_SelectOption_UseValue_InputDropdownMenu() throws TestRunException {
         assertTrue(objAction.callContextMenu_ButtonContextMenu());
-        assertTrue(objAction.selectOption_UseValue_InputDropdownMenu("value", new String[]{"1"}));
+        assertTrue(objAction.selectOption_UseValue_ContextMenuHard("value", new String[]{"1"}));
     }
 
     @Test

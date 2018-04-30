@@ -134,26 +134,25 @@ public class ActionPage {
     }
 
     //logical method
-    private boolean callAlertClickAndHold(WebElement element, String text) throws TestRunException {
+    private Alert callAlert_ClickAndHold(WebElement element) throws TestRunException {
         if(element != null && element.isEnabled()) {
             builder.clickAndHold(element).pause(3000).build().perform();
-            new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
-            Alert alert = driver.switchTo().alert();
-            //  не использую описание ошибки, так как не юзаю класс Actions
-            if(alert.getText().equals(text)) {
-                alert.accept();
-                return true;
-            }
+            return driver.switchTo().alert();
         } else {
             throw new TestRunException("callAlertClickAndHold(). Error, element is null or is't enabled");
         }
-        return false;
     }
 
     //action method
-    public boolean callAlertClickAndHold_ButtonClickAndHold() throws TestRunException {
+    public boolean callAlertClickAndHold_ButtonClickAndHold(String text) throws TestRunException {
         WebElement elementButton = driver.findElement(buttonClickAndHold);
-        return callAlertClickAndHold(elementButton, "AlertClickAndHold");
+        Alert alertClickAndHold = callAlert_ClickAndHold(elementButton);
+        new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+        if(alertClickAndHold.getText().equals(text)) {
+            alertClickAndHold.accept();
+            return true;
+        }
+        return false;
     }
 
     //logical method
@@ -197,16 +196,30 @@ public class ActionPage {
         return false;
     }
 
+    //logical method
+    private void callAlert_SelectBox() {
+
+    }
+
     //action method
-    public boolean selectOption_UseValue_InputDropdownMenu(String attribute, String[] values) throws TestRunException {
+    public boolean selectOption_UseValue_ContextMenuHard(String attribute, String[] values) throws TestRunException {
         WebElement elementDropdownMenu = driver.findElement(inputDropdownMenuContextMenuHard);
         return selectOption_UseValue(elementDropdownMenu, attribute, values);
     }
 
     //action method
     public boolean selectOption_UseValue_SelectBox(String attribute, String[] values) throws TestRunException {
-        WebElement selectBox = driver.findElement(selectSelectBoxMain);
-        return selectOption_UseValue(selectBox, attribute, values);
+        WebElement elementSelectBox = driver.findElement(selectSelectBoxMain);
+        WebElement buttonSubmit = driver.findElement(buttonSubmitSelectBoxMain);
+        if(selectOption_UseValue(elementSelectBox, attribute, values)) {
+            if(buttonSubmit != null && buttonSubmit.isEnabled()) {
+                builder.moveToElement(buttonSubmit).click();
+                new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+            } else {
+                throw new TestRunException("selectOption_UseValue_SelectBox(). Error, buttonSubmit is null or is't enabled");
+            }
+        }
+        return selectOption_UseValue(elementSelectBox, attribute, values);
     }
 
     //logical method
