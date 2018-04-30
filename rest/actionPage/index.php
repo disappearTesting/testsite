@@ -220,22 +220,22 @@
 			
 			<div class="select-multiple-event">
 				<div class="select-box">
-				<h4>SelectBox</h4>
-				<p>Select elements, individually or in a group.</p>
-				<form action="#" method="post" id="demoForm" class="demoForm">
-					<p>
-						<select name="demoSel[]" id="demoSel" size="8" width="200" multiple style="width:175px">
-							<option value="option_1" disabled>Option 1</option>
-							<option value="option_2">Option 2</option>
-							<option value="option_3">Option 3</option>
-							<option value="option_4">Option 4</option>
-							<option value="option_5">Option 5</option>
-							<option value="option_6">Option 6</option>
-						</select>
-						<input id="button-submit-select-box" type="submit" value="Submit" />
-						<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
-					</p>
-				</form>
+					<h4>SelectBox</h4>
+					<p>Select elements, individually or in a group.</p>
+					<form action="#" method="post" id="demoForm" class="demoForm">
+						<p>
+							<select name="demoSel[]" id="demoSel" size="8" width="200" multiple style="width:175px">
+								<option value="option_1" disabled>Option 1</option>
+								<option value="option_2">Option 2</option>
+								<option value="option_3">Option 3</option>
+								<option value="option_4">Option 4</option>
+								<option value="option_5">Option 5</option>
+								<option value="option_6">Option 6</option>
+							</select>
+							<input id="button-submit-select-box" type="submit" value="Submit" />
+							<textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
+						</p>
+					</form>
 				</div>
 				<script>
 					// arguments: reference to select list, callback function (optional)
@@ -302,24 +302,31 @@
 				</script>
 			</div>
 			<div class="sort-box">
-					<h4>SortBox</h4>
-					<p>Reorder elements in a list using the mouse.</p>
-					<ul id="sortable">
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-					</ul>
-					<script>
-					  $( function() {
-						$( "#sortable" ).sortable();
-						$( "#sortable" ).disableSelection();
-					  } );
-					</script>
-				</div>
+				<h4>SortBox</h4>
+				<p>Reorder elements in a list using the mouse.</p>
+				<ul id="sortable">
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+				  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+				</ul>
+				<script>
+				  $( function() {
+					$( "#sortable" ).sortable();
+					$( "#sortable" ).disableSelection();
+				  } );
+				</script>
+			</div>
+			<div class="image-box">
+				<h4>ImageBox</h4>
+				<figure>
+					<img src="images/test.png">
+					<figcaption>Save image using WebDriver + Actions + Robot</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
 </body>
