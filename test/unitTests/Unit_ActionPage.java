@@ -11,7 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import pom.ActionPage;
@@ -41,13 +40,10 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_Test() throws TestRunException {
-        //objAction.sortElement_UseDragAndDrop("Item 2", "Item 4");
-    }
-
-    @Test
-    public void test_GetCountOfRowsInResizeArea_UseJavascript() throws TestRunException {
-        objAction.getCountOfRowsInTextArea_UseJavascript();
+    public void test_SortElement_SortBox() throws TestRunException {
+        objAction.scrollToElement_SortBox();
+        assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 1", "Item 7"));
+        assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 6", "Item 7"));
     }
 
     @Test

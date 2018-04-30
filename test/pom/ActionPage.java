@@ -40,11 +40,17 @@ public class ActionPage {
     }
 
     //logical method
-    public void scrollToElement(WebElement element) {
-        if (driver instanceof JavascriptExecutor) {
+    private void scrollToElement(WebElement element) {
+        if (driver instanceof JavascriptExecutor && element != null) {
             ((JavascriptExecutor) driver)
                     .executeScript("arguments[0].scrollIntoView(true);", element);
         }
+    }
+
+    //action method
+    public void scrollToElement_SortBox() {
+        WebElement element = driver.findElement(liSortBoxMain);
+        scrollToElement(element);
     }
 
     //logical method
@@ -127,12 +133,6 @@ public class ActionPage {
         return countOfRows;
     }
 
-    //action method
-    public String getCountOfRowsInTextArea_UseJavascript() throws TestRunException {
-        return getCountOfRowsInElement_UseJavascript();
-    }
-
-
     //logical method
     private boolean callAlertClickAndHold(WebElement element, String text) throws TestRunException {
         if(element != null && element.isEnabled()) {
@@ -210,7 +210,7 @@ public class ActionPage {
     }
 
     //logical method
-    public WebElement getElementFromList_UseText(List<WebElement> listOfElements, String item) throws TestRunException {
+    private WebElement getElementFromList_UseText(List<WebElement> listOfElements, String item) {
         for(WebElement element : listOfElements) {
             if(element.getText().equals(item)) {
                 return element;
@@ -219,18 +219,22 @@ public class ActionPage {
         return null;
     }
 
-    //logical method
-    public boolean sortElement_UseDragAndDrop(String itemThat, String itemTo) throws TestRunException {
-        List<WebElement> listOfElements = driver.findElements(liSortBoxMain);
+    //action method
+    private boolean sortElement_UseDragAndDrop(List<WebElement> listOfElements, String itemThat, String itemTo) throws TestRunException {
         WebElement elementThat = getElementFromList_UseText(listOfElements, itemThat);
         WebElement elementTo = getElementFromList_UseText(listOfElements, itemTo);
-        if(elementThat.isEnabled()) {
-            builder.clickAndHold(elementThat).moveToElement(elementTo).release().build().perform();
+        if(elementThat != null && elementTo != null) {
+            builder.moveToElement(elementThat).clickAndHold().moveToElement(elementTo).release().build().perform();
+            return true;
         } else {
-            throw new TestRunException("sortElement_UseDragAndDrop(). Error, element is't displayed");
+            throw new TestRunException("sortElement_UseDragAndDrop(). Error, element is null");
         }
-        //builder.clickAndHold(elementThat).moveToElement(elementTo).release().build().perform();
-        return false;
+    }
+
+    //action method
+    public boolean sortElement_UseDragAndDrop_SortBox(String itemThat, String itemTo) throws TestRunException {
+        List<WebElement> listOfElements = driver.findElements(liSortBoxMain);
+        return sortElement_UseDragAndDrop(listOfElements, itemThat, itemTo);
     }
 
     //logical method

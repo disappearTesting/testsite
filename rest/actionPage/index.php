@@ -219,25 +219,6 @@
 			</div>
 			
 			<div class="select-multiple-event">
-				<div class="sort-box">
-					<h4>SortBox</h4>
-					<p>Reorder elements in a list using the mouse.</p>
-					<ul id="sortable">
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-					</ul>
-					<script>
-					  $( function() {
-						$( "#sortable" ).sortable();
-						$( "#sortable" ).disableSelection();
-					  } );
-					</script>
-				</div>
 				<div class="select-box">
 				<h4>SelectBox</h4>
 				<p>Select elements, individually or in a group.</p>
@@ -320,6 +301,25 @@
 					};
 				</script>
 			</div>
+			<div class="sort-box">
+					<h4>SortBox</h4>
+					<p>Reorder elements in a list using the mouse.</p>
+					<ul id="sortable">
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+					  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+					</ul>
+					<script>
+					  $( function() {
+						$( "#sortable" ).sortable();
+						$( "#sortable" ).disableSelection();
+					  } );
+					</script>
+				</div>
 		</div>
 	</div>
 </body>
