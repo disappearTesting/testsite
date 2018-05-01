@@ -6,17 +6,16 @@ package pom;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.imageio.ImageIO;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
@@ -40,6 +39,7 @@ public class ActionPage {
     private static By selectSelectBoxMain = By.id("demoSel");
     private static By buttonSubmitSelectBoxMain = By.id("button-submit-select-box");
     private static By liSortBoxMain = By.className("ui-sortable-handle");
+    private static By imgFig1Main = By.id("img-fig1");
 
     public ActionPage(WebDriver driver, Actions builder) {
         this.driver = driver;
@@ -351,23 +351,33 @@ public class ActionPage {
     }
 
     //logical method
-    private void saveImageFromURL_UseImageClass(WebElement element, String repo) throws IOException, TestRunException {
+    public boolean saveFileFromURL_UseImageClass(String path, String filename) throws IOException, TestRunException {
+        WebElement element = driver.findElement(imgFig1Main);
         if(element != null && element.isDisplayed()) {
             String attribute = element.getAttribute("src");
             URL urlImage = new URL(attribute);
             BufferedImage saveImage = ImageIO.read(urlImage);
-            ImageIO.write(saveImage, "png", new File(repo));
+            return ImageIO.write(saveImage, "png", new File(path + filename));
         } else {
             throw new TestRunException("saveImageFromUrl_UseImageClass(). Error, element is null or is't displayed");
         }
     }
 
-    //action method
-    public boolean saveImageFromURL_ImageBox() {
+    //logical method
+    private boolean checkExistingFile(String path, String filename) {
+        File dir = new File(path);
+        if(dir.exists() && dir.getName().equals(filename)) {
+            return checkExistingFile(path, filename);
+        }
         return false;
     }
 
-    public static void main(String[] args) {
-        System.out.println(MouseInfo.getNumberOfButtons());
+    //action method
+    public boolean saveImageFromURL_ImageBox(String path, String filename) throws IOException, TestRunException {
+        WebElement elementImage = driver.findElement(imgFig1Main);
+//        if(saveFileFromURL_UseImageClass(elementImage,path)) {
+//            checkExistingFile(path, filename);
+//        }
+        return false;
     }
 }
