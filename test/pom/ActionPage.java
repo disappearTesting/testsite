@@ -5,11 +5,19 @@
 package pom;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 
 public class ActionPage {
@@ -340,5 +348,26 @@ public class ActionPage {
     public boolean selectRadioButton_RadioButton() throws TestRunException {
         List<WebElement> listRadioButtons = driver.findElements(radioButtonContextMenuHard);
         return selectRadioButton(listRadioButtons);
+    }
+
+    //logical method
+    private void saveImageFromURL_UseImageClass(WebElement element, String repo) throws IOException, TestRunException {
+        if(element != null && element.isDisplayed()) {
+            String attribute = element.getAttribute("src");
+            URL urlImage = new URL(attribute);
+            BufferedImage saveImage = ImageIO.read(urlImage);
+            ImageIO.write(saveImage, "png", new File(repo));
+        } else {
+            throw new TestRunException("saveImageFromUrl_UseImageClass(). Error, element is null or is't displayed");
+        }
+    }
+
+    //action method
+    public boolean saveImageFromURL_ImageBox() {
+        return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(MouseInfo.getNumberOfButtons());
     }
 }

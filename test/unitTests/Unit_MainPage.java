@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package unitTests.loginPage;
+package unitTests;
 
 import org.junit.After;
 import org.junit.Before;

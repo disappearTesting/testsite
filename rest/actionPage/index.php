@@ -322,9 +322,13 @@
 			</div>
 			<div class="image-box">
 				<h4>ImageBox</h4>
-				<figure>
-					<img src="images/test.png">
-					<figcaption>Save image using WebDriver + Actions + Robot</figcaption>
+				<figure class="fig1">
+					<figcaption>Save image from URL</figcaption>
+					<img id="img-fig1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpJEu-MpZMbIw1ttUBKceo0StB3zax9TjY6eoErmnGWoCGM2I">
+				</figure>
+				<figure class="fig2">
+					<figcaption>Save image from local repo</figcaption>
+					<img id="img-fig2" src="images/test.png">
 				</figure>
 			</div>
 		</div>
