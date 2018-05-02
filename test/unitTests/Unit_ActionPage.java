@@ -12,10 +12,9 @@ import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import pom.ActionPage;
+import pom.ExtentReportTest;
 import pom.TestRunException;
 
 import java.io.IOException;
@@ -23,12 +22,15 @@ import java.io.IOException;
 public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
-    private static final String DOWNLOAD_PATH = "images/";
+    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
+    private static final String REPORT_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\report\\";
+    private static final String REPORT_FILENAME = "report_test_SortElement_SortBox().html";
 
     private WebDriver driver;
     private Actions builder;
     private JavascriptExecutor javascript;
     private ActionPage objAction;
+    private ExtentReportTest objExtent;
 
     @Before
     public void setUp() {
@@ -36,6 +38,7 @@ public class Unit_ActionPage {
         builder = new Actions(driver);
         //javascript = (JavascriptExecutor)driver;
         objAction = new ActionPage(driver, builder);
+        objExtent = new ExtentReportTest(REPORT_PATH, REPORT_FILENAME);
         driver.get(URL_ACTION_PAGE);
     }
 
@@ -46,7 +49,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_Test() throws IOException, TestRunException {
-        objAction.saveFileFromURL_UseImageClass("C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\","img-fig1.png");
+        objAction.saveFileFromURL_UseImageClass(DOWNLOAD_PATH,"img-fig1.png");
     }
 
     @Test
