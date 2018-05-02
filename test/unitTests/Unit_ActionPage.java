@@ -4,6 +4,7 @@
  */
 package unitTests;
 
+import com.relevantcodes.extentreports.ExtentTest;
 import org.junit.After;
 import static org.junit.Assert.assertTrue;
 
@@ -23,11 +24,14 @@ public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
     private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
+    private static final String REPORT_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\report\\";
+    private static final String REPORT_FILENAME = "report_test_SortElement_SortBox().html";
 
     private WebDriver driver;
     private Actions builder;
     private JavascriptExecutor javascript;
     private ActionPage objAction;
+    private ExtentReportTest extent;
 
     @Before
     public void setUp() {
@@ -35,6 +39,7 @@ public class Unit_ActionPage {
         builder = new Actions(driver);
         //javascript = (JavascriptExecutor)driver;
         objAction = new ActionPage(driver, builder);
+        extent = new ExtentReportTest(REPORT_PATH, REPORT_FILENAME);
         driver.get(URL_ACTION_PAGE);
     }
 
@@ -50,6 +55,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_SortElement_SortBox() throws TestRunException {
+        extent.
         objAction.scrollToElement_SortBox();
         assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 1", "Item 7"));
         assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 6", "Item 7"));

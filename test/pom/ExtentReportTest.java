@@ -3,19 +3,21 @@
  */
 package pom;
 
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentReportTest {
 
     // Create object of extent report and specify the report file path.
-    ExtentReports extent;
+    private ExtentReports extent;
+    private ExtentHtmlReporter htmlReporter;
 
     public ExtentReportTest(String path, String filename) {
-        this.extent = new ExtentReports(System.getProperty(path) + filename, false);
+        this.htmlReporter = new ExtentHtmlReporter(path + filename);
+        this.extent = new ExtentReports();
     }
 
     public ExtentReports getExtent() {
         return extent;
     }
-
 }
