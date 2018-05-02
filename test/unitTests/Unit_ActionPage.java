@@ -12,9 +12,7 @@ import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import pom.ActionPage;
 import pom.TestRunException;
 
@@ -23,7 +21,7 @@ import java.io.IOException;
 public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
-    private static final String DOWNLOAD_PATH = "images/";
+    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
 
     private WebDriver driver;
     private Actions builder;
@@ -46,7 +44,7 @@ public class Unit_ActionPage {
 
     @Test
     public void test_Test() throws IOException, TestRunException {
-        objAction.saveFileFromURL_UseImageClass("C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\","img-fig1.png");
+        objAction.saveFileFromURL_UseImageClass(DOWNLOAD_PATH,"img-fig1.png");
     }
 
     @Test
