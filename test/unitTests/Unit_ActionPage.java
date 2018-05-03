@@ -25,7 +25,7 @@ public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
     private static final String DOWNLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
-    private static final String REPORT_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\actionPage\\reports";
+    private static final String REPORT_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\reports\\";
 
     private WebDriver driver;
     private Actions builder;
@@ -55,7 +55,8 @@ public class Unit_ActionPage {
     public void test_SortElement_SortBox() throws TestRunException {
         objReport = new ExtentReportTest(REPORT_PATH, "report_test_SortElement_SortBox().html");
         ExtentReports objectOfExtent = objReport.getObjectOfExtent();
-        ExtentTest extentTest = objectOfExtent.startTest("test_SortElement_SortBox()", "Start the test");
+        ExtentTest extentTest = objectOfExtent.startTest("test_SortElement_SortBox()",
+                "actionPage/index.php. SortBox. Reorder elements in a list.");
 
         extentTest.log(LogStatus.INFO,"do scrollToElement_SortBox() method");
         objAction.scrollToElement_SortBox();

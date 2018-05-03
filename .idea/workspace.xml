@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223fc242-e987-4227-911b-53e621daafda" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest/actionPage/images/X.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/ExtentReportTest.java" afterPath="$PROJECT_DIR$/test/pom/ExtentReportTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nullnull" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testsite.iml" afterPath="$PROJECT_DIR$/testsite.iml" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,10 +28,22 @@
       <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="60" column="93" lean-forward="true" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="93" />
+            <state relative-caret-position="515">
+              <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
+              <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -45,26 +53,14 @@
       <file leaf-file-name="ExtentReportTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/ExtentReportTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#365#366#0" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
                 <element signature="e#471#472#0" expanded="true" />
                 <element signature="e#535#536#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1439">
-              <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,9 +82,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1494" />
+    <option name="x" value="-1550" />
     <option name="y" value="129" />
-    <option name="width" value="1492" />
+    <option name="width" value="1548" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -437,21 +433,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 01m 05s.xml">
-      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 02m 24s.xml">
-      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 03m 01s.xml">
-      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 03m 33s.xml">
-      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 04m 11s.xml">
-      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 05m 41s.xml">
       <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
     </history-entry>
@@ -467,9 +448,24 @@
     <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 11h 43m 31s.xml">
       <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 12h 48m 03s.xml">
+      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 13h 07m 43s.xml">
+      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 13h 08m 33s.xml">
+      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 13h 15m 10s.xml">
+      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_ActionPage_test_SortElement_SortBox - 2018.05.03 at 13h 22m 00s.xml">
+      <configuration name="Unit_ActionPage.test_SortElement_SortBox" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1494" y="129" width="1492" height="1080" extended-state="0" />
+    <frame x="-1550" y="129" width="1548" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,12 +478,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="90" width="1740" height="865" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="90" width="1740" height="865" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21983357" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21161549" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.49587628" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -783,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1439">
+        <state relative-caret-position="419">
           <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -793,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ExtentReportTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="408">
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#365#366#0" expanded="true" />
@@ -807,8 +803,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="60" column="93" lean-forward="true" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="93" />
+        <state relative-caret-position="515">
+          <caret line="54" column="68" lean-forward="true" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
