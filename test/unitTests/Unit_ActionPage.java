@@ -5,12 +5,13 @@
 package unitTests;
 
 import com.relevantcodes.extentreports.ExtentTest;
-import org.junit.After;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.LogStatus;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -23,23 +24,20 @@ import java.io.IOException;
 public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
-    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
-    private static final String REPORT_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\report\\";
-    private static final String REPORT_FILENAME = "report_test_SortElement_SortBox().html";
+    private static final String DOWNLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
+    private static final String REPORT_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\actionPage\\reports";
 
     private WebDriver driver;
     private Actions builder;
-    private JavascriptExecutor javascript;
+
     private ActionPage objAction;
-    private ExtentReportTest extent;
+    private ExtentReportTest objReport;
 
     @Before
     public void setUp() {
         driver = new FirefoxDriver();
         builder = new Actions(driver);
-        //javascript = (JavascriptExecutor)driver;
         objAction = new ActionPage(driver, builder);
-        extent = new ExtentReportTest(REPORT_PATH, REPORT_FILENAME);
         driver.get(URL_ACTION_PAGE);
     }
 
@@ -55,10 +53,20 @@ public class Unit_ActionPage {
 
     @Test
     public void test_SortElement_SortBox() throws TestRunException {
-        extent.
+        objReport = new ExtentReportTest(REPORT_PATH, "report_test_SortElement_SortBox().html");
+        ExtentReports objectOfExtent = objReport.getObjectOfExtent();
+        ExtentTest extentTest = objectOfExtent.startTest("test_SortElement_SortBox()", "Start the test");
+
+        extentTest.log(LogStatus.INFO,"do scrollToElement_SortBox() method");
         objAction.scrollToElement_SortBox();
+
+        extentTest.log(LogStatus.INFO,"do sortElement_UseDragAndDrop_SortBox() method");
         assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 1", "Item 7"));
         assertTrue(objAction.sortElement_UseDragAndDrop_SortBox("Item 6", "Item 7"));
+
+        extentTest.log(LogStatus.INFO,"endTest");
+        objectOfExtent.endTest(extentTest);
+        objectOfExtent.flush();
     }
 
     @Test

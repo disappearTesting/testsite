@@ -243,7 +243,7 @@ public class ActionPage {
         return null;
     }
 
-    //action method
+    //logical method
     private boolean sortElement_UseDragAndDrop(List<WebElement> listOfElements, String itemThat, String itemTo) throws TestRunException {
         WebElement elementThat = getElementFromList_UseText(listOfElements, itemThat);
         WebElement elementTo = getElementFromList_UseText(listOfElements, itemTo);
