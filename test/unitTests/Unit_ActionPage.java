@@ -24,8 +24,8 @@ import java.io.IOException;
 public class Unit_ActionPage {
 
     private static final String URL_ACTION_PAGE = "http://testsite.local/rest/actionPage/index.php";
-    private static final String DOWNLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
-    private static final String REPORT_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\reports\\";
+    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\actionPage\\images\\";
+    private static final String REPORT_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\reports\\";
 
     private WebDriver driver;
     private Actions builder;
@@ -47,8 +47,8 @@ public class Unit_ActionPage {
     }
 
     @Test
-    public void test_Test() throws IOException, TestRunException {
-        objAction.saveFileFromURL_UseImageClass(DOWNLOAD_PATH,"img-fig1.png");
+    public void test_SaveImageFromURL_ImageBox() throws IOException, TestRunException {
+        assertTrue(objAction.saveImageFromURL_ImageBox(DOWNLOAD_PATH,"img-fig1.png"));
     }
 
     @Test

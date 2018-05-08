@@ -350,8 +350,7 @@ public class ActionPage {
     }
 
     //logical method
-    public boolean saveFileFromURL_UseImageClass(String path, String filename) throws IOException, TestRunException {
-        WebElement element = driver.findElement(imgFig1Main);
+    private boolean saveFileFromURL_UseImageClass(WebElement element, String path, String filename) throws IOException, TestRunException {
         if(element != null && element.isDisplayed()) {
             String attribute = element.getAttribute("src");
             URL urlImage = new URL(attribute);
@@ -364,9 +363,9 @@ public class ActionPage {
 
     //logical method
     private boolean checkExistingFile(String path, String filename) {
-        File dir = new File(path);
-        if(dir.exists() && dir.getName().equals(filename)) {
-            return checkExistingFile(path, filename);
+        File file = new File(path + filename);
+        if(file.exists() && file.isFile()) {
+            return true;
         }
         return false;
     }
@@ -374,9 +373,11 @@ public class ActionPage {
     //action method
     public boolean saveImageFromURL_ImageBox(String path, String filename) throws IOException, TestRunException {
         WebElement elementImage = driver.findElement(imgFig1Main);
-//        if(saveFileFromURL_UseImageClass(elementImage,path)) {
-//            checkExistingFile(path, filename);
-//        }
+        if(saveFileFromURL_UseImageClass(elementImage, path, filename)) {
+            if(checkExistingFile(path, filename)) {
+                return true;
+            }
+        }
         return false;
     }
 
