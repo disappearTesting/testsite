@@ -29,13 +29,22 @@ public class FilePage {
         return file.exists() && file.isFile();
     }
 
+    //logical method
+    private void selectTheFile_WindowsFileUploadDialog_UseAutoItScript(WebElement element, String script) throws InterruptedException, IOException, TestRunException {
+        if(element != null && element.isEnabled()) {
+            element.click();
+            Thread.sleep(3000);
+            executeAutoItScript(script);
+        } else {
+            throw new TestRunException("selectTheFile_WindowsFileUploadDialog_UseAutoItScript(). Error, element is null or is't enabled");
+        }
+    }
+
     //action method
-    public boolean uploadFile_useAutoItScript(String path, String filename, String script) throws InterruptedException, IOException {
+    public boolean uploadFile_Success(String path, String filename, String script) throws InterruptedException, TestRunException, IOException {
         WebElement buttonBrowse = driver.findElement(buttonBrowseFile);
         WebElement buttonUpload = driver.findElement(buttonUploadFile);
-        buttonBrowse.click();
-        Thread.sleep(3000);
-        executeAutoItScript(script);
+        selectTheFile_WindowsFileUploadDialog_UseAutoItScript(buttonBrowse, script);
         Thread.sleep(3000);
         buttonUpload.click();
         return checkExistingFile(path, filename);

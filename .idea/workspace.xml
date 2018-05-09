@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85b3ff52-f8fb-467d-8915-8003540a6114" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AutoIT/test.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/rest/filePage/upload.php" afterPath="$PROJECT_DIR$/rest/filePage/upload.php" />
-      <change beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
       <change beforePath="$PROJECT_DIR$/test/pom/FilePage.java" afterPath="$PROJECT_DIR$/test/pom/FilePage.java" />
-      <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +29,8 @@
       <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="240">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#1323#1324#0" expanded="true" />
                 <element signature="e#1352#1353#0" expanded="true" />
@@ -48,12 +42,12 @@
       <file leaf-file-name="FilePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state relative-caret-position="640">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,12 +56,12 @@
       <file leaf-file-name="Unit_FilePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#524#525#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -277,12 +271,12 @@
       <updated>1525808116392</updated>
       <workItem from="1525808117559" duration="520000" />
       <workItem from="1525873165300" duration="283000" />
-      <workItem from="1525884668556" duration="8384000" />
+      <workItem from="1525884668556" duration="9009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9187000" />
+    <option name="totallyTimeSpent" value="9812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
@@ -359,29 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-          <folding>
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1352#1353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-17">
@@ -392,14 +363,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
           </folding>
         </state>
       </provider>
