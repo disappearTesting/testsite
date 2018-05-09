@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b274028d-be2b-4e40-a2a9-398253a736ad" name="Default" comment="">
+    <list default="true" id="85b3ff52-f8fb-467d-8915-8003540a6114" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/AutoIT/ex1.au3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/AutoIT/ex1.exe" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/AutoIT/test.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/rest/filePage/upload.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/rest/uploadFilePage/folderToUploadFile/test.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/rest/uploadFilePage/upload.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/rest/uploadFilePage/upload_file_page.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,21 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
+      <file leaf-file-name="UploadFilePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/pom/UploadFilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="373" column="44" lean-forward="true" selection-start-line="373" selection-start-column="19" selection-end-line="373" selection-end-column="44" />
+            <state relative-caret-position="100">
+              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -48,8 +45,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/pom/ActionPage.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
       </list>
     </option>
   </component>
@@ -81,8 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -112,6 +105,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -131,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_ActionPage.test_Test">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -152,56 +147,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="Unit_ActionPage.test_SortElement_SortBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="testsite" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
-      <option name="METHOD_NAME" value="test_SortElement_SortBox" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="Unit_ActionPage.test_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="unitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="testsite" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="unitTests" />
-      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_ActionPage" />
-      <option name="METHOD_NAME" value="test_Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -263,16 +208,6 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SortElement_SortBox" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_Test" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_Test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_ActionPage.test_SortElement_SortBox" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -282,49 +217,17 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b274028d-be2b-4e40-a2a9-398253a736ad" name="Default" comment="" />
-      <created>1525717861502</created>
+      <changelist id="85b3ff52-f8fb-467d-8915-8003540a6114" name="Default" comment="" />
+      <created>1525808116392</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1525717861502</updated>
-      <workItem from="1525717862641" duration="4480000" />
+      <updated>1525808116392</updated>
+      <workItem from="1525808117559" duration="520000" />
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 33m 10s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 34m 29s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 35m 06s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 35m 34s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 38m 58s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 40m 33s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 41m 23s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 42m 22s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 42m 52s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_ActionPage_test_Test - 2018.05.07 at 22h 43m 16s.xml">
-      <configuration name="Unit_ActionPage.test_Test" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4480000" />
+    <option name="totallyTimeSpent" value="520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
@@ -338,8 +241,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="27" y="57" width="1837" height="950" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -349,7 +252,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="20" y="49" width="1878" height="992" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -365,9 +268,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="12" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -379,42 +280,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Resizable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ExtentReportTest.java">
+    <entry file="file://$PROJECT_DIR$/test/pom/UploadFilePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="373" column="44" lean-forward="true" selection-start-line="373" selection-start-column="19" selection-end-line="373" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="49" column="48" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="48" />
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
