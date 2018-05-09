@@ -364,19 +364,14 @@ public class ActionPage {
     //logical method
     private boolean checkExistingFile(String path, String filename) {
         File file = new File(path + filename);
-        if(file.exists() && file.isFile()) {
-            return true;
-        }
-        return false;
+        return file.exists() && file.isFile();
     }
 
     //action method
     public boolean saveImageFromURL_ImageBox(String path, String filename) throws IOException, TestRunException {
         WebElement elementImage = driver.findElement(imgFig1Main);
         if(saveFileFromURL_UseImageClass(elementImage, path, filename)) {
-            if(checkExistingFile(path, filename)) {
-                return true;
-            }
+            return checkExistingFile(path, filename);
         }
         return false;
     }

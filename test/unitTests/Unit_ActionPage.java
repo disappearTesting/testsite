@@ -43,7 +43,7 @@ public class Unit_ActionPage {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
