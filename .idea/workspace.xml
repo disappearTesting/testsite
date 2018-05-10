@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="223fc242-e987-4227-911b-53e621daafda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/actionPage/images/img-fig1.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unitTests/Resizable.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/ActionPage.java" afterPath="$PROJECT_DIR$/test/pom/ActionPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java" />
-    </list>
+    <list default="true" id="223fc242-e987-4227-911b-53e621daafda" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +25,8 @@
       <file leaf-file-name="Unit_ActionPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="1054">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -41,24 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActionPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1258">
-              <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
+            <state relative-caret-position="807">
+              <caret line="383" column="1" lean-forward="true" selection-start-line="383" selection-start-column="1" selection-end-line="383" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
               </folding>
             </state>
           </provider>
@@ -434,7 +417,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1550" y="129" width="1548" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -447,7 +430,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="90" width="1740" height="865" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21695594" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -495,7 +478,6 @@
           <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -527,7 +509,6 @@
           <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -569,7 +550,6 @@
           <caret line="381" column="0" lean-forward="false" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -591,7 +571,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -613,7 +592,6 @@
           <caret line="331" column="32" lean-forward="true" selection-start-line="331" selection-start-column="32" selection-end-line="331" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -636,7 +614,6 @@
           <caret line="193" column="52" lean-forward="false" selection-start-line="193" selection-start-column="52" selection-end-line="193" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -658,7 +635,6 @@
           <caret line="193" column="52" lean-forward="false" selection-start-line="193" selection-start-column="52" selection-end-line="193" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -681,7 +657,6 @@
           <caret line="215" column="58" lean-forward="false" selection-start-line="215" selection-start-column="19" selection-end-line="215" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -703,7 +678,6 @@
           <caret line="222" column="45" lean-forward="false" selection-start-line="222" selection-start-column="45" selection-end-line="222" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -715,7 +689,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
           </folding>
         </state>
       </provider>
@@ -786,17 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/ExtentReportTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -807,22 +769,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258">
-          <caret line="251" column="24" lean-forward="false" selection-start-line="251" selection-start-column="24" selection-end-line="251" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1525795128779" expanded="true" signature="15797:15806" ph="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_ActionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="383" column="1" lean-forward="true" selection-start-line="383" selection-start-column="1" selection-end-line="383" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
