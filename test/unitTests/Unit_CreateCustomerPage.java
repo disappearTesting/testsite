@@ -1,4 +1,4 @@
-package unitTests.loginPage;
+package unitTests;
 
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import pom.CreateCustomerPage;
