@@ -15,7 +15,7 @@ import java.io.IOException;
 public class Unit_FilePage {
 
     private static final String URL_FILE_PAGE = "http://testsite.local/rest/filePage/upload.php";
-    private static final String UPLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\filePage\\folderToUpload\\";
+    private static final String UPLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\folderToUpload\\";
 
     private WebDriver driver;
 
@@ -36,6 +36,6 @@ public class Unit_FilePage {
 
     @Test
     public void test_UploadFile_Success() throws InterruptedException, TestRunException, IOException {
-        Assert.assertTrue(objFile.uploadFile_Success(UPLOAD_PATH, "fileToUpload.txt", "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\filePage\\uploadFile_Success.exe"));
+        Assert.assertTrue(objFile.uploadFile_Success(UPLOAD_PATH, "fileToUpload.txt", "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\uploadFile_Success.exe"));
     }
 }
