@@ -4,10 +4,13 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import pom.ExtentReportTest;
 import pom.FilePage;
+import pom.FirefoxProfileTestsite;
 import pom.TestRunException;
 
 import java.io.IOException;
@@ -18,13 +21,15 @@ public class Unit_FilePage {
     private static final String UPLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\folderToUpload\\";
 
     private WebDriver driver;
-
+    private FirefoxProfile profile;
     private FilePage objFile;
+    private FirefoxProfileTestsite objProfile;
     private ExtentReportTest objReport;
 
     @Before
     public void setUp() {
-        driver = new FirefoxDriver();
+        profile = objProfile.setFirefoxProfileDownloadSettings();
+        driver = new FirefoxDriver((Capabilities) profile);
         objFile = new FilePage(driver);
         driver.get(URL_FILE_PAGE);
     }

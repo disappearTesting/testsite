@@ -33,7 +33,7 @@
 		<div id="download-file-form">
 			<h4>Download File</h4>
 			<label>
-				<a href="http://testsite.local/rest/filePage/folderToDownload/fileToDownload.txt" download>fileToDownload.txt</a>
+				<a id="a-download-file" href="http://testsite.local/rest/filePage/folderToDownload/fileToDownload.txt" download>fileToDownload.txt</a>
 			</label>
 		</div>
 	</div>

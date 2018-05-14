@@ -17,6 +17,7 @@ public class FilePage {
 
     private static By buttonBrowseFile = By.id("button-browse-file");
     private static By buttonUploadFile = By.id("button-upload-file");
+    private static By aDownloadFile = By.id("a-download-file");
 
     public FilePage(WebDriver driver) {
         this.driver = driver;
@@ -46,5 +47,12 @@ public class FilePage {
         new WebDriverWait(driver, 5).until(ExpectedConditions.textToBePresentInElementValue(buttonBrowse, filename));
         buttonUpload.click();
         return checkExistingFile(path, filename);
+    }
+
+    //action method
+    public boolean downloadFile_Success(String script) throws InterruptedException, TestRunException, IOException {
+        WebElement aDownload = driver.findElement(aDownloadFile);
+        selectTheFile_WindowsFileDialog_UseAutoItScript(aDownload, script);
+        return false;
     }
 }
