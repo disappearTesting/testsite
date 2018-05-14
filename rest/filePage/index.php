@@ -25,10 +25,16 @@
 		<h1 class="">AutoIT</h1>
 		<div id="upload-file-form">
 			<h4>Upload File</h4>
-			<form enctype="multipart/form-data" action="upload.php" method="POST">
+			<form enctype="multipart/form-data" action="index.php" method="POST">
 				<input type="file" id="button-browse-file" name="uploaded_file"></input>
 				<input type="submit" id="button-upload-file" value="Upload"></input>
 			</form>
+		</div>
+		<div id="download-file-form">
+			<h4>Download File</h4>
+			<label>
+				<a href="http://testsite.local/rest/filePage/folderToDownload/fileToDownload.txt" download>fileToDownload.txt</a>
+			</label>
 		</div>
 	</div>
 </body>

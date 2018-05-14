@@ -3,9 +3,13 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class FilePage {
 
@@ -25,7 +29,7 @@ public class FilePage {
     }
 
     //logical method
-    private void selectTheFile_WindowsFileUploadDialog_UseAutoItScript(WebElement element, String script) throws InterruptedException, IOException, TestRunException {
+    private void selectTheFile_WindowsFileDialog_UseAutoItScript(WebElement element, String script) throws InterruptedException, IOException, TestRunException {
         if(element != null && element.isEnabled()) {
             element.click();
             Runtime.getRuntime().exec(script);
@@ -38,8 +42,8 @@ public class FilePage {
     public boolean uploadFile_Success(String path, String filename, String script) throws InterruptedException, TestRunException, IOException {
         WebElement buttonBrowse = driver.findElement(buttonBrowseFile);
         WebElement buttonUpload = driver.findElement(buttonUploadFile);
-        selectTheFile_WindowsFileUploadDialog_UseAutoItScript(buttonBrowse, script);
-        Thread.sleep(6000);
+        selectTheFile_WindowsFileDialog_UseAutoItScript(buttonBrowse, script);
+        new WebDriverWait(driver, 5).until(ExpectedConditions.textToBePresentInElementValue(buttonBrowse, filename));
         buttonUpload.click();
         return checkExistingFile(path, filename);
     }
