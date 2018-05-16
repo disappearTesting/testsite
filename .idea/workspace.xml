@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="223fc242-e987-4227-911b-53e621daafda" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/filePage/index.php" afterPath="$PROJECT_DIR$/rest/filePage/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/FilePage.java" afterPath="$PROJECT_DIR$/test/pom/FilePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" />
     </list>
@@ -29,36 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Unit_FilePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Unit_FilePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FirefoxProfileTestsite.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="170">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+                <element signature="e#1176#1177#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirefoxDriver.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
+      <file leaf-file-name="FirefoxProfileTestsite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="476">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#296#297#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,8 +57,8 @@
       <file leaf-file-name="FilePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+            <state relative-caret-position="686">
+              <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -96,10 +87,10 @@
         <option value="$PROJECT_DIR$/test/pom/ActionPage.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/test/unitTests/Unit_CreateCustomerPage.java" />
-        <option value="$PROJECT_DIR$/test/pom/FilePage.java" />
         <option value="$PROJECT_DIR$/test/pom/BrowserProfileTestsite.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" />
         <option value="$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java" />
+        <option value="$PROJECT_DIR$/test/pom/FilePage.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" />
       </list>
     </option>
   </component>
@@ -212,7 +203,7 @@
       <pane id="AndroidView" />
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_FilePage.test_UploadFile_Success">
+  <component name="RunManager" selected="JUnit.Unit_FilePage.test">
     <configuration default="false" name="Unit_FilePage.test_UploadFile_Success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -257,6 +248,32 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="testsite" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unit_FilePage.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_FilePage" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -463,14 +480,16 @@
       <listeners />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_FilePage.test_UploadFile_Success" />
       <item index="1" class="java.lang.String" itemvalue="Application.FilePage" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_FilePage.test" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_FilePage.test_UploadFile_Success" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FilePage" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_FilePage.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_FilePage.test_UploadFile_Success" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FilePage" />
       </list>
     </recent_temporary>
   </component>
@@ -491,23 +510,23 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 11h 48m 07s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 19h 59m 47s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 11h 48m 48s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 20h 00m 22s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 11h 51m 47s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 20h 01m 06s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 12h 06m 15s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 20h 01m 30s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 13h 58m 51s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 20h 02m 01s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 14h 00m 59s.xml">
-      <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
+    <history-entry file="Unit_FilePage_test - 2018.05.14 at 20h 03m 21s.xml">
+      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Unit_FilePage_test_UploadFile_Success - 2018.05.14 at 14h 13m 15s.xml">
       <configuration name="Unit_FilePage.test_UploadFile_Success" configurationId="JUnit" />
@@ -524,7 +543,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -536,7 +555,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="90" width="1740" height="865" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="76" y="90" width="1740" height="865" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -938,22 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="54" column="53" lean-forward="false" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/3.8.1/selenium-firefox-driver-3.8.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -962,14 +965,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1176#1177#0" expanded="true" />
           </folding>
         </state>
       </provider>

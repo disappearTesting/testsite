@@ -21,15 +21,14 @@ public class Unit_FilePage {
     private static final String UPLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\folderToUpload\\";
 
     private WebDriver driver;
-    private FirefoxProfile profile;
     private FilePage objFile;
     private FirefoxProfileTestsite objProfile;
     private ExtentReportTest objReport;
 
     @Before
     public void setUp() {
-        profile = objProfile.setFirefoxProfileDownloadSettings();
-        driver = new FirefoxDriver((Capabilities) profile);
+        FirefoxProfile mprofile = objProfile.setFirefoxProfileDownloadSettings();
+        driver = new FirefoxDriver((Capabilities) mprofile);
         objFile = new FilePage(driver);
         driver.get(URL_FILE_PAGE);
     }
@@ -42,5 +41,10 @@ public class Unit_FilePage {
     @Test
     public void test_UploadFile_Success() throws InterruptedException, TestRunException, IOException {
         Assert.assertTrue(objFile.uploadFile_Success(UPLOAD_PATH, "fileToUpload.txt", "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\uploadFile_Success.exe"));
+    }
+
+    @Test
+    public void test() throws InterruptedException, TestRunException, IOException {
+        objFile.downloadFile_Success();
     }
 }

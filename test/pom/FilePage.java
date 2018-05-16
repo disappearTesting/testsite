@@ -50,9 +50,8 @@ public class FilePage {
     }
 
     //action method
-    public boolean downloadFile_Success(String script) throws InterruptedException, TestRunException, IOException {
+    public void downloadFile_Success() throws InterruptedException, TestRunException, IOException {
         WebElement aDownload = driver.findElement(aDownloadFile);
-        selectTheFile_WindowsFileDialog_UseAutoItScript(aDownload, script);
-        return false;
+        aDownload.click();
     }
 }
