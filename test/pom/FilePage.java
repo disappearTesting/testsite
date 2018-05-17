@@ -3,13 +3,11 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class FilePage {
 
@@ -30,7 +28,7 @@ public class FilePage {
     }
 
     //logical method
-    private void selectTheFile_WindowsFileDialog_UseAutoItScript(WebElement element, String script) throws InterruptedException, IOException, TestRunException {
+    private void selectTheFile_WindowsFileDialog_UseAutoItScript(WebElement element, String script) throws IOException, TestRunException {
         if(element != null && element.isEnabled()) {
             element.click();
             Runtime.getRuntime().exec(script);
@@ -50,7 +48,7 @@ public class FilePage {
     }
 
     //action method
-    public void downloadFile_Success() throws InterruptedException, TestRunException, IOException {
+    public void downloadFile_Success() {
         WebElement aDownload = driver.findElement(aDownloadFile);
         aDownload.click();
     }

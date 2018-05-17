@@ -22,13 +22,11 @@ public class Unit_FilePage {
 
     private WebDriver driver;
     private FilePage objFile;
-    private FirefoxProfileTestsite objProfile;
     private ExtentReportTest objReport;
 
     @Before
     public void setUp() {
-        FirefoxProfile mprofile = objProfile.setFirefoxProfileDownloadSettings();
-        driver = new FirefoxDriver((Capabilities) mprofile);
+        driver = new FirefoxDriver();
         objFile = new FilePage(driver);
         driver.get(URL_FILE_PAGE);
     }
