@@ -23,7 +23,7 @@ public class Unit_FilePage {
     private static final String UPLOAD_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\folderToUpload\\";
     private static final String UPLOAD_SCRIPT_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\uploadFile_Success.exe";
     private static final String DOWNLOAD_FILENAME = "fileToDownload.txt";
-    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\filePage\\test";
+    private static final String DOWNLOAD_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\filePage\\test\\";
     private static final String FIREFOX_PROFILE_FILENAME = "FirefoxProfileTestsite";
 
     private WebDriver driver;

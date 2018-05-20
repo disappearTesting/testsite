@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="002c1f05-e8f4-470d-9471-890fd7b76e2b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/rest/filePage/test/fileToDownload.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/pom/FilePage.java" afterPath="$PROJECT_DIR$/test/pom/FilePage.java" />
       <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_FilePage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,14 +17,14 @@
       <file leaf-file-name="Unit_FilePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="38" column="111" lean-forward="false" selection-start-line="38" selection-start-column="111" selection-end-line="38" selection-end-column="111" />
+            <state relative-caret-position="123">
+              <caret line="25" column="114" lean-forward="false" selection-start-line="25" selection-start-column="114" selection-end-line="25" selection-end-column="114" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilePage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FilePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="763">
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirefoxProfileTestsite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FirefoxProfileTestsite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -358,23 +355,11 @@
       <workItem from="1526582435237" duration="4502000" />
       <workItem from="1526808341839" duration="282000" />
       <workItem from="1526814291126" duration="8269000" />
-      <workItem from="1526836433425" duration="5719000" />
+      <workItem from="1526836433425" duration="6051000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_FilePage_test - 2018.05.20 at 23h 20m 36s.xml">
-      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_FilePage_test - 2018.05.20 at 23h 21m 57s.xml">
-      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_FilePage_test - 2018.05.20 at 23h 24m 14s.xml">
-      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_FilePage_test - 2018.05.20 at 23h 26m 14s.xml">
-      <configuration name="Unit_FilePage.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_FilePage_test - 2018.05.20 at 23h 26m 36s.xml">
       <configuration name="Unit_FilePage.test" configurationId="JUnit" />
     </history-entry>
@@ -393,13 +378,24 @@
     <history-entry file="Unit_FilePage_test_DownloadFile_TXT_Success - 2018.05.20 at 23h 45m 16s.xml">
       <configuration name="Unit_FilePage.test_DownloadFile_TXT_Success" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_FilePage_test_DownloadFile_TXT_Success - 2018.05.20 at 23h 49m 02s.xml">
+      <configuration name="Unit_FilePage.test_DownloadFile_TXT_Success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_FilePage_test_DownloadFile_TXT_Success - 2018.05.20 at 23h 51m 36s.xml">
+      <configuration name="Unit_FilePage.test_DownloadFile_TXT_Success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_FilePage_test_DownloadFile_TXT_Success - 2018.05.20 at 23h 52m 57s.xml">
+      <configuration name="Unit_FilePage.test_DownloadFile_TXT_Success" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_FilePage_test_DownloadFile_TXT_Success - 2018.05.20 at 23h 53m 47s.xml">
+      <configuration name="Unit_FilePage.test_DownloadFile_TXT_Success" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18772000" />
+    <option name="totallyTimeSpent" value="19104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -410,7 +406,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="32" y="92" width="1878" height="930" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="32" y="92" width="1878" height="930" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -421,7 +417,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="16" y="89" width="1878" height="924" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="16" y="89" width="1878" height="924" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -438,26 +434,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/pom/FilePage.java</url>
-          <line>52</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/pom/FilePage.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
@@ -518,10 +494,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_FilePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="38" column="111" lean-forward="false" selection-start-line="38" selection-start-column="111" selection-end-line="38" selection-end-column="111" />
+        <state relative-caret-position="123">
+          <caret line="25" column="114" lean-forward="false" selection-start-line="25" selection-start-column="114" selection-end-line="25" selection-end-column="114" />
           <folding />
         </state>
       </provider>
@@ -529,15 +513,7 @@
     <entry file="file://$PROJECT_DIR$/test/pom/FirefoxProfileTestsite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/FilePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="51" />
           <folding />
         </state>
       </provider>
