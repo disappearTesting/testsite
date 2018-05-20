@@ -15,41 +15,26 @@ import java.util.Optional;
 
 public class FirefoxProfileTestsite {
 
-//    private FirefoxProfile profile;
-//
-//    public FirefoxProfileTestsite(FirefoxProfile profile) {
-//        this.profile = profile;
-//    }
-//
-//    private FirefoxProfile createFirefoxProfile() {
-//        ProfilesIni profile = new ProfilesIni();
-//        return profile.getProfile("FirefoxProfileTestsite");
-//    }
-//
-//    public FirefoxProfile setFirefoxProfileDownloadSettings() {
-//        profile = createFirefoxProfile();
-//        profile.setPreference("browser.download.folderList", 2);
-//        profile.setPreference("browser.download.manager.showWhenStarting", false);
-//        profile.setPreference("browser.download.dir", "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\filePage\\folderToDownload");
-//        profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/csv");
-//        return profile;
-//    }
+    private FirefoxProfile profile;
+    private FirefoxOptions options;
 
-    public static void main(String[] args) throws InterruptedException {
+    public FirefoxProfileTestsite(FirefoxProfile profile, FirefoxOptions options) {
+        this.profile = profile;
+        this.options = options;
+    }
+
+    private FirefoxProfile createFirefoxProfile(String profileName) {
         ProfilesIni profilesIni = new ProfilesIni();
-        FirefoxProfile profile = profilesIni.getProfile("FirefoxProfileTestsite");
-        //profile.setPreference("browser.download.folderList", 2);
-        profile.setPreference("browser.download.manager.showWhenStarting", false);
+        profile = profilesIni.getProfile(profileName);
+        return profile;
+    }
+
+    public FirefoxOptions getOptions_SkipDownloadDialog_FileType_TXT(String profileName, String downloadDir) {
+        profile = createFirefoxProfile(profileName);
         profile.setPreference("browser.download.manager.useWindow", false);
-        profile.setPreference("browser.download.dir", "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\filePage\\test");
-        profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/csv");
-
-
-        FirefoxOptions options = new FirefoxOptions().setProfile(profile);
-        WebDriver driver = new FirefoxDriver(options);
-        driver.get("http://testsite.local/rest/filePage/index.php");
-        WebElement element = driver.findElement(By.id("a-download-file"));
-        element.click();
-        //driver.quit();
+        profile.setPreference("browser.download.dir", downloadDir);
+        profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/plain");
+        options = new FirefoxOptions().setProfile(profile);
+        return options;
     }
 }
