@@ -48,8 +48,9 @@ public class FilePage {
     }
 
     //action method
-    public void downloadFile_Success() {
+    public boolean downloadFile_TXT_Success(String path, String filename) {
         WebElement aDownload = driver.findElement(aDownloadFile);
         aDownload.click();
+        return checkExistingFile(path, filename);
     }
 }
