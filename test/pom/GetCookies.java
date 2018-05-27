@@ -17,10 +17,16 @@ public class GetCookies {
         this.cookieFileName = cookieFileName;
     }
 
+    //logical method
+    private boolean checkExistingFile(String path, String filename) {
+        File file = new File(path + filename);
+        return file.exists() && file.isFile();
+    }
+
     // logical method
-    private BufferedWriter writeTheCookieFile() throws IOException {
+    private File writeTheCookieFile() throws IOException {
         File file = new File(cookieFileName);
-        BufferedWriter bufferedWriter = null;
+        BufferedWriter bufferedWriter;
         if (file.exists()) {
             file.delete();
         } else {
@@ -34,11 +40,22 @@ public class GetCookies {
             bufferedWriter.close();
             fileWriter.close();
         }
-        return bufferedWriter;
+        return file;
+    }
+
+    // action method
+    public File getTheCookieFile() throws IOException {
+        return writeTheCookieFile();
+    }
+
+    // action method
+    public boolean checkExistingCookieFile(String path, String filename) {
+        return checkExistingFile(path, filename);
     }
 
     // logical method
-    private BufferedReader readeTheCookieFile() throws IOException {
+    private Cookie readTheCookieFile() throws IOException {
+        Cookie cookie = null;
         File file = new File(cookieFileName);
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
@@ -57,13 +74,15 @@ public class GetCookies {
                 {
                     expiry = new Date(val);
                 }
-                Boolean isSecure = new Boolean(token.nextToken()).
-                        booleanValue();
-                Cookie cookie = new Cookie(name,value,domain,path,expiry,isSecure);
-                System.out.println(cookie);
-                driver.manage().addCookie(cookie); // This will add the stored cookie to your current session
+                Boolean isSecure = new Boolean(token.nextToken()).booleanValue();
+                cookie = new Cookie(name,value,domain,path,expiry,isSecure);
             }
         }
-        return bufferedReader;
+        return cookie;
+    }
+
+    // action method
+    public Cookie getCookie() throws IOException {
+         return readTheCookieFile();
     }
 }
