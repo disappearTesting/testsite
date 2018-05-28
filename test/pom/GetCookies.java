@@ -4,8 +4,8 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 
 import java.io.*;
-import java.util.Date;
-import java.util.StringTokenizer;
+import java.text.*;
+import java.util.*;
 
 public class GetCookies {
 
@@ -54,35 +54,45 @@ public class GetCookies {
     }
 
     // logical method
-    private Cookie readTheCookieFile() throws IOException {
-        Cookie cookie = null;
+    private void readTheCookieFile() throws IOException, ParseException {
         File file = new File(cookieFileName);
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
         String strLine = bufferedReader.readLine();
-        while(strLine != null){
-            StringTokenizer token = new StringTokenizer(strLine,";");
-            while(token.hasMoreTokens()){
+        while (strLine != null) {
+            StringTokenizer token = new StringTokenizer(strLine, ";");
+            while (token.hasMoreTokens()) {
                 String name = token.nextToken();
                 String value = token.nextToken();
                 String domain = token.nextToken();
                 String path = token.nextToken();
-                Date expiry = null;
 
+                Date expiry = null;
                 String val;
-                if(!(val=token.nextToken()).equals("null"))
-                {
-                    expiry = new Date(val);
+                if (!(val = token.nextToken()).equals("null")) {
+                     //Locale ruLocale = new Locale.Builder().setLanguage("ru").setRegion("RU").build();
+                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z", Locale.ENGLISH);
+                     expiry = dateFormat.parse(val);
                 }
-                Boolean isSecure = new Boolean(token.nextToken()).booleanValue();
-                cookie = new Cookie(name,value,domain,path,expiry,isSecure);
+                boolean isSecure = new Boolean(token.nextToken()).booleanValue();
+                Cookie cookie = new Cookie(name, value, domain, path, expiry, isSecure);
+                driver.manage().addCookie(cookie);
             }
         }
-        return cookie;
     }
 
+    // logical method
+//    private Cookie addCookie(String name, String value, String domain, String path, Date expiry, Boolean isSecure) {
+//        return new Cookie(name, value, domain, path, expiry, isSecure);
+//    }
+
     // action method
-    public Cookie getCookie() throws IOException {
-         return readTheCookieFile();
+    public void addCookie_Q() throws InterruptedException, IOException, ParseException {
+        driver.manage().deleteAllCookies();
+        Thread.sleep(3000);
+        readTheCookieFile();
+        //driver.navigate().refresh();
+        Thread.sleep(3000);
+        driver.get("http://testsite.local/rest/loginPage/login.php");
     }
 }
