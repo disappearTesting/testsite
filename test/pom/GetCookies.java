@@ -70,8 +70,8 @@ public class GetCookies {
                 Date expiry = null;
                 String val;
                 if (!(val = token.nextToken()).equals("null")) {
-                     //Locale ruLocale = new Locale.Builder().setLanguage("ru").setRegion("RU").build();
-                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z", Locale.ENGLISH);
+                     Locale enLocale = new Locale.Builder().setLanguage("en").setRegion("").build();
+                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", enLocale);
                      expiry = dateFormat.parse(val);
                 }
                 boolean isSecure = new Boolean(token.nextToken()).booleanValue();
@@ -81,18 +81,25 @@ public class GetCookies {
         }
     }
 
-    // logical method
-//    private Cookie addCookie(String name, String value, String domain, String path, Date expiry, Boolean isSecure) {
-//        return new Cookie(name, value, domain, path, expiry, isSecure);
-//    }
-
     // action method
-    public void addCookie_Q() throws InterruptedException, IOException, ParseException {
-        driver.manage().deleteAllCookies();
-        Thread.sleep(3000);
+    public void addCookies() throws IOException, ParseException {
         readTheCookieFile();
-        //driver.navigate().refresh();
-        Thread.sleep(3000);
-        driver.get("http://testsite.local/rest/loginPage/login.php");
+    }
+
+    // logical method
+    private Set<Cookie> getAllCookies() {
+        return driver.manage().getCookies();
+    }
+
+    // logical method
+    private void addCookiesToBrowser(Set<Cookie> cookies, String domain) {
+        for(Cookie cookie : cookies) {
+            if(cookie != null) {
+                if(cookie.getDomain().contains(domain)) {
+                    //driver.manage().addCookie(new Cookie(name, value, domain, path, expiry));
+                }
+            }
+        }
+        driver.navigate().refresh();
     }
 }
