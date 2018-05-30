@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 public class Unit_Login {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
-    private static final String COOKIE_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
+    private static final String COOKIE_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
     private static final String COOKIE_FILENAME = "Login.Cookies.data";
 
     private WebDriver driver;

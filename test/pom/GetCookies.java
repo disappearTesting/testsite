@@ -65,13 +65,17 @@ public class GetCookies {
                 String name = token.nextToken();
                 String value = token.nextToken();
                 String domain = token.nextToken();
+                if(domain == "testsite.local") {
+                    switch (domain = null) {
+                    }
+                }
                 String path = token.nextToken();
 
                 Date expiry = null;
                 String val;
                 if (!(val = token.nextToken()).equals("null")) {
                      //Locale ruLocale = new Locale.Builder().setLanguage("ru").setRegion("RU").build();
-                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z", Locale.ENGLISH);
+                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE dd MMM yyyy HH:mm:ss z", Locale.ENGLISH);
                      expiry = dateFormat.parse(val);
                 }
                 boolean isSecure = new Boolean(token.nextToken()).booleanValue();
@@ -80,11 +84,6 @@ public class GetCookies {
             }
         }
     }
-
-    // logical method
-//    private Cookie addCookie(String name, String value, String domain, String path, Date expiry, Boolean isSecure) {
-//        return new Cookie(name, value, domain, path, expiry, isSecure);
-//    }
 
     // action method
     public void addCookie_Q() throws InterruptedException, IOException, ParseException {
