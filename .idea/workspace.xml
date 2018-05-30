@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18721358-7621-4595-b10b-6d880f38fd48" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/LightShot.Cookies.data" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/Login.Cookies.data" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/Login.Cookies.data" afterPath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/Login.Cookies.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/home.php" afterPath="$PROJECT_DIR$/rest/loginPage/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/login.php" afterPath="$PROJECT_DIR$/rest/loginPage/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/register.php" afterPath="$PROJECT_DIR$/rest/loginPage/register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/LoginPage.Cookies.data" afterPath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/LoginPage.Cookies.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/pom/GetCookies.java" afterPath="$PROJECT_DIR$/test/pom/GetCookies.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unitTests/Unit_RegisterPage.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_RegisterPage.java" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,11 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GetCookies.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GetCookies.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="1207">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding>
+                <element signature="e#3313#3314#0" expanded="true" />
+                <element signature="e#3364#3365#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,9 +50,11 @@
       <file leaf-file-name="Unit_Login.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-              <folding />
+            <state relative-caret-position="459">
+              <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+              <folding>
+                <marker date="1527666373041" expanded="true" signature="2982:2990" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,10 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/unitTests/Unit_RegisterPage.java" />
-        <option value="$PROJECT_DIR$/test/unitTests/Unit_Login.java" />
         <option value="$PROJECT_DIR$/test/pom/GetCookies.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
       </list>
     </option>
   </component>
@@ -532,46 +541,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="18721358-7621-4595-b10b-6d880f38fd48" name="Default" comment="" />
-      <created>1527576051545</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1527576051545</updated>
-    </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="Unit_Login_test - 2018.05.29 at 16h 26m 59s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 16h 27m 31s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 16h 29m 34s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 28m 30s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 29m 08s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 29m 39s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 30m 59s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 33m 12s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 39m 58s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test - 2018.05.29 at 18h 40m 33s.xml">
-      <configuration name="Unit_Login.test" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1924" y="125" width="1928" height="1088" extended-state="6" />
@@ -612,28 +582,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/pom/GetCookies.java</url>
-          <line>91</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,7 +602,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1527666373041" expanded="true" signature="2982:2990" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -649,7 +612,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -657,7 +623,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1527666373041" expanded="true" signature="2982:2990" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -681,14 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="54" column="93" lean-forward="true" selection-start-line="54" selection-start-column="93" selection-end-line="54" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -734,16 +694,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="459">
+          <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+          <folding>
+            <marker date="1527666373041" expanded="true" signature="2982:2990" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="1207">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#3313#3314#0" expanded="true" />
+            <element signature="e#3364#3365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
