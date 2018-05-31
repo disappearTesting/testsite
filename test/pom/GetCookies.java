@@ -1,7 +1,10 @@
 package pom;
 
 import org.openqa.selenium.Cookie;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.*;
 import java.text.*;
@@ -74,10 +77,11 @@ public class GetCookies {
                      SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", enLocale);
                      expiry = dateFormat.parse(val);
                 }
-                boolean isSecure = new Boolean(token.nextToken()).booleanValue();
+                boolean isSecure = new Boolean(token.nextToken());
                 Cookie cookie = new Cookie(name, value, domain, path, expiry, isSecure);
                 driver.manage().addCookie(cookie);
             }
+            strLine = bufferedReader.readLine();
         }
     }
 
@@ -87,19 +91,8 @@ public class GetCookies {
     }
 
     // logical method
-    private Set<Cookie> getAllCookies() {
-        return driver.manage().getCookies();
-    }
-
-    // logical method
-    private void addCookiesToBrowser(Set<Cookie> cookies, String domain) {
-        for(Cookie cookie : cookies) {
-            if(cookie != null) {
-                if(cookie.getDomain().contains(domain)) {
-                    //driver.manage().addCookie(new Cookie(name, value, domain, path, expiry));
-                }
-            }
-        }
-        driver.navigate().refresh();
+    public void waitForLoad(WebDriver driver) {
+        new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd)
+                .executeScript("return document.readyState").equals("complete"));
     }
 }

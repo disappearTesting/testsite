@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="148b5aee-418b-47c5-b48a-72aa81569bb4" name="Default" comment="" />
+    <list default="true" id="148b5aee-418b-47c5-b48a-72aa81569bb4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/LightShot.Cookies.data" afterPath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/LightShot.Cookies.data" />
+      <change beforePath="$PROJECT_DIR$/test/pom/GetCookies.java" afterPath="$PROJECT_DIR$/test/pom/GetCookies.java" />
+      <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,34 +19,56 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
+            <state relative-caret-position="0">
               <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit_Login.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Unit_Login.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+            <state relative-caret-position="783">
+              <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetCookies.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
+      <file leaf-file-name="Unit_Login_UseCookies.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login_UseCookies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1657#1658#0" expanded="true" />
-                <element signature="e#3181#3182#0" expanded="true" />
-                <element signature="e#3232#3233#0" expanded="true" />
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetCookies.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+                <element signature="e#1814#1815#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,7 +103,9 @@
         <option value="$PROJECT_DIR$/test/pom/TakeCookies.java" />
         <option value="$PROJECT_DIR$/test/unitTests/Test.java" />
         <option value="$PROJECT_DIR$/test/pom/GetCookies.java" />
+        <option value="$PROJECT_DIR$/test/pom/Login_LightShot.java" />
         <option value="$PROJECT_DIR$/test/unitTests/Unit_Login.java" />
+        <option value="$PROJECT_DIR$/test/unitTests/Unit_Login_UseCookies.java" />
       </list>
     </option>
   </component>
@@ -109,7 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -117,6 +145,11 @@
             <path>
               <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="testsite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="testsite" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
@@ -139,7 +172,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -159,32 +192,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_Login.test_T">
+  <component name="RunManager" selected="JUnit.Unit_Login.test_LoginTo_UseCookies_LightShot">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="GetCookies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="pom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="pom.GetCookies" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="testsite" />
-      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -238,6 +252,31 @@
       <option name="PACKAGE_NAME" value="unitTests" />
       <option name="MAIN_CLASS_NAME" value="unitTests.Unit_Login" />
       <option name="METHOD_NAME" value="test_GenerateCookieFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="testsite" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_Login" />
+      <option name="METHOD_NAME" value="test_LoginTo_UseCookies_LightShot" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -364,16 +403,16 @@
       <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_Login_CorrectCredentials" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_Login.test" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_GenerateCookieFile" />
-      <item index="3" class="java.lang.String" itemvalue="Application.GetCookies" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_T" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_T" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_LoginTo_UseCookies_LightShot" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_T" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_Login.test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_Login_CorrectCredentials" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_GenerateCookieFile" />
-        <item index="4" class="java.lang.String" itemvalue="Application.GetCookies" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_LoginTo_UseCookies_LightShot" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_T" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Unit_Login.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_Login_CorrectCredentials" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Unit_Login.test_GenerateCookieFile" />
       </list>
     </recent_temporary>
   </component>
@@ -396,30 +435,25 @@
       <workItem from="1527493167636" duration="23324000" />
       <workItem from="1527520255673" duration="5674000" />
       <workItem from="1527614816624" duration="6407000" />
+      <workItem from="1527791034947" duration="5070000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 00m 38s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    <history-entry file="Unit_Login_test_LoginTo_UseCookies_LightShot - 2018.05.31 at 21h 36m 48s.xml">
+      <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 03m 59s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    <history-entry file="Unit_Login_test_LoginTo_UseCookies_LightShot - 2018.05.31 at 21h 41m 30s.xml">
+      <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 05m 15s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    <history-entry file="Unit_Login_test_LoginTo_UseCookies_LightShot - 2018.05.31 at 22h 15m 14s.xml">
+      <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 05m 41s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    <history-entry file="Unit_Login_test_LoginTo_UseCookies_LightShot - 2018.05.31 at 22h 15m 37s.xml">
+      <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 06m 42s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 06m 59s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 08m 27s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    <history-entry file="Unit_Login_test_LoginTo_UseCookies_LightShot - 2018.05.31 at 22h 16m 27s.xml">
+      <configuration name="Unit_Login.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 10m 54s.xml">
       <configuration name="Unit_Login.test_T" configurationId="JUnit" />
@@ -430,12 +464,19 @@
     <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 13m 18s.xml">
       <configuration name="Unit_Login.test_T" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_Login_test_T - 2018.05.31 at 21h 30m 07s.xml">
+      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_test_T - 2018.05.31 at 21h 30m 48s.xml">
+      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47183000" />
+    <option name="totallyTimeSpent" value="52253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -450,7 +491,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17465389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17625134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -474,43 +515,39 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unitTests/Unit_Login.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unitTests/Unit_Login.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/pom/GetCookies.java</url>
-          <line>77</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unitTests/Unit_Login.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/unitTests/Unit_Login.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1520">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
@@ -533,10 +570,8 @@
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -563,10 +598,8 @@
           <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -609,10 +642,8 @@
           <caret line="73" column="17" lean-forward="true" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,10 +654,8 @@
           <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -669,26 +698,9 @@
           <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,37 +761,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="797" column="30" lean-forward="false" selection-start-line="797" selection-start-column="30" selection-end-line="797" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unitTests/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
+        <state relative-caret-position="0">
           <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.8.1/selenium-support-3.8.1-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="202" column="15" lean-forward="false" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/jre/lib/rt.jar!/java/util/function/Function.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/Login_LightShot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
+        <state relative-caret-position="549">
+          <caret line="55" column="49" lean-forward="true" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1657#1658#0" expanded="true" />
-            <element signature="e#3181#3182#0" expanded="true" />
-            <element signature="e#3232#3233#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1814#1815#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/pom/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login_UseCookies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="58" column="5" lean-forward="false" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
