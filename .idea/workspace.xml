@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="148b5aee-418b-47c5-b48a-72aa81569bb4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/rest/loginPage/folderToCookiesFile/Login.Cookies.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/pom/GetCookies.java" afterPath="$PROJECT_DIR$/test/pom/GetCookies.java" />
-      <change beforePath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" afterPath="$PROJECT_DIR$/test/unitTests/Unit_Login.java" />
-    </list>
+    <list default="true" id="148b5aee-418b-47c5-b48a-72aa81569bb4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +35,8 @@
       <file leaf-file-name="GetCookies.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <state relative-caret-position="669">
+              <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1601#1602#0" expanded="true" />
@@ -400,14 +395,11 @@
       <workItem from="1527441470775" duration="6817000" />
       <workItem from="1527493167636" duration="23324000" />
       <workItem from="1527520255673" duration="5674000" />
-      <workItem from="1527614816624" duration="6360000" />
+      <workItem from="1527614816624" duration="6407000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 00m 05s.xml">
-      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 00m 38s.xml">
       <configuration name="Unit_Login.test_T" configurationId="JUnit" />
     </history-entry>
@@ -435,13 +427,15 @@
     <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 11m 22s.xml">
       <configuration name="Unit_Login.test_T" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_Login_test_T - 2018.05.29 at 22h 13m 18s.xml">
+      <configuration name="Unit_Login.test_T" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47136000" />
+    <option name="totallyTimeSpent" value="47183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -463,7 +457,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="18" y="78" width="1878" height="935" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="18" y="78" width="1878" height="935" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -777,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/pom/GetCookies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="669">
+          <caret line="99" column="17" lean-forward="true" selection-start-line="99" selection-start-column="17" selection-end-line="99" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1601#1602#0" expanded="true" />
