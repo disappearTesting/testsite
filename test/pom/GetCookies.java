@@ -82,28 +82,12 @@ public class GetCookies {
                 Cookie cookie = new Cookie(name, value, domain, path, expiry, isSecure);
                 driver.manage().addCookie(cookie);
             }
+            strLine = bufferedReader.readLine();
         }
     }
 
     // action method
     public void addCookies() throws IOException, ParseException {
         readTheCookieFile();
-    }
-
-    // logical method
-    private Set<Cookie> getAllCookies() {
-        return driver.manage().getCookies();
-    }
-
-    // logical method
-    private void addCookiesToBrowser(Set<Cookie> cookies, String domain) {
-        for(Cookie cookie : cookies) {
-            if(cookie != null) {
-                if(cookie.getDomain().contains(domain)) {
-                    //driver.manage().addCookie(new Cookie(name, value, domain, path, expiry));
-                }
-            }
-        }
-        driver.navigate().refresh();
     }
 }

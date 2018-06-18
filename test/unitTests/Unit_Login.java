@@ -21,7 +21,7 @@ public class Unit_Login {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
     //private static final String COOKIE_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
-    private static final String COOKIE_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
+    private static final String COOKIE_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
     //private static final String COOKIE_FILENAME = "LoginPage.Cookies.data";
     private static final String COOKIE_FILENAME = "LightShot.Cookies.data";
 
@@ -69,7 +69,6 @@ public class Unit_Login {
     @Test
     public void test_T() throws InterruptedException, IOException, ParseException {
         driver.manage().deleteAllCookies();
-        Thread.sleep(3000);
         objCookies.addCookies();
         Thread.sleep(3000);
         driver.get("https://prntscr.com/gallery.html");
