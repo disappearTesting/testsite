@@ -6,6 +6,8 @@ import org.junit.Test;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pom.GetCookies;
 import pom.HomePage;
 import pom.Login;
@@ -14,16 +16,22 @@ import pom.TestRunException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertTrue;
 
 public class Unit_Login {
 
     private static final String URL_LOGIN_PAGE = "http://testsite.local/rest/loginPage/login.php";
+<<<<<<< HEAD
     //private static final String COOKIE_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
     private static final String COOKIE_PATH = "C:\\Users\\Makarov_K\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
     //private static final String COOKIE_FILENAME = "LoginPage.Cookies.data";
     private static final String COOKIE_FILENAME = "LightShot.Cookies.data";
+=======
+    private static final String COOKIE_PATH = "C:\\Users\\hookie\\IdeaProjects\\testsite\\rest\\loginPage\\folderToCookiesFile\\";
+    private static final String COOKIE_FILENAME = "LoginPage.Cookies.data";
+>>>>>>> c882f6d5c87b0d5ff303345b9a226a76bef3064e
 
     private WebDriver driver;
     private Login objLogin;
@@ -34,9 +42,7 @@ public class Unit_Login {
         driver = new FirefoxDriver();
         objLogin = new Login(driver);
         objCookies = new GetCookies(driver, COOKIE_PATH + COOKIE_FILENAME);
-        //objCookies = new GetCookies(driver, COOKIE_PATH + COOKIE_FILENAME);
-        //driver.get(URL_LOGIN_PAGE);
-        driver.get("https://prntscr.com/gallery.html");
+        driver.get(URL_LOGIN_PAGE);
     }
 
     @After
@@ -58,6 +64,7 @@ public class Unit_Login {
         objCookies.getTheCookieFile();
         assertTrue(objCookies.checkExistingCookieFile(COOKIE_PATH, COOKIE_FILENAME));
     }
+<<<<<<< HEAD
 
     @Test
     public void test() throws IOException {
@@ -73,4 +80,6 @@ public class Unit_Login {
         Thread.sleep(3000);
         driver.get("https://prntscr.com/gallery.html");
     }
+=======
+>>>>>>> c882f6d5c87b0d5ff303345b9a226a76bef3064e
 }
