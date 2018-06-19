@@ -93,13 +93,9 @@ public class GetCookies {
     public void addCookies() throws IOException, ParseException {
         readTheCookieFile();
     }
-<<<<<<< HEAD
-=======
-
     // logical method
     public void waitForLoad(WebDriver driver) {
         new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd)
                 .executeScript("return document.readyState").equals("complete"));
     }
->>>>>>> c882f6d5c87b0d5ff303345b9a226a76bef3064e
 }
