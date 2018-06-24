@@ -68,13 +68,17 @@ public class GetCookies {
                 String name = token.nextToken();
                 String value = token.nextToken();
                 String domain = token.nextToken();
+                if(domain == "testsite.local") {
+                    switch (domain = null) {
+                    }
+                }
                 String path = token.nextToken();
 
                 Date expiry = null;
                 String val;
                 if (!(val = token.nextToken()).equals("null")) {
-                     Locale enLocale = new Locale.Builder().setLanguage("en").setRegion("").build();
-                     SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", enLocale);
+                    Locale enLocale = new Locale.Builder().setLanguage("en").setRegion("").build();
+                    SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", enLocale);
                      expiry = dateFormat.parse(val);
                 }
                 boolean isSecure = new Boolean(token.nextToken());
@@ -89,10 +93,8 @@ public class GetCookies {
     public void addCookies() throws IOException, ParseException {
         readTheCookieFile();
     }
-
     // logical method
     public void waitForLoad(WebDriver driver) {
-        new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd)
-                .executeScript("return document.readyState").equals("complete"));
+        new WebDriverWait(driver, 30).until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd).executeScript("return document.readyState").equals("complete"));
     }
 }

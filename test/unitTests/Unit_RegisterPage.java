@@ -81,8 +81,8 @@ public class Unit_RegisterPage {
 
         WebElement element = driver.findElement(objRegister.getRegisterSuccess());
 
-        assertEquals(1, objSQLQueries.getSQLQuery_executeUpdate(SQL_DELETE_FROM_WHERE));
-        objSQLQueries.disconnect();
+//        assertEquals(1, objSQLQueries.getSQLQuery_executeUpdate(SQL_DELETE_FROM_WHERE));
+//        objSQLQueries.disconnect();
 
         assertTrue(element.getText().equals(TEXT_SUCCESS_REGISTER));
     }
