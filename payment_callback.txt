@@ -1,0 +1,12 @@
+{
+  "device_height" : "1024",
+  "app_version" : "1.7.15",
+  "last_sync_inet_type" : "no_sync_type",
+  "app_build" : "3",
+  "advertising_track_enabled" : "1",
+  "device_platform" : "iPad5,1",
+  "autoload_new_issues_on" : "0",
+  "device_system_version" : "9.3.2",
+  "issues_loaded" : "0",
+  "device_width" : "768"
+}
