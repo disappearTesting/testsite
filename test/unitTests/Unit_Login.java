@@ -40,7 +40,7 @@ public class Unit_Login {
 
     @After
     public void tearDown() {
-        //driver.quit();
+        driver.quit();
     }
 
     @Test
