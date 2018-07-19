@@ -87,7 +87,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-1910" />
     <option name="y" value="8" />
     <option name="width" value="1897" />
@@ -287,7 +287,7 @@
       <workItem from="1531735377382" duration="622000" />
       <workItem from="1531806323969" duration="22000" />
       <workItem from="1531826767833" duration="953000" />
-      <workItem from="1531895111210" duration="6986000" />
+      <workItem from="1531895111210" duration="7601000" />
     </task>
     <servers />
   </component>
@@ -303,11 +303,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14066000" />
+    <option name="totallyTimeSpent" value="14681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1910" y="8" width="1897" height="1183" extended-state="1" />
-    <editor active="true" />
+    <frame x="-1910" y="8" width="1897" height="1183" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -320,10 +319,10 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286385" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29859155" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29859155" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2891175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2891175" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
