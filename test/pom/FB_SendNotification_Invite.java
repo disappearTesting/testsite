@@ -1,9 +1,7 @@
 package pom;
 
 import org.json.simple.JSONObject;
-
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.util.Random;
 
 public class FB_SendNotification_Invite {
@@ -54,11 +52,18 @@ public class FB_SendNotification_Invite {
     private final String __spin_b = "trunk";
     private final String __spin_t = "1531838330";
 
+<<<<<<< HEAD
     public static void main(String[] args) throws UnsupportedEncodingException {
         Random random = new Random();
         byte[] array = new byte[10];
         random.nextBytes(array);
         String generatedString = new String(array,"UTF-8");
+=======
+    public static void main(String[] args) {
+        byte[] array = new byte[7]; // length is bounded by 7
+        new Random().nextBytes(array);
+        String generatedString = new String(array);
+>>>>>>> 46cf310c041690b16cfa289ca2e0428491ee82d5
         System.out.println(generatedString);
     }
 }
