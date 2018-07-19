@@ -1,7 +1,6 @@
 package pom;
 
 import org.json.simple.JSONObject;
-import java.io.UnsupportedEncodingException;
 import java.util.Random;
 
 public class FB_SendNotification_Invite {
@@ -12,12 +11,25 @@ public class FB_SendNotification_Invite {
     private final String redirect_url = "https://www.facebook.com/dialog/return/arbiter#origin=https%3A%2F%2Fbottle.smapps.org%2Fapp%2Ffb%2F";
     private final String fallback_redirect_uri = "https://bottle.smapps.org/app/fb/";
 
-    private String encoded_state = "fa9fd468ee69bc";
-
-    private JSONObject e2e = new JSONObject();
-    private Object getE2e() {
-        return e2e.put("submit_0", "1531854395431");
+    private String getEncodedState() {
+        String alphanumeric = "abcdefghijklmnopqrstuvwxyz0123456789";
+        int stringLength = 14;
+        StringBuilder randStr = new StringBuilder();
+        for(int i = 0; i < stringLength; i++){
+            int number = new Random().nextInt(alphanumeric.length());
+            char ch = alphanumeric.charAt(number);
+            randStr.append(ch);
+        }
+        return randStr.toString();
     }
+    private String encoded_state = getEncodedState();
+
+    private Object getE2e() {
+        JSONObject object = new JSONObject();
+        object.put("submit_0", "1531854395431");
+        return object;
+    }
+    private String e2e = getE2e().toString();
 
     private static final String MESSAGE = "Wanna play together? You’ll definitely make new friends!";
 
@@ -27,12 +39,26 @@ public class FB_SendNotification_Invite {
     private String frictionless = "";
 
     private String inviteableFriendId = "100015538898268";
-    private JSONObject profileChooserItems = new JSONObject();
     private Object getProfileChooserItems() {
-        return profileChooserItems.put(inviteableFriendId, true);
+        JSONObject object = new JSONObject();
+        object.put(inviteableFriendId, true);
+        return object;
     }
+    private String profileChooserItems = getProfileChooserItems().toString();
 
-    private String signature = "6579488546570717286";
+    private String getSignature() {
+        String numeric = "0123456789";
+        int stringLength = 19;
+        StringBuilder randInt = new StringBuilder();
+        for(int i = 0; i < stringLength; i++) {
+            int number = new Random().nextInt(numeric.length());
+            char ch = numeric.charAt(number);
+            randInt.append(ch);
+        }
+        return randInt.toString();
+    }
+    private String signature = getSignature();
+
     private String egoLoggingSignature = user_app_id + "-" + app_id + "-" + signature;
 
     // some unchangeable params
@@ -40,7 +66,7 @@ public class FB_SendNotification_Invite {
     private String access_token = "";
     private final String sdk = "joey";
     private int from_post = 1;
-    private final int __CONFIRM = 1;
+    private final int __CONFIRM__ = 1;
     private final int __a = 1;
     private String __dyn = "5V4cjJLyGmaWxd2u6aEyzGomzFEuzVbGAdy8Z9LFwxx" + "-" + "6ES2N6wAxu13wFGEa8Gm4UJi28rxuF98CUOuVWxeUW2y4GDgdUHzomAx6USbAqwzxvDx2UO49e5o5aayrzE9ohxG18U8o8k3GEqF3FK5ESq2e2ut5wDAwGwYypUhKHxCq4okGm8xC784a5olyoK7Uy5UGdyU4e4ebzef" + "-" + "EOUx5wKK2acGdhUgV8O9wyQu9z8ynxdy8OdAh8GcBzXxCfxbCyHxqcwGwwzqGu2K64mbyUOmHDKiFUa8aoCubK";
     private String __req = "9d";
@@ -52,18 +78,18 @@ public class FB_SendNotification_Invite {
     private final String __spin_b = "trunk";
     private final String __spin_t = "1531838330";
 
-<<<<<<< HEAD
-    public static void main(String[] args) throws UnsupportedEncodingException {
-        Random random = new Random();
-        byte[] array = new byte[10];
-        random.nextBytes(array);
-        String generatedString = new String(array,"UTF-8");
-=======
+    private String getURL() {
+        String URL = "https://apps.facebook.com/v3.0/dialog/app_requests/submit?dpr=1?";
+        String URI = fb_dtsg.concat(app_id).concat(redirect_url).concat(fallback_redirect_uri)
+                .concat(display).concat(access_token).concat(sdk).concat(String.valueOf(from_post)).concat(encoded_state).concat(e2e).concat(MESSAGE)
+                .concat(data).concat(frictionless).concat(profileChooserItems).concat(egoLoggingSignature).concat(String.valueOf(__CONFIRM__))
+                .concat(user_app_id).concat(String.valueOf(__a)).concat(__dyn).concat(__req).concat(String.valueOf(__be)).concat(__pc)
+                .concat(String.valueOf(__rev)).concat(jazoest).concat(String.valueOf(__spin_r)).concat(String.valueOf(__spin_b)).concat(String.valueOf(__spin_t));
+        String result = URL.concat(URI);
+        return result;
+    }
+
     public static void main(String[] args) {
-        byte[] array = new byte[7]; // length is bounded by 7
-        new Random().nextBytes(array);
-        String generatedString = new String(array);
->>>>>>> 46cf310c041690b16cfa289ca2e0428491ee82d5
-        System.out.println(generatedString);
+
     }
 }
