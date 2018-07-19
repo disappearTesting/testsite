@@ -2,6 +2,12 @@ package pom;
 
 import org.json.simple.JSONObject;
 
+import java.nio.charset.Charset;
+import java.util.Locale;
+import java.util.Random;
+
+import static java.util.Locale.ENGLISH;
+
 public class FB_SendNotification_Invite {
 
     private final String user_app_id = "100015487932490";
@@ -51,6 +57,9 @@ public class FB_SendNotification_Invite {
     private final String __spin_t = "1531838330";
 
     public static void main(String[] args) {
-
+        byte[] array = new byte[7]; // length is bounded by 7
+        new Random().nextBytes(array);
+        String generatedString = new String(array);
+        System.out.println(generatedString);
     }
 }
