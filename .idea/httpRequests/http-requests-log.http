@@ -1,3 +1,7 @@
+POST https://scanword.smapps.net/rest/sync/ios
+
+###
+
 GET https://willowtreeapps.com/ideas/organizing-automated-tests-with-page-object-model/0ef98b75-f623-4ee5-acbb-80560e176bdb/sessionId
 
 <> 2018-06-25T112338.404.html
