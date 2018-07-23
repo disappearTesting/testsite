@@ -1,3 +1,19 @@
+GET https://scanword.smapps.net/rest/sync/ios
+
+###
+
+GET https://scanword.smapps.net/rest/sync/ios
+
+###
+
+POST https://scanword.smapps.net/rest/sync/ios
+
+###
+
+POST https://scanword.smapps.net/rest/sync/ios
+
+###
+
 POST https://scanword.smapps.net/rest/sync/ios
 
 ###

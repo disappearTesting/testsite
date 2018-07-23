@@ -10,7 +10,6 @@ public class ReadContent {
         if(url != null) {
             try {
                 BufferedReader input = new BufferedReader(new InputStreamReader(url.openStream()));
-
                 String inputLine;
                 while((inputLine = input.readLine()) != null) {
                     System.out.println(inputLine);
