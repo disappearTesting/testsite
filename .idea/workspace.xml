@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="9ff68eec-6084-4508-bd12-a02c7eeac200" name="Default" comment="" />
-=======
-    <list default="true" id="80a08186-a541-4377-bc0d-347eda2095dc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java" afterPath="$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java" />
-      <change beforePath="$PROJECT_DIR$/test/pom/Test1.java" afterPath="" />
+    <list default="true" id="23e3bdc5-0c8c-47dd-b338-26fa1371e585" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/target/test-classes/test/Test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test/CertificatesInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test/NetClient_POST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test/ReadContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test/RequestParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test/Test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,16 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FB_SendNotification_Invite.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java">
+      <file leaf-file-name="NetClient_POST.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="626">
-              <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-=======
-            <state relative-caret-position="781">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
+            <state relative-caret-position="720">
+              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,22 +33,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FB_SendNotification_Invite_Request.http" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/pom/FB_SendNotification_Invite_Request.http">
+      <file leaf-file-name="ReadContent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="144">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="RequestParams.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/RequestParams.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="468">
+              <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.http" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -63,25 +65,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java" />
-        <option value="$PROJECT_DIR$/test/pom/FB_SendNotification_Invite_Request.http" />
+        <option value="$PROJECT_DIR$/test/test/HttpURLConnectionExample.java" />
+        <option value="$PROJECT_DIR$/test/test/Test.java" />
+        <option value="$PROJECT_DIR$/test/test/Test.http" />
+        <option value="$PROJECT_DIR$/test/test/NetClient_POST.java" />
       </list>
     </option>
   </component>
@@ -91,54 +89,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="TestSite Project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="TestSite Project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
-<<<<<<< HEAD
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1910" />
-    <option name="y" value="8" />
+    <option name="x" value="-1901" />
+    <option name="y" value="1" />
     <option name="width" value="1897" />
     <option name="height" value="1183" />
-=======
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="width" value="1863" />
-    <option name="height" value="1080" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,18 +119,489 @@
               <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
               <item name="testsite" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="pom" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://thecatapi.com/api/categories/list" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://rbaskets.in/baskets/gf" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://rbaskets.in/baskets/x" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://rbaskets.in/baskets/x" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://rbaskets.in/baskets/" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770ef9f1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_track_enabled" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="146bf9847a7913eb78ada4ed9f4f1b2c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="48036c76ca6b47d45b0b89c98204a220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="updates" />
+                <option name="value" value="ewogICJlOWM5ZmMyMTA2NmUzN2I1Y2YwYzY2ZmM4ZWJlNjI1OSIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDEKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNDE5NTI2CiAgfSwKICAiNTU5OGQ0MzQ1N2E3YTFjNGY3Yjc3YTYxZmJhZWRmZDEiIDogewogICAgInV1cyIgOiB7CiAgICAgICJsYyIgOiAyLAogICAgICAibGYiIDogewogICAgICAgICJiYWNrZ3JvdW5kIiA6IDEKICAgICAgfQogICAgfSwKICAgICJfdW90IiA6IDE1MzI0MTk1MjUKICB9Cn0%3D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="DELETE" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://scanword.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770ef9f1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_track_enabled" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="146bf9847a7913eb78ada4ed9f4f1b2c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="48036c76ca6b47d45b0b89c98204a220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="updates" />
+                <option name="value" value="ewogICJlOWM5ZmMyMTA2NmUzN2I1Y2YwYzY2ZmM4ZWJlNjI1OSIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDEKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNDE5NTI2CiAgfSwKICAiNTU5OGQ0MzQ1N2E3YTFjNGY3Yjc3YTYxZmJhZWRmZDEiIDogewogICAgInV1cyIgOiB7CiAgICAgICJsYyIgOiAyLAogICAgICAibGYiIDogewogICAgICAgICJiYWNrZ3JvdW5kIiA6IDEKICAgICAgfQogICAgfSwKICAgICJfdW90IiA6IDE1MzI0MTk1MjUKICB9Cn0%3D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770ef9f1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_track_enabled" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="146bf9847a7913eb78ada4ed9f4f1b2c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="48036c76ca6b47d45b0b89c98204a220" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="updates" />
+                <option name="value" value="ewogICJlOWM5ZmMyMTA2NmUzN2I1Y2YwYzY2ZmM4ZWJlNjI1OSIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDEKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNDE5NTI2CiAgfSwKICAiNTU5OGQ0MzQ1N2E3YTFjNGY3Yjc3YTYxZmJhZWRmZDEiIDogewogICAgInV1cyIgOiB7CiAgICAgICJsYyIgOiAyLAogICAgICAibGYiIDogewogICAgICAgICJiYWNrZ3JvdW5kIiA6IDEKICAgICAgfQogICAgfSwKICAgICJfdW90IiA6IDE1MzI0MTk1MjUKICB9Cn0=" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770efuf1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="56aafd9fa1dsss360b2af22977d96b4a" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="39439cc2f65e7ff23668095e125je6ce" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="updates" />
+                <option name="value" value="ewogICJhMTA5YmUxOGU5ZjdmMGU5Njk1ZDI3MWVhNjJlN2ZlNiIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgImxjIiA6IDEsCiAgICAgICJsZiIgOiB7CiAgICAgICAgImRlc2t0b3AiIDogMQogICAgICB9CiAgICB9LAogICAgIl91b3QiIDogMTUzMjQxNTUyMQogIH0KfQ%3D%3D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770efuf1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="56aafd9fa1dsss360b2af22977d96b4a" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="39439cc2f65e7ff23668095e125je6ce" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="updates" />
+                <option name="value" value="ewogICJhMTA5YmUxOGU5ZjdmMGU5Njk1ZDI3MWVhNjJlN2ZlNiIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgImxjIiA6IDEsCiAgICAgICJsZiIgOiB7CiAgICAgICAgImRlc2t0b3AiIDogMQogICAgICB9CiAgICB9LAogICAgIl91b3QiIDogMTUzMjQxNTUyMQogIH0KfQ%3D%3D" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://any-api.com/waag_org/waag_org/docs/layers/POST_layers_format_" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770efuf1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="56aafd9fa1dsss360b2af22977d96b4a" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="39439cc2f65e7ff23668095e125je6ce" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="user_id" />
+                <option name="value" value="3116963" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="auth_key" />
+                <option name="value" value="110d770efuf1e6d81c2dce7c7b224f26" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_id" />
+                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_id" />
+                <option name="value" value="00000000-0000-0000-0000-000000000000" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="vendor_key" />
+                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="advertising_key" />
+                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="device_info" />
+                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="visit_id" />
+                <option name="value" value="56aafd9fa1dsss360b2af22977d96b4a" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="request_id" />
+                <option name="value" value="39439cc2f65e7ff23668095e125je6ce" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="{&quot;error&quot;:&quot;Error auth_key.&quot;,&quot;request_id&quot;:&quot;39439cc2f65e7ff23668095e125je6ce&quot;}" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://scanword.smapps.net" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="https://any-api.com/waag_org/waag_org/docs/layers/POST_layers_format_" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -180,50 +615,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration name="FB_SendNotification_Invite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+  <component name="RunManager" selected="Application.NetClient_POST">
+    <configuration name="HttpURLConnectionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.HttpURLConnectionExample" />
+      <module name="testsite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pom.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="pom.FB_SendNotification_Invite" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
+    </configuration>
+    <configuration name="NetClient_POST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.NetClient_POST" />
       <module name="testsite" />
-      <envs />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="testsite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -233,24 +662,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -263,139 +681,79 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
+    <list>
+      <item itemvalue="Application.NetClient_POST" />
+      <item itemvalue="Application.HttpURLConnectionExample" />
+      <item itemvalue="Application.Test" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.FB_SendNotification_Invite" />
+      <list>
+        <item itemvalue="Application.NetClient_POST" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.HttpURLConnectionExample" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80a08186-a541-4377-bc0d-347eda2095dc" name="Default" comment="" />
-      <created>1532019477175</created>
+      <changelist id="23e3bdc5-0c8c-47dd-b338-26fa1371e585" name="Default" comment="" />
+      <created>1532414513773</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1529387286644</updated>
-      <workItem from="1530023873260" duration="4000" />
-      <workItem from="1530511936154" duration="147000" />
-      <workItem from="1530512137906" duration="1053000" />
-      <workItem from="1530515410271" duration="15000" />
-      <workItem from="1531317646907" duration="3650000" />
-      <workItem from="1531375707286" duration="614000" />
-      <workItem from="1531735377382" duration="622000" />
-      <workItem from="1531806323969" duration="22000" />
-      <workItem from="1531826767833" duration="953000" />
-      <workItem from="1531895111210" duration="7601000" />
-      <workItem from="1531981870374" duration="322000" />
-      <workItem from="1531982230515" duration="634000" />
-      <workItem from="1531982895595" duration="114000" />
-      <workItem from="1531983037804" duration="151000" />
-      <workItem from="1531983214824" duration="11826000" />
-=======
-      <updated>1532019477175</updated>
-      <workItem from="1532019478335" duration="3479000" />
-      <workItem from="1532027427170" duration="2679000" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
+      <updated>1532414513773</updated>
+      <workItem from="1532414520820" duration="14912000" />
+      <workItem from="1532434819902" duration="6435000" />
+      <workItem from="1532443845481" duration="1238000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="27728000" />
-=======
-    <option name="totallyTimeSpent" value="6158000" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
+    <option name="totallyTimeSpent" value="22585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="0" width="1863" height="1080" extended-state="0" />
+    <frame x="-1901" y="1" width="1897" height="1183" extended-state="0" />
     <editor active="true" />
     <layout>
-<<<<<<< HEAD
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3286385" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32957748" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" x="139" y="196" width="1730" height="714" id="Run" order="2" type="WINDOWED" weight="0.3286385" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.29859155" />
+      <window_info active="true" anchor="bottom" x="33" y="71" width="1847" height="1010" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4403756" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30536005" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19545208" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" x="-1900" y="190" width="1878" height="947" id="Debug" order="3" type="WINDOWED" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Nl-Palette" order="2" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Properties" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" x="55" y="55" width="1847" height="979" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.36619717" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
-=======
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24931054" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" x="81" y="69" width="1813" height="857" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="376" y="319" width="1813" height="999" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2283508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,61 +763,131 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <breakpoint-manager>
+      <option name="time" value="40" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&quot;POST&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&quot;GET&quot;</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/pom/Test1.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/FB_SendNotification_Invite_Request.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="590">
-          <caret line="48" column="42" lean-forward="true" selection-end-line="65" />
+        <state relative-caret-position="666">
+          <caret line="37" column="69" lean-forward="true" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/ActionPage.java">
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="114" column="46" selection-start-line="114" selection-start-column="46" selection-end-line="114" selection-end-column="46" />
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/pom/Test1.java">
+    <entry file="file://$PROJECT_DIR$/test/test/RequestParams.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-=======
-        <state relative-caret-position="781">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
->>>>>>> ba21bffd33341d50030f3463941e7a7e22b26db5
+        <state relative-caret-position="576">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/RequestParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/HttpURLConnectionExample.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/net/HttpURLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="418" column="16" selection-start-line="418" selection-start-column="16" selection-end-line="418" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="437" column="11" selection-start-line="437" selection-start-column="11" selection-end-line="437" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/Test.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/RequestParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
