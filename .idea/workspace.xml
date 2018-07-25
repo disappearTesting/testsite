@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23e3bdc5-0c8c-47dd-b338-26fa1371e585" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/target/test-classes/test/Test.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/CertificatesInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/NetClient_POST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/ReadContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/RequestParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test/Test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="23e3bdc5-0c8c-47dd-b338-26fa1371e585" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +15,8 @@
       <file leaf-file-name="NetClient_POST.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="427">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -715,12 +706,12 @@
       <updated>1532414513773</updated>
       <workItem from="1532414520820" duration="14912000" />
       <workItem from="1532434819902" duration="6435000" />
-      <workItem from="1532443845481" duration="1238000" />
+      <workItem from="1532443845481" duration="1497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22585000" />
+    <option name="totallyTimeSpent" value="22844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1901" y="1" width="1897" height="1183" extended-state="0" />
@@ -736,8 +727,8 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="33" y="71" width="1847" height="1010" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32957748" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4403756" />
+      <window_info anchor="bottom" x="33" y="71" width="1847" height="1050" id="Run" order="2" type="WINDOWED" weight="0.32957748" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4403756" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19545208" />
@@ -747,7 +738,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" x="55" y="55" width="1847" height="979" id="Debug" order="3" type="WINDOWED" visible="true" weight="0.36619717" />
+      <window_info anchor="bottom" x="55" y="55" width="1847" height="979" id="Debug" order="3" type="WINDOWED" weight="0.36619717" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -764,7 +755,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="40" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/test/NetClient_POST.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/test/NetClient_POST.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -886,8 +891,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="427">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
