@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class RequestParams {
+public class QueryBuilder {
 
     // logical method
     private StringBuffer defineRequestParams(Map<String, String> params) {
@@ -27,7 +27,7 @@ public class RequestParams {
     }
 
     // action method
-    public StringBuffer setRequestParams(Map<String, String> params) {
+    public StringBuffer setQuery(Map<String, String> params) {
         return defineRequestParams(params);
     }
 }
