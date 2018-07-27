@@ -2,7 +2,7 @@
  * @author hookie
  * @version 1.0
  */
-package unitTests.loginPage;
+package unitTests;
 
 import pom.MySQLQueries_Testsite;
 import pom.RegisterPage;
@@ -132,7 +132,7 @@ public class Unit_RegisterPage {
         int i = 0;
         int eqCount = 0;
 
-        objRegister.registerSetNameEmailPassword("t", "@example.com", "test");
+        objRegister.registerSetNameEmailPassword("t", "@example.com", "scanword_test/test");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objRegister.getTextError()));
 

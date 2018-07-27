@@ -1,0 +1,11 @@
+{
+  "response": {
+    "error": true,
+    "message": "Error. Wrong auth_key."
+  },
+  "success": true,
+  "memory": 831,
+  "serverInfo": {
+    "time": 1532525800
+  }
+}

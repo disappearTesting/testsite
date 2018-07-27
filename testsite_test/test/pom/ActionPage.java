@@ -284,7 +284,7 @@ public class ActionPage {
     //action method
     public boolean setTextToInput_InputText() throws TestRunException {
         WebElement elementInput = driver.findElement(inputTextContextMenuHard);
-        return setTextToInput(elementInput, "test");
+        return setTextToInput(elementInput, "scanword_test/test");
 
     }
 

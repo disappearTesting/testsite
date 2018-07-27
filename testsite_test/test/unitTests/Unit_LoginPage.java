@@ -19,9 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Unit_LoginPage {
 
@@ -100,7 +98,7 @@ public class Unit_LoginPage {
         int i = 0;
         int eqCount = 0;
 
-        objLogin.loginSetEmailPassword("test", "");
+        objLogin.loginSetEmailPassword("scanword_test/test", "");
 
         new WebDriverWait(driver, 5).until(presenceOfAllElementsLocatedBy(objLogin.getTextDanger()));
 
@@ -116,7 +114,7 @@ public class Unit_LoginPage {
 
     @Test
     public void test_LoginSetIncorrectCredentials() {
-        objLogin.loginSetEmailPassword("makarov@smartproject.ua", "test");
+        objLogin.loginSetEmailPassword("makarov@smartproject.ua", "scanword_test/test");
 
         new WebDriverWait(driver, 5).until(presenceOfElementLocated(objLogin.getAlertDanger()));
 
