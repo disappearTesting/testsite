@@ -1,4 +1,4 @@
-package scanword_test.client;
+package client;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLPeerUnverifiedException;

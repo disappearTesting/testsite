@@ -1,4 +1,4 @@
-package test;
+package client;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -6,10 +6,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class RequestParams {
+public class QueryBuilder {
 
     // logical method
-    private StringBuffer defineRequestParams(Map<String, String> params) {
+    private StringBuffer buildQueryString(Map<String, String> params) {
         StringBuffer requestParams = new StringBuffer();
         Iterator<String> iterator = params.keySet().iterator();
         while(iterator.hasNext()) {
@@ -27,7 +27,7 @@ public class RequestParams {
     }
 
     // action method
-    public StringBuffer setRequestParams(Map<String, String> params) {
-        return defineRequestParams(params);
+    public StringBuffer setQuery(Map<String, String> params) {
+        return buildQueryString(params);
     }
 }
