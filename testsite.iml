@@ -4,10 +4,10 @@
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/scanword_test/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/testsite_test/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/scanword_test" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/testsite_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scanword/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/testsite/testsite_tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/scanword" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/testsite" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
