@@ -1,8 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="91558ca8-4d87-40d3-ae9b-965dd3c55881" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+    <list default="true" id="87bbfe6f-cbc8-4588-bedd-9766485942c4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword_test/client/CertificatesInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_client/CertificatesInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword_test/client/NetClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_client/NetClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword_test/client/QueryBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_client/QueryBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword_test/client/ReadContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_client/ReadContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword_test/client/Test.http" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_client/Test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Test.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test/QueryBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/testsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/bootstrap.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/bootstrap.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/highlight.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/highlight.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/jquery.contextMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/jquery.contextMenu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/jquery.contextMenu.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/jquery.contextMenu.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/jquery.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/jquery.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/jquery.ui.position.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/jquery.ui.position.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/hard-contextMenu/theme-fixes.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/hard-contextMenu/theme-fixes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/images/img-fig1.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/images/img-fig1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/images/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/images/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/resize/assets/hsizegrip.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/resize/assets/hsizegrip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/resize/assets/vsizegrip.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/resize/assets/vsizegrip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/resize/assets/wingrip.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/resize/assets/wingrip.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/resize/jquery-resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/resize/jquery-resizable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/resize/styleResize.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/resize/styleResize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/select-multiple/css/page_v2.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/select-multiple/css/page_v2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/select-multiple/css/small_v2.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/select-multiple/css/small_v2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/bootstrap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/bootstrap.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/css.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/css.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/github.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/highlight.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/highlight.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/jquery.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/jquery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/jquery.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/jquery.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/jquery_002.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/jquery_002.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/jquery_003.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/jquery_003.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/simple-contextMenu/theme-fixes.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/simple-contextMenu/theme-fixes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/bootstrap-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/bootstrap-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/bootstrap-slider.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/bootstrap-slider.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/highlight.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/highlight.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/highlightjs-github-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/highlightjs-github-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/jquery.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/jquery.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/slider-example/modernizr.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/slider-example/modernizr.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/sort/jquery-1.12.4.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/sort/jquery-1.12.4.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/sort/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/sort/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/sort/jquery-ui.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/sort/jquery-ui.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/actionPage/sort/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/actionPage/sort/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/alertPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/alertPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/css/bootstrap-datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/css/bootstrap-datetimepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/css/bootstrap-datetimepicker.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/img/glyphicons-halflings-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/img/glyphicons-halflings-white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/img/glyphicons-halflings.png" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/img/glyphicons-halflings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/datetime/jquery/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/datetime/jquery/jquery-1.8.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/bootstrap-datetimepicker.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.az.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.da.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.de.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ee.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.el.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.he.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.hy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.id.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.is.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.it.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.no.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.pt-BR.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.rs-latin.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.rs-latin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.rs.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.rs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.th.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.ua.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.ua.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/js/locales/bootstrap-datetimepicker.zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/js/locales/bootstrap-datetimepicker.zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/_coverage.html" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/_coverage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/coverage.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/coverage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/jquery-1.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/mock.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/mock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/qunit-logging.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/qunit-logging.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/qunit.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/qunit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/qunit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/assets/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/assets/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/run-qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/run-qunit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/component.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/formats.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/formats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/inline.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/inline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/keyboard_navigation/2011.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/keyboard_navigation/2011.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/keyboard_navigation/2012.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/keyboard_navigation/2012.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/keyboard_navigation/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/keyboard_navigation/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/mouse_navigation/2011.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/mouse_navigation/2011.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/mouse_navigation/2012.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/mouse_navigation/2012.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/mouse_navigation/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/mouse_navigation/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/suites/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/suites/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/datetimePage/tests/tests.min.html" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/datetimePage/tests/tests.min.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/downloadFile_Success.au3" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/downloadFile_Success.au3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/fileToUpload.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/fileToUpload.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/folderToDownload/fileToDownload.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/folderToDownload/fileToDownload.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/folderToUpload/developerLog-Р‘СѓС‚С‹Р»РѕС‡РєР° Wed May 16 2018 11-02-54 AM.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/folderToUpload/developerLog-Р‘СѓС‚С‹Р»РѕС‡РєР° Wed May 16 2018 11-02-54 AM.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/folderToUpload/fileToDownload.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/folderToUpload/fileToDownload.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/folderToUpload/fileToUpload.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/folderToUpload/fileToUpload.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/uploadFile_HandleError.au3" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/uploadFile_HandleError.au3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/uploadFile_Success.au3" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/uploadFile_Success.au3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/filePage/uploadFile_Success.exe" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/filePage/uploadFile_Success.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/folderToCookiesFile/LightShot.Cookies.data" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/folderToCookiesFile/LightShot.Cookies.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/folderToCookiesFile/LoginPage.Cookies.data" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/folderToCookiesFile/LoginPage.Cookies.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage/script_generate_pass.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage/script_generate_pass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/folderToCookiesFile/Login.Cookies.data" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/folderToCookiesFile/Login.Cookies.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/loginPage_v.2/script_generate_pass.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/loginPage_v.2/script_generate_pass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/mainPage/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/mainPage/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/mainPage/styleMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/mainPage/styleMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/styleCreate.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/styleCreate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/styleDelete.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/styleDelete.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/styleIndex.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/styleIndex.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/styleRead.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/styleRead.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/styleUpdate.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/styleUpdate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/postPage/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/postPage/update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/bootstrap-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/bootstrap-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/bootstrap-slider.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/bootstrap-slider.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/highlight.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/highlight.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/highlightjs-github-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/highlightjs-github-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/jquery.min.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/jquery.min.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/sliderPage/slider-example/modernizr.js.Без названия" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/sliderPage/slider-example/modernizr.js.Без названия" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/windowPage/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/windowPage/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/windowPage/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/windowPage/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/rest/windowPage/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_resources/windowPage/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/ActionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/ActionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/AlertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/AlertPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/ConvertBase64ToString.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/ConvertBase64ToString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/CreateCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/CreateCustomerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/CurrentDatetime.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/CurrentDatetime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/DatetimeKendoUIPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/DatetimeKendoUIPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/ExtentReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/ExtentReportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/FilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/FilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/FirefoxProfileTestsite.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/FirefoxProfileTestsite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/GetCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/GetCookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/MySQLQueries_Testsite.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/MySQLQueries_Testsite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/TestRunException.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/TestRunException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/WindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/WindowPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/pom/WriteBrowserSessionToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/pom/WriteBrowserSessionToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/restAssured/Rest_LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/restAssured/Rest_LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/seleniumExamples/Selenium_LoginPageUseMobProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/seleniumExamples/Selenium_LoginPageUseMobProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_ActionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_ActionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_AlertPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_AlertPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_CreateCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_CreateCustomerPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_DatetimeKendoUIPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_DatetimeKendoUIPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_FilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_FilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_Login_UseCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login_UseCookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testsite_test/test/unitTests/Unit_WindowPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_WindowPage.java" afterDir="false" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,12 +231,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadContent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+    <leaf>
+      <file leaf-file-name="NetClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_client/NetClient.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="60">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+            <state relative-caret-position="774">
+              <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,58 +249,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test/NetClient.java">
+      <file leaf-file-name="ReadContent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_client/ReadContent.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificatesInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_client/CertificatesInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="580">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+            <state>
+              <caret column="24" selection-start-column="24" selection-end-column="24" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="QueryBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/QueryBuilder.java">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_client/QueryBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="520">
               <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
               <folding />
+=======
+            <state relative-caret-position="468">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unit_Login_UseCookies.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login_UseCookies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/scanword_test/client/RequestParams.java" />
+        <option value="$PROJECT_DIR$/scanword_test/client/NetClient.java" />
+        <option value="$PROJECT_DIR$/scanword_test/client/QuetyBuilder.java" />
+        <option value="$PROJECT_DIR$/scanword_test/client/ReadContent.java" />
+        <option value="$PROJECT_DIR$/scanword_test/client/CertificatesInfo.java" />
+        <option value="$PROJECT_DIR$/scanword_test/client/QueryBuilder.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_client/QueryBuilder.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/test/test/ClientTest.java" />
-        <option value="$PROJECT_DIR$/test/test/Test.java" />
-        <option value="$PROJECT_DIR$/test/test/Test.http" />
-        <option value="$PROJECT_DIR$/test/test/NetClient_POST.java" />
-        <option value="$PROJECT_DIR$/test/test/ReadContent.java" />
-        <option value="$PROJECT_DIR$/test/test/RequestParams.java" />
-        <option value="$PROJECT_DIR$/test/test/BuildTheQuery.java" />
-        <option value="$PROJECT_DIR$/test/test/QueryBuilder.java" />
-        <option value="$PROJECT_DIR$/test/test/NetClient.java" />
+        <option value="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_MainPage.java" />
+        <option value="$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login_UseCookies.java" />
       </list>
     </option>
   </component>
@@ -87,216 +326,88 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="90" />
-    <option name="width" value="1720" />
-    <option name="height" value="1080" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestSite Project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestSite Project" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+<<<<<<< HEAD
       <pane id="AndroidView" />
+=======
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="scanword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
+              <item name="scanword" type="462c0819:PsiDirectoryNode" />
+              <item name="scanword_client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
               <item name="testsite" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
               <item name="testsite" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="testsite_tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="testsite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_project" type="462c0819:PsiDirectoryNode" />
               <item name="testsite" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="testsite_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="unitTests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
+=======
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-  </component>
-  <component name="RestClientSettings">
-    <option name="REQUEST_HISTORY">
-      <list>
-        <RestClientRequest>
-          <option name="httpMethod" value="GET" />
-          <option name="urlBase" value="https://httpbin.org/post" />
-          <option name="urlPath" value="" />
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="Jack" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="occupation" />
-                <option name="value" value="programmer" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://httpbin.org/post" />
-          <option name="urlPath" value="" />
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="Jack" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="occupation" />
-                <option name="value" value="programmer" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://scanword-stage.smapps.net/rest/sync/ios" />
-          <option name="urlPath" value="" />
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="user_id" />
-                <option name="value" value="3116963" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="auth_key" />
-                <option name="value" value="110d770ef9f1e6d81c2dce7c7b224f26" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="vendor_id" />
-                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_id" />
-                <option name="value" value="00000000-0000-0000-0000-000000000000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_track_enabled" />
-                <option name="value" value="0" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="vendor_key" />
-                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_key" />
-                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="device_info" />
-                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="visit_id" />
-                <option name="value" value="146bf9847a7913eb78ada4ed9f4f1b2c" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="request_id" />
-                <option name="value" value="48036c76ca6b47d45b0b89c98204a220" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="updates" />
-                <option name="value" value="ewogICJlOWM5ZmMyMTA2NmUzN2I1Y2YwYzY2ZmM4ZWJlNjI1OSIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDEKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNDE5NTI2CiAgfSwKICAiNTU5OGQ0MzQ1N2E3YTFjNGY3Yjc3YTYxZmJhZWRmZDEiIDogewogICAgInV1cyIgOiB7CiAgICAgICJsYyIgOiAyLAogICAgICAibGYiIDogewogICAgICAgICJiYWNrZ3JvdW5kIiA6IDEKICAgICAgfQogICAgfSwKICAgICJfdW90IiA6IDE1MzI0MTk1MjUKICB9Cn0%3D" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://scanword-stage.smapps.net/rest/sync/ios" />
-          <option name="urlPath" value="" />
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="user_id" />
-                <option name="value" value="3116963" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="auth_key" />
-                <option name="value" value="110d770ef9f1e6d81c2dce7c7b224f26" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="vendor_id" />
-                <option name="value" value="C9332507-6821-443E-BC09-0870A1BA1CB5" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_id" />
-                <option name="value" value="00000000-0000-0000-0000-000000000000" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_track_enabled" />
-                <option name="value" value="0" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="vendor_key" />
-                <option name="value" value="67cfffb331dae540bdded988c35c136b" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="advertising_key" />
-                <option name="value" value="575115c0a76bbc7cf76f331a9a933a0c" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="device_info" />
-                <option name="value" value="ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI1NjgiLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICI2MiIsCiAgImFkdmVydGlzaW5nX3RyYWNrX2VuYWJsZWQiIDogIjAiLAogICJkZXZpY2VfcGxhdGZvcm0iIDogImlQaG9uZTYsMSIsCiAgImF1dG9sb2FkX25ld19pc3N1ZXNfb24iIDogIjAiLAogICJkZXZpY2Vfc3lzdGVtX3ZlcnNpb24iIDogIjEwLjIiLAogICJsb2NhbGl6YXRpb24iIDogInJ1IiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMCIsCiAgImRldmljZV93aWR0aCIgOiAiMzIwIgp9" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="visit_id" />
-                <option name="value" value="146bf9847a7913eb78ada4ed9f4f1b2c" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="request_id" />
-                <option name="value" value="48036c76ca6b47d45b0b89c98204a220" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="updates" />
-                <option name="value" value="ewogICJlOWM5ZmMyMTA2NmUzN2I1Y2YwYzY2ZmM4ZWJlNjI1OSIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDEKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNDE5NTI2CiAgfSwKICAiNTU5OGQ0MzQ1N2E3YTFjNGY3Yjc3YTYxZmJhZWRmZDEiIDogewogICAgInV1cyIgOiB7CiAgICAgICJsYyIgOiAyLAogICAgICAibGYiIDogewogICAgICAgICJiYWNrZ3JvdW5kIiA6IDEKICAgICAgfQogICAgfSwKICAgICJfdW90IiA6IDE1MzI0MTk1MjUKICB9Cn0%3D" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Makarov_K\IdeaProjects\test_project\scanword_test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -310,107 +421,103 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NetClient">
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="test.ClientTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="testsite" />
-      <envs />
-    </configuration>
-    <configuration name="NetClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="test.NetClient" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="testsite" />
-      <envs />
-    </configuration>
-    <configuration name="NetClient_POST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="test.NetClient_POST" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="testsite" />
-      <envs />
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="test.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="testsite" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot">
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Unit_LoginPage.test_Login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testsite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_LoginPage" />
+      <option name="METHOD_NAME" value="test_Login" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testsite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_Login_UseCookies" />
+      <option name="METHOD_NAME" value="test_LoginTo_UseCookies_LightShot" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Unit_Login.test_Login_CorrectCredentials" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testsite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_Login" />
+      <option name="METHOD_NAME" value="test_Login_CorrectCredentials" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testsite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="unitTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="unitTests" />
+      <option name="MAIN_CLASS_NAME" value="unitTests.Unit_MainPage" />
+      <option name="METHOD_NAME" value="test_SubmenuDropdownIsEnable" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -420,24 +527,13 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -450,51 +546,40 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.ClientTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NetClient_POST" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NetClient" />
+    <list>
+      <item itemvalue="JUnit.Unit_MainPage.test_SubmenuDropdownIsEnable" />
+      <item itemvalue="JUnit.Unit_Login.test_Login_CorrectCredentials" />
+      <item itemvalue="JUnit.Unit_LoginPage.test_Login" />
+      <item itemvalue="JUnit.Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.NetClient" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="Application.NetClient_POST" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ClientTest" />
+      <list>
+        <item itemvalue="JUnit.Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" />
+        <item itemvalue="JUnit.Unit_LoginPage.test_Login" />
+        <item itemvalue="JUnit.Unit_Login.test_Login_CorrectCredentials" />
+        <item itemvalue="JUnit.Unit_MainPage.test_SubmenuDropdownIsEnable" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="91558ca8-4d87-40d3-ae9b-965dd3c55881" name="Default" comment="" />
-      <created>1532451156181</created>
+      <changelist id="87bbfe6f-cbc8-4588-bedd-9766485942c4" name="Default" comment="" />
+      <created>1532681004971</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1532451156181</updated>
       <workItem from="1532451157349" duration="4420000" />
       <workItem from="1532456889320" duration="333000" />
@@ -502,10 +587,47 @@
       <workItem from="1532457538402" duration="5655000" />
       <workItem from="1532533939970" duration="1861000" />
       <workItem from="1532630703816" duration="600000" />
+=======
+      <updated>1532681004971</updated>
+      <workItem from="1532681008673" duration="1683000" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.07.27 at 11h 58m 10s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.07.27 at 12h 00m 36s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.07.27 at 12h 02m 02s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_MainPage_test_SubmenuDropdownIsEnable - 2018.07.27 at 12h 07m 38s.xml">
+      <configuration name="Unit_MainPage.test_SubmenuDropdownIsEnable" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_test_Login_CorrectCredentials - 2018.07.27 at 12h 07m 56s.xml">
+      <configuration name="Unit_Login.test_Login_CorrectCredentials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_test_Login_CorrectCredentials - 2018.07.27 at 12h 08m 15s.xml">
+      <configuration name="Unit_Login.test_Login_CorrectCredentials" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_LoginPage_test_Login - 2018.07.27 at 12h 08m 45s.xml">
+      <configuration name="Unit_LoginPage.test_Login" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_UseCookies_test_LoginTo_UseCookies_LightShot - 2018.07.27 at 12h 09m 01s.xml">
+      <configuration name="Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_UseCookies_test_LoginTo_UseCookies_LightShot - 2018.07.27 at 12h 09m 37s.xml">
+      <configuration name="Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_Login_UseCookies_test_LoginTo_UseCookies_LightShot - 2018.07.27 at 12h 10m 22s.xml">
+      <configuration name="Unit_Login_UseCookies.test_LoginTo_UseCookies_LightShot" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="13151000" />
   </component>
   <component name="ToolWindowManager">
@@ -539,6 +661,42 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="1683000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1760" y="7" width="1714" height="1183" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.32957748" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3299279" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" x="-1760" y="60" width="1664" height="995" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32957748" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1983173" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,32 +705,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="27" />
-    </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="setValue">
-      <expression>
-        <expression-string>&quot;POST&quot;</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>((HttpsURLConnectionImpl)connection).method</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>sun.net.www.protocol.https.HttpsURLConnectionImpl</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+    <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
@@ -615,110 +751,179 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+=======
+        <state relative-caret-position="90">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_client/NetClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="774">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_client/ReadContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_client/CertificatesInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/FB_Notification_Invite/Main.java" />
-    <entry file="file://$PROJECT_DIR$/test/FB_Notification_Invite/NetClientPost.java" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/Test.java" />
-    <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
-    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test/QueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_client/QueryBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="468">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+          <folding>
+            <element signature="e#1522#1523#0" expanded="true" />
+            <element signature="e#1552#1553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="520">
+          <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
+=======
+        <state relative-caret-position="414">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="60">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="-72">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient.java">
+    <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/unitTests/Unit_Login_UseCookies.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="580">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="126">
+          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+>>>>>>> 40c9db555be3b8e3a3b38151b310e5e166fe344e
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>testsite</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3625" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.aventstack:extentreports:3.1.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

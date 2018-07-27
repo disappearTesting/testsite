@@ -1,3 +1,51 @@
+GET https://mahjong-stage.smapps.net/gp/app?user_id=27&social_id=gp&auth_key=
+
+<> 2018-07-25T043643.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=27&social_id=gp&auth_key=8ee6b196a34c681ed4d651def1fb036c
+
+<> 2018-07-25T043638.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=28&social_id=gp&auth_key=8ee6b196a34c681ed4d651def1fb036c
+
+<> 2018-07-25T043629.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=28&social_id=gp&auth_key=8ee6b196a34c681ed4d651def1fb036c
+
+<> 2018-07-25T043604.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=29&social_id=gp
+
+<> 2018-07-25T042539.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=29&social_id=gp&auth_key=
+
+<> 2018-07-25T042505.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=29&social_id=gp&auth_key=8ee6b196a34c681ed4d651def1fb036c
+
+<> 2018-07-25T042446.200.json
+
+###
+
+GET https://mahjong-stage.smapps.net/gp/app?user_id=28&social_id=gp&auth_key=8ee6b196a34c681ed4d651def1fb036c
+
+<> 2018-07-25T042431.200.json
+
+###
+
 GET https://httpbin.org/post?name=Jack&occupation=programmer
 
 <> 2018-07-24T104311.405.html
@@ -225,43 +273,5 @@ POST https://scanword.smapps.net
 ###
 
 POST https://scanword.smapps.net/rest/sync/ios
-
-###
-
-GET https://any-api.com/waag_org/waag_org/docs/layers/POST_layers_format_
-
-<> 2018-07-24T095708.200.html
-
-###
-
-POST https://any-api.com/waag_org/waag_org/docs/layers/POST_layers_format_
-
-<> 2018-07-24T095604.404.html
-
-###
-
-GET https://scanword.smapps.net/rest/sync/ios
-
-###
-
-GET https://scanword.smapps.net/rest/sync/ios
-
-###
-
-POST https://scanword.smapps.net/rest/sync/ios
-
-###
-
-POST https://scanword.smapps.net/rest/sync/ios
-
-###
-
-POST https://scanword.smapps.net/rest/sync/ios
-
-###
-
-GET https://willowtreeapps.com/ideas/organizing-automated-tests-with-page-object-model/0ef98b75-f623-4ee5-acbb-80560e176bdb/sessionId
-
-<> 2018-06-25T112338.404.html
 
 ###
