@@ -5,41 +5,10 @@
     <list default="true" id="23e3bdc5-0c8c-47dd-b338-26fa1371e585" name="Default" comment="" />
 =======
     <list default="true" id="91558ca8-4d87-40d3-ae9b-965dd3c55881" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T030039.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T030050.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T034717.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T041316.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T041325.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T042019.201.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T042525.409.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T044657.200.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T061718.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T095604.404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T095708.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T111641.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T111710.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T111732.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T111911.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T111924.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T112057.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T112132.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T112528.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T112540.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T113444.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T113510.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T113637.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T113643.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T124819.200.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/httpRequests/2018-07-24T124833.200.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-06-25T112256.404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/Test.http" afterPath="$PROJECT_DIR$/target/test-classes/test/Test.http" />
-      <change beforePath="$PROJECT_DIR$/test/pom/FB_SendNotification_Invite.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test/test/NetClient_POST.java" afterPath="$PROJECT_DIR$/test/test/NetClient_POST.java" />
+      <change beforePath="$PROJECT_DIR$/test/test/NetClient.java" afterPath="$PROJECT_DIR$/test/test/NetClient.java" />
       <change beforePath="$PROJECT_DIR$/test/test/ReadContent.java" afterPath="$PROJECT_DIR$/test/test/ReadContent.java" />
-      <change beforePath="$PROJECT_DIR$/test/test/Test.http" afterPath="$PROJECT_DIR$/test/test/Test.http" />
+      <change beforePath="$PROJECT_DIR$/test/test/RequestParams.java" afterPath="$PROJECT_DIR$/test/test/QueryBuilder.java" />
     </list>
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,9 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NetClient_POST.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
+      <file leaf-file-name="ReadContent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="427">
               <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
@@ -62,29 +32,13 @@
             <state relative-caret-position="860">
               <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
+=======
+            <state relative-caret-position="120">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadContent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.http" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/test/Test.http">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,11 +46,19 @@
       <file leaf-file-name="NetClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test/NetClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryBuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test/QueryBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,8 +87,11 @@
         <option value="$PROJECT_DIR$/test/test/ClientTest.java" />
         <option value="$PROJECT_DIR$/test/test/Test.java" />
         <option value="$PROJECT_DIR$/test/test/Test.http" />
-        <option value="$PROJECT_DIR$/test/test/ReadContent.java" />
         <option value="$PROJECT_DIR$/test/test/NetClient_POST.java" />
+        <option value="$PROJECT_DIR$/test/test/ReadContent.java" />
+        <option value="$PROJECT_DIR$/test/test/RequestParams.java" />
+        <option value="$PROJECT_DIR$/test/test/BuildTheQuery.java" />
+        <option value="$PROJECT_DIR$/test/test/QueryBuilder.java" />
         <option value="$PROJECT_DIR$/test/test/NetClient.java" />
       </list>
     </option>
@@ -138,9 +103,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="120" />
-    <option name="width" value="1773" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="90" />
+    <option name="width" value="1720" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -158,6 +123,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,8 +149,6 @@
       </pane>
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -555,20 +520,29 @@
       <workItem from="1532451157349" duration="4420000" />
       <workItem from="1532456889320" duration="333000" />
       <workItem from="1532457239437" duration="282000" />
+<<<<<<< HEAD
       <workItem from="1532457538402" duration="5581000" />
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
+=======
+      <workItem from="1532457538402" duration="5655000" />
+      <workItem from="1532533939970" duration="1644000" />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="22844000" />
 =======
     <option name="totallyTimeSpent" value="10616000" />
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
+=======
+    <option name="totallyTimeSpent" value="12334000" />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1928" height="1088" extended-state="6" />
+    <frame x="90" y="0" width="1720" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
 <<<<<<< HEAD
@@ -610,13 +584,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="21" y="61" width="1878" height="903" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="21" y="61" width="1878" height="903" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16613418" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18862276" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -629,7 +602,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +657,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -690,11 +667,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java">
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="40" column="101" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="40" selection-end-column="101" />
-          <folding />
+        <state relative-caret-position="420">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,83 +702,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
     <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="40" column="101" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="40" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="40" column="101" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="40" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
     <entry file="file://$PROJECT_DIR$/test/test/Test.http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,54 +733,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" column="61" lean-forward="false" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="19" column="63" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/ClientTest.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/Test.java" />
     <entry file="file://$PROJECT_DIR$/test/unitTests/Unit_MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="30" column="98" lean-forward="false" selection-start-line="30" selection-start-column="98" selection-end-line="30" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java" />
+    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test/QueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test/ReadContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/Test.http">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test/NetClient_POST.java">
-      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="427">
           <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
 =======
         <state relative-caret-position="860">
           <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
+=======
+        <state relative-caret-position="120">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -847,12 +779,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test/NetClient.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="680">
           <caret line="43" column="58" lean-forward="true" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
 >>>>>>> 8bd375a5768a0a3334423db7d9b3f90764f26208
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="500">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding />
+>>>>>>> 87c2dc76f7d71f0941a3563379506e54e670eded
         </state>
       </provider>
     </entry>
