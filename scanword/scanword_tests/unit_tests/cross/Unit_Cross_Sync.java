@@ -1,4 +1,4 @@
-package scanword_tests.unit_tests;
+package scanword_tests.unit_tests.cross;
 
 import org.junit.After;
 import org.junit.Assert;

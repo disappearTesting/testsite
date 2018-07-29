@@ -1,4 +1,4 @@
-package scanword_tests.unit_tests;
+package scanword_tests.unit_tests.sudoku;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -14,7 +14,7 @@ import java.net.URL;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Unit_Sudoku_SudokuListData {
+public class Unit_SudokuSolved_SudokuListData {
 
     private NetClient objClient;
     private URL url;
