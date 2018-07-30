@@ -34,17 +34,28 @@ public class Unit_Cross_Sync {
         Map<String, String> paramsSync = new LinkedHashMap<>();
         paramsSync.put("user_id", "3116963");
         paramsSync.put("auth_key", "110d770ef9f1e6d81c2dce7c7b224f26");
-       // paramsSync.put("vendor_id", "45692FEF-F609-4904-9369-E82FFD314379");
-        //paramsSync.put("advertising_id", "797243CA-A44D-4078-A105-CFB23CDD6F93");
-        //paramsSync.put("advertising_track_enabled", "1");
-        //paramsSync.put("vendor_key", "4d328057ae06daf4793fca3141c58c95");
-        //paramsSync.put("advertising_key", "03d5de31c587ad16f5fb6e833c92fc20");
-        //paramsSync.put("device_info", "ewogICJkZXZpY2VfaGVpZ2h0IiA6ICI2NjciLAogICJhcHBfdmVyc2lvbiIgOiAiMS43LjE2IiwKICAibGFzdF9zeW5jX2luZXRfdHlwZSIgOiAibm9fc3luY190eXBlIiwKICAiYXBwX2J1aWxkIiA6ICIyIiwKICAiYWR2ZXJ0aXNpbmdfdHJhY2tfZW5hYmxlZCIgOiAiMSIsCiAgImRldmljZV9wbGF0Zm9ybSIgOiAiaVBob25lOCwxIiwKICAiYXV0b2xvYWRfbmV3X2lzc3Vlc19vbiIgOiAiMCIsCiAgImRldmljZV9zeXN0ZW1fdmVyc2lvbiIgOiAiMTAuMi4xIiwKICAiaXNzdWVzX2xvYWRlZCIgOiAiMSIsCiAgImRldmljZV93aWR0aCIgOiAiMzc1Igp9");
-        //paramsSync.put("visit_id", "375c140e4d06ca8b16aca97d844bb06e");
-        //paramsSync.put("request_id", "2600e7cf50354b34e411ca4fdfdbd84e");
         paramsSync.put("updates", "ewogICI4NzY4YTIzZjk3NmE0MDM4ZmM1ZGEzZWQ4MDhmZDZmMCIgOiB7CiAgICAidXVzIiA6IHsKICAgICAgInRtIiA6IDIKICAgIH0sCiAgICAiX3VvdCIgOiAxNTMyNjkxOTMyCiAgfQp9");
 
         objClient.doRequest(url, paramsSync, "POST");
+
+        Assert.assertEquals(200, objClient.getResponseCode());
+        Assert.assertEquals("OK", objClient.getResponseMessage());
+    }
+
+    @Test
+    public void test_Sync_POST_CrossSolved_Double() throws IOException {
+        Map<String, String> params = new LinkedHashMap<>();
+        params.put("user_id", "3116963");
+        params.put("auth_key", "110d770ef9f1e6d81c2dce7c7b224f26");
+        params.put("updates", "ewogICI4NWMxNGNjNTU4YTRiMzJmMDE2NzI0NDk2YmRhMzM1OCIgOiB7CiAgICAidWhrYiIgOiB7CiAgICAgICJrZXl3b3JkX2JvbnVzIiA6ICJbXG4gIHtcbiAgICBcImJvbnVzX25hbWVcIiA6IFwia2V5V29yZFwiLFxuICAgIFwicGFyYW1zXCIgOiB7XG4gICAgICBcImFtb3VudF92aWRlb1wiIDogMCxcbiAgICAgIFwiYW1vdW50X2tleVwiIDogMSxcbiAgICAgIFwidGltZXN0YW1wXCIgOiBcIjIwMTgtMDctMjcgMTM6MjI6NTkgKzAwMDBcIixcbiAgICAgIFwiY3Jvc3NfaWRcIiA6IDE4NjY5XG4gICAgfVxuICB9XG5dIgogICAgfSwKICAgICJfdW90IiA6IDE1MzI2OTc3NzksCiAgICAidWNtIiA6IHsKICAgICAgImMxODY3MSIgOiB7CiAgICAgICAgImgiIDogIiAgICAgIC4gLiAuICAgICAuICAuICAuICAuLi4uIC4uLi4gIC4gIC4uLi4uLiAuIC4gLi4uLi4gLi4uLi4gLiAgLi4uLiAgLi4uLiAuIC4gLi4uLiAuLi4uICAgLi4uLi4gLiAuICAuIC4uLiAuICAgLi4uIC4gLi4uLi4uLiAuIC4uLi4uIC4uLi4uICAuLi4uICAgLi4uLiAuLi4uLi4uLi4uLi4gIC4uLi4uICAgLi4uLiAgLi4uLi4uIC4uLi4gICAuLi4uIiwKICAgICAgICAiYSIgOiAiICAgICAg0YEg0YEg0LQgICAgINC9ICDRgSAg0LwgINGB0LDQvdC4INGC0YDQsNC6ICDQtSAg0YPQutGA0LXRgdGCINGFINC/INC/0L7RgtC+0L8g0YDQuNGB0LrQsCDQvSAg0LPQsNC30LAgINC80L7RgNC1INC/INGDINCx0LDRjtC9INCw0YDQuNC4ICAg0YHQsNC90YLQsCDQvyDQsCAg0L4g0LTQsNC6INC7ICAg0LvRjNC1INC9INGC0LrQvtGA0YfQvNCwINC+INCw0LLRgNCw0Lsg0LzRhtGL0YDQuCAg0LXQvdC+0LsgICDRgNC10YPRgiDQv9Cw0YHRgtC+0YDQvNC10L3QuNGB0LogINGC0ZHRgNC60LAgICDQutC40YHQsCAg0L7QutGC0LDQstCwINC60LDQsNGBICAg0LDQutCw0L0iCiAgICAgIH0KICAgIH0sCiAgICAidXVzIiA6IHsKICAgICAgInRvbGgiIDogMSwKICAgICAgImhjbyIgOiAxMjksCiAgICAgICJ0YyIgOiA5LAogICAgICAiaGx1IiA6IDEKICAgIH0KICB9Cn0=");
+
+        Map<String, String> params_2 = new LinkedHashMap<>();
+        params_2.put("user_id", "3116963");
+        params_2.put("auth_key", "110d770ef9f1e6d81c2dce7c7b224f26");
+        params_2.put("updates", "ewogICI4NWMxNGNjNWZmMjRiMzJmMDE2NzI0NDk2YmRhNDQ0OCIgOiB7CiAgICAidWhrYiIgOiB7CiAgICAgICJrZXl3b3JkX2JvbnVzIiA6ICJbXG4gIHtcbiAgICBcImJvbnVzX25hbWVcIiA6IFwia2V5V29yZFwiLFxuICAgIFwicGFyYW1zXCIgOiB7XG4gICAgICBcImFtb3VudF92aWRlb1wiIDogMCxcbiAgICAgIFwiYW1vdW50X2tleVwiIDogMSxcbiAgICAgIFwidGltZXN0YW1wXCIgOiBcIjIwMTgtMDctMjcgMTM6MjI6NTkgKzAwMDBcIixcbiAgICAgIFwiY3Jvc3NfaWRcIiA6IDE4NjY5XG4gICAgfVxuICB9XG5dIgogICAgfSwKICAgICJfdW90IiA6IDE1MzI2OTc3NzksCiAgICAidWNtIiA6IHsKICAgICAgImMxODY3MSIgOiB7CiAgICAgICAgImgiIDogIiAgICAgIC4gLiAuICAgICAuICAuICAuICAuLi4uIC4uLi4gIC4gIC4uLi4uLiAuIC4gLi4uLi4gLi4uLi4gLiAgLi4uLiAgLi4uLiAuIC4gLi4uLiAuLi4uICAgLi4uLi4gLiAuICAuIC4uLiAuICAgLi4uIC4gLi4uLi4uLiAuIC4uLi4uIC4uLi4uICAuLi4uICAgLi4uLiAuLi4uLi4uLi4uLi4gIC4uLi4uICAgLi4uLiAgLi4uLi4uIC4uLi4gICAuLi4uIiwKICAgICAgICAiYSIgOiAiICAgICAg0YEg0YEg0LQgICAgINC9ICDRgSAg0LwgINGB0LDQvdC4INGC0YDQsNC6ICDQtSAg0YPQutGA0LXRgdGCINGFINC/INC/0L7RgtC+0L8g0YDQuNGB0LrQsCDQvSAg0LPQsNC30LAgINC80L7RgNC1INC/INGDINCx0LDRjtC9INCw0YDQuNC4ICAg0YHQsNC90YLQsCDQvyDQsCAg0L4g0LTQsNC6INC7ICAg0LvRjNC1INC9INGC0LrQvtGA0YfQvNCwINC+INCw0LLRgNCw0Lsg0LzRhtGL0YDQuCAg0LXQvdC+0LsgICDRgNC10YPRgiDQv9Cw0YHRgtC+0YDQvNC10L3QuNGB0LogINGC0ZHRgNC60LAgICDQutC40YHQsCAg0L7QutGC0LDQstCwINC60LDQsNGBICAg0LDQutCw0L0iCiAgICAgIH0KICAgIH0sCiAgICAidXVzIiA6IHsKICAgICAgInRvbGgiIDogMSwKICAgICAgImhjbyIgOiAxMjksCiAgICAgICJ0YyIgOiA5LAogICAgICAiaGx1IiA6IDEKICAgIH0KICB9Cn0=");
+
+        objClient.doRequest(url, params, "POST");
+        objClient.doRequest(url, params_2, "POST");
 
         Assert.assertEquals(200, objClient.getResponseCode());
         Assert.assertEquals("OK", objClient.getResponseMessage());
