@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87bbfe6f-cbc8-4588-bedd-9766485942c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanword/scanword_client/Test.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scanword_client/Test.http" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,38 +22,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Unit_SudokuSolved_SudokuListData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java">
+      <file leaf-file-name="Unit_CrossSolved_CrossListData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="38" column="685" selection-start-line="38" selection-start-column="685" selection-end-line="38" selection-end-column="685" />
+              <caret line="38" column="7808" selection-start-line="38" selection-start-column="7808" selection-end-line="38" selection-end-column="7808" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit_SudokuSolved_Sync.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java">
+      <file leaf-file-name="Unit_CrossSolved_Sync.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="38" column="675" selection-start-line="38" selection-start-column="675" selection-end-line="38" selection-end-column="675" />
+              <caret line="36" column="7799" selection-start-line="36" selection-start-column="7799" selection-end-line="36" selection-end-column="7799" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Unit_SudokuSolved_Info.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java">
+      <file leaf-file-name="Unit_CrossSolved_TestSuite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Unit_SudokuSolved_TestSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="234">
               <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +57,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -91,12 +88,19 @@
         <option value="$PROJECT_DIR$/scanword/scanword_client/QueryBuilder.java" />
         <option value="$PROJECT_DIR$/scanword/scanword_client/NetClient.java" />
         <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/Unit_Scanword_SyncRequest.java" />
-        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_Cross_Sync.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java" />
-        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_Cross_Sync.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSilved_Sync.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Info.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java" />
         <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java" />
         <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java" />
+        <option value="$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java" />
+        <option value="$PROJECT_DIR$/scanword/Test.http" />
+        <option value="$PROJECT_DIR$/scanword/Test.java" />
       </list>
     </option>
   </component>
@@ -125,7 +129,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-1760" />
     <option name="width" value="1714" />
     <option name="height" value="1200" />
@@ -135,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,25 +177,57 @@
               <item name="scanword" type="462c0819:PsiDirectoryNode" />
               <item name="scanword_tests" type="462c0819:PsiDirectoryNode" />
               <item name="unit_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test_project" type="462c0819:PsiDirectoryNode" />
-              <item name="scanword" type="462c0819:PsiDirectoryNode" />
-              <item name="scanword_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="unit_tests" type="462c0819:PsiDirectoryNode" />
-              <item name="sudoku" type="462c0819:PsiDirectoryNode" />
-              <item name="Unit_SudokuSolved_Sync.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="cross" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://clientapi.mail.ru/fcgi-bin/smsphoneinfo" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="info" />
+                <option name="value" value="typing_check" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="service" />
+                <option name="value" value="odkl_registration" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="lang" />
+                <option name="value" value="ru" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="428009ad-42ca-45b0-9017-973d2fd26cda" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="phone" />
+                <option name="value" value="+375504455266" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -204,7 +241,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Unit_SudokuSolved_Info.test_SudokuSolved_Info">
+  <component name="RunManager" selected="Application.Unit_CrossSolved_TestSuite">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="testsite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Unit_CrossSolved_TestSuite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.cross.Unit_CrossSolved_TestSuite" />
+      <module name="testsite" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scanword_tests.unit_tests.cross.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Unit_SudokuSolved_TestSuite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.sudoku.Unit_SudokuSolved_TestSuite" />
       <module name="testsite" />
@@ -219,19 +272,19 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_CrossSolved_Info.test_CrossSolved_Info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testsite" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="scanword_tests.unit_tests.*" />
+          <option name="PATTERN" value="scanword_tests.unit_tests.cross.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="scanword_tests.unit_tests" />
-      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.Unit_Scanword_SyncRequest" />
-      <option name="METHOD_NAME" value="test_Sync_POST_CrossSolved" />
+      <option name="PACKAGE_NAME" value="scanword_tests.unit_tests.cross" />
+      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.cross.Unit_CrossSolved_Info" />
+      <option name="METHOD_NAME" value="test_CrossSolved_Info" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -242,30 +295,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved_Double" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testsite" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scanword_tests.unit_tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="scanword_tests.unit_tests" />
-      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.Unit_Scanword_SyncRequest" />
-      <option name="METHOD_NAME" value="test_Sync_POST_CrossSolved_Double" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Unit_SudokuSolved_Info.test_SudokuSolved_Info" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Unit_SudokuSolved_Sync.test_SudokuSolved_Sync" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testsite" />
       <extension name="coverage">
         <pattern>
@@ -276,31 +306,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="scanword_tests.unit_tests.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.sudoku.Unit_SudokuSolved_Info" />
-      <option name="METHOD_NAME" value="test_SudokuSolved_Info" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="Unit_SudokuSolved_SudokuListData.test_SudokuSolved_SudokuListData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testsite" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="scanword_tests.unit_tests.sudoku.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="scanword_tests.unit_tests.sudoku" />
-      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.sudoku.Unit_SudokuSolved_SudokuListData" />
-      <option name="METHOD_NAME" value="test_SudokuSolved_SudokuListData" />
+      <option name="MAIN_CLASS_NAME" value="scanword_tests.unit_tests.sudoku.Unit_SudokuSolved_Sync" />
+      <option name="METHOD_NAME" value="test_SudokuSolved_Sync" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -350,19 +357,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved" />
-      <item itemvalue="JUnit.Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved_Double" />
+      <item itemvalue="Application.Unit_CrossSolved_TestSuite" />
+      <item itemvalue="JUnit.Unit_CrossSolved_Info.test_CrossSolved_Info" />
       <item itemvalue="Application.Unit_SudokuSolved_TestSuite" />
-      <item itemvalue="JUnit.Unit_SudokuSolved_SudokuListData.test_SudokuSolved_SudokuListData" />
-      <item itemvalue="JUnit.Unit_SudokuSolved_Info.test_SudokuSolved_Info" />
+      <item itemvalue="JUnit.Unit_SudokuSolved_Sync.test_SudokuSolved_Sync" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Unit_SudokuSolved_Info.test_SudokuSolved_Info" />
+        <item itemvalue="Application.Unit_CrossSolved_TestSuite" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Unit_SudokuSolved_TestSuite" />
-        <item itemvalue="JUnit.Unit_SudokuSolved_SudokuListData.test_SudokuSolved_SudokuListData" />
-        <item itemvalue="JUnit.Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved" />
-        <item itemvalue="JUnit.Unit_Scanword_SyncRequest.test_Sync_POST_CrossSolved_Double" />
+        <item itemvalue="JUnit.Unit_SudokuSolved_Sync.test_SudokuSolved_Sync" />
+        <item itemvalue="JUnit.Unit_CrossSolved_Info.test_CrossSolved_Info" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +384,9 @@
       <option name="presentableId" value="Default" />
       <updated>1532681004971</updated>
       <workItem from="1532681008673" duration="16186000" />
-      <workItem from="1532932146184" duration="7107000" />
+      <workItem from="1532932146184" duration="15164000" />
+      <workItem from="1533015684353" duration="5091000" />
+      <workItem from="1533117550301" duration="2785000" />
     </task>
     <servers />
   </component>
@@ -385,12 +394,39 @@
     <history-entry file="Unit_SudokuSolved_SudokuListData_test_SudokuSolved_SudokuListData - 2018.07.30 at 12h 34m 09s.xml">
       <configuration name="Unit_SudokuSolved_SudokuListData.test_SudokuSolved_SudokuListData" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Unit_SudokuSolved_Info_test_SudokuSolved_Info - 2018.07.30 at 13h 54m 42s.xml">
+      <configuration name="Unit_SudokuSolved_Info.test_SudokuSolved_Info" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_SudokuSolved_Info_test_SudokuSolved_Info - 2018.07.30 at 14h 39m 17s.xml">
+      <configuration name="Unit_SudokuSolved_Info.test_SudokuSolved_Info" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_Sync_test_CrossSolved_Sync - 2018.07.30 at 17h 12m 03s.xml">
+      <configuration name="Unit_CrossSolved_Sync.test_CrossSolved_Sync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_Info_test_CrossSolved_Info - 2018.07.30 at 17h 55m 14s.xml">
+      <configuration name="Unit_CrossSolved_Info.test_CrossSolved_Info" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_CrossListData_test_CrossSolved_CrossListData - 2018.07.30 at 17h 57m 24s.xml">
+      <configuration name="Unit_CrossSolved_CrossListData.test_CrossSolved_CrossListData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_Sync_test_CrossSolved_Sync - 2018.07.30 at 17h 57m 35s.xml">
+      <configuration name="Unit_CrossSolved_Sync.test_CrossSolved_Sync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_Sync_test_CrossSolved_Sync - 2018.07.30 at 18h 02m 42s.xml">
+      <configuration name="Unit_CrossSolved_Sync.test_CrossSolved_Sync" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_CrossSolved_Info_test_CrossSolved_Info - 2018.07.30 at 18h 04m 54s.xml">
+      <configuration name="Unit_CrossSolved_Info.test_CrossSolved_Info" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Unit_SudokuSolved_Sync_test_SudokuSolved_Sync - 2018.07.31 at 11h 53m 28s.xml">
+      <configuration name="Unit_SudokuSolved_Sync.test_SudokuSolved_Sync" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23293000" />
+    <option name="totallyTimeSpent" value="39226000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1760" y="0" width="1714" height="1200" extended-state="0" />
+    <frame x="-1760" y="0" width="1714" height="1200" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -403,11 +439,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3299279" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" x="146" y="48" width="1664" height="995" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32957748" />
+      <window_info anchor="bottom" x="146" y="48" width="1647" height="995" id="Run" order="2" type="WINDOWED" weight="0.32957748" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32902032" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20072116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20552884" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -430,6 +466,58 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="1963" selection-start-line="38" selection-start-column="1963" selection-end-line="38" selection-end-column="1963" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="1973" selection-start-line="38" selection-start-column="1973" selection-end-line="38" selection-end-column="1973" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="2557" selection-start-line="38" selection-start-column="2557" selection-end-line="38" selection-end-column="2557" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="2547" selection-start-line="36" selection-start-column="2547" selection-end-line="36" selection-end-column="2547" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="4187" selection-start-line="38" selection-start-column="4187" selection-end-line="38" selection-end-column="4187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scanword/scanword_client/NetClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1566">
@@ -447,16 +535,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/Unit_Scanword_SyncRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="83" column="53" lean-forward="true" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/Unit_Scanword_SyncRequest.java" />
     <entry file="file://$PROJECT_DIR$/testsite/testsite_tests/pom/ActionPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -469,10 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-          <folding>
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,16 +599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/Unit_Scanword_SyncRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/Unit_Scanword_SyncRequest.java" />
     <entry file="file://$PROJECT_DIR$/scanword/scanword_client/CertificatesInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -554,38 +620,76 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_Cross_Sync.java">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+        <state relative-caret-position="576">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java">
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="38" column="685" selection-start-line="38" selection-start-column="685" selection-end-line="38" selection-end-column="685" />
+        <state relative-caret-position="684">
+          <caret line="38" column="6479" selection-start-line="38" selection-start-column="6479" selection-end-line="38" selection-end-column="6479" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Sync.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
-          <caret line="38" column="675" selection-start-line="38" selection-start-column="675" selection-end-line="38" selection-end-column="675" />
+          <caret line="38" column="1963" selection-start-line="38" selection-start-column="1963" selection-end-line="38" selection-end-column="1963" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/PasswordGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_Info.java">
+    <entry file="file://$PROJECT_DIR$/scanword/Test.http">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="162">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/sudoku/Unit_SudokuSolved_SudokuListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="38" column="1973" selection-start-line="38" selection-start-column="1973" selection-end-line="38" selection-end-column="1973" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_Sync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="36" column="7799" selection-start-line="36" selection-start-column="7799" selection-end-line="36" selection-end-column="7799" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_CrossListData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="38" column="7808" selection-start-line="38" selection-start-column="7808" selection-end-line="38" selection-end-column="7808" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scanword/scanword_tests/unit_tests/cross/Unit_CrossSolved_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

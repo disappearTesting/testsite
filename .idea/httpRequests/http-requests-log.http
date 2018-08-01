@@ -1,3 +1,9 @@
+GET https://clientapi.mail.ru/fcgi-bin/smsphoneinfo?info=typing_check&service=odkl_registration&lang=ru&id=428009ad-42ca-45b0-9017-973d2fd26cda&phone=+375504455266
+
+<> 2018-08-01T032143.200.json
+
+###
+
 GET https://mahjong-stage.smapps.net/gp/app?user_id=27&social_id=gp&auth_key=
 
 <> 2018-07-25T043643.200.json
@@ -269,9 +275,5 @@ GET https://scanword.smapps.net
 ###
 
 POST https://scanword.smapps.net
-
-###
-
-POST https://scanword.smapps.net/rest/sync/ios
 
 ###

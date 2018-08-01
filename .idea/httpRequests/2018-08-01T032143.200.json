@@ -1,0 +1,19 @@
+{
+  "info": {
+    "operator": "ALL_BELARUS",
+    "phone": "+375504455266"
+  },
+  "printable": [],
+  "status": "OK",
+  "typing_check": {
+    "trunk_code": "8",
+    "modified_phone_number": "+375504455266",
+    "remaining_lengths": [
+      0
+    ],
+    "prefix_state": [
+      "mobile"
+    ],
+    "modified_prefix": "+375"
+  }
+}

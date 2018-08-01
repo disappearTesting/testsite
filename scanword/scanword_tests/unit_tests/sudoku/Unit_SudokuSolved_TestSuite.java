@@ -10,9 +10,9 @@ public class Unit_SudokuSolved_TestSuite {
 
     @RunWith(Suite.class)
     @Suite.SuiteClasses({
+            Unit_SudokuSolved_Sync.class,
             Unit_SudokuSolved_SudokuListData.class,
-            Unit_SudokuSolved_Info.class,
-            Unit_SudokuSolved_Sync.class
+            //Unit_SudokuSolved_Info.class
     })
 
     public class JunitTestSuite {
